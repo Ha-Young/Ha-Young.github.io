@@ -41,7 +41,7 @@
   Link: </component---src-templates-blog-post-js-507243ec147542bd6218.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/blog/example-title/page-data.json>; rel=preload; as=fetch; crossorigin
-/blog/second-title
+/question/1
   Link: </webpack-runtime-cc80d9a32abb1d706a4c.js>; rel=preload; as=script
   Link: </framework-5fc6169171e885c3b522.js>; rel=preload; as=script
   Link: </styles-cd63080e784be7b7e7cf.js>; rel=preload; as=script
@@ -49,7 +49,7 @@
   Link: </92c71b40fabf116e9c1437d16baee1f61fa514e3-8a487e17aef45b24a0f1.js>; rel=preload; as=script
   Link: </component---src-templates-blog-post-js-507243ec147542bd6218.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/blog/second-title/page-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/question/1/page-data.json>; rel=preload; as=fetch; crossorigin
 /blog/code-example
   Link: </webpack-runtime-cc80d9a32abb1d706a4c.js>; rel=preload; as=script
   Link: </framework-5fc6169171e885c3b522.js>; rel=preload; as=script
@@ -77,15 +77,6 @@
   Link: </component---src-templates-blog-post-js-507243ec147542bd6218.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/question/2/page-data.json>; rel=preload; as=fetch; crossorigin
-/question/1
-  Link: </webpack-runtime-cc80d9a32abb1d706a4c.js>; rel=preload; as=script
-  Link: </framework-5fc6169171e885c3b522.js>; rel=preload; as=script
-  Link: </styles-cd63080e784be7b7e7cf.js>; rel=preload; as=script
-  Link: </app-99ff5ed8455d8a436ef0.js>; rel=preload; as=script
-  Link: </92c71b40fabf116e9c1437d16baee1f61fa514e3-8a487e17aef45b24a0f1.js>; rel=preload; as=script
-  Link: </component---src-templates-blog-post-js-507243ec147542bd6218.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/question/1/page-data.json>; rel=preload; as=fetch; crossorigin
 /404/
   Link: </webpack-runtime-cc80d9a32abb1d706a4c.js>; rel=preload; as=script
   Link: </framework-5fc6169171e885c3b522.js>; rel=preload; as=script
