@@ -39,19 +39,19 @@
 <p>먼저 프로젝트에 antd를 설치하고,
 Gatsby이기 때문에 gatsby-antd-plugin 또한 설치해야 한다.</p>
 <div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> antd gatsby-antd-plugin</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
-<p>혹은 </p>
+<p>혹은</p>
 <div class="gatsby-highlight" data-language="bash"><pre style="counter-reset: linenumber NaN" class="language-bash line-numbers"><code class="language-bash"><span class="token function">yarn</span> <span class="token function">add</span> antd gatsby-antd-plugin</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <p>으로 다운받아 준다.</p>
 <h4>2. gatsby-config.js에 적용시키기</h4>
 <p>우리가 gatsby에 사용할 plugin을 설치했으므로 당연히 gatsby에 plugin을 적용시켜야 한다.</p>
 <p>그럼 당연히 <strong>gatsby-config.js</strong>에서 처리를 해줘야겠지.</p>
-<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript">plugins<span class="token operator">:</span><span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-        resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-antd"</span><span class="token punctuation">,</span>
-        options<span class="token operator">:</span> <span class="token punctuation">{</span>
-            style<span class="token operator">:</span> <span class="token boolean">true</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
+<div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript">plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-antd"</span><span class="token punctuation">,</span>
+    options<span class="token operator">:</span> <span class="token punctuation">{</span>
+      style<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">]</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>와 같이 plugins 배열에 위 객체를 주가해주면 된다.</p>
 <h4>3. 나의 Gatsby 프로젝트에 antd 적용시키기</h4>
@@ -78,30 +78,30 @@ Modal Component였는데, 이를 적용시키면서 설명을 하겠다.</p>
 <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>showModal 함수는</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">showModal</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
-    Modal<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-      title<span class="token operator">:</span> <span class="token string">"Skill Info"</span><span class="token punctuation">,</span>
-      content<span class="token operator">:</span> <span class="token punctuation">(</span>
+  Modal<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    title<span class="token operator">:</span> <span class="token string">"Skill Info"</span><span class="token punctuation">,</span>
+    content<span class="token operator">:</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">></span>
         <span class="token operator">&lt;</span>div<span class="token operator">></span>
-          <span class="token operator">&lt;</span>div<span class="token operator">></span>
-            <span class="token operator">&lt;</span>Stars countOfStars<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
-            <span class="token operator">&lt;</span>p<span class="token operator">></span>고급 기능까지 문서없이 구현 가능<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-          <span class="token operator">&lt;</span>div<span class="token operator">></span>
-            <span class="token operator">&lt;</span>Stars countOfStars<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
-            <span class="token operator">&lt;</span>p<span class="token operator">></span>
-              고급 기능은 문서를 참조해야 하고 기초기능은 문서참조를 하지않아도
-              됨<span class="token punctuation">.</span>
-            <span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-          <span class="token operator">&lt;</span>div<span class="token operator">></span>
-            <span class="token operator">&lt;</span>Stars countOfStars<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
-            <span class="token operator">&lt;</span>p<span class="token operator">></span>기초 지식과 사용은 무리가 없으나 문서참조를 자주해야 됨<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
-          <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>Stars countOfStars<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">3</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>p<span class="token operator">></span>고급 기능까지 문서없이 구현 가능<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
         <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-      <span class="token punctuation">)</span><span class="token punctuation">,</span>
-      <span class="token function-variable function">onOk</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+        <span class="token operator">&lt;</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>Stars countOfStars<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>p<span class="token operator">></span>
+            고급 기능은 문서를 참조해야 하고 기초기능은 문서참조를 하지않아도
+            됨<span class="token punctuation">.</span>
+          <span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span>div<span class="token operator">></span>
+          <span class="token operator">&lt;</span>Stars countOfStars<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+          <span class="token operator">&lt;</span>p<span class="token operator">></span>기초 지식과 사용은 무리가 없으나 문서참조를 자주해야 됨<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">onOk</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>다음과 같이 구현하였다.</p>
 <h4>4. less쪽 error 발견</h4>
 <p>이렇게 해서 실행을 해봤는데 아니나다를까 애러를 발견했다.</p>
@@ -121,20 +121,20 @@ Modal Component였는데, 이를 적용시키면서 설명을 하겠다.</p>
 <p>less-to-json은 사용에 다른 문제가 있어서 로컬파일에서 less를 만들어 쓸 것이기 때문에 추가.</p>
 <p>그 후에 plugin을 설치했으므로 당연히 <strong>gatsby-config.js에 추가</strong>해야된다.</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript">plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-        resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-antd"</span><span class="token punctuation">,</span>
-        options<span class="token operator">:</span> <span class="token punctuation">{</span>
-            style<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-antd"</span><span class="token punctuation">,</span>
+    options<span class="token operator">:</span> <span class="token punctuation">{</span>
+      style<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">{</span>
-        resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-less"</span><span class="token punctuation">,</span>
-        options<span class="token operator">:</span> <span class="token punctuation">{</span>
-            lessOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
-                javascriptEnabled<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-            <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-less"</span><span class="token punctuation">,</span>
+    options<span class="token operator">:</span> <span class="token punctuation">{</span>
+      lessOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+        javascriptEnabled<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">]</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>아래 gatsby-plugin-less를 추가하고
 Option값에 javascriptEnabled를 반드시 true로 설정해야 한다.</p>
@@ -143,7 +143,35 @@ Option값에 javascriptEnabled를 반드시 true로 설정해야 한다.</p>
 <p>역시 새롭게 사용하는 것에는 한번에 되는일은 없다.
 이제 한번에 되는게 이상할 정도....
 이번 문제는 이랬다.</p>
-<p><img src="C:%5Cprojects%5Cmy-blog%5Csrc%5Ccontent%5CGatsby%5C2020-08-17-Gatsby---Gatsby%EC%97%90-antd%EC%A0%81%EC%9A%A9%EC%8B%9C%ED%82%A4%EA%B8%B0%5CnoJavascriptEnabled.JPG"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 776px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/6d935d3620f54495904ce242b52fe2fa/1f1b4/noJavascriptEnabled.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 29.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAcyFkB//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAWEAADAAAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hIv/aAAwDAQACAAMAAAAQh9//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABACExYYH/2gAIAQEAAT8QyFvY2pibn//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="  noJavascriptEnabled"
+        title="  noJavascriptEnabled"
+        src="/static/6d935d3620f54495904ce242b52fe2fa/1f1b4/noJavascriptEnabled.jpg"
+        srcset="/static/6d935d3620f54495904ce242b52fe2fa/e07e9/noJavascriptEnabled.jpg 200w,
+/static/6d935d3620f54495904ce242b52fe2fa/066f9/noJavascriptEnabled.jpg 400w,
+/static/6d935d3620f54495904ce242b52fe2fa/1f1b4/noJavascriptEnabled.jpg 776w"
+        sizes="(max-width: 776px) 100vw, 776px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>찾다찾다 안나와서 그냥 gatsby starter pack 중에서 ant design을 사용한 것이 있길래 해당 git을 clone해서 참조해보았다.</p>
 <p>그 결과 찾은것이 less-to-json.</p>
 <p>less에 사용되는 vars값들을 로컬로 만들고 가져오도록 하고있었다.
@@ -157,21 +185,21 @@ starter pack에서 이렇게 사용하면 방법이 이런가보다.</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">const</span> lessToJson <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"less-to-json"</span><span class="token punctuation">)</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <p>그러고 다시 앞에서 plugins에 추가시켰던 less부분에 사용해야 된다.</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript">plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
-    <span class="token punctuation">{</span>
-        resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-antd"</span><span class="token punctuation">,</span>
-        options<span class="token operator">:</span> <span class="token punctuation">{</span>
-            style<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-antd"</span><span class="token punctuation">,</span>
+    options<span class="token operator">:</span> <span class="token punctuation">{</span>
+      style<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
-    <span class="token punctuation">{</span>
-        resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-less"</span><span class="token punctuation">,</span>
-        options<span class="token operator">:</span> <span class="token punctuation">{</span>
-            lessOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
-                javascriptEnabled<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-                modifyVars<span class="token operator">:</span> <span class="token function">lessToJson</span><span class="token punctuation">(</span><span class="token string">"src/theme/vars.less"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-            <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-less"</span><span class="token punctuation">,</span>
+    options<span class="token operator">:</span> <span class="token punctuation">{</span>
+      lessOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
+        javascriptEnabled<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        modifyVars<span class="token operator">:</span> <span class="token function">lessToJson</span><span class="token punctuation">(</span><span class="token string">"src/theme/vars.less"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">]</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>보면 <strong>modifyVars : lessToJson("....path....")</strong> 가 추가되어있는데
 로컬파일을 생성해줘야 된다.</p>
