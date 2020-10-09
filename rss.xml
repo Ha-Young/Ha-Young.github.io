@@ -1,4 +1,163 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 07 Oct 2020 13:45:21 GMT</lastBuildDate><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - 1주차 두번째 오피스아워 정리]]></title><description><![CDATA[1주차 수요일 오피스아워 정리 오피스아워에서 하는 것 월요일 : 해당 주 과제, 배우는 것에 대하여 설명 수요일 : 해당 주 주제에 관해 주요한 부분 설명 금요일 : 해당 주차 과제에 대한 솔루션 JavaScript Type Boolean Null…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep1주차수요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep1주차수요일_오피스아워정리/</guid><pubDate>Wed, 07 Oct 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;1주차 수요일 오피스아워 정리&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 09 Oct 2020 13:04:00 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>https://ha-young.github.io/vanillacoding_prep/2020-09-10-내가_바닐라코딩을_선택한이유/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-10-내가_바닐라코딩을_선택한이유/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Prep 1주차 금요일 오피스아워 정리]]></title><description><![CDATA[Prep 1주차 금요일 오피스아워 정리 PrevQ. {} || something 지난시간 {} || something, {} && something 이 안되었던 이유는  자바스크립트 엔진에서 {}를 구문블록 (block statement…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep1주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep1주차금요일_오피스아워정리/</guid><pubDate>Fri, 09 Oct 2020 12:05:00 GMT</pubDate><content:encoded>&lt;h1&gt;Prep 1주차 금요일 오피스아워 정리&lt;/h1&gt;
+&lt;h2&gt;PrevQ. {} || something&lt;/h2&gt;
+&lt;p&gt;지난시간 {} || something, {} &amp;#x26;&amp;#x26; something 이 안되었던 이유는 &lt;/p&gt;
+&lt;p&gt;자바스크립트 엔진에서 {}를 구문블록 (block statement)로 해석 한 것!&lt;/p&gt;
+&lt;p&gt;우리가 if, for 문을 쓸 때 {}를 쓰듯이 {}는 block statement라고 하는데,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;123&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Error&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;123&quot;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Error&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;{} 을 block statement로 해석한 것.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; value1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;123&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;123&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;요렇게 변수에 대입할 때 써주거나 ()로 묶어주면 된다.&lt;/p&gt;
+&lt;p&gt;실제로는 이렇게 잘 사용하지 않기 때문에 위와 같은 오류는 잘 볼 일이 없다.&lt;/p&gt;
+&lt;p&gt;사실 위 처럼 변수에 할당하지않고 바로&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;123&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;으로 하지는 않기 때문에 흔하지 않은 애러.&lt;/p&gt;
+&lt;p&gt;자바스크립트 엔진에서 &lt;strong&gt;{}를 객체 리터럴로 받아들이기보다 Block Statement로 인식 할 수 있다는걸&lt;/strong&gt; 알아두면 될 것 같다.&lt;/p&gt;
+&lt;h4&gt;근데 이런경우가 있다?&lt;/h4&gt;
+&lt;p&gt;크롬 콘솔에서 &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Pass - 세미콜론(;) 없이 수행&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// Error - 세미콜론(;) 있음&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;로 하면 애러가 안난다 &lt;/p&gt;
+&lt;p&gt;하지만 &lt;strong&gt;다른 브라우저&lt;/strong&gt;에서는 되는데 브라우저마다 동작하는 방식? 이 조금 다를 수 있다는 점을 알아두면 될 듯.&lt;/p&gt;
+&lt;p&gt;세밀하게 살펴보지 않으면 절대로 알 수 없는 내용인데 찾으신분은 진짜 대단하신 것 같다.&lt;/p&gt;
+&lt;h2&gt;이번 과제 리뷰&lt;/h2&gt;
+&lt;h4&gt;typeof&lt;/h4&gt;
+&lt;p&gt;typeof 키워드 기억.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;typeof &quot;123&quot; -&gt; &quot;string&quot;&lt;/li&gt;
+&lt;li&gt;typeof 123 -&gt; &quot;number&quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;와 같이 작동하고 type값을 string으로 알려준다.&lt;/p&gt;
+&lt;h5&gt;다음은 어떻게 작동할까?&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// false&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// typeof undefined는 &quot;undefined&quot;이기 때문&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; arr &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; arr
+arr &lt;span class=&quot;token comment&quot;&gt;// &quot;object&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 그럼 여기서 어떻게 arr이 배열인걸 판별할 수 있을까?&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Array&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isArray&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token comment&quot;&gt;// ToDo&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Array.isArray(something) 로 판별&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;arr.isArray() 가 아닌걸 염두하자!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;AboutArrays에서 나온 부분&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; message &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;함수 외부&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getMessage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; message&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;overrideMessage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; message &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;함수 내부&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; message&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; result1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getMessage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; result2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;overrideMessage&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 아래는 어떻게 될까?&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result1&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//함수 외부&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//함수 내부&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;message&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Q. result1 왜 &quot;함수 외부&quot;?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;result1는 getMessage() 함수 결과를 받는데,&lt;/li&gt;
+&lt;li&gt;getMessage() 함수 안에 return문에 message를 받아서 쓴다.&lt;/li&gt;
+&lt;li&gt;하지만, message라는 변수는 getMessage 함수안에 없기 때문에 &lt;strong&gt;제일 가까운 거리&lt;/strong&gt;의 message라는 변수를 찾아다니게 되고,&lt;/li&gt;
+&lt;li&gt;그 전에 선언했던 message = &quot;함수 외부&quot;; 를 가져오게 되는 것.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Q. result2 왜 &quot;함수 내부&quot;?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;result2는 overrideMessage() 함수 결과를 받는데,&lt;/li&gt;
+&lt;li&gt;result2 내부의 message가 가장 가까우므로 이거 리턴.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Q. 맨 마지막 console.log(message) 결과는?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;결과는 &quot;함수 외부&quot;&lt;/p&gt;
+&lt;p&gt;overrideMessage() 함수 내부의 결과는 overrideMessage() 함수 내부에만 영향을 미치기때문에 반영 X&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;이 부분은 다음주의 Scope와 연관된 부분이니 다음주에 더 자세히 알 수 있다.&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt; &lt;strong&gt;자바스크립트 Definition(정의)에는 거리가 중요하다고 하는 부분이 있는데, Scope와 관련된 개념이니 다음주 Scope 잘 배우자&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;js에는 예약어(키워드)가 있는데,
+이는 변수명으로 쓸 수 없다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;function , var, let, const, for, if, return 등등...&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Q. indexOf(숫자 or 문자열?)&lt;/h2&gt;
+&lt;p&gt;과제 AboutString.js에서&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;orderMessage.indexOf(3)이 왜 되는지? orderMessage.indexOf(&quot;3&quot;)이 되어야 되는게 아닌지?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;원래 indexOf()에는 문자열이 들어가야되는게 맞지만,
+자동으로 string으로 변환? 되었다고 보면 된다.&lt;/p&gt;
+&lt;p&gt;함수에는 요런 예외적인 부분이 있을 수 있다는 점!&lt;/p&gt;
+&lt;h2&gt;Q. var VS let&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt; var 보다는 let을 사용하는게 좋지 않을까?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;맞다. 하지만 Prep에서는 var 쓰는 편&lt;/p&gt;
+&lt;p&gt;자바스크립트 변수 선언은&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; var1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; var2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; var3 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;3가지가 있는데, 이 차이의 개념을 알려면 Scope, Hoisting과 같은 자바스크립트 핵심개념을 알아아 됨.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;나중에 배울 수 있다. 궁금하면 구글 검색.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Q. mdn에서 indexOf(searchElement[, fromIndex) ?&lt;/h2&gt;
+&lt;p&gt;[ 대괄호로 표기된 부분은 &lt;strong&gt;Optional&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;대괄호 뒷부분은 없어도 되는 부분이라&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;searchElement&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+arr&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;searchElement&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; fromIndex&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;둘 다 가능하다는 표현.&lt;/p&gt;
+&lt;h2&gt;Q. toMatch()에서 정규표현식?&lt;/h2&gt;
+&lt;h4&gt;정규표현식&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;정규표현식이 무엇인지는 알 필요가 있지만 어떻게 쓰는지는 지금은 공부 할 필요가 없다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;현업에서 종종 쓰일일이 있지만, 그때그때 필요할 때 공부하면 된다.&lt;/p&gt;
+&lt;h4&gt;toMatch()&lt;/h4&gt;
+&lt;p&gt;Mocha?라는 라이브러리에 내장된 함수.&lt;/p&gt;
+&lt;p&gt;Mocha?라이브러리를 쓸일이 아니면 쓰일일이 없으니 신경안써도 됨.&lt;/p&gt;
+&lt;h2&gt;Q. 객체.속성키() ?&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;welcomeMessage&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; name &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;안녕!&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; person &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; say&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; welcomeMessage &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+person&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;say&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;something&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// 객체의 속성으로 함수를 넣을 수 있기 때문에,&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 해당 키값으로 함수를 불러오고 사용 할 수 있다.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 여기선 key가 say, value가 welcomeMessage함수.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// person의 say라는 속성으로 함수 사용.&lt;/span&gt;
+
+&lt;span class=&quot;token comment&quot;&gt;// person.say(&quot;something&quot;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// welcomeMessage(&quot;something&quot;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// person.say와 welcomeMessage는 같다.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// person.say가 가리키고 있는것이 welcomeMessage이기 때문에.&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Q. VS 확장프로그램 Prettier?&lt;/h2&gt;
+&lt;p&gt;써도 상관없다. BootCamp에서는 사용 못함.&lt;/p&gt;
+&lt;p&gt;Prettier는 opinionated code formatter.&lt;/p&gt;
+&lt;p&gt;prettier만의 코드스타일로 만들어 준다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;어떻게 코드스타일링을 하는지 참조하면 좋다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;하지만, opnionated하기 때문에,
+prettier의 코드스타일을 원치 않하지 않는데 적용되거나,
+회사 내부의 코드스타일을 망칠 수 있기 때문에 &lt;strong&gt;이런 상황에서는 사용하면 안된다.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;다른 사람의 코드스타일을 이해하고 맞춰서 쓸 수 있으려면 어떤 한 코드스타일을 습득하거나 정립한 후부터 가능.&lt;/p&gt;
+&lt;p&gt;코드스타일은 정답이 없기 때문에 &lt;strong&gt;회사에 맞추면 된다.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;ETC&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;금요일 깜짝 선물은 여수 바다. 실망...&lt;/li&gt;
+&lt;li&gt;커피 수여식 여러분 감사합니다..!&lt;/li&gt;
+&lt;li&gt;켄님은 돈까스 많이 좋아하신다.&lt;/li&gt;
+&lt;li&gt;나이키는 재수없어서 싫어하신다.&lt;/li&gt;
+&lt;li&gt;이번주말에 코드리뷰 진행된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - 1주차 두번째 오피스아워 정리]]></title><description><![CDATA[1주차 수요일 오피스아워 정리 오피스아워에서 하는 것 월요일 : 해당 주 과제, 배우는 것에 대하여 설명 수요일 : 해당 주 주제에 관해 주요한 부분 설명 금요일 : 해당 주차 과제에 대한 솔루션 JavaScript Type Boolean Null…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep1주차수요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep1주차수요일_오피스아워정리/</guid><pubDate>Wed, 07 Oct 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;1주차 수요일 오피스아워 정리&lt;/h1&gt;
 &lt;h2&gt;오피스아워에서 하는 것&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;월요일 : 해당 주 과제, 배우는 것에 대하여 설명&lt;/li&gt;
