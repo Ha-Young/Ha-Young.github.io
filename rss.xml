@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 11 Oct 2020 13:48:51 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>https://ha-young.github.io/vanillacoding_prep/2020-09-10-내가_바닐라코딩을_선택한이유/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-10-내가_바닐라코딩을_선택한이유/</guid><content:encoded></content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[​---
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 12 Oct 2020 16:53:07 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><link>https://ha-young.github.io/vanillacoding_prep/2020-09-10-내가_바닐라코딩을_선택한이유/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-10-내가_바닐라코딩을_선택한이유/</guid><content:encoded></content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[​---
 title: "패스트캠퍼스 알고리즘 완주반 6주차 과제"
 draft: false
 path: "/algorithm/fastcampus/week6"
@@ -237,7 +237,117 @@ category: &apos;algorithm&apos;
     &lt;span class=&quot;token keyword&quot;&gt;except&lt;/span&gt; RecursionError&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;설명&lt;/h4&gt;
-&lt;p&gt;재귀함수로 구현하였으며 무한루프(재귀애러)에 빠지면 except로 잡아서 false처리하도록 하였다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Prep 1주차 금요일 오피스아워 정리]]></title><description><![CDATA[Prep 1주차 금요일 오피스아워 정리 PrevQ. {} || something 지난시간 {} || something, {} && something 이 안되었던 이유는  자바스크립트 엔진에서 {}를 구문블록 (block statement…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep1주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep1주차금요일_오피스아워정리/</guid><pubDate>Fri, 09 Oct 2020 12:05:00 GMT</pubDate><content:encoded>&lt;h1&gt;Prep 1주차 금요일 오피스아워 정리&lt;/h1&gt;
+&lt;p&gt;재귀함수로 구현하였으며 무한루프(재귀애러)에 빠지면 except로 잡아서 false처리하도록 하였다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Prep 2주차 월요일 오피스아워 정리]]></title><description><![CDATA[Prep 2주차 월요일 오피스아워 정리 코드리뷰 요청시 과제 하고 난 후에 꼭 merge request 해주세요. (매주 금 저녁 7시까지) prep가이드 > 과제제출방법 참조. 금 저녁 7시이후에 merge request…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep2주차월요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep2주차월요일_오피스아워정리/</guid><pubDate>Tue, 13 Oct 2020 12:05:00 GMT</pubDate><content:encoded>&lt;h1&gt;Prep 2주차 월요일 오피스아워 정리&lt;/h1&gt;
+&lt;h2&gt;코드리뷰 요청시&lt;/h2&gt;
+&lt;p&gt;과제 하고 난 후에 꼭 merge request 해주세요. (매주 금 저녁 7시까지)&lt;/p&gt;
+&lt;p&gt;prep가이드 &gt; 과제제출방법 참조.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;금 저녁 7시이후에 merge request시에는 코드리뷰를 못 받을수도 있음.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Merge request는 켄님이 알아서 닫음.&lt;/p&gt;
+&lt;p&gt;닫힌 것도 볼 수 있다. Closed 탭.&lt;/p&gt;
+&lt;h2&gt;코드리뷰 질문&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;merge request시에 질문 작성&lt;/li&gt;
+&lt;li&gt;질문 부분에 주석으로 질문 작성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;벡틱?&lt;/h2&gt;
+&lt;p&gt;` 기호를 가리키는 말.
+&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt; 으로 만든 문자열은 string template라고 안에 변수를 넣을 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;hellow &lt;/span&gt;&lt;span class=&quot;token interpolation&quot;&gt;&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;${&lt;/span&gt;something&lt;span class=&quot;token interpolation-punctuation punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt; world&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;substr()&lt;/h2&gt;
+&lt;p&gt;String.substr()은 이제 지원 X. 사용하면 안된다.&lt;/p&gt;
+&lt;p&gt;substring() 또는 slice()를 사용해야 한다.&lt;/p&gt;
+&lt;h2&gt;이번주 과제&lt;/h2&gt;
+&lt;h4&gt;Tick Tack Toe 게임 구현하기&lt;/h4&gt;
+&lt;p&gt;Prep 가이드 &gt; 과제 관련 안내 란에 오픈.&lt;/p&gt;
+&lt;p&gt;Git lab으로 오픈 될 예정.&lt;/p&gt;
+&lt;p&gt;README.md를 읽으면서 과제를 파악하자.&lt;/p&gt;
+&lt;p&gt;앞으로 모든 과제는 README.md에 상세히 적혀있음.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;npm install 등등의 과제 진행 순서도 포함.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;구현해야 될 기능은 README.md의 ToDo를 참조.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;구글에서 &lt;a href=&quot;%22%5Bhttps://www.google.com/search?newwindow=1&amp;#x26;hl=ko&amp;#x26;source=hp&amp;#x26;ei=TjGEX-jMJ56Fr7wPzfWX4AE&amp;#x26;q=%ED%8B%B1%ED%83%9D%ED%86%A0&amp;#x26;oq=%ED%8B%B1%ED%83%9D%ED%86%A0&amp;#x26;gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBOgQIABADOgUIABCxA1DAh2BYq5RgYM2VYGgBcAB4AYAB0gGIAbUJkgEFMC44LjGYAQCgAQGqAQdnd3Mtd2l6sAEA&amp;#x26;sclient=psy-ab&amp;#x26;ved=0ahUKEwjoq_nK7a7sAhWewosBHc36BRwQ4dUDCAc&amp;#x26;uact=5%5D(https://www.google.com/search?newwindow=1&amp;#x26;hl=ko&amp;#x26;source=hp&amp;#x26;ei=TjGEX-jMJ56Fr7wPzfWX4AE&amp;#x26;q=%ED%8B%B1%ED%83%9D%ED%86%A0&amp;#x26;oq=%ED%8B%B1%ED%83%9D%ED%86%A0&amp;#x26;gs_lcp=CgZwc3ktYWIQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6CAgAELEDEIMBOgQIABADOgUIABCxA1DAh2BYq5RgYM2VYGgBcAB4AYAB0gGIAbUJkgEFMC44LjGYAQCgAQGqAQdnd3Mtd2l6sAEA&amp;#x26;sclient=psy-ab&amp;#x26;ved=0ahUKEwjoq_nK7a7sAhWewosBHc36BRwQ4dUDCAc&amp;#x26;uact=5)%22&quot;&gt;Tick Tack Toe(틱택토)&lt;/a&gt; 검색하시면 브라우저에서 간단히 해볼 수 있다.&lt;/u&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;git clone&lt;/li&gt;
+&lt;li&gt;cd tick-tack-toe&lt;/li&gt;
+&lt;li&gt;npm install&lt;/li&gt;
+&lt;li&gt;code . 혹은 vscode로 오픈&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;git checkout -b &apos;이름&apos;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;모든 과제마다 브랜치를 따야된다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;npm start&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://localhost:port&quot;&gt;http://localhost:port&lt;/a&gt; 로 확인 가능&lt;/li&gt;
+&lt;li&gt;개발...&lt;/li&gt;
+&lt;li&gt;종료시 ctrl + c &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;index.html, index.js를 이용해 작업해보자.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;과제 할 때 기능 추가나 수정사항이 있을 때 바로바로 commit 하고 메세지를 잘 남기자.&lt;/strong&gt;  -&gt; 작업 이력관리에 도움이 되고 리뷰받을 때 더 잘 받을 수 있다.&lt;/p&gt;
+&lt;h2&gt;Q. MR 여는건 언제?&lt;/h2&gt;
+&lt;p&gt;과제 처음부터 MR(merge request)를 열기보다는, 나중에 열자. 하지만, &lt;strong&gt;금요일 저녁 7시 전에 작업이 완료되지 않았더라도 금요일 저녁 7시 전에는 꼭 열어두자.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Q. 브랜치 이름 중복?&lt;/h2&gt;
+&lt;p&gt;이전 과제와는 상관 없다.&lt;/p&gt;
+&lt;p&gt;하지만, 다른사람들과 중복되지 않게 이름으로 하는 것이 좋다.&lt;/p&gt;
+&lt;h2&gt;이번주 과제 핵심 주제 (주의깊게 봐야 될)&lt;/h2&gt;
+&lt;p&gt;이번주 내용이 많을 수 있으므로 미리미리 강의 시청을 해두자.&lt;/p&gt;
+&lt;p&gt;DOM 보다는 Scope &amp;#x26; Hoisting이 더 우선순위!&lt;/p&gt;
+&lt;p&gt;DOM에서는 요소 선택하는 방법들 이벤트들 슥 훑어보는 느낌으로.&lt;/p&gt;
+&lt;p&gt;Scope &amp;#x26; Hoisting은 꼼꼼히 보고 이해하자.
+이해가 부족하면 인터넷 꼭 찾아보자.&lt;/p&gt;
+&lt;h2&gt;Q. 0 == null, 0 == undefined 가 false?&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// &lt;/span&gt;
+&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// true &lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// false &lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// false &lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// true, look at Logical NOT operator &lt;/span&gt;
+&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// true, look at Logical NOT operator &lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// true&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;0 == false인데,&lt;/p&gt;
+&lt;p&gt;0 == null,
+0 == undefined
+는 false이다. 왜 그런걸까?&lt;/p&gt;
+&lt;p&gt;저 상황에서는 == 연산자로 &lt;strong&gt;type coercion&lt;/strong&gt;이 발생했기 때문인데,
+왜 type coercion이 발생하는지에 대해서는 알 필요가 없다.&lt;/p&gt;
+&lt;p&gt;그리고 &lt;strong&gt;== 비교는 쓰지 않는것이 좋다.&lt;/strong&gt; - 일반적인 js convention이 아니다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;javascript에서 비교는 무조건 === 3개로!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Q. !!의 의미?&lt;/h2&gt;
+&lt;p&gt;!는 not 연산자. not은 반대 Boolean으로 바꾼다.&lt;/p&gt;
+&lt;p&gt;그리고 모든 값에 대하여 Boolean 형으로 바꾸는데,&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; value1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; bolVal &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;value &lt;span class=&quot;token comment&quot;&gt;// false&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; bolVal2 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;value &lt;span class=&quot;token comment&quot;&gt;// true&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이러한 특성 때문에,&lt;/p&gt;
+&lt;p&gt;!!연산자로 해당 변수값을 boolean형으로 바꾸는데 쓰기도 한다.
+-&gt; 사실 이상황 아니면 잘 쓰지 않는다.&lt;/p&gt;
+&lt;p&gt;현업에서는 Boolean(피연산자) 와 !! 비슷하게 쓰이는 것 같고, 회사 convention에 따르면 된다. 없으면 본인이 편한대로.&lt;/p&gt;
+&lt;h2&gt;Q. currenttarget &amp;#x3C;-&gt; target&lt;/h2&gt;
+&lt;p&gt;수요일 오피스아워에서 얘기 할 것.&lt;/p&gt;
+&lt;p&gt;강의 들을 때, 공부할 때 자세히 살펴보자.&lt;/p&gt;
+&lt;h2&gt;Q. 파일 마지막에 \n 개행문자?&lt;/h2&gt;
+&lt;p&gt;스스로 올린 과제가 잘 올라갔는지 확인하자.&lt;/p&gt;
+&lt;p&gt;깃 저장소(깃랩)에 보면 No newline at end of file이라는 메세지가 있을 수 있는데,&lt;/p&gt;
+&lt;p&gt;이 부분은 Git에서 알려주는 메세지.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Git은 모든 파일에 마지막에 빈 줄이 필요&lt;/strong&gt;하다.
+Git이 파일 구분할 때 필요하다고 함.&lt;/p&gt;
+&lt;p&gt;개행문자라기보다 그냥 enter로 빈 줄 하나 만들어주면 된다.&lt;/p&gt;
+&lt;p&gt;더 자세한 내용은 구글링해보자.&lt;/p&gt;
+&lt;h2&gt;Q. 객체 property? key?&lt;/h2&gt;
+&lt;p&gt;부르기에 차이. 부르는 사람 마음.&lt;/p&gt;
+&lt;p&gt;property, 속성, key .. 상관없음.&lt;/p&gt;
+&lt;h2&gt;ETC&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;캔님 애플 16인치 쓰신다고하네요. (부럽...)&lt;/li&gt;
+&lt;li&gt;캔님 수염은 가끔씩 민다고하시네요.&lt;/li&gt;
+&lt;li&gt;블로그 리뷰는 Slack 9기방에 적어두면 한번 봐주신다고 합니다.&lt;/li&gt;
+&lt;li&gt;부트캠프 테스트는 12월 둘째주에 봐도 되지만,
+신청은 그전에 미리미리 해둬야 된다고 하네요.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Prep 1주차 금요일 오피스아워 정리]]></title><description><![CDATA[Prep 1주차 금요일 오피스아워 정리 PrevQ. {} || something 지난시간 {} || something, {} && something 이 안되었던 이유는  자바스크립트 엔진에서 {}를 구문블록 (block statement…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep1주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep1주차금요일_오피스아워정리/</guid><pubDate>Fri, 09 Oct 2020 12:05:00 GMT</pubDate><content:encoded>&lt;h1&gt;Prep 1주차 금요일 오피스아워 정리&lt;/h1&gt;
 &lt;h2&gt;PrevQ. {} || something&lt;/h2&gt;
 &lt;p&gt;지난시간 {} || something, {} &amp;#x26;&amp;#x26; something 이 안되었던 이유는 &lt;/p&gt;
 &lt;p&gt;자바스크립트 엔진에서 {}를 구문블록 (block statement)로 해석 한 것!&lt;/p&gt;
