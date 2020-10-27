@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Oct 2020 09:24:26 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[​---
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 27 Oct 2020 09:36:26 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[​---
 title: "패스트캠퍼스 알고리즘 완주반 6주차 과제"
 draft: false
 path: "/algorithm/fastcampus/week6"
@@ -258,7 +258,63 @@ category: &apos;algorithm&apos;
 &lt;li&gt;Symbol&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;1. String Type&lt;/h2&gt;
-&lt;p&gt;String Type은 문자열로써 다른 &lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><link>https://ha-young.github.io/vanillacoding_prep/2020-09-10-내가_바닐라코딩을_선택한이유/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-10-내가_바닐라코딩을_선택한이유/</guid><content:encoded></content:encoded></item><item><title><![CDATA[Prep 3주차 금요일 오피스아워 정리]]></title><description><![CDATA[Q…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep3주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep3주차금요일_오피스아워정리/</guid><pubDate>Wed, 21 Oct 2020 12:13:00 GMT</pubDate><content:encoded>&lt;h2&gt;Q. 이번과제 수정사항 생기면 계속 재 풀이하는데?&lt;/h2&gt;
+&lt;p&gt;String Type은 문자열로써 다른 &lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><link>https://ha-young.github.io/vanillacoding_prep/2020-09-10-내가_바닐라코딩을_선택한이유/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-10-내가_바닐라코딩을_선택한이유/</guid><content:encoded></content:encoded></item><item><title><![CDATA[프로그래머스 - 완주하지 못한 선수 - Lv1]]></title><description><![CDATA[문제 설명 수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다. 마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion…]]></description><link>https://ha-young.github.io/programmers_algorithm_study/2020-10-27-프로그래머스_완주하지-못한-선수---Lv1/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_study/2020-10-27-프로그래머스_완주하지-못한-선수---Lv1/</guid><pubDate>Tue, 27 Oct 2020 09:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;p&gt;수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.&lt;/p&gt;
+&lt;p&gt;마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.&lt;/p&gt;
+&lt;h5&gt;제한사항&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다.&lt;/li&gt;
+&lt;li&gt;completion의 길이는 participant의 길이보다 1 작습니다.&lt;/li&gt;
+&lt;li&gt;참가자의 이름은 1개 이상 20개 이하의 알파벳 소문자로 이루어져 있습니다.&lt;/li&gt;
+&lt;li&gt;참가자 중에는 동명이인이 있을 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;입출력 예&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;participant&lt;/th&gt;
+&lt;th&gt;completion&lt;/th&gt;
+&lt;th&gt;return&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;[leo, kiki, eden]&lt;/td&gt;
+&lt;td&gt;[eden, kiki]&lt;/td&gt;
+&lt;td&gt;leo&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[marina, josipa, nikola, vinko, filipa]&lt;/td&gt;
+&lt;td&gt;[josipa, filipa, marina, nikola]&lt;/td&gt;
+&lt;td&gt;vinko&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[mislav, stanko, mislav, ana]&lt;/td&gt;
+&lt;td&gt;[stanko, ana, mislav]&lt;/td&gt;
+&lt;td&gt;mislav&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
+&lt;p&gt;예제 #1
+leo는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.&lt;/p&gt;
+&lt;p&gt;예제 #2
+vinko는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.&lt;/p&gt;
+&lt;p&gt;예제 #3
+mislav는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 한 명밖에 없기 때문에 한명은 완주하지 못했습니다.&lt;/p&gt;
+&lt;h2&gt;나의 풀이&lt;/h2&gt;
+&lt;h3&gt;소스&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-python line-numbers&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; collections &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; Counter
+
+&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;participant&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; completion&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    answer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;
+    
+    result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Counter&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;participant&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; Counter&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;completion&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+    
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;설명&lt;/h3&gt;
+&lt;p&gt;Counter를 이용.&lt;/p&gt;
+&lt;p&gt;Counter는 - 연산자가 되고 동일한 키워드의 개수를 빼준다. (완전 편리)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Prep 3주차 금요일 오피스아워 정리]]></title><description><![CDATA[Q…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep3주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep3주차금요일_오피스아워정리/</guid><pubDate>Wed, 21 Oct 2020 12:13:00 GMT</pubDate><content:encoded>&lt;h2&gt;Q. 이번과제 수정사항 생기면 계속 재 풀이하는데?&lt;/h2&gt;
 &lt;p&gt;이럴때는 개발을 위해서 네비게이터를 따로 만들어 둔다던지 등의 조작을 한다.&lt;/p&gt;
 &lt;p&gt;어떠한 기능이나 프로세스를 개발 하고자 할 때 개발자 자체적으로 테스트를 진행 한다면(단위 테스트) 개발, 테스트를 위해서 &lt;strong&gt;해당 기능이나 프로세스에 포함되지는 않더라도 개발, 테스트만을 위한 함수라던지 프로세스를 만들어서 기능 확인, 테스트를 한다.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2&gt;변수 네이밍에 Array 단어?&lt;/h2&gt;
