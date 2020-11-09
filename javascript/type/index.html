@@ -272,7 +272,7 @@ someValue <span class="token operator">=</span> <span class="token keyword">null
 <p>문제는 우리가 사용하지 않는 객체를 수동으로 해제할 수 없다는 점과 사용하지 않는 메모리를 파악하는데 있다.</p>
 <p>이를 우리가 <strong>사용하지 않는 변수에 null값을 직접 할당</strong>해서 가비지 컬렉션이 되도록 유도하여 Javascript의 <strong>메모리 관리에 도움</strong>을 줄 수 있다.</p>
 <p>참조값을 가지고 있는 변수에 null값을 직접 할당함으로써 해당 메모리를 가리키는 참조 정보를 제거하여 누구도 참조하지 않는 메모리 영역으로 만드는 것.</p>
-<h3>null값 판별</h3>
+<h3>null값 확인 (Falsy)</h3>
 <p><code class="language-text">null</code> 값 또한 <code class="language-text">undefined</code>와 마찬가지로 Falsy값에 속하기 때문에 <code class="language-text">undefined</code> 와 같이 Falsy 값으로 사용 할 수 있지만, 객체 참조값 변수로의 null을 명확하게 비교하려면 아래와 같이 해도 상관없다.</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript"><span class="token keyword">var</span> someObj <span class="token operator">=</span> <span class="token punctuation">{</span>
     author<span class="token operator">:</span> <span class="token string">"hayoung"</span>
@@ -290,7 +290,7 @@ someObj <span class="token operator">=</span> <span class="token keyword">null</
 <p>null 값은 프로그래밍 중에 의도적으로 빈 값을 나타내기 위한 값이다.</p>
 <h4>== 연산자 [주의!]</h4>
 <p>undefined와 null에 대해 <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/Comparison_Operators">== 연산자</a>의 사용에 주의를 가져야 한다.</p>
-<p><code class="language-text">==</code> 연산자는 <code class="language-text">===</code>연산자와 다르게 형변환을 시켜준다는 특성이 있다.</p>
+<p><code class="language-text">==</code> 연산자는 <code class="language-text">===</code>연산자와 다르게 형변환이 적용된다는 특성이 있다.</p>
 <p>따라서 <code class="language-text">null</code>과 <code class="language-text">undefined</code>의 값을 비교할 때 형변환이 일어나서 둘 다 Falsy값이기 때문에 참이된다.</p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">null</span> <span class="token operator">==</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">null</span> <span class="token operator">===</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// false</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
@@ -299,6 +299,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p>하지만, null 타입인 <code class="language-text">null</code>을 typeof 하면 <strong>null로 나오지 않고 <code class="language-text">object</code>로 나온다.</strong></p>
 <div class="gatsby-highlight" data-language="javascript"><pre style="counter-reset: linenumber NaN" class="language-javascript line-numbers"><code class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> <span class="token keyword">undefined</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "undefined"</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// "object"</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>이는 자바스크립트 초기 설계상의 오류라고 볼 수 있다.</p>
 <h4>숫자값 덧셈</h4>
 <p><code class="language-text">null</code>에 숫자값을 더하면 그 숫자 그대로의 값이 되지만,</p>
 <p><code class="language-text">undefined</code>에 숫자값이 더해지면 NaN이 된다.</p>
