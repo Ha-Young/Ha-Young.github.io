@@ -1,9 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Nov 2020 12:34:50 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[​---
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 10 Nov 2020 14:11:22 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Prep 4주차 금요일 오피스아워 정리 Q. 콜백함수에서의 this는 일반함수로 실행되는거? 함수마다 다르다. setTimeout 혹은 addEventListener로 넘어가는 this는 작동이 다른데, setTimeout…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep 4주차 금요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep 4주차 금요일 오피스아워 정리/</guid><content:encoded>&lt;h1&gt;Prep 4주차 금요일 오피스아워 정리&lt;/h1&gt;
+&lt;h2&gt;Q. 콜백함수에서의 this는 일반함수로 실행되는거?&lt;/h2&gt;
+&lt;p&gt;함수마다 다르다.&lt;/p&gt;
+&lt;p&gt;setTimeout 혹은 addEventListener로 넘어가는 this는 작동이 다른데,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;setTimeout의 callbackFunction는 일반함수와 같이 실행 그래서 일반함수와 똑같이 this 적용&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;addEventListener는 currentTarget.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;addEventListener에 this는 쓰지 말자.  eventListener 함수에서 this는 잘 쓰지 않는다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Stack overflow에서 글을 읽을 때&lt;/h2&gt;
+&lt;p&gt;Stack overflow에서 질문내용, 답변내용을 꼼꼼히 읽어서, 나의 상황과 유사한지 확인해보자.&lt;/p&gt;
+&lt;p&gt;답변을 맹신하거나 무작정 따라하지말고 mdn과 비교하는 등의 검증절차를 거치자.&lt;/p&gt;
+&lt;p&gt;이러한 습관을 잘 들여놓자.&lt;/p&gt;
+&lt;h2&gt;Q. 변수에 setInterval?&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; timer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;someFunc&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;timer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 결과 1?&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이 부분은 MDN setInterval 공식문서를 확인해보자.&lt;/p&gt;
+&lt;p&gt;setTimeout, setInterval의 리턴값을 알아두자!&lt;/p&gt;
+&lt;h2&gt;Q. 전역으로 선언한 모든 변수는 전역객체의 key값?&lt;/h2&gt;
+&lt;p&gt;모든 변수가 그렇지는 않다.&lt;/p&gt;
+&lt;p&gt;let, const 는 전역객체의 key값(속성)으로 들어가지 않는다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;var로 선언한 변수만 해당&lt;/strong&gt;&lt;/p&gt;
+&lt;h2&gt;Q. 그럼 const, let은 전역변수로 선언 불가능?&lt;/h2&gt;
+&lt;p&gt;가능하다. const, let은 전역변수 (global)로 선언가능하지만, 전역객체의 키값(속성)으로 들어가지는 않는 것.&lt;/p&gt;
+&lt;h2&gt;Q. 6주차 과제 수정가능한 부분?&lt;/h2&gt;
+&lt;p&gt;ReadME.md에 명시되어있는 부분만 수정가능!&lt;/p&gt;
+&lt;p&gt;advanced의 event처리는 Canola 내부를 조금 만져야 된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;요구사항 1 - 명시되어 있음&lt;/li&gt;
+&lt;li&gt;요구사항 2 - CanolaUI 컴포넌트 수정 X&lt;/li&gt;
+&lt;li&gt;Advanced - 정답은 없다. CanolaUI 내부 수정 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Q. 디버거가 제대로 작동안할때?&lt;/h2&gt;
+&lt;p&gt;스크린 녹화해서 켄님에게 Slack DM하기!&lt;/p&gt;
+&lt;h2&gt;Break 기간에는?&lt;/h2&gt;
+&lt;p&gt;Break 기간의 목적은 이전 학습에 대한 Review 목적!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;본인 페이스에 맞추는것이 제일 좋다!&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;이해 안되는 내용 다시 확인&lt;/li&gt;
+&lt;li&gt;다른 사람들의 과제페이스에 신경쓰지말자!!!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;부트캠프 어드미션 테스트는 가능하면 빨리보면 좋기는 좋다.&lt;/li&gt;
+&lt;li&gt;테스트는 걱정하지말자. 마지막 과제까지 큰 문제없이 이해없이 했다면!&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;단기적인 목표로 계획을 잘 세우자!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;멀리보지말자!&lt;/li&gt;
+&lt;li&gt;요일별로 무엇을 할 것인지.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Q. 함수 선언식의 함수 이름과 변수이름이 중복되도 괜찮을까?&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;vanillaCoding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// ToDo&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; vanillaCoding &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;식별자가 override하는 경우가 있을수도 있기 때문에 &lt;strong&gt;하지말아야 한다&lt;/strong&gt;!&lt;/p&gt;
+&lt;p&gt;함수 선언식에서의 함수명도 변수 쓰듯이 쓸 수 있기 때문!&lt;/p&gt;
+&lt;h2&gt;Q. 콘솔창에 생성자 함수로 인스턴스 만들었을 때?&lt;/h2&gt;
+&lt;p&gt;생성자 함수명 {} 라고 뜨는데, 이는 특별한 의미는 없고 만든사람이 친절하게 알려주려고 만든 목적이다.&lt;/p&gt;
+&lt;h2&gt;Q. 객체의 key값으로 [] index 가능?&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; person1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    age&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token function-variable function&quot;&gt;logAge&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; people &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; person1 &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; employees &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    list&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; people
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+employees&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;list&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;logAge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;객체의 key값으로 가져오는 value가 배열이라면 가능하다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;employees.list&lt;/code&gt; 의 value가 &lt;code class=&quot;language-text&quot;&gt;people&lt;/code&gt;인 배열이므로 가능.&lt;/p&gt;
+&lt;h2&gt;Q. 지금 배우는 것 이상의 심화된 원리는 이해가 안되는데?&lt;/h2&gt;
+&lt;p&gt;지금 이해가 안된다면, 나중에 다시 찾아봐도 된다. 다시 찾아보면 이해가 될 수도 있다.&lt;/p&gt;
+&lt;p&gt;지금의 아는 것 보다 나중에 아는 것이 많아지면서 이해나 습득이 잘되고 빨라진다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;가장 좋은건 반복이다. 반복 하자!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;남의 코드를 복붙하지말고 스스로 인내심을 가지고 개발하는 것이 중요.&lt;/p&gt;
+&lt;h2&gt;ETC&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;다음주 &lt;strong&gt;break주에서는 오피스아워가 없습니다.&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;질문은 가능합니다.&lt;/li&gt;
+&lt;li&gt;다음 강의 영상 올라옵니다. (Closure &amp;#x26; Recursion)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;사무실이 이사갈수도 있다!  삼성, 선릉, 역삼 근처!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;공유오피스는 아닙니다!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><link>https://ha-young.github.io/vanillacoding/2020-09-10-내가_바닐라코딩을_선택한이유/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/2020-09-10-내가_바닐라코딩을_선택한이유/</guid><content:encoded></content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[​---
 title: "패스트캠퍼스 알고리즘 완주반 6주차 과제"
 draft: false
 path: "/algorithm/fastcampus/week6"
 date: "2020-10-11 22:06"
-category: 'algorithm…]]></description><link>https://ha-young.github.io/algorithm/2020-10-11_패캠_알고리즘완주반_6주/</link><guid isPermaLink="false">https://ha-young.github.io/algorithm/2020-10-11_패캠_알고리즘완주반_6주/</guid><content:encoded>&lt;p&gt;​---
+category: 'algorithm…]]></description><link>https://ha-young.github.io/algorithm/2020-10-11_패캠_알고리즘완주반_6주/</link><guid isPermaLink="false">https://ha-young.github.io/algorithm/2020-10-11_패캠_알고리즘완주반_6주/</guid><content:encoded>&lt;p&gt;​---
 title: &quot;패스트캠퍼스 알고리즘 완주반 6주차 과제&quot;
 draft: false
 path: &quot;/algorithm/fastcampus/week6&quot;
@@ -237,115 +345,7 @@ category: &apos;algorithm&apos;
     &lt;span class=&quot;token keyword&quot;&gt;except&lt;/span&gt; RecursionError&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
         &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;False&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;설명&lt;/h4&gt;
-&lt;p&gt;재귀함수로 구현하였으며 무한루프(재귀애러)에 빠지면 except로 잡아서 false처리하도록 하였다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><link>https://ha-young.github.io/vanillacoding/2020-09-10-내가_바닐라코딩을_선택한이유/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/2020-09-10-내가_바닐라코딩을_선택한이유/</guid><content:encoded></content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[Prep 4주차 금요일 오피스아워 정리 Q. 콜백함수에서의 this는 일반함수로 실행되는거? 함수마다 다르다. setTimeout 혹은 addEventListener로 넘어가는 this는 작동이 다른데, setTimeout…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep 4주차 금요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep 4주차 금요일 오피스아워 정리/</guid><content:encoded>&lt;h1&gt;Prep 4주차 금요일 오피스아워 정리&lt;/h1&gt;
-&lt;h2&gt;Q. 콜백함수에서의 this는 일반함수로 실행되는거?&lt;/h2&gt;
-&lt;p&gt;함수마다 다르다.&lt;/p&gt;
-&lt;p&gt;setTimeout 혹은 addEventListener로 넘어가는 this는 작동이 다른데,&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;setTimeout의 callbackFunction는 일반함수와 같이 실행 그래서 일반함수와 똑같이 this 적용&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;addEventListener는 currentTarget.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;addEventListener에 this는 쓰지 말자.  eventListener 함수에서 this는 잘 쓰지 않는다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Stack overflow에서 글을 읽을 때&lt;/h2&gt;
-&lt;p&gt;Stack overflow에서 질문내용, 답변내용을 꼼꼼히 읽어서, 나의 상황과 유사한지 확인해보자.&lt;/p&gt;
-&lt;p&gt;답변을 맹신하거나 무작정 따라하지말고 mdn과 비교하는 등의 검증절차를 거치자.&lt;/p&gt;
-&lt;p&gt;이러한 습관을 잘 들여놓자.&lt;/p&gt;
-&lt;h2&gt;Q. 변수에 setInterval?&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; timer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;someFunc&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;timer&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 결과 1?&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이 부분은 MDN setInterval 공식문서를 확인해보자.&lt;/p&gt;
-&lt;p&gt;setTimeout, setInterval의 리턴값을 알아두자!&lt;/p&gt;
-&lt;h2&gt;Q. 전역으로 선언한 모든 변수는 전역객체의 key값?&lt;/h2&gt;
-&lt;p&gt;모든 변수가 그렇지는 않다.&lt;/p&gt;
-&lt;p&gt;let, const 는 전역객체의 key값(속성)으로 들어가지 않는다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;var로 선언한 변수만 해당&lt;/strong&gt;&lt;/p&gt;
-&lt;h2&gt;Q. 그럼 const, let은 전역변수로 선언 불가능?&lt;/h2&gt;
-&lt;p&gt;가능하다. const, let은 전역변수 (global)로 선언가능하지만, 전역객체의 키값(속성)으로 들어가지는 않는 것.&lt;/p&gt;
-&lt;h2&gt;Q. 6주차 과제 수정가능한 부분?&lt;/h2&gt;
-&lt;p&gt;ReadME.md에 명시되어있는 부분만 수정가능!&lt;/p&gt;
-&lt;p&gt;advanced의 event처리는 Canola 내부를 조금 만져야 된다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;요구사항 1 - 명시되어 있음&lt;/li&gt;
-&lt;li&gt;요구사항 2 - CanolaUI 컴포넌트 수정 X&lt;/li&gt;
-&lt;li&gt;Advanced - 정답은 없다. CanolaUI 내부 수정 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Q. 디버거가 제대로 작동안할때?&lt;/h2&gt;
-&lt;p&gt;스크린 녹화해서 켄님에게 Slack DM하기!&lt;/p&gt;
-&lt;h2&gt;Break 기간에는?&lt;/h2&gt;
-&lt;p&gt;Break 기간의 목적은 이전 학습에 대한 Review 목적!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;본인 페이스에 맞추는것이 제일 좋다!&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;이해 안되는 내용 다시 확인&lt;/li&gt;
-&lt;li&gt;다른 사람들의 과제페이스에 신경쓰지말자!!!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;부트캠프 어드미션 테스트는 가능하면 빨리보면 좋기는 좋다.&lt;/li&gt;
-&lt;li&gt;테스트는 걱정하지말자. 마지막 과제까지 큰 문제없이 이해없이 했다면!&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;단기적인 목표로 계획을 잘 세우자!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;멀리보지말자!&lt;/li&gt;
-&lt;li&gt;요일별로 무엇을 할 것인지.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Q. 함수 선언식의 함수 이름과 변수이름이 중복되도 괜찮을까?&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;vanillaCoding&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// ToDo&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; vanillaCoding &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;식별자가 override하는 경우가 있을수도 있기 때문에 &lt;strong&gt;하지말아야 한다&lt;/strong&gt;!&lt;/p&gt;
-&lt;p&gt;함수 선언식에서의 함수명도 변수 쓰듯이 쓸 수 있기 때문!&lt;/p&gt;
-&lt;h2&gt;Q. 콘솔창에 생성자 함수로 인스턴스 만들었을 때?&lt;/h2&gt;
-&lt;p&gt;생성자 함수명 {} 라고 뜨는데, 이는 특별한 의미는 없고 만든사람이 친절하게 알려주려고 만든 목적이다.&lt;/p&gt;
-&lt;h2&gt;Q. 객체의 key값으로 [] index 가능?&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; age &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; person1 &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    age&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token function-variable function&quot;&gt;logAge&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;age&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; people &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; person1 &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; employees &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    list&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; people
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-employees&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;list&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;logAge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;객체의 key값으로 가져오는 value가 배열이라면 가능하다.&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;employees.list&lt;/code&gt; 의 value가 &lt;code class=&quot;language-text&quot;&gt;people&lt;/code&gt;인 배열이므로 가능.&lt;/p&gt;
-&lt;h2&gt;Q. 지금 배우는 것 이상의 심화된 원리는 이해가 안되는데?&lt;/h2&gt;
-&lt;p&gt;지금 이해가 안된다면, 나중에 다시 찾아봐도 된다. 다시 찾아보면 이해가 될 수도 있다.&lt;/p&gt;
-&lt;p&gt;지금의 아는 것 보다 나중에 아는 것이 많아지면서 이해나 습득이 잘되고 빨라진다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;가장 좋은건 반복이다. 반복 하자!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;남의 코드를 복붙하지말고 스스로 인내심을 가지고 개발하는 것이 중요.&lt;/p&gt;
-&lt;h2&gt;ETC&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;다음주 &lt;strong&gt;break주에서는 오피스아워가 없습니다.&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;질문은 가능합니다.&lt;/li&gt;
-&lt;li&gt;다음 강의 영상 올라옵니다. (Closure &amp;#x26; Recursion)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;사무실이 이사갈수도 있다!  삼성, 선릉, 역삼 근처!&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;공유오피스는 아닙니다!&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Prep 6주차 월요일 오피스아워 정리]]></title><description><![CDATA[이번주 과제 Canola UI는 간단하게 만들어놓은 라이브러리라고 생각하면 된다.  소스코드가 많지않아서 소스 다 볼 수 있을것. Digital Clock을 구현하는 것도 중요하지만, Canola UI…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep6주차월요일_오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep6주차월요일_오피스아워 정리/</guid><pubDate>Mon, 09 Nov 2020 12:20:00 GMT</pubDate><content:encoded>&lt;h2&gt;이번주 과제&lt;/h2&gt;
+&lt;p&gt;재귀함수로 구현하였으며 무한루프(재귀애러)에 빠지면 except로 잡아서 false처리하도록 하였다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Prep 6주차 월요일 오피스아워 정리]]></title><description><![CDATA[이번주 과제 Canola UI는 간단하게 만들어놓은 라이브러리라고 생각하면 된다.  소스코드가 많지않아서 소스 다 볼 수 있을것. Digital Clock을 구현하는 것도 중요하지만, Canola UI…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep6주차월요일_오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep6주차월요일_오피스아워 정리/</guid><pubDate>Mon, 09 Nov 2020 12:20:00 GMT</pubDate><content:encoded>&lt;h2&gt;이번주 과제&lt;/h2&gt;
 &lt;p&gt;Canola UI는 간단하게 만들어놓은 라이브러리라고 생각하면 된다. &lt;/p&gt;
 &lt;p&gt;소스코드가 많지않아서 소스 다 볼 수 있을것.&lt;/p&gt;
 &lt;p&gt;Digital Clock을 구현하는 것도 중요하지만,&lt;/p&gt;
@@ -1437,7 +1437,7 @@ final &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class
 &lt;ul&gt;
 &lt;li&gt;유향 그래프에서 노드간의 최소거리를 구하는 문제였습니다.&lt;/li&gt;
 &lt;li&gt;Dijkstra 알고리즘을 이용하면 답을 구할 수 있습니다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Prep 4주차 수요일 오피스아워 정리]]></title><description><![CDATA[strict mode? 함수가 regular function call로 실행되었을 때 글로벌객체로 잡히는 this를 undefined로 처리. this사용 함수가 실행되었을 때 결정이 된다. 어떻게 실행되었느냐 regular function call…]]></description><link>https://ha-young.github.io/vanillacoding/Prep 4주차 수요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/Prep 4주차 수요일 오피스아워 정리/</guid><pubDate>Wed, 28 Oct 2020 13:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;strict mode?&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Prep 4주차 수요일 오피스아워 정리]]></title><description><![CDATA[strict mode? 함수가 regular function call로 실행되었을 때 글로벌객체로 잡히는 this를 undefined로 처리. this사용 함수가 실행되었을 때 결정이 된다. 어떻게 실행되었느냐 regular function call…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep 4주차 수요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep 4주차 수요일 오피스아워 정리/</guid><pubDate>Wed, 28 Oct 2020 13:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;strict mode?&lt;/h2&gt;
 &lt;p&gt;함수가 regular function call로 실행되었을 때 글로벌객체로 잡히는 this를 undefined로 처리.&lt;/p&gt;
 &lt;h2&gt;this사용&lt;/h2&gt;
 &lt;ul&gt;
@@ -1804,7 +1804,7 @@ mislav는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 �
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;result&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;keys&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;설명&lt;/h3&gt;
 &lt;p&gt;Counter를 이용.&lt;/p&gt;
-&lt;p&gt;Counter는 - 연산자가 되고 동일한 키워드의 개수를 빼준다. (완전 편리)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Prep 4주차 월요일 오피스아워 정리]]></title><description><![CDATA[ToDo 리스트 활용 ToDo 리스트 (요구사항) 에 현혹되지 말자! ToDo 리스트에 있는 기능이나 요구사항보다 개발할 때에는 더 잘게 쪼개서 작업을 해야 된다. ex) 시작 버튼을 눌렀을 경우, quiz.json…]]></description><link>https://ha-young.github.io/vanillacoding/Prep 4주차 월요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/Prep 4주차 월요일 오피스아워 정리/</guid><pubDate>Mon, 26 Oct 2020 12:20:00 GMT</pubDate><content:encoded>&lt;h2&gt;ToDo 리스트 활용&lt;/h2&gt;
+&lt;p&gt;Counter는 - 연산자가 되고 동일한 키워드의 개수를 빼준다. (완전 편리)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Prep 4주차 월요일 오피스아워 정리]]></title><description><![CDATA[ToDo 리스트 활용 ToDo 리스트 (요구사항) 에 현혹되지 말자! ToDo 리스트에 있는 기능이나 요구사항보다 개발할 때에는 더 잘게 쪼개서 작업을 해야 된다. ex) 시작 버튼을 눌렀을 경우, quiz.json…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep 4주차 월요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep 4주차 월요일 오피스아워 정리/</guid><pubDate>Mon, 26 Oct 2020 12:20:00 GMT</pubDate><content:encoded>&lt;h2&gt;ToDo 리스트 활용&lt;/h2&gt;
 &lt;p&gt;ToDo 리스트 (요구사항) 에 현혹되지 말자!&lt;/p&gt;
 &lt;p&gt;ToDo 리스트에 있는 기능이나 요구사항보다 개발할 때에는 더 잘게 쪼개서 작업을 해야 된다.&lt;/p&gt;
 &lt;h4&gt;ex)&lt;/h4&gt;
@@ -1824,7 +1824,7 @@ mislav는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 �
 &lt;p&gt;개발 할 때 여러가지를 생각하면서 하지 말고 일단 하나의 기능만 생각하고 개발하고 하는 식으로 진행하자.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;다른 기능과의 연관성과 리팩토링은 나중에!&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;divide and conquer!&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Prep 3주차 금요일 오피스아워 정리]]></title><description><![CDATA[Q…]]></description><link>https://ha-young.github.io/vanillacoding/Prep3주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/Prep3주차금요일_오피스아워정리/</guid><pubDate>Wed, 21 Oct 2020 12:13:00 GMT</pubDate><content:encoded>&lt;h2&gt;Q. 이번과제 수정사항 생기면 계속 재 풀이하는데?&lt;/h2&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Prep 3주차 금요일 오피스아워 정리]]></title><description><![CDATA[Q…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep3주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep3주차금요일_오피스아워정리/</guid><pubDate>Wed, 21 Oct 2020 12:13:00 GMT</pubDate><content:encoded>&lt;h2&gt;Q. 이번과제 수정사항 생기면 계속 재 풀이하는데?&lt;/h2&gt;
 &lt;p&gt;이럴때는 개발을 위해서 네비게이터를 따로 만들어 둔다던지 등의 조작을 한다.&lt;/p&gt;
 &lt;p&gt;어떠한 기능이나 프로세스를 개발 하고자 할 때 개발자 자체적으로 테스트를 진행 한다면(단위 테스트) 개발, 테스트를 위해서 &lt;strong&gt;해당 기능이나 프로세스에 포함되지는 않더라도 개발, 테스트만을 위한 함수라던지 프로세스를 만들어서 기능 확인, 테스트를 한다.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2&gt;변수 네이밍에 Array 단어?&lt;/h2&gt;
@@ -1869,7 +1869,7 @@ mislav는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 �
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;매 기수 바뀌는 진행방식. 다음엔 어떻게 바뀔까?&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Prep 3주차 수요일 오피스아워 정리]]></title><description><![CDATA[Primitive Vs Reference Primitive Object를 제외한 나머지 String Number Boolean Undefined Null Symbol Reference Object 타입 Object (객체) Array Function…]]></description><link>https://ha-young.github.io/vanillacoding/Prep3주차수요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/Prep3주차수요일_오피스아워정리/</guid><pubDate>Wed, 21 Oct 2020 12:13:00 GMT</pubDate><content:encoded>&lt;h2&gt;Primitive Vs Reference&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Prep 3주차 수요일 오피스아워 정리]]></title><description><![CDATA[Primitive Vs Reference Primitive Object를 제외한 나머지 String Number Boolean Undefined Null Symbol Reference Object 타입 Object (객체) Array Function…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep3주차수요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep3주차수요일_오피스아워정리/</guid><pubDate>Wed, 21 Oct 2020 12:13:00 GMT</pubDate><content:encoded>&lt;h2&gt;Primitive Vs Reference&lt;/h2&gt;
 &lt;h4&gt;Primitive&lt;/h4&gt;
 &lt;p&gt;Object를 제외한 나머지&lt;/p&gt;
 &lt;ul&gt;
@@ -2004,7 +2004,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;이번주 과제 저번주보다 쪼끔 어려울수도 있는데, 그래도 괜찮을거다.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Prep 3주차 월요일 오피스아워 정리]]></title><description><![CDATA[함수 Naming…]]></description><link>https://ha-young.github.io/vanillacoding/Prep2주차월요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/Prep2주차월요일_오피스아워정리/</guid><pubDate>Mon, 19 Oct 2020 11:54:00 GMT</pubDate><content:encoded>&lt;h2&gt;함수 Naming&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Prep 3주차 월요일 오피스아워 정리]]></title><description><![CDATA[함수 Naming…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep2주차월요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep2주차월요일_오피스아워정리/</guid><pubDate>Mon, 19 Oct 2020 11:54:00 GMT</pubDate><content:encoded>&lt;h2&gt;함수 Naming&lt;/h2&gt;
 &lt;p&gt;함수 이름은 동사로 시작하는 것이 일반적.&lt;/p&gt;
 &lt;p&gt;국내에만 국한된 것이 아니라 세계적으로 쓰는 컨벤션.&lt;/p&gt;
 &lt;p&gt;영어로 이해할 수 있게 잘 네이밍 하는 것이 상당히 중요하다.&lt;/p&gt;
@@ -2053,12 +2053,12 @@ Git이 빈 줄을 통해서 파일을 구분 하는 로직이 있다고 함.&lt;
 &lt;/blockquote&gt;
 &lt;p&gt;가독성을 위한 코드를 짜는 법은 계속해서 연마하자!&lt;/p&gt;
 &lt;h2&gt;DOM에 새로운 커스텀 속성을 만들때?&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-html line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;vanilla-coding&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;isgood&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;true&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-html line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;vanilla-coding&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;isgood&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;true&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
     Something
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;다음과 같이 isGood 부분은 원래 html div 태그의 attribute가 아니라 새로 커스텀 해서 만든 속성!&lt;/p&gt;
 &lt;p&gt;이렇게 할 수 도 있다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-html line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;vanilla-coding&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;data-isgood&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;true&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-html line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;vanilla-coding&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;data-isgood&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;true&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
     Something
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;근데, 커스텀 속성을 부여하고 싶을때에는 위처럼 data- 를 붙인 data attribute를 사용해야 한다.&lt;/p&gt;
@@ -2084,7 +2084,7 @@ Git이 빈 줄을 통해서 파일을 구분 하는 로직이 있다고 함.&lt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;부트캠프 8기 최종 발표가 있다는데...?&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Prep 2주차 금요일 오피스아워 정리]]></title><description><![CDATA[Q. DOM 실습 좀더 하고싶을땐? Prep 과제로 충분하지만 더 하고싶다면, 인터넷에 javascript mini project 검색. 아니면, 스스로 아이디어를 내서 만들어보자. querySelector vs getElementById DOM…]]></description><link>https://ha-young.github.io/vanillacoding/Prep2주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/Prep2주차금요일_오피스아워정리/</guid><pubDate>Fri, 16 Oct 2020 12:14:00 GMT</pubDate><content:encoded>&lt;h2&gt;Q. DOM 실습 좀더 하고싶을땐?&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Prep 2주차 금요일 오피스아워 정리]]></title><description><![CDATA[Q. DOM 실습 좀더 하고싶을땐? Prep 과제로 충분하지만 더 하고싶다면, 인터넷에 javascript mini project 검색. 아니면, 스스로 아이디어를 내서 만들어보자. querySelector vs getElementById DOM…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep2주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep2주차금요일_오피스아워정리/</guid><pubDate>Fri, 16 Oct 2020 12:14:00 GMT</pubDate><content:encoded>&lt;h2&gt;Q. DOM 실습 좀더 하고싶을땐?&lt;/h2&gt;
 &lt;p&gt;Prep 과제로 충분하지만 더 하고싶다면,&lt;/p&gt;
 &lt;p&gt;인터넷에 javascript mini project 검색.&lt;/p&gt;
 &lt;p&gt;아니면, 스스로 아이디어를 내서 만들어보자.&lt;/p&gt;
@@ -2200,7 +2200,7 @@ boardElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;sp
 &lt;p&gt;innerHTML은 우리가 HTML 파일을 생성(Marup)할때처럼 문자열처럼 값을 넣을 수 있다면,&lt;/p&gt;
 &lt;p&gt;createElement - appendChild는 각 요소를 프로그래밍적으로 만들어서 넣는다고 보면된다.&lt;/p&gt;
 &lt;p&gt;상황에 맞게 쓰면 된다. 후자는 요소를 여러개 추가해야되는 상황이면 일일이 만들어서 넣어줘야 된다.&lt;/p&gt;
-&lt;p&gt;둘 다 상황에 맞게 잘 쓰면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Prep 2주차 수요일 오피스아워 정리]]></title><description><![CDATA[과제 먼저 살펴 볼 함수는 calculatorWinner() -> 승자 판별하는 함수. 어떻게 승자판별하는지 잘 파악해보자. 배열 어떻게 넘겨주고 하는건 그 다음. 그리고 승자판별을 언제해야되느냐? 이 타이밍은 잘 생각해보자. Q. 과제에서 css…]]></description><link>https://ha-young.github.io/vanillacoding/Prep3주차월요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/Prep3주차월요일 오피스아워 정리/</guid><pubDate>Wed, 14 Oct 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;과제&lt;/h2&gt;
+&lt;p&gt;둘 다 상황에 맞게 잘 쓰면 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Prep 2주차 수요일 오피스아워 정리]]></title><description><![CDATA[과제 먼저 살펴 볼 함수는 calculatorWinner() -> 승자 판별하는 함수. 어떻게 승자판별하는지 잘 파악해보자. 배열 어떻게 넘겨주고 하는건 그 다음. 그리고 승자판별을 언제해야되느냐? 이 타이밍은 잘 생각해보자. Q. 과제에서 css…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep3주차월요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep3주차월요일 오피스아워 정리/</guid><pubDate>Wed, 14 Oct 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;과제&lt;/h2&gt;
 &lt;p&gt;먼저 살펴 볼 함수는&lt;/p&gt;
 &lt;p&gt;calculatorWinner() -&gt; 승자 판별하는 함수. 어떻게 승자판별하는지 잘 파악해보자.&lt;/p&gt;
 &lt;p&gt;배열 어떻게 넘겨주고 하는건 그 다음.&lt;/p&gt;
@@ -2297,8 +2297,8 @@ target은 event가 실제로 일어나는 element라고 보면되고,&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;아마 대부분의 경우에서는 target과 currentTarget은 같을 것 같다.&lt;/p&gt;
 &lt;p&gt;하지만 다른 경우가 존재하는데,&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-html line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;outer&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
-  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation attr-equals&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;inner&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-html line-numbers&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;outer&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;div&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;inner&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
     
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;div&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -2408,56 +2408,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; a &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h2&gt;전역변수 = 객체객체 속성. 그럼 delete?&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;delete&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;something &lt;span class=&quot;token comment&quot;&gt;// false&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;전역 객체에서의 속성 삭제는 안된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[프로그래머스 - 삼각 달팽이 Lv2]]></title><description><![CDATA[문제 설명 정수 n이 매개변수로 주어집니다. 다음 그림과 같이 밑변의 길이와 높이가 n인 삼각형에서 맨 위 꼭짓점부터 반시계 방향으로 달팽이 채우기를 진행한 후, 첫 행부터 마지막 행까지 모두 순서대로 합친 새로운 배열을 return…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-10-16-프로그래머스_삼각_달팽이_Lv2/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-10-16-프로그래머스_삼각_달팽이_Lv2/</guid><pubDate>Tue, 13 Oct 2020 07:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
-&lt;p&gt;정수 n이 매개변수로 주어집니다. 다음 그림과 같이 밑변의 길이와 높이가 n인 삼각형에서 맨 위 꼭짓점부터 반시계 방향으로 달팽이 채우기를 진행한 후, 첫 행부터 마지막 행까지 모두 순서대로 합친 새로운 배열을 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/e1e53b93-dcdf-446f-b47f-e8ec1292a5e0/examples.png&quot; alt=&quot;examples.png&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h5&gt;제한사항&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;n은 1 이상 1,000 이하입니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h5&gt;입출력 예&lt;/h5&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;n&lt;/th&gt;
-&lt;th&gt;result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;[1,2,9,3,10,8,4,5,6,7]&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;5&lt;/td&gt;
-&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;[1,2,12,3,13,11,4,14,15,10,5,6,7,8,9]&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;6&lt;/td&gt;
-&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;[1,2,15,3,16,14,4,17,21,13,5,18,19,20,12,6,7,8,9,10,11]&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
-&lt;p&gt;입출력 예 #1&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;문제 예시와 같습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;입출력 예 #2&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;문제 예시와 같습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;입출력 예 #3&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;문제 예시와 같습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;나의 풀이&lt;/h2&gt;
-&lt;h3&gt;소스&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-python line-numbers&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;설명&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[프로그래머스 - 단어 퍼즐 Lv4]]></title><description><![CDATA[문제 설명 단어 퍼즐은 주어진 단어 조각들을 이용해서 주어진 문장을 완성하는 퍼즐입니다. 이때, 주어진 각 단어 조각들은 각각 무한개씩 있다고 가정합니다. 예를 들어 주어진 단어 조각이 “ba”, “na”, “n”, “a”인 경우 ba, na, n…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-10-13-프로그래머스_단어퍼즐_Lv4/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-10-13-프로그래머스_단어퍼즐_Lv4/</guid><pubDate>Tue, 13 Oct 2020 07:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;p&gt;전역 객체에서의 속성 삭제는 안된다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[프로그래머스 - 단어 퍼즐 Lv4]]></title><description><![CDATA[문제 설명 단어 퍼즐은 주어진 단어 조각들을 이용해서 주어진 문장을 완성하는 퍼즐입니다. 이때, 주어진 각 단어 조각들은 각각 무한개씩 있다고 가정합니다. 예를 들어 주어진 단어 조각이 “ba”, “na”, “n”, “a”인 경우 ba, na, n…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-10-13-프로그래머스_단어퍼즐_Lv4/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-10-13-프로그래머스_단어퍼즐_Lv4/</guid><pubDate>Tue, 13 Oct 2020 07:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;단어 퍼즐은 주어진 단어 조각들을 이용해서 주어진 문장을 완성하는 퍼즐입니다. 이때, 주어진 각 단어 조각들은 각각 무한개씩 있다고 가정합니다. 예를 들어 주어진 단어 조각이 [“ba”, “na”, “n”, “a”]인 경우 ba, na, n, a 단어 조각이 각각 무한개씩 있습니다. 이때, 만들어야 하는 문장이 “banana”라면 “ba”, “na”, “n”, “a”의 4개를 사용하여 문장을 완성할 수 있지만, “ba”, “na”, “na”의 3개만을 사용해도 “banana”를 완성할 수 있습니다. 사용 가능한 단어 조각들을 담고 있는 배열 strs와 완성해야 하는 문자열 t가 매개변수로 주어질 때, 주어진 문장을 완성하기 위해 사용해야 하는 단어조각 개수의 최솟값을 return 하도록 solution 함수를 완성해 주세요. 만약 주어진 문장을 완성하는 것이 불가능하면 -1을 return 하세요.&lt;/p&gt;
 &lt;h5&gt;제한사항&lt;/h5&gt;
 &lt;ul&gt;
@@ -2561,7 +2512,56 @@ ap 1개, ple 1개의 총 2개로 apple을 만들 수 있으므로 필요한 단�
             &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; start &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;and&lt;/span&gt; t&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;start&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;end&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; strs&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
                 dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt; j&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
 
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;inf&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Prep 2주차 월요일 오피스아워 정리]]></title><description><![CDATA[코드리뷰 요청시 과제 하고 난 후에 꼭 merge request 해주세요. (매주 금 저녁 7시까지) prep가이드 > 과제제출방법 참조. 금 저녁 7시이후에 merge request시에는 코드리뷰를 못 받을수도 있음. Merge request…]]></description><link>https://ha-young.github.io/vanillacoding/Prep2주차수요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/Prep2주차수요일_오피스아워정리/</guid><pubDate>Mon, 12 Oct 2020 12:05:00 GMT</pubDate><content:encoded>&lt;h2&gt;코드리뷰 요청시&lt;/h2&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;inf&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; dp&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[프로그래머스 - 삼각 달팽이 Lv2]]></title><description><![CDATA[문제 설명 정수 n이 매개변수로 주어집니다. 다음 그림과 같이 밑변의 길이와 높이가 n인 삼각형에서 맨 위 꼭짓점부터 반시계 방향으로 달팽이 채우기를 진행한 후, 첫 행부터 마지막 행까지 모두 순서대로 합친 새로운 배열을 return…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-10-16-프로그래머스_삼각_달팽이_Lv2/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-10-16-프로그래머스_삼각_달팽이_Lv2/</guid><pubDate>Tue, 13 Oct 2020 07:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;p&gt;정수 n이 매개변수로 주어집니다. 다음 그림과 같이 밑변의 길이와 높이가 n인 삼각형에서 맨 위 꼭짓점부터 반시계 방향으로 달팽이 채우기를 진행한 후, 첫 행부터 마지막 행까지 모두 순서대로 합친 새로운 배열을 return 하도록 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.ap-northeast-2.amazonaws.com/files/production/e1e53b93-dcdf-446f-b47f-e8ec1292a5e0/examples.png&quot; alt=&quot;examples.png&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h5&gt;제한사항&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;n은 1 이상 1,000 이하입니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h5&gt;입출력 예&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;n&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;[1,2,9,3,10,8,4,5,6,7]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;[1,2,12,3,13,11,4,14,15,10,5,6,7,8,9]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;td&gt;&lt;code class=&quot;language-text&quot;&gt;[1,2,15,3,16,14,4,17,21,13,5,18,19,20,12,6,7,8,9,10,11]&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
+&lt;p&gt;입출력 예 #1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;문제 예시와 같습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;입출력 예 #2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;문제 예시와 같습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;입출력 예 #3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;문제 예시와 같습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;나의 풀이&lt;/h2&gt;
+&lt;h3&gt;소스&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-python line-numbers&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;설명&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[Prep 2주차 월요일 오피스아워 정리]]></title><description><![CDATA[코드리뷰 요청시 과제 하고 난 후에 꼭 merge request 해주세요. (매주 금 저녁 7시까지) prep가이드 > 과제제출방법 참조. 금 저녁 7시이후에 merge request시에는 코드리뷰를 못 받을수도 있음. Merge request…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep2주차수요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep2주차수요일_오피스아워정리/</guid><pubDate>Mon, 12 Oct 2020 12:05:00 GMT</pubDate><content:encoded>&lt;h2&gt;코드리뷰 요청시&lt;/h2&gt;
 &lt;p&gt;과제 하고 난 후에 꼭 merge request 해주세요. (매주 금 저녁 7시까지)&lt;/p&gt;
 &lt;p&gt;prep가이드 &gt; 과제제출방법 참조.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -2769,7 +2769,7 @@ Git이 파일 구분할 때 필요하다고 함.&lt;/p&gt;
             start &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
             end &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;
 
-    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Prep 1주차 금요일 오피스아워 정리]]></title><description><![CDATA[PrevQ. {} || something 지난시간 {} || something, {} && something 이 안되었던 이유는  자바스크립트 엔진에서 {}를 구문블록 (block statement)로 해석 한 것! 우리가 if, for…]]></description><link>https://ha-young.github.io/vanillacoding/Prep1주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/Prep1주차금요일_오피스아워정리/</guid><pubDate>Fri, 09 Oct 2020 12:05:00 GMT</pubDate><content:encoded>&lt;h2&gt;PrevQ. {} || something&lt;/h2&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Prep 1주차 금요일 오피스아워 정리]]></title><description><![CDATA[PrevQ. {} || something 지난시간 {} || something, {} && something 이 안되었던 이유는  자바스크립트 엔진에서 {}를 구문블록 (block statement)로 해석 한 것! 우리가 if, for…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep1주차금요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep1주차금요일_오피스아워정리/</guid><pubDate>Fri, 09 Oct 2020 12:05:00 GMT</pubDate><content:encoded>&lt;h2&gt;PrevQ. {} || something&lt;/h2&gt;
 &lt;p&gt;지난시간 {} || something, {} &amp;#x26;&amp;#x26; something 이 안되었던 이유는 &lt;/p&gt;
 &lt;p&gt;자바스크립트 엔진에서 {}를 구문블록 (block statement)로 해석 한 것!&lt;/p&gt;
 &lt;p&gt;우리가 if, for 문을 쓸 때 {}를 쓰듯이 {}는 block statement라고 하는데,&lt;/p&gt;
@@ -2927,7 +2927,7 @@ prettier의 코드스타일을 원치 않하지 않는데 적용되거나,
 &lt;li&gt;나이키는 재수없어서 싫어하신다.&lt;/li&gt;
 &lt;li&gt;이번주말에 코드리뷰 진행된다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - 1주차 두번째 오피스아워 정리]]></title><description><![CDATA[오피스아워에서 하는 것 월요일 : 해당 주 과제, 배우는 것에 대하여 설명 수요일 : 해당 주 주제에 관해 주요한 부분 설명 금요일 : 해당 주차 과제에 대한 솔루션 JavaScript Type Boolean Null Undefined Number…]]></description><link>https://ha-young.github.io/vanillacoding/Prep1주차수요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/Prep1주차수요일_오피스아워정리/</guid><pubDate>Wed, 07 Oct 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;오피스아워에서 하는 것&lt;/h2&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - 1주차 두번째 오피스아워 정리]]></title><description><![CDATA[오피스아워에서 하는 것 월요일 : 해당 주 과제, 배우는 것에 대하여 설명 수요일 : 해당 주 주제에 관해 주요한 부분 설명 금요일 : 해당 주차 과제에 대한 솔루션 JavaScript Type Boolean Null Undefined Number…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep1주차수요일_오피스아워정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep1주차수요일_오피스아워정리/</guid><pubDate>Wed, 07 Oct 2020 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;오피스아워에서 하는 것&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;월요일 : 해당 주 과제, 배우는 것에 대하여 설명&lt;/li&gt;
 &lt;li&gt;수요일 : 해당 주 주제에 관해 주요한 부분 설명&lt;/li&gt;
@@ -4130,7 +4130,7 @@ red는 가로가 긴 직사각형으로 생겨야 되는 문제.&lt;/li&gt;
 answer = [sum(i) for i in list(combinations(prime_list, 3))].count(n)&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_가운데 글자 가져오기]]></title><description><![CDATA[문제 설명 단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다. 재한사항 s는 길이가 1 이상, 100이하인 스트링입니다. 입출력 예 s return abcde c qwer…]]></description><link>https://ha-young.github.io/vanillacoding/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_가운데-글자-가져오기/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_가운데-글자-가져오기/</guid><pubDate>Wed, 16 Sep 2020 01:30:00 GMT</pubDate><content:encoded>&lt;h1&gt;문제 설명&lt;/h1&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_가운데 글자 가져오기]]></title><description><![CDATA[문제 설명 단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다. 재한사항 s는 길이가 1 이상, 100이하인 스트링입니다. 입출력 예 s return abcde c qwer…]]></description><link>https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_가운데-글자-가져오기/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_가운데-글자-가져오기/</guid><pubDate>Wed, 16 Sep 2020 01:30:00 GMT</pubDate><content:encoded>&lt;h1&gt;문제 설명&lt;/h1&gt;
 &lt;p&gt;단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다.&lt;/p&gt;
 &lt;h1&gt;재한사항&lt;/h1&gt;
 &lt;ul&gt;
@@ -4167,7 +4167,7 @@ answer = [sum(i) for i in list(combinations(prime_list, 3))].count(n)&lt;/code&g
     &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; s&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;midIdx&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_수박수박수박수박수박수]]></title><description><![CDATA[문제 설명 길이가 n이고, 수박수박수박수....와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다. 제한 조건 n은 길이 10,00…]]></description><link>https://ha-young.github.io/vanillacoding/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_수박수박수박수박수박수/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_수박수박수박수박수박수/</guid><pubDate>Wed, 16 Sep 2020 01:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_수박수박수박수박수박수]]></title><description><![CDATA[문제 설명 길이가 n이고, 수박수박수박수....와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다. 제한 조건 n은 길이 10,00…]]></description><link>https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_수박수박수박수박수박수/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_수박수박수박수박수박수/</guid><pubDate>Wed, 16 Sep 2020 01:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;길이가 n이고, 수박수박수박수....와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다.&lt;/p&gt;
 &lt;h2&gt;제한 조건&lt;/h2&gt;
 &lt;ul&gt;
@@ -4210,7 +4210,7 @@ answer = [sum(i) for i in list(combinations(prime_list, 3))].count(n)&lt;/code&g
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_김서방 찾기]]></title><description><![CDATA[문제 설명 String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x에 있다는 String을 반환하는 함수, solution을 완성하세요. seoul에 Kim…]]></description><link>https://ha-young.github.io/vanillacoding/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_김서방-찾기/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_김서방-찾기/</guid><pubDate>Wed, 16 Sep 2020 01:15:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_김서방 찾기]]></title><description><![CDATA[문제 설명 String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x에 있다는 String을 반환하는 함수, solution을 완성하세요. seoul에 Kim…]]></description><link>https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_김서방-찾기/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_김서방-찾기/</guid><pubDate>Wed, 16 Sep 2020 01:15:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x에 있다는 String을 반환하는 함수, solution을 완성하세요. seoul에 Kim은 오직 한 번만 나타나며 잘못된 값이 입력되는 경우는 없습니다.&lt;/p&gt;
 &lt;h2&gt;제한 사항&lt;/h2&gt;
 &lt;ul&gt;
@@ -4899,63 +4899,9 @@ visit_log_reverse = (*next_position, *cur_position)&lt;/code&gt;&lt;span aria-hi
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;check&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[2주차 Stack & Hash] 빙고 - Lv3]]></title><description><![CDATA[문제 설명 빙고는 NxN 크기의 게임 보드 칸에 1부터 NxN까지의 자연수를 중복 없이 하나씩 적은 후 숫자를 하나씩 지워나가는 게임입니다. 이때, 가로, 세로, 대각선 방향으로 한 줄에 적힌 숫자를 모두 지울 경우 빙고를…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-14-[2주차-Stack-&amp;-Hash]-빙고/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-14-[2주차-Stack-&amp;-Hash]-빙고/</guid><pubDate>Mon, 14 Sep 2020 04:20:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;빙고는 NxN 크기의 게임 보드 칸에 1부터 NxN까지의 자연수를 중복 없이 하나씩 적은 후 숫자를 하나씩 지워나가는 게임입니다. 이때, 가로, 세로, 대각선 방향으로 한 줄에 적힌 숫자를 모두 지울 경우 빙고를 1개 만들었다고 합니다.
 다음은 4X4 크기의 게임 보드를 이용해 게임을 진행한 예시입니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 280px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5db08b4ca7788133c8778588d2894bf3/908b1/bingo_rlkqli.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 104%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABcRAAAXEQHKJvM/AAADaklEQVQ4y12UR08lMRCE52/tzr/jwI0TEgc4IEAgkaNAiJyEyDnnnB5x4M1DDPbW1+C37B4sz7Q7VFe1HU1NTT2fnp6+HhwcJCcnJ8ny8nKyuLiYyJbs7+8nx8fHyebmZjI7O2u2w8PDot/S0lLR7+joKL+9vZ2LFPB5fn7u5WTr4eHB393deTn4m5sbv7e35x8fH/319bVXsNmx5XI5W8Tgx/709FSI9PExPT3th4eH3eDgoLu9vXVycH19fW53d9e1tbU5VXYq4iYnJ93AwIDr6OhwQlq09fb2uqqqKi9g+ejs7CxbWFjw4+PjbmRkxF9eXvr7+3svKvz8/LwfHR216qCZmZmxxVlAPjc35xXnuru78Uuj1dXVjJbVuiNQfNjCJhT+4uLCvre2tv6xsQc/UUFXgEkjEZupd3hwVMRpZ2fHq3VDCncq5jc2NuwbOxyLDlskonVsSpxGIjkjidC59fV1q07g6+urF3rbKQT6LMsseRAOv3w+79fW1hzFkyRJESWDE/GIKIYOHnGUIBaI87eKvrS01NqHU/Hv39/ffXt7u9MYEZNGgplBbGdnJwpaC6AsFApealrQ8/OzjQy7FDWUJAyFUV5z7N/e3tJIQ2scysGxgyS0BTLW1dWVqcq52rLE+IS5ZdSwCUwaCV0GKpSCE9qBS5ChIItkKysrRRsdIBILm5A6bEL5JQrVSEgykrLSNPVCbxRQnUC1hACG+KcoAvBXFCUzDpuamlxLS0sxgIRDQ0Om9MvLC9XN1tXVZV0wPnAIlyUlJU73/0sUbgo/PT09TtfPuKE6fCEKAUEU0NA6icNM4tfQ0GCiWEI5ZGHaqcgNYGBBSXK4IVlon//waLBIKlB2U5QnjTQ/GSiYdg4ZchKiHig4+5kQn58J+WZC6EqJ00iIMm4Dg81IhAAGnHYQ49vZhhj+uDn4hRul6+sAYKII0Yd+XH19vQO6nOwJ4ynjaSorK7OnShQ4aKmoqHBCZk8cNjorLy//1AMMh3kSZlTm6YK/7/b9xMSEPVNjY2M2wHAKCoSifcYEzrlR/f39FP26KRrOz/AiBzURgwASoCxn8MV5UP3/F57RUtFCVFlZ+VuPQNza2ho3NzfHdXV1cU1NTawLHzc2NsaiItZYxNXV1XaueS361dbWhrjf+Gr9+gPiE8oJY7M84QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;image&quot;
-        title=&quot;image&quot;
-        src=&quot;/static/5db08b4ca7788133c8778588d2894bf3/908b1/bingo_rlkqli.png&quot;
-        srcset=&quot;/static/5db08b4ca7788133c8778588d2894bf3/772e8/bingo_rlkqli.png 200w,
-/static/5db08b4ca7788133c8778588d2894bf3/908b1/bingo_rlkqli.png 280w&quot;
-        sizes=&quot;(max-width: 280px) 100vw, 280px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cbingo_rlkqli.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
 &lt;p&gt;위와 같이 각 칸에 숫자가 적혀 있을 때, 위 게임 보드에서 순서대로 지운 숫자가 [14,3,2,4,13,1,16,11,5,15]인 경우 아래와 같이 빙고 3개가 만들어집니다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 350px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8a0020558be910e5c6c4f4ee311d76df/13ae7/bingo_xibpii.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 97.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABcRAAAXEQHKJvM/AAAErklEQVQ4y42U228bRRTGt0hFIBUqwRMImSd4RuJvQGqe4KUiUtNEqirgDSoV4UgVEiqgFtWpRFMn9JLm1lwKSZM6SWO7SXyrE9927XUc37322o5va8d2k7jOevdjdqnoC0gd6ezMaHZ+Ot83Z4ai/qd9+6v+xIUrw29Rr9BMJpNmfX39A3Xy44VvTuzYVr7PMtZ+Elqf+WF/fNN4MWA3Xt9+av5t22K4uG1b7s8xNm3Ob9OyGwZt0LKk5WmrNu1Z+8G8MHvpzt2RT/6lz9wZ/LiZZNDig2oc5XZIhFAIuVCJetHZDeMwEyTBYp8LQC5G0Uwx6j+dUgIR18bRZe1377Ax7nWzcfU49WBq4suQ88nz5Qdj0vLsmJik7WLAviouTI125ifvdmjLikjWxZUHY6KyHnSYxLjHIs5NjogTt/UgSvbuj491PTaaPrJaLSep+du69/airnbUsYKIY1muhrfkZsInu4wP5aDtMZm75FrUI0edqzLnWZfrMY/MB57KO84nErED5dBmpf/rM28qasevXaKo61d+/jAb8bf3ixyeFTg5xbpR3HaiuONGKexGPmAH8Q77KT8O0wHE3BtgHSYccH5JsSPL2ISvertPKsCp4QGKGhsb12SyuTafyyPNZ+VkIoGDNIts4CkE4uFezEPCixaBcbQdCa8NzSSNasQtNRI+1GNe4fyZ028rwPl7N49Rc3NzmjTHtW02KywWqxwKsugUIuBfAJXNYj4Ey6NZrP41qR7SPudHbNMkeYxzaGdDwhddn6nAh6N6ipqcnNTk8/m22+2C1+eT+UwabXLSacauQp9nAuD9dsRcaygF7TjkGDTjXhRZu1QKOnCQooXe05//A7w3SFE6nU6TSqXa1WoV1WpNjkbCKASdquRiaAtR1wb8LgcauQQa+QTS2z6kgh7U+JhEPFfGwvm+HhU4fosAR0dHNdlstp3L5ZBMJmUuSTwkNZcPbiK8tY4E7YAgVJBK80imOJQqAvKFIojn0m6xjEKpLPT29qnAqekZipqentLkCNBgMGBxcVFm/QxQSYCxPgZjM+KQ30atKiAcDoOhadT39lAVBCwZDJLZbEKz0RBOnTqlAmdnZ0maE5OabC7f3nK54aX9cppLoRTxwboyj10ivZkKoFwugc9modhSLpdRKpXAsqwUj8dRqVSE7u5uFTgzQzK8obuq4Xb87fpuGiRk1rulXCdVshKKl7FoVIUUCgUokCiZE5BUq9WUsXDu3DkVODIyQlG3dZc1BxzTru4omx1y0msFuSnqKSuHUo35iMQKigSoQAUiV+mJ7xKBKhkLfX19LyXfvPqThlz0w41HM9KmcUEkD4RIXh3x0f07nQm9rhPbeiLuP2uKC4uLIqlVsdFoiAQokifraHV1FfV6vdTV1fVS8tTvv7xfjdPYDbnRIjWHchwSKd4dp5lIdqKVDUHqiFCqgNQrOp0OWq0WFLkEpmR81NPTc/JFhseoW38Mf7qxNDdaYB16coeHWMvSMOdZG4y6LX8mPJbpuGttkKZ9wzzPD2UymSGGYYZ8Pt8QqV09x3G3aJq+dvbs2TcUoF6vV2vn3f9+h187rnyoV2wDAwNq/zfP/w6yIXRB4gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;image&quot;
-        title=&quot;image&quot;
-        src=&quot;/static/8a0020558be910e5c6c4f4ee311d76df/13ae7/bingo_xibpii.png&quot;
-        srcset=&quot;/static/8a0020558be910e5c6c4f4ee311d76df/772e8/bingo_xibpii.png 200w,
-/static/8a0020558be910e5c6c4f4ee311d76df/13ae7/bingo_xibpii.png 350w&quot;
-        sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cbingo_xibpii.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
 &lt;p&gt;빙고 게임 보드에 적힌 숫자가 담겨있는 배열 board, 게임 보드에서 순서대로 지운 숫자가 들어있는 배열 nums가 매개변수로 주어질 때, board에서 nums에 들어있는 숫자를 모두 지우면 몇 개의 빙고가 만들어지는지 return하도록 solution함수를 완성해주세요.&lt;/p&gt;
 &lt;h2&gt;제한사항&lt;/h2&gt;
 &lt;ul&gt;
@@ -4992,34 +4938,7 @@ visit_log_reverse = (*next_position, *cur_position)&lt;/code&gt;&lt;span aria-hi
 문제의 예시와 같습니다.&lt;/p&gt;
 &lt;p&gt;입출력 예 #2
 다음 그림과 같이 2개의 빙고가 만들어집니다.
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 250px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/122ce8abea391d717abaf4f1ca96019b/63868/%EB%B9%99%EA%B3%A03_l1bqza.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABcRAAAXEQHKJvM/AAAEsklEQVQ4y5WUy28bVRTG7YIqlW5clkiwYdlNXZBYIbFAYsU/AwukSrCDyoUFrRBESUuFSJtHI1I3bdLGdmwnfsyM32/P++mxPX7Fj7TFjufjjlMJRWLDlUYzc3Xv755zvu9c187OjouiKHeSot3p3YeucHD/YjgUuASXyxWNRNxMKuVOJBLuUCjkZhjGHYvF3AcHB4tvmqbdu7u7LmfIsuz6zxE9PLoejkQ/d/2Psb6+/u/PzZs3Ly0vL7+7+uDBlW+/+fqyf2vj2jP/9qc/f/fV5ZWVlSuPHz/2kA2eO3fueFZXVz1LS0ue27dve7a3tz1ra2tXbt269Y7D2dzcPANmMpkbjUZjrBsNWaqVNDkdMaRM1GiWKZXnOV0jQ5IkrV6va6ZpaqqqahzHOdMKeQaFQsHncABcWAANw/jJsiwUSyVMx30o2Sj2Nu7jRKtAkSXkcjk0TRMdsiYeiy3+R6MRUgwDlmUhiuLv54Asx/vGkxOoeuNvy1DmRiE2ryeD8x6fnSuqOpdVbd7p9eeqps/rHD/nBHGuN8y5KCtTMg+yf9nhTE9PLwSDQZerHA98j6GJkVabqvk4zFICHTYNq5KAWUvjpMGhKxSgFJJ4afLoiUWoxSQmBjvDQAfLRH49p1A1EbzbqacgMAezdpVGKRZAyL8BLX8EjgoiE/RDSoVJKQ6RCflRPtoDqS+Y/e1TkczXqdDmL/f+/ODoMPoJifBtAtxfGkk5iCkCrFCoJoMIP9lYRCqmIwTyhBwWhpY7RJYA2eQ+SFlQjDw9dd61xP6D+2tbHx5Go58Rr150FZKRHzDp4tiUpkqRRqMYR5fNoF0i6RdjeKUWMWBTEAs0Rk0FLbEKqZzGyJRn9shCLR3/zcm0Z0hvLVLmBdE3OB6CFcRpS5fR5zKokSgnJOqxlEernMBIzKJtNqAZDTRbbTTbbZB9M+ebF8WVNyo73eQABZ+m6aCY9LSlSegRQZiAHy/lPMYExMb2CDyLTruJSq0OTTfQJkCapmY8x0GWpeVztsnScZ/jv05DncrlDKnPm5QrSejlFAZKFRZfgFDJo2dqMGUeXL1KIm3NJpMxiLHPA+VUyDczKlAz4WmnmkSDiFGOPUe7yqDZNCHJCiyrA7NCQ89GoKSCsDQBiqrNBoO+Y+zzwG6N8jkLA4/uT50UHSs8fXgXOol0eDwAac1Fij0+h/2Ne6CfreP1wEKComcyOaxtWeeBLBX0YahjrJanLWIbJ0LHj10ijqHr6Pf7cFrTqKQW7TgQstC4Cvq97mz2+iVqldJ5IOlN32Q8BrkcpnK9bBPb2Go+ZrdrjC0IvK3puk0uBJtcFDY5wCYlsPVqxu5Wk7NXWgkiHTwDjo0zIFnsIxcEkjQztQzZPhZydmJvy541OZuoaIfDYZscapMo7RfPn9uxeMJ+3VFtqxyfTYgTjvn0mwiHZ0Ci0o+j4dBp8rnG1xbpOvXr81lIokhsIcM5UBAEIoCwEMlkCzjmUjY6PAQ6eHcBPGmcAf1+/3vVavVjYlRvPBy4erDz6IujF0++zAT+ukolk9eJil4ijDcSiXgVWfbm8gXv4d62t3b07Fop8vSj0NYf7zucdjmx4P0D9aRqQjkYDWYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;image&quot;
-        title=&quot;image&quot;
-        src=&quot;/static/122ce8abea391d717abaf4f1ca96019b/63868/%EB%B9%99%EA%B3%A03_l1bqza.png&quot;
-        srcset=&quot;/static/122ce8abea391d717abaf4f1ca96019b/772e8/%EB%B9%99%EA%B3%A03_l1bqza.png 200w,
-/static/122ce8abea391d717abaf4f1ca96019b/63868/%EB%B9%99%EA%B3%A03_l1bqza.png 250w&quot;
-        sizes=&quot;(max-width: 250px) 100vw, 250px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;img src=&quot;.%5C%EB%B9%99%EA%B3%A03_l1bqza.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
 &lt;h2&gt;나의 풀이&lt;/h2&gt;
 &lt;h3&gt;첫번째 풀이&lt;/h3&gt;
 &lt;h4&gt;소스&lt;/h4&gt;
@@ -5695,90 +5614,7 @@ queue의 PriorityQueue를 사용하였다.&lt;/p&gt;
 &lt;h4&gt;설명&lt;/h4&gt;
 &lt;p&gt;위 풀이에 대해 코드를 pythonic하게 하였다.&lt;/p&gt;
 &lt;h4&gt;결과&lt;/h4&gt;
-&lt;p&gt;통과&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 모의고사] 전염병 - Lv3]]></title><description><![CDATA[문제 설명 m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다. 예를 들어 2x…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h6&gt;문제 설명&lt;/h6&gt;
-&lt;p&gt;m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다.&lt;/p&gt;
-&lt;p&gt;예를 들어 2x4 크기 사무실에서, 병에 걸린 직원의 위치가 (1,4), (2,2)이고 백신을 맞은 직원의 위치가 (1,2)입니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기 까지는 이틀이 소요됩니다.&lt;/p&gt;
-&lt;p&gt;0일
-&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9c4fb28f8a/efffcfc1-f803-46fc-b3fd-54169a20600b.png&quot; alt=&quot;573528139.32.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;1일&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9fdf14b30f/178463e2-09ad-46ae-a4d9-571572271946.png&quot; alt=&quot;573528143.88.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;2일&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/49d73ec1ca/4cc4355f-407c-4d26-b1d6-87ba7f374a65.png&quot; alt=&quot;573528147.73.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;사무실의 크기 m, n과 병에 걸린 직원의 위치 infests, 백신을 맞은 직원의 위치 vaccinateds가 매개변수로 주어집니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기까지 며칠이 걸리는지 return 하는 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;h5&gt;제한사항&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;은 1 이상 300 이하인 자연수입니다.&lt;/li&gt;
-&lt;li&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;의 길이는 1 이상&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;*&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이하입니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;는 길이가 1 이상&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;*&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이하입니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;백신을 맞은 직원이 병에 걸린 경우는 주어지지 않습니다.&lt;/li&gt;
-&lt;li&gt;병을 아무리 퍼트려도 백신을 맞은 직원을 제외한 모든 직원이 병에 감염될 수 없다면 -1을 리턴합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5&gt;입출력 예&lt;/h5&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;m&lt;/th&gt;
-&lt;th&gt;n&lt;/th&gt;
-&lt;th&gt;infests&lt;/th&gt;
-&lt;th&gt;vaccinateds&lt;/th&gt;
-&lt;th&gt;result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;[[1,4],[2,2]]&lt;/td&gt;
-&lt;td&gt;[[1,2]]&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;[[2,2]]&lt;/td&gt;
-&lt;td&gt;[[1,2],[2,1],[2,3]]&lt;/td&gt;
-&lt;td&gt;-1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;[[1, 1], [2, 2]]&lt;/td&gt;
-&lt;td&gt;[[1, 2], [2, 1]]&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
-&lt;p&gt;입출력 예 #1
-문제의 예시와 같습니다.&lt;/p&gt;
-&lt;p&gt;입출력 예#2
-&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/931ce64a33/486ea8a6-4d6f-45b1-9af2-35e36e049326.png&quot; alt=&quot;573528150.21.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;전염병자의 근처가 백신 접종자로 막혀있어, 다른 직원에게 병이 도달하지 않습니다. 따라서 -1을 리턴합니다.&lt;/p&gt;
-&lt;p&gt;입출력 예#3&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/93d4ee8842/77ec17c9-949f-4ccb-bf11-2c3010a2f9a8.png&quot; alt=&quot;573533913.75.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;처음부터 모든 직원이 전염병을 앓고 있거나, 백신을 맞은 상태입니다. 따라서 0을 리턴합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] 더 맵게 - Lv2]]></title><description><![CDATA[문제 설명 매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 만들기 위해 Leo…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;p&gt;통과&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] 더 맵게 - Lv2]]></title><description><![CDATA[문제 설명 매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 만들기 위해 Leo…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 만들기 위해 Leo는 스코빌 지수가 가장 낮은 두 개의 음식을 아래와 같이 특별한 방법으로 섞어 새로운 음식을 만듭니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;섞은 음식의 스코빌 지수 = 가장 맵지 않은 음식의 스코빌 지수 + (두 번째로 맵지 않은 음식의 스코빌 지수 * 2)&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Leo는 모든 음식의 스코빌 지수가 K 이상이 될 때까지 반복하여 섞습니다.
@@ -5862,7 +5698,90 @@ O(n log n)&lt;/p&gt;
 &lt;code class=&quot;language-text&quot;&gt;if&lt;/code&gt;를 이용한 예외 처리를 LBYL이라 부르고 &lt;code class=&quot;language-text&quot;&gt;try ~ except&lt;/code&gt;를 이용한 예외 처리를 EAFP라고 부릅니다. 파이썬은 EAFP 방식을 권장하고 있습니다. :)
 &lt;a href=&quot;https://suwoni-codelab.com/python%20%EA%B8%B0%EB%B3%B8/2018/03/06/Python-Basic-EAFP/&quot;&gt;https://suwoni-codelab.com/python%20%EA%B8%B0%EB%B3%B8/2018/03/06/Python-Basic-EAFP/&lt;/a&gt;
 관련 블로그 글 입니다.&lt;/p&gt;
-&lt;p&gt;와 같은 리뷰는 받았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sass(Scss)를 마스터해보자-2]]></title><link>https://ha-young.github.io/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</link><guid isPermaLink="false">https://ha-young.github.io/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</guid><pubDate>Wed, 09 Sep 2020 00:11:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] Flood Fill - Lv3]]></title><description><![CDATA[문제 설명 n x m 크기 도화지에 그려진 그림의 색깔이…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</guid><pubDate>Mon, 07 Sep 2020 23:13:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;p&gt;와 같은 리뷰는 받았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 모의고사] 전염병 - Lv3]]></title><description><![CDATA[문제 설명 m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다. 예를 들어 2x…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h6&gt;문제 설명&lt;/h6&gt;
+&lt;p&gt;m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다.&lt;/p&gt;
+&lt;p&gt;예를 들어 2x4 크기 사무실에서, 병에 걸린 직원의 위치가 (1,4), (2,2)이고 백신을 맞은 직원의 위치가 (1,2)입니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기 까지는 이틀이 소요됩니다.&lt;/p&gt;
+&lt;p&gt;0일
+&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9c4fb28f8a/efffcfc1-f803-46fc-b3fd-54169a20600b.png&quot; alt=&quot;573528139.32.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;1일&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9fdf14b30f/178463e2-09ad-46ae-a4d9-571572271946.png&quot; alt=&quot;573528143.88.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2일&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/49d73ec1ca/4cc4355f-407c-4d26-b1d6-87ba7f374a65.png&quot; alt=&quot;573528147.73.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;사무실의 크기 m, n과 병에 걸린 직원의 위치 infests, 백신을 맞은 직원의 위치 vaccinateds가 매개변수로 주어집니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기까지 며칠이 걸리는지 return 하는 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;h5&gt;제한사항&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;은 1 이상 300 이하인 자연수입니다.&lt;/li&gt;
+&lt;li&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;의 길이는 1 이상&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;*&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이하입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;는 길이가 1 이상&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;*&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이하입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;백신을 맞은 직원이 병에 걸린 경우는 주어지지 않습니다.&lt;/li&gt;
+&lt;li&gt;병을 아무리 퍼트려도 백신을 맞은 직원을 제외한 모든 직원이 병에 감염될 수 없다면 -1을 리턴합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;입출력 예&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;m&lt;/th&gt;
+&lt;th&gt;n&lt;/th&gt;
+&lt;th&gt;infests&lt;/th&gt;
+&lt;th&gt;vaccinateds&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;[[1,4],[2,2]]&lt;/td&gt;
+&lt;td&gt;[[1,2]]&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;[[2,2]]&lt;/td&gt;
+&lt;td&gt;[[1,2],[2,1],[2,3]]&lt;/td&gt;
+&lt;td&gt;-1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;[[1, 1], [2, 2]]&lt;/td&gt;
+&lt;td&gt;[[1, 2], [2, 1]]&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
+&lt;p&gt;입출력 예 #1
+문제의 예시와 같습니다.&lt;/p&gt;
+&lt;p&gt;입출력 예#2
+&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/931ce64a33/486ea8a6-4d6f-45b1-9af2-35e36e049326.png&quot; alt=&quot;573528150.21.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;전염병자의 근처가 백신 접종자로 막혀있어, 다른 직원에게 병이 도달하지 않습니다. 따라서 -1을 리턴합니다.&lt;/p&gt;
+&lt;p&gt;입출력 예#3&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/93d4ee8842/77ec17c9-949f-4ccb-bf11-2c3010a2f9a8.png&quot; alt=&quot;573533913.75.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;처음부터 모든 직원이 전염병을 앓고 있거나, 백신을 맞은 상태입니다. 따라서 0을 리턴합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sass(Scss)를 마스터해보자-2]]></title><link>https://ha-young.github.io/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</link><guid isPermaLink="false">https://ha-young.github.io/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</guid><pubDate>Wed, 09 Sep 2020 00:11:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] Flood Fill - Lv3]]></title><description><![CDATA[문제 설명 n x m 크기 도화지에 그려진 그림의 색깔이…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</guid><pubDate>Mon, 07 Sep 2020 23:13:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;n x m 크기 도화지에 그려진 그림의 색깔이 2차원 리스트로 주어집니다. 같은 색깔은 같은 숫자로 나타난다고 할 때, 그림에 있는 영역은 총 몇 개인지 알아내려 합니다. 영역이란 상하좌우로 연결된 같은 색상의 공간을 말합니다.&lt;/p&gt;
 &lt;p&gt;예를 들어, [[1,2,3], [3,2,1]] 같은 리스트는 다음과 같이 표현할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
@@ -6266,7 +6185,7 @@ O( (n * m)^2 ) 가 된다.&lt;/p&gt;</content:encoded></item><item><title><![CDA
 &lt;span class=&quot;token property-line&quot;&gt;  &lt;span class=&quot;token property&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; left&lt;/span&gt;
   &lt;span class=&quot;token selector&quot;&gt;li&lt;/span&gt;
 &lt;span class=&quot;token property-line&quot;&gt;    &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; red&lt;/span&gt;
-&lt;span class=&quot;token property-line&quot;&gt;    &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;/span&gt;&lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token function&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string url&quot;&gt;&quot;./image.jpg&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token property-line&quot;&gt;    &lt;span class=&quot;token property&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;/span&gt;&lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token function&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&quot;./image.jpg&quot;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token property-line&quot;&gt;    &lt;span class=&quot;token property&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;last-child&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token property-line&quot;&gt;      &lt;span class=&quot;token property&quot;&gt;margin-right&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; -10px&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;SCSS: &lt;/p&gt;
@@ -7231,14 +7150,7 @@ Modal Component였는데, 이를 적용시키면서 설명을 하겠다.&lt;/p&g
 &lt;p&gt;다음과 같이 구현하였다.&lt;/p&gt;
 &lt;h4&gt;4. less쪽 error 발견&lt;/h4&gt;
 &lt;p&gt;이렇게 해서 실행을 해봤는데 아니나다를까 애러를 발견했다.&lt;/p&gt;
-&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 403px; &quot;&gt;
-      &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/912025bb2e93088f8bed37e92711f02d/c80d3/lessError.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
-    &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 38.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAcyFkB//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAYEAACAwAAAAAAAAAAAAAAAAAAARARIf/aAAgBAQABPyF0ZH//2gAMAwEAAgADAAAAEIgf/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8QVZ//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCH/8QAGhABAAIDAQAAAAAAAAAAAAAAAQBBETGB4f/aAAgBAQABPxCnBw8iCl7Hc//Z&amp;apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
-  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;image-20200728164139495&quot; title=&quot;image-20200728164139495&quot; src=&quot;/static/912025bb2e93088f8bed37e92711f02d/c80d3/lessError.jpg&quot; srcset=&quot;/static/912025bb2e93088f8bed37e92711f02d/e07e9/lessError.jpg 200w,
-/static/912025bb2e93088f8bed37e92711f02d/066f9/lessError.jpg 400w,
-/static/912025bb2e93088f8bed37e92711f02d/c80d3/lessError.jpg 403w&quot; sizes=&quot;(max-width: 403px) 100vw, 403px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;
+&lt;img src=&quot;.\lessError.JPG&quot; alt=&quot;image-20200728164139495&quot; style=&quot;zoom:100%;&quot; /&gt;
 &lt;p&gt;해당 애러내용은 찾아보니 antd 모듈은 less 모듈을 사용하는데 이 less모듈이 없어서 나는 애러였다.&lt;/p&gt;
 &lt;h4&gt;5. less 모듈, gatsby-plugin 설치 및 config 적용&lt;/h4&gt;
 &lt;p&gt;번거롭게도 gatsby에서는 less모듈 또한 gatsby-less-plugin을 설치해줘야 한다.&lt;/p&gt;
@@ -7269,35 +7181,7 @@ Option값에 javascriptEnabled를 반드시 true로 설정해야 한다.&lt;/p&g
 &lt;p&gt;역시 새롭게 사용하는 것에는 한번에 되는일은 없다.
 이제 한번에 되는게 이상할 정도....
 이번 문제는 이랬다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 776px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6d935d3620f54495904ce242b52fe2fa/1f1b4/noJavascriptEnabled.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 29.500000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAcyFkB//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAWEAADAAAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hIv/aAAwDAQACAAMAAAAQh9//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAEAAgMAAAAAAAAAAAAAAAABACExYYH/2gAIAQEAAT8QyFvY2pibn//Z&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;  noJavascriptEnabled&quot;
-        title=&quot;  noJavascriptEnabled&quot;
-        src=&quot;/static/6d935d3620f54495904ce242b52fe2fa/1f1b4/noJavascriptEnabled.jpg&quot;
-        srcset=&quot;/static/6d935d3620f54495904ce242b52fe2fa/e07e9/noJavascriptEnabled.jpg 200w,
-/static/6d935d3620f54495904ce242b52fe2fa/066f9/noJavascriptEnabled.jpg 400w,
-/static/6d935d3620f54495904ce242b52fe2fa/1f1b4/noJavascriptEnabled.jpg 776w&quot;
-        sizes=&quot;(max-width: 776px) 100vw, 776px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5CnoJavascriptEnabled.JPG&quot;&gt;&lt;/p&gt;
 &lt;p&gt;찾다찾다 안나와서 그냥 gatsby starter pack 중에서 ant design을 사용한 것이 있길래 해당 git을 clone해서 참조해보았다.&lt;/p&gt;
 &lt;p&gt;그 결과 찾은것이 less-to-json.&lt;/p&gt;
 &lt;p&gt;less에 사용되는 vars값들을 로컬로 만들고 가져오도록 하고있었다.
@@ -7348,37 +7232,7 @@ starter pack에서 이렇게 사용하면 방법이 이런가보다.&lt;/p&gt;
 &lt;h4&gt;8. 확인&lt;/h4&gt;
 &lt;p&gt;자 확인해보니 잘 나온다ㅎㅎㅎ 앞으로 다양하게 ant design을 적용시켜서
 Gatsby 프로젝트를 꾸며보자!&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/d00ddc55a9a533baa9bc654cb404eb3d/7e1b6/modal.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 70%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEEA//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdq4AYg//8QAGBABAAMBAAAAAAAAAAAAAAAAAgEDIDL/2gAIAQEAAQUCHdxMDH//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAASAhcf/aAAgBAQAGPwJaUlH/xAAZEAEAAgMAAAAAAAAAAAAAAAABABEgMUH/2gAIAQEAAT8hAi6YtQG+Y//aAAwDAQACAAMAAAAQMM//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAgMBAAAAAAAAAAAAAAABEBEAIUEx/9oACAEBAAE/EC/EAj0wvTcv1W55H//Z&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;modal&quot;
-        title=&quot;modal&quot;
-        src=&quot;/static/d00ddc55a9a533baa9bc654cb404eb3d/4b190/modal.jpg&quot;
-        srcset=&quot;/static/d00ddc55a9a533baa9bc654cb404eb3d/e07e9/modal.jpg 200w,
-/static/d00ddc55a9a533baa9bc654cb404eb3d/066f9/modal.jpg 400w,
-/static/d00ddc55a9a533baa9bc654cb404eb3d/4b190/modal.jpg 800w,
-/static/d00ddc55a9a533baa9bc654cb404eb3d/e5166/modal.jpg 1200w,
-/static/d00ddc55a9a533baa9bc654cb404eb3d/7e1b6/modal.jpg 1310w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cmodal.jpg&quot; alt=&quot;modal&quot;&gt;&lt;/p&gt;
 &lt;p&gt;만약 안되면
 npm 모듈을 clean하고 reinstall 하도록 하자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[C++ 객체지향 프로그래밍 1]]></title><description><![CDATA[객체지향 프로그래밍 현실적인 것, 현실에 존재하는 것을 프로그래밍 하기엔 적합하나, 
 현실에 존재하지 않는 것, 추상적인 것을 프로그래밍 구현하기엔 힘들고 부적합한 방식이 될 수 있다. Java VS C++ Java와 C…]]></description><link>https://ha-young.github.io/cpp/2020-08-13-C++-객체지향-프로그래밍-1/</link><guid isPermaLink="false">https://ha-young.github.io/cpp/2020-08-13-C++-객체지향-프로그래밍-1/</guid><pubDate>Thu, 13 Aug 2020 09:15:00 GMT</pubDate><content:encoded>&lt;h3&gt;객체지향 프로그래밍&lt;/h3&gt;
@@ -7974,8 +7828,8 @@ reference = number2;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&qu
 &lt;/blockquote&gt;
 &lt;p&gt;앞으로 설명하겠지만 bool 데이터형을 먼저 설명하자면&lt;/p&gt;
 &lt;p&gt;c에서는 bool 데이터가 없었는데,&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-c line-numbers&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;define&lt;/span&gt; &lt;span class=&quot;token expression&quot;&gt;TRUE &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
-&lt;span class=&quot;token macro property&quot;&gt;&lt;span class=&quot;token directive-hash&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;token directive keyword&quot;&gt;define&lt;/span&gt; &lt;span class=&quot;token expression&quot;&gt;FALSE &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;c&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-c line-numbers&quot;&gt;&lt;code class=&quot;language-c&quot;&gt;&lt;span class=&quot;token macro property&quot;&gt;#&lt;span class=&quot;token directive keyword&quot;&gt;define&lt;/span&gt; TRUE 1&lt;/span&gt;
+&lt;span class=&quot;token macro property&quot;&gt;#&lt;span class=&quot;token directive keyword&quot;&gt;define&lt;/span&gt; FALSE 0&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;과 같이 전처리기를 통한 값 정의로 true false를 사용하였다면&lt;/p&gt;
 &lt;p&gt;C++에서는 이를 타입으로 제공해주었다.&lt;/p&gt;
 &lt;p&gt;bool type이 없다는건 지금 Java, C#, Python, JavaScript 등의 대표적인 프로그래밍 언어들에서는&lt;/p&gt;
@@ -8310,66 +8164,12 @@ $$&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-ro
 &lt;p&gt;&lt;strong&gt;gatsby-transformer-remark&lt;/strong&gt; 플러그인을 이용해 마크다운 파일을 해석 및 html로 변환시키는데,&lt;/p&gt;
 &lt;p&gt;이 과정에서 image 파일을 읽지 않는건지 읽었지만 내부 경로가 바뀌어서 못 읽는 건지 알 수 없었다.&lt;/p&gt;
 &lt;p&gt;build가 된 후의 build폴더인 &lt;u&gt;public 폴더 내부를 살펴보니&lt;/u&gt; 변환된 html 폴더에서 image를 가져오는 것이 빌드 된 후의 asset folder(static)가 아니라 내가 설정한 ./image-1.jpg 그대로 적용되어있는 걸 확인 할 수 있었다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 202px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/14ec37fdb64a1d64df4405f14cdf45cf/2e687/image-20200729154157118.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 147.5%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAACXBIWXMAAAsSAAALEgHS3X78AAADbUlEQVRIx5VW627jRBj1WyABTXP1fXwZx4md2EnsJGW7F5VuEdtVuyDtFtAWrQAhdrX8gAV+8AA8Ag96ODNtQ4VU1v7xaTJj58w333fOGRt900fPG6NjBugNXXRHHgZWALV+FaJVGONI4oPTn1H+9jcSOUFerFFt76Nc1OiNuMGwXRh9/mlfZLDzDQamB8uNmKHAyGaWzFa91OPYNAwhM/heiBffvcbjL76G5cWot/cgohSdvqNfagNqmE6oa5WWG8hsqbMT0YSjj72+vQNsCmq4wRiOF+ns1g9PMOKRZZpDxBOdZesjO34Ck/U6PDlDdfgpHG4wnS+RZiVCgnaHTjtAVTPVgHL7EDJfaXCbm6ij7w8cAnq7bjcC9FkvdeRnlz/i+PwCAefF6gDFsuZGBL0Gagw4cq7oIZIcli/ZWVuD6HU2qz1tYtJGSHz79nc8/eoVAtatOniAar3FotrCJPB+G9oMWSudhRuyZq4mtlpTD0eKUm15GMgcATP88PX3qN78BOFJ5JRdNlvCZm1vgzUBNlQ3u+zmfprBK1eUn0+1RDoUwMddSxO827A5hoim8JjhZ2cXqA+PmVVMDhbXBJ8hzRd67JsNM3REorNa3DtCTOkNuagaowBDOUU0ziEZg4YdNxRplfxG1O7Jl98gLTY6G+VC6qh7PUtT6QqsgX2pnb0whctMz1/+gGLzQAOq9Tb8+1cpMY1AznVky08QcJSTFTfJqOsp3PA/Efx/GEFSoKwfIS8PcPn2D9TH51gdHCEcF/DiGfx4zpjdCs7l3aHNwXJjDOyQdRTYBAIuST7kmjYOR1FIwtRzqedDvntXGEqvllIJXcUxXbzLLCSuj/G8wrKmSSwqzMo1ltUa2XyllXPlQnc1hVkNrqWmCO6MbHTYWaXfm2dd/dvfvdfIHF6+eYfPn19qL5wtNsysRkgHmnMsVxstw87Aea8MjRsDiKYli8rO+jHUxRUlU52RFyTweRUoO2siP0NzkCBPLy5x+PiUhRVUSKZVkkwKdjuni4tddu/Vsk1TVd0t7p9hWh/BETGSbIF4nDFmiNM5bDatsWMrwKEd4dWpiSeP6DBmrI/pMhRIp4XT7O4U05H465ccf/76BKbISZEN5mWtnef2ndwIUDXkI34hpIyoa2KP8xvH1h9SI39HnSZH/gfzgY7r9y4RCAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;image-20200729154157118&quot;
-        title=&quot;image-20200729154157118&quot;
-        src=&quot;/static/14ec37fdb64a1d64df4405f14cdf45cf/2e687/image-20200729154157118.png&quot;
-        srcset=&quot;/static/14ec37fdb64a1d64df4405f14cdf45cf/772e8/image-20200729154157118.png 200w,
-/static/14ec37fdb64a1d64df4405f14cdf45cf/2e687/image-20200729154157118.png 202w&quot;
-        sizes=&quot;(max-width: 202px) 100vw, 202px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cimage-20200729154157118.png&quot; alt=&quot;image-20200729154157118&quot;&gt;&lt;/p&gt;
 &lt;p&gt;내가 해당 빌드경로에 이미지를 넣어서 deploy하는 방법도 있겠지만, 이미지를 asset폴더로 빌드하고 자동으로 html에 경로를 설정해주는 무언가가 있을 것이라 생각했다.&lt;/p&gt;
 &lt;p&gt;없으면 어떻게 자동화 할 방법을 모색해야했다.&lt;/p&gt;
 &lt;h3&gt;markdown에 쓰이는 image 자동 build 구조 짜기&lt;/h3&gt;
 &lt;p&gt;나는 우선, 블로그 포스팅 Markdown을 작성 할 때 다음과 같이 이미지와 markdown파일을 동일 폴더내에 위치하도록 글을 작성하고 빌드할 때 자동으로 image는 asset경로로 빠지고 html에서는 image src경로가 해당 asset경로로 바뀌길 원했다.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 318px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/ff489ad643a6b02c56005cb884fa34e9/2debd/image-20200729151830923.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 36%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHMqWQD/8QAFxAAAwEAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAQABBQJGz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABgQAAMBAQAAAAAAAAAAAAAAAAARYQEx/9oACAEBAAE/IeB4OYf/2gAMAwEAAgADAAAAEAQf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGBABAQEBAQAAAAAAAAAAAAAAAREAkaH/2gAIAQEAAT8QClxSzjNtfbf/2Q==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;image-20200729151830923&quot;
-        title=&quot;image-20200729151830923&quot;
-        src=&quot;/static/ff489ad643a6b02c56005cb884fa34e9/2debd/image-20200729151830923.jpg&quot;
-        srcset=&quot;/static/ff489ad643a6b02c56005cb884fa34e9/e07e9/image-20200729151830923.jpg 200w,
-/static/ff489ad643a6b02c56005cb884fa34e9/2debd/image-20200729151830923.jpg 318w&quot;
-        sizes=&quot;(max-width: 318px) 100vw, 318px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;.%5Cimage-20200729151830923.jpg&quot; alt=&quot;image-20200729151830923&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;리서칭&lt;/h3&gt;
 &lt;p&gt;구글링을 하는데 한글로 된 내용이 없어서,
 영어로 검색하니까 제대로 된 내용들을 찾을 수 있었다.&lt;/p&gt;
