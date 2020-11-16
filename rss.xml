@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 16 Nov 2020 12:27:58 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[​---
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 16 Nov 2020 12:33:21 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[​---
 title: "패스트캠퍼스 알고리즘 완주반 6주차 과제"
 draft: false
 path: "/algorithm/fastcampus/week6"
@@ -860,31 +860,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;거기에 나와있는 Tip은 꼭 해야되는 것이 아니라 말 그대로 tip이므로 꼭 그렇게 해야되는건 아님!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Lexical Scope? Javascript Scope]]></title><description><![CDATA[여러분 lexical scope라는 말을 알고계신가용 (알고 계셨다면 죄송합니당...)
-수요일날 오피스아워 정리한것을 읽어보는데 제가 lexical this라는 것을 적어놨더라구용 (arrow function에 있는 this는 lexical this…]]></description><link>https://ha-young.github.io/drafts/2020-11-12-Lexical-Scope-Javascript-Scope/</link><guid isPermaLink="false">https://ha-young.github.io/drafts/2020-11-12-Lexical-Scope-Javascript-Scope/</guid><pubDate>Thu, 12 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;여러분 lexical scope라는 말을 알고계신가용 (알고 계셨다면 죄송합니당...)
-수요일날 오피스아워 정리한것을 읽어보는데 제가 lexical this라는 것을 적어놨더라구용 (arrow function에 있는 this는 lexical this라는 말...)
-막 아는 것처럼 적어놨는데, 사실 몰랐습니당. 그래서 이게 무엇인지 좀 찾아보았는데용
-우선 lexical this란 워딩을 &lt;strong&gt;lexical scope가 적용된 this&lt;/strong&gt;로 바꿔야 될 것 같습니당. (lexical this의 의미라고 생각해주셔도 될 것 같습니당)lexical scope란 간단히 말해서 함수가 작동하는 부분이 아닌 &lt;strong&gt;선언된 부분에서 스코프가 결정&lt;/strong&gt;된다는 것입니당.
-우리가 배웠던 javascript의 scope 작동방식인데용, lexical scope를 따로 배우기 보다는 우리가 배운 이 javascript scope방식이 lexical scope방식이라고 생각하시면 될 것 같습니당.
-(반대로 dynamic scope도 있습니당 우리는 javascript를 하기 때문에 굳이 알 필요는 없지만, 다른 언어와의 작동방식 차이로 궁금하시면 알아두시는 것도 좋을 것 같습니당.)아래는 제가 다른 예제 참조하여 만든 예제인데용, 보고 결과를 찾으시면 lexical scope(javascript scope)이해를 잘하고 계시는것이고, dynamic scope의 작동방식을 알면 왜 다르게 작동하는지, dynamic scope와 lexical scope와의 차이를 알 수 있을 것 같습니당&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var isGood = true;function vanilla() {
-    var isGood = false;
-    coding();
-}function coding() {
-    var teacher = &amp;#39;ken&amp;#39;;
-    console.log(teacher);
-    console.log(isGood);
-}vanilla(); // lexical scope 적용과 dynamic scope의 적용결과는 다르다. why?
-function vanilla() {
-    var isGood = false;
-    var teacher = &amp;#39;ken&amp;#39;;
-    function coding() {
-        var isGood = true;
-        console.log(isGood);
-        console.log(teacher);
-    }
-    coding();
-}vanilla(); // lexical scope 적용과 dynamic scope의 적용결과는 같음. why?&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[javascript prototype 생성자 함수 내부에 체이닝을 하면 안되는 이유]]></title><description><![CDATA[…]]></description><link>https://ha-young.github.io/drafts/2020-11-12-javascript-prototype-생성자-함수-내부에-체이닝을-하면-안되는-이유/</link><guid isPermaLink="false">https://ha-young.github.io/drafts/2020-11-12-javascript-prototype-생성자-함수-내부에-체이닝을-하면-안되는-이유/</guid><pubDate>Thu, 12 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const House = function(width, length, height) {  
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[javascript prototype 생성자 함수 내부에 체이닝을 하면 안되는 이유]]></title><description><![CDATA[…]]></description><link>https://ha-young.github.io/drafts/2020-11-12-javascript-prototype-생성자-함수-내부에-체이닝을-하면-안되는-이유/</link><guid isPermaLink="false">https://ha-young.github.io/drafts/2020-11-12-javascript-prototype-생성자-함수-내부에-체이닝을-하면-안되는-이유/</guid><pubDate>Thu, 12 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const House = function(width, length, height) {  
   this.width = width;
   this.length = length;
   this.height = height;
@@ -957,7 +933,31 @@ console.log(&amp;#39;my Room area is&amp;#39;, myRoom.calculateArea(), &amp;#39;
   };
 };var myRoom = new Room(3,3,3,false);Room.prototype = Object.create(House.prototype);
 Room.prototype.constructor = Room;dir(myRoom);&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;와 같다고 보시면 될 것 같습니다.이렇게 되면 myRoom객체의 prototype은 Object이죠&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Prep 6주차 수요일 오피스아워 정리]]></title><description><![CDATA[Q. this Quiz 함수의 실행시점을 잘 보자. 함수의 실행시점은 11라인  dot notation을 통해서 넘겨지더라도 실행시점에서 dot notation이 없으면 일반함수 실행과 같다. 또한  의 인자로  과 같이 dot notation…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep 6주차 수요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep 6주차 수요일 오피스아워 정리/</guid><pubDate>Wed, 11 Nov 2020 12:20:00 GMT</pubDate><content:encoded>&lt;h2&gt;Q. this Quiz&lt;/h2&gt;
+&lt;p&gt;와 같다고 보시면 될 것 같습니다.이렇게 되면 myRoom객체의 prototype은 Object이죠&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Lexical Scope? Javascript Scope]]></title><description><![CDATA[여러분 lexical scope라는 말을 알고계신가용 (알고 계셨다면 죄송합니당...)
+수요일날 오피스아워 정리한것을 읽어보는데 제가 lexical this라는 것을 적어놨더라구용 (arrow function에 있는 this는 lexical this…]]></description><link>https://ha-young.github.io/drafts/2020-11-12-Lexical-Scope-Javascript-Scope/</link><guid isPermaLink="false">https://ha-young.github.io/drafts/2020-11-12-Lexical-Scope-Javascript-Scope/</guid><pubDate>Thu, 12 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;여러분 lexical scope라는 말을 알고계신가용 (알고 계셨다면 죄송합니당...)
+수요일날 오피스아워 정리한것을 읽어보는데 제가 lexical this라는 것을 적어놨더라구용 (arrow function에 있는 this는 lexical this라는 말...)
+막 아는 것처럼 적어놨는데, 사실 몰랐습니당. 그래서 이게 무엇인지 좀 찾아보았는데용
+우선 lexical this란 워딩을 &lt;strong&gt;lexical scope가 적용된 this&lt;/strong&gt;로 바꿔야 될 것 같습니당. (lexical this의 의미라고 생각해주셔도 될 것 같습니당)lexical scope란 간단히 말해서 함수가 작동하는 부분이 아닌 &lt;strong&gt;선언된 부분에서 스코프가 결정&lt;/strong&gt;된다는 것입니당.
+우리가 배웠던 javascript의 scope 작동방식인데용, lexical scope를 따로 배우기 보다는 우리가 배운 이 javascript scope방식이 lexical scope방식이라고 생각하시면 될 것 같습니당.
+(반대로 dynamic scope도 있습니당 우리는 javascript를 하기 때문에 굳이 알 필요는 없지만, 다른 언어와의 작동방식 차이로 궁금하시면 알아두시는 것도 좋을 것 같습니당.)아래는 제가 다른 예제 참조하여 만든 예제인데용, 보고 결과를 찾으시면 lexical scope(javascript scope)이해를 잘하고 계시는것이고, dynamic scope의 작동방식을 알면 왜 다르게 작동하는지, dynamic scope와 lexical scope와의 차이를 알 수 있을 것 같습니당&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var isGood = true;function vanilla() {
+    var isGood = false;
+    coding();
+}function coding() {
+    var teacher = &amp;#39;ken&amp;#39;;
+    console.log(teacher);
+    console.log(isGood);
+}vanilla(); // lexical scope 적용과 dynamic scope의 적용결과는 다르다. why?
+function vanilla() {
+    var isGood = false;
+    var teacher = &amp;#39;ken&amp;#39;;
+    function coding() {
+        var isGood = true;
+        console.log(isGood);
+        console.log(teacher);
+    }
+    coding();
+}vanilla(); // lexical scope 적용과 dynamic scope의 적용결과는 같음. why?&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Prep 6주차 수요일 오피스아워 정리]]></title><description><![CDATA[Q. this Quiz 함수의 실행시점을 잘 보자. 함수의 실행시점은 11라인  dot notation을 통해서 넘겨지더라도 실행시점에서 dot notation이 없으면 일반함수 실행과 같다. 또한  의 인자로  과 같이 dot notation…]]></description><link>https://ha-young.github.io/vanillacoding_prep/Prep 6주차 수요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/Prep 6주차 수요일 오피스아워 정리/</guid><pubDate>Wed, 11 Nov 2020 12:20:00 GMT</pubDate><content:encoded>&lt;h2&gt;Q. this Quiz&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; something &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     age&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token function-variable function&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -5112,44 +5112,7 @@ red는 가로가 긴 직사각형으로 생겨야 되는 문제.&lt;/li&gt;
 answer = [sum(i) for i in list(combinations(prime_list, 3))].count(n)&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_가운데 글자 가져오기]]></title><description><![CDATA[문제 설명 단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다. 재한사항 s는 길이가 1 이상, 100이하인 스트링입니다. 입출력 예 s return abcde c qwer…]]></description><link>https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_가운데-글자-가져오기/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_가운데-글자-가져오기/</guid><pubDate>Wed, 16 Sep 2020 01:30:00 GMT</pubDate><content:encoded>&lt;h1&gt;문제 설명&lt;/h1&gt;
-&lt;p&gt;단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다.&lt;/p&gt;
-&lt;h1&gt;재한사항&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;s는 길이가 1 이상, 100이하인 스트링입니다.&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;입출력 예&lt;/h1&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;s&lt;/th&gt;
-&lt;th&gt;return&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;abcde&lt;/td&gt;
-&lt;td&gt;c&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;qwer&lt;/td&gt;
-&lt;td&gt;we&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2&gt;나의 풀이&lt;/h2&gt;
-&lt;h4&gt;소스&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; midIdx &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token comment&quot;&gt;// 짝수면&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
-        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; s&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;midIdx&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; s&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;midIdx&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// 홀수면&lt;/span&gt;
-    &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; s&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;midIdx&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_수박수박수박수박수박수]]></title><description><![CDATA[문제 설명 길이가 n이고, 수박수박수박수....와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다. 제한 조건 n은 길이 10,00…]]></description><link>https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_수박수박수박수박수박수/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_수박수박수박수박수박수/</guid><pubDate>Wed, 16 Sep 2020 01:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_수박수박수박수박수박수]]></title><description><![CDATA[문제 설명 길이가 n이고, 수박수박수박수....와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다. 제한 조건 n은 길이 10,00…]]></description><link>https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_수박수박수박수박수박수/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_수박수박수박수박수박수/</guid><pubDate>Wed, 16 Sep 2020 01:30:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;길이가 n이고, 수박수박수박수....와 같은 패턴을 유지하는 문자열을 리턴하는 함수, solution을 완성하세요. 예를들어 n이 4이면 수박수박을 리턴하고 3이라면 수박수를 리턴하면 됩니다.&lt;/p&gt;
 &lt;h2&gt;제한 조건&lt;/h2&gt;
 &lt;ul&gt;
@@ -5192,7 +5155,44 @@ answer = [sum(i) for i in list(combinations(prime_list, 3))].count(n)&lt;/code&g
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
     
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; answer&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_김서방 찾기]]></title><description><![CDATA[문제 설명 String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x에 있다는 String을 반환하는 함수, solution을 완성하세요. seoul에 Kim…]]></description><link>https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_김서방-찾기/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_김서방-찾기/</guid><pubDate>Wed, 16 Sep 2020 01:15:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_가운데 글자 가져오기]]></title><description><![CDATA[문제 설명 단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다. 재한사항 s는 길이가 1 이상, 100이하인 스트링입니다. 입출력 예 s return abcde c qwer…]]></description><link>https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_가운데-글자-가져오기/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_가운데-글자-가져오기/</guid><pubDate>Wed, 16 Sep 2020 01:30:00 GMT</pubDate><content:encoded>&lt;h1&gt;문제 설명&lt;/h1&gt;
+&lt;p&gt;단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요. 단어의 길이가 짝수라면 가운데 두글자를 반환하면 됩니다.&lt;/p&gt;
+&lt;h1&gt;재한사항&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;s는 길이가 1 이상, 100이하인 스트링입니다.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;입출력 예&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;s&lt;/th&gt;
+&lt;th&gt;return&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;abcde&lt;/td&gt;
+&lt;td&gt;c&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;qwer&lt;/td&gt;
+&lt;td&gt;we&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;나의 풀이&lt;/h2&gt;
+&lt;h4&gt;소스&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-javascript line-numbers&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;solution&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; midIdx &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;parseInt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// 짝수면&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; 
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; s&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;midIdx&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; s&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;midIdx&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// 홀수면&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; s&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;midIdx&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep코스 사전준비 - Week3_김서방 찾기]]></title><description><![CDATA[문제 설명 String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x에 있다는 String을 반환하는 함수, solution을 완성하세요. seoul에 Kim…]]></description><link>https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_김서방-찾기/</link><guid isPermaLink="false">https://ha-young.github.io/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_김서방-찾기/</guid><pubDate>Wed, 16 Sep 2020 01:15:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;String형 배열 seoul의 element중 Kim의 위치 x를 찾아, 김서방은 x에 있다는 String을 반환하는 함수, solution을 완성하세요. seoul에 Kim은 오직 한 번만 나타나며 잘못된 값이 입력되는 경우는 없습니다.&lt;/p&gt;
 &lt;h2&gt;제한 사항&lt;/h2&gt;
 &lt;ul&gt;
@@ -6677,90 +6677,7 @@ queue의 PriorityQueue를 사용하였다.&lt;/p&gt;
 &lt;h4&gt;설명&lt;/h4&gt;
 &lt;p&gt;위 풀이에 대해 코드를 pythonic하게 하였다.&lt;/p&gt;
 &lt;h4&gt;결과&lt;/h4&gt;
-&lt;p&gt;통과&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 모의고사] 전염병 - Lv3]]></title><description><![CDATA[문제 설명 m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다. 예를 들어 2x…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h6&gt;문제 설명&lt;/h6&gt;
-&lt;p&gt;m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다.&lt;/p&gt;
-&lt;p&gt;예를 들어 2x4 크기 사무실에서, 병에 걸린 직원의 위치가 (1,4), (2,2)이고 백신을 맞은 직원의 위치가 (1,2)입니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기 까지는 이틀이 소요됩니다.&lt;/p&gt;
-&lt;p&gt;0일
-&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9c4fb28f8a/efffcfc1-f803-46fc-b3fd-54169a20600b.png&quot; alt=&quot;573528139.32.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;1일&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9fdf14b30f/178463e2-09ad-46ae-a4d9-571572271946.png&quot; alt=&quot;573528143.88.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;2일&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/49d73ec1ca/4cc4355f-407c-4d26-b1d6-87ba7f374a65.png&quot; alt=&quot;573528147.73.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;사무실의 크기 m, n과 병에 걸린 직원의 위치 infests, 백신을 맞은 직원의 위치 vaccinateds가 매개변수로 주어집니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기까지 며칠이 걸리는지 return 하는 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;h5&gt;제한사항&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;은 1 이상 300 이하인 자연수입니다.&lt;/li&gt;
-&lt;li&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;의 길이는 1 이상&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;*&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이하입니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;는 길이가 1 이상&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;*&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이하입니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;백신을 맞은 직원이 병에 걸린 경우는 주어지지 않습니다.&lt;/li&gt;
-&lt;li&gt;병을 아무리 퍼트려도 백신을 맞은 직원을 제외한 모든 직원이 병에 감염될 수 없다면 -1을 리턴합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5&gt;입출력 예&lt;/h5&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;m&lt;/th&gt;
-&lt;th&gt;n&lt;/th&gt;
-&lt;th&gt;infests&lt;/th&gt;
-&lt;th&gt;vaccinateds&lt;/th&gt;
-&lt;th&gt;result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;[[1,4],[2,2]]&lt;/td&gt;
-&lt;td&gt;[[1,2]]&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;[[2,2]]&lt;/td&gt;
-&lt;td&gt;[[1,2],[2,1],[2,3]]&lt;/td&gt;
-&lt;td&gt;-1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;[[1, 1], [2, 2]]&lt;/td&gt;
-&lt;td&gt;[[1, 2], [2, 1]]&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
-&lt;p&gt;입출력 예 #1
-문제의 예시와 같습니다.&lt;/p&gt;
-&lt;p&gt;입출력 예#2
-&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/931ce64a33/486ea8a6-4d6f-45b1-9af2-35e36e049326.png&quot; alt=&quot;573528150.21.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;전염병자의 근처가 백신 접종자로 막혀있어, 다른 직원에게 병이 도달하지 않습니다. 따라서 -1을 리턴합니다.&lt;/p&gt;
-&lt;p&gt;입출력 예#3&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/93d4ee8842/77ec17c9-949f-4ccb-bf11-2c3010a2f9a8.png&quot; alt=&quot;573533913.75.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;처음부터 모든 직원이 전염병을 앓고 있거나, 백신을 맞은 상태입니다. 따라서 0을 리턴합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] 더 맵게 - Lv2]]></title><description><![CDATA[문제 설명 매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 만들기 위해 Leo…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;p&gt;통과&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] 더 맵게 - Lv2]]></title><description><![CDATA[문제 설명 매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 만들기 위해 Leo…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 만들기 위해 Leo는 스코빌 지수가 가장 낮은 두 개의 음식을 아래와 같이 특별한 방법으로 섞어 새로운 음식을 만듭니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;섞은 음식의 스코빌 지수 = 가장 맵지 않은 음식의 스코빌 지수 + (두 번째로 맵지 않은 음식의 스코빌 지수 * 2)&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Leo는 모든 음식의 스코빌 지수가 K 이상이 될 때까지 반복하여 섞습니다.
@@ -6844,7 +6761,90 @@ O(n log n)&lt;/p&gt;
 &lt;code class=&quot;language-text&quot;&gt;if&lt;/code&gt;를 이용한 예외 처리를 LBYL이라 부르고 &lt;code class=&quot;language-text&quot;&gt;try ~ except&lt;/code&gt;를 이용한 예외 처리를 EAFP라고 부릅니다. 파이썬은 EAFP 방식을 권장하고 있습니다. :)
 &lt;a href=&quot;https://suwoni-codelab.com/python%20%EA%B8%B0%EB%B3%B8/2018/03/06/Python-Basic-EAFP/&quot;&gt;https://suwoni-codelab.com/python%20%EA%B8%B0%EB%B3%B8/2018/03/06/Python-Basic-EAFP/&lt;/a&gt;
 관련 블로그 글 입니다.&lt;/p&gt;
-&lt;p&gt;와 같은 리뷰는 받았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sass(Scss)를 마스터해보자-2]]></title><link>https://ha-young.github.io/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</link><guid isPermaLink="false">https://ha-young.github.io/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</guid><pubDate>Wed, 09 Sep 2020 00:11:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] Flood Fill - Lv3]]></title><description><![CDATA[문제 설명 n x m 크기 도화지에 그려진 그림의 색깔이…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</guid><pubDate>Mon, 07 Sep 2020 23:13:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
+&lt;p&gt;와 같은 리뷰는 받았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 모의고사] 전염병 - Lv3]]></title><description><![CDATA[문제 설명 m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다. 예를 들어 2x…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h6&gt;문제 설명&lt;/h6&gt;
+&lt;p&gt;m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다.&lt;/p&gt;
+&lt;p&gt;예를 들어 2x4 크기 사무실에서, 병에 걸린 직원의 위치가 (1,4), (2,2)이고 백신을 맞은 직원의 위치가 (1,2)입니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기 까지는 이틀이 소요됩니다.&lt;/p&gt;
+&lt;p&gt;0일
+&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9c4fb28f8a/efffcfc1-f803-46fc-b3fd-54169a20600b.png&quot; alt=&quot;573528139.32.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;1일&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9fdf14b30f/178463e2-09ad-46ae-a4d9-571572271946.png&quot; alt=&quot;573528143.88.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2일&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/49d73ec1ca/4cc4355f-407c-4d26-b1d6-87ba7f374a65.png&quot; alt=&quot;573528147.73.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;사무실의 크기 m, n과 병에 걸린 직원의 위치 infests, 백신을 맞은 직원의 위치 vaccinateds가 매개변수로 주어집니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기까지 며칠이 걸리는지 return 하는 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;h5&gt;제한사항&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;은 1 이상 300 이하인 자연수입니다.&lt;/li&gt;
+&lt;li&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;의 길이는 1 이상&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;*&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이하입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;는 길이가 1 이상&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;*&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-text line-numbers&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이하입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;백신을 맞은 직원이 병에 걸린 경우는 주어지지 않습니다.&lt;/li&gt;
+&lt;li&gt;병을 아무리 퍼트려도 백신을 맞은 직원을 제외한 모든 직원이 병에 감염될 수 없다면 -1을 리턴합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;입출력 예&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;m&lt;/th&gt;
+&lt;th&gt;n&lt;/th&gt;
+&lt;th&gt;infests&lt;/th&gt;
+&lt;th&gt;vaccinateds&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;[[1,4],[2,2]]&lt;/td&gt;
+&lt;td&gt;[[1,2]]&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;[[2,2]]&lt;/td&gt;
+&lt;td&gt;[[1,2],[2,1],[2,3]]&lt;/td&gt;
+&lt;td&gt;-1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;[[1, 1], [2, 2]]&lt;/td&gt;
+&lt;td&gt;[[1, 2], [2, 1]]&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5&gt;입출력 예 설명&lt;/h5&gt;
+&lt;p&gt;입출력 예 #1
+문제의 예시와 같습니다.&lt;/p&gt;
+&lt;p&gt;입출력 예#2
+&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/931ce64a33/486ea8a6-4d6f-45b1-9af2-35e36e049326.png&quot; alt=&quot;573528150.21.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;전염병자의 근처가 백신 접종자로 막혀있어, 다른 직원에게 병이 도달하지 않습니다. 따라서 -1을 리턴합니다.&lt;/p&gt;
+&lt;p&gt;입출력 예#3&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/93d4ee8842/77ec17c9-949f-4ccb-bf11-2c3010a2f9a8.png&quot; alt=&quot;573533913.75.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;처음부터 모든 직원이 전염병을 앓고 있거나, 백신을 맞은 상태입니다. 따라서 0을 리턴합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sass(Scss)를 마스터해보자-2]]></title><link>https://ha-young.github.io/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</link><guid isPermaLink="false">https://ha-young.github.io/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</guid><pubDate>Wed, 09 Sep 2020 00:11:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] Flood Fill - Lv3]]></title><description><![CDATA[문제 설명 n x m 크기 도화지에 그려진 그림의 색깔이…]]></description><link>https://ha-young.github.io/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</link><guid isPermaLink="false">https://ha-young.github.io/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</guid><pubDate>Mon, 07 Sep 2020 23:13:00 GMT</pubDate><content:encoded>&lt;h2&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;n x m 크기 도화지에 그려진 그림의 색깔이 2차원 리스트로 주어집니다. 같은 색깔은 같은 숫자로 나타난다고 할 때, 그림에 있는 영역은 총 몇 개인지 알아내려 합니다. 영역이란 상하좌우로 연결된 같은 색상의 공간을 말합니다.&lt;/p&gt;
 &lt;p&gt;예를 들어, [[1,2,3], [3,2,1]] 같은 리스트는 다음과 같이 표현할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
