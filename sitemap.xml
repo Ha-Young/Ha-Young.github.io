@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 8주차 금요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 8주차 금요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 8주차 수요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 8주차 월요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/gatsby/내손내만-Gatsby로-블로그-만들기/2020-11-19-내손내만-Gatsby.js로-블로그-만들기---2-gatsby설치,-starter-고르기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -22,8 +22,8 @@
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep2주차월요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep2주차금요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep3주차월요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-13-프로그래머스_단어퍼즐_Lv4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-16-프로그래머스_삼각_달팽이_Lv2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-13-프로그래머스_단어퍼즐_Lv4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep2주차수요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-12-프로그래머스_가장_긴_팰린드롬_Lv3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep1주차금요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
