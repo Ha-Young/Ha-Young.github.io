@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/vanillacoding-Prep-후기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 9주차 수요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 9주차 월요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 8주차 금요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 8주차 수요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 8주차 월요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 7주차 금요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/gatsby/내손내만-Gatsby로-블로그-만들기/2020-11-19-내손내만-Gatsby.js로-블로그-만들기---2-gatsby설치,-starter-고르기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 7주차 수요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 7주차 월요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---DOM/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 6주차 금요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 6주차 수요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep6주차월요일_오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 6주차월요일_오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding/BootCamp 바닐라코딩 부트캠프 지원/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_javascript/2020-11-08-[JS]-프로그래머스---K-번째-수-Lv1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---Type/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 4주차 금요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-30-프로그래머스---스킬트리-Lv2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-29-패스트캠퍼스-알고리즘-완주반-2차평가/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 4주차 수요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-27-프로그래머스_완주하지-못한-선수---Lv1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 4주차 월요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep3주차금요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep3주차수요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep2주차월요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep2주차금요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep3주차월요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 3주차금요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 3주차수요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 3주차월요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 2주차금요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 2주차수요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-13-프로그래머스_단어퍼즐_Lv4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-16-프로그래머스_삼각_달팽이_Lv2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep2주차수요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 2주차월요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-12-프로그래머스_가장_긴_팰린드롬_Lv3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep1주차금요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep1주차수요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/algorithm/2020-10-11_패캠_알고리즘완주반_6주/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 1주차 금요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 1주차 수요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm/2020-09-28_코드리뷰_파이썬_꿀팁/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm/2020-09-28_알고리즘_문제풀이_가이드/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/data-structrue/2020-09-22-자료구조-Tree에-대해-알아보자---2-이진탐색트리-구현/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>

@@ -107,7 +107,7 @@ Gatsby이기 때문에 gatsby-antd-plugin 또한 설치해야 한다.</p>
 <p>그럼 당연히 <strong>gatsby-config.js</strong>에서 처리를 해줘야겠지.</p>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
   <span class="token punctuation">{</span>
-    resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-antd"</span><span class="token punctuation">,</span>
+    resolve<span class="token operator">:</span> <span class="token string">'gatsby-plugin-antd'</span><span class="token punctuation">,</span>
     options<span class="token operator">:</span> <span class="token punctuation">{</span>
       style<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
@@ -139,7 +139,7 @@ Modal Component였는데, 이를 적용시키면서 설명을 하겠다.</p>
 <p>showModal 함수는</p>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">showModal</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   Modal<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-    title<span class="token operator">:</span> <span class="token string">"Skill Info"</span><span class="token punctuation">,</span>
+    title<span class="token operator">:</span> <span class="token string">'Skill Info'</span><span class="token punctuation">,</span>
     content<span class="token operator">:</span> <span class="token punctuation">(</span>
       <span class="token operator">&lt;</span>div<span class="token operator">></span>
         <span class="token operator">&lt;</span>div<span class="token operator">></span>
@@ -179,13 +179,13 @@ Modal Component였는데, 이를 적용시키면서 설명을 하겠다.</p>
 <p>그 후에 plugin을 설치했으므로 당연히 <strong>gatsby-config.js에 추가</strong>해야된다.</p>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
   <span class="token punctuation">{</span>
-    resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-antd"</span><span class="token punctuation">,</span>
+    resolve<span class="token operator">:</span> <span class="token string">'gatsby-plugin-antd'</span><span class="token punctuation">,</span>
     options<span class="token operator">:</span> <span class="token punctuation">{</span>
       style<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">{</span>
-    resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-less"</span><span class="token punctuation">,</span>
+    resolve<span class="token operator">:</span> <span class="token string">'gatsby-plugin-less'</span><span class="token punctuation">,</span>
     options<span class="token operator">:</span> <span class="token punctuation">{</span>
       lessOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
         javascriptEnabled<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
@@ -231,21 +231,21 @@ starter pack에서 이렇게 사용하면 방법이 이런가보다.</p>
 <p>설치를 했으면 적용해야되는데,</p>
 <p><strong>gatsby-config.js</strong>에 추가해야 될 것이 있다.</p>
 <p>우선, 맨 위에 less-to-json을 require해야된다. 사용해야되서…</p>
-<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> lessToJson <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"less-to-json"</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> lessToJson <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'less-to-json'</span><span class="token punctuation">)</span></code></pre></div>
 <p>그러고 다시 앞에서 plugins에 추가시켰던 less부분에 사용해야 된다.</p>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
   <span class="token punctuation">{</span>
-    resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-antd"</span><span class="token punctuation">,</span>
+    resolve<span class="token operator">:</span> <span class="token string">'gatsby-plugin-antd'</span><span class="token punctuation">,</span>
     options<span class="token operator">:</span> <span class="token punctuation">{</span>
       style<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">{</span>
-    resolve<span class="token operator">:</span> <span class="token string">"gatsby-plugin-less"</span><span class="token punctuation">,</span>
+    resolve<span class="token operator">:</span> <span class="token string">'gatsby-plugin-less'</span><span class="token punctuation">,</span>
     options<span class="token operator">:</span> <span class="token punctuation">{</span>
       lessOptions<span class="token operator">:</span> <span class="token punctuation">{</span>
         javascriptEnabled<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
-        modifyVars<span class="token operator">:</span> <span class="token function">lessToJson</span><span class="token punctuation">(</span><span class="token string">"src/theme/vars.less"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        modifyVars<span class="token operator">:</span> <span class="token function">lessToJson</span><span class="token punctuation">(</span><span class="token string">'src/theme/vars.less'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
       <span class="token punctuation">}</span><span class="token punctuation">,</span>
     <span class="token punctuation">}</span><span class="token punctuation">,</span>
   <span class="token punctuation">}</span><span class="token punctuation">,</span>

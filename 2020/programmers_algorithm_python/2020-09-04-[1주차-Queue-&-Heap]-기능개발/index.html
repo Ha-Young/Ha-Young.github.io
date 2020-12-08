@@ -90,13 +90,13 @@
 <h4 id="소스" style="position:relative;"><a href="#%EC%86%8C%EC%8A%A4" aria-label="소스 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>소스</h4>
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">solution</span><span class="token punctuation">(</span>progresses<span class="token punctuation">,</span> speeds<span class="token punctuation">)</span><span class="token punctuation">:</span>
     answer <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
-    
+
     <span class="token comment"># 작업 큐에 작업이 남아있으면 계속해서 수행</span>
     <span class="token keyword">while</span> <span class="token builtin">len</span><span class="token punctuation">(</span>progresses<span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">:</span>
         <span class="token comment"># 우선 작업을 수행시킨다.</span>
         <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>progresses<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
             progresses<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> speeds<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
-            
+
         <span class="token comment"># 앞에서 부터 작업 완료된 것이 있는지 체크한다. 완료되었으면 작업 큐에서 제거</span>
         work_complete_num <span class="token operator">=</span> <span class="token number">0</span>
         <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>progresses<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -105,11 +105,11 @@
                 progresses<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
             <span class="token keyword">else</span><span class="token punctuation">:</span> <span class="token comment"># 완료 되지 않았다면 넘긴다.</span>
                 <span class="token keyword">break</span>
-        
+
         <span class="token comment"># 완료된 작업의 개수가 0보다 크면 anwser에 추가.</span>
         <span class="token keyword">if</span> work_complete_num <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">:</span>
             answer<span class="token punctuation">.</span>append<span class="token punctuation">(</span>work_complete_num<span class="token punctuation">)</span>
-    
+
     <span class="token keyword">return</span> answer</code></pre></div>
 <h4 id="설명" style="position:relative;"><a href="#%EC%84%A4%EB%AA%85" aria-label="설명 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>설명</h4>
 <p>우선, 이 문제에 대해서 큐로 접근해야 겠다고 생각을 했는데,</p>

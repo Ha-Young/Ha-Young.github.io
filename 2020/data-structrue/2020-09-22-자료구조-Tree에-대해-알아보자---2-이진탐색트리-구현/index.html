@@ -75,13 +75,13 @@
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">NodeMgmt</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> head<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>head <span class="token operator">=</span> head
-    
+
     <span class="token keyword">def</span> <span class="token function">insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token keyword">pass</span>
-    
+
     <span class="token keyword">def</span> <span class="token function">search</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token keyword">pass</span>
-    
+
     <span class="token keyword">def</span> <span class="token function">delete</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token keyword">pass</span></code></pre></div>
 <h3 id="3-이진-탐색-트리-삽입insert-구현" style="position:relative;"><a href="#3-%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC-%EC%82%BD%EC%9E%85insert-%EA%B5%AC%ED%98%84" aria-label="3 이진 탐색 트리 삽입insert 구현 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. 이진 탐색 트리 삽입(Insert) 구현</h3>
@@ -90,7 +90,7 @@
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">NodeMgmt</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> head<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>head <span class="token operator">=</span> head
-    
+
     <span class="token keyword">def</span> <span class="token function">insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>current_node <span class="token operator">=</span> self<span class="token punctuation">.</span>head
         <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
@@ -113,7 +113,7 @@
 <div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">NodeMgmt</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> head<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>head <span class="token operator">=</span> head
-    
+
     <span class="token keyword">def</span> <span class="token function">search</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>current_node <span class="token operator">=</span> self<span class="token punctuation">.</span>head
         <span class="token keyword">while</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">:</span>
@@ -123,7 +123,7 @@
                 self<span class="token punctuation">.</span>current_node <span class="token operator">=</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>left
             <span class="token keyword">else</span><span class="token punctuation">:</span>
                 self<span class="token punctuation">.</span>current_node <span class="token operator">=</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right
-        <span class="token keyword">return</span> <span class="token boolean">False</span>        </code></pre></div>
+        <span class="token keyword">return</span> <span class="token boolean">False</span></code></pre></div>
 <h3 id="5-이진-탐색-트리-삭제delete-구현-아이디어" style="position:relative;"><a href="#5-%EC%9D%B4%EC%A7%84-%ED%83%90%EC%83%89-%ED%8A%B8%EB%A6%AC-%EC%82%AD%EC%A0%9Cdelete-%EA%B5%AC%ED%98%84-%EC%95%84%EC%9D%B4%EB%94%94%EC%96%B4" aria-label="5 이진 탐색 트리 삭제delete 구현 아이디어 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. 이진 탐색 트리 삭제(Delete) 구현 아이디어</h3>
 <p>위의 삽입과 탐색과 달리 이진 탐색 트리 삭제는 매우 복잡하다.</p>
 <p>그래서 경우의 수를 나뉘어서 구현하면 그나마 쉬운데, 경우의 수는 다음과 같다.</p>
@@ -190,10 +190,10 @@
         <span class="token keyword">else</span><span class="token punctuation">:</span>
             self<span class="token punctuation">.</span>parent <span class="token operator">=</span> self<span class="token punctuation">.</span>current_node
             self<span class="token punctuation">.</span>current_node <span class="token operator">=</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right
-    
+
     <span class="token keyword">if</span> searched <span class="token operator">==</span> <span class="token boolean">False</span><span class="token punctuation">:</span>
         <span class="token keyword">return</span> <span class="token boolean">False</span>
-    
+
     <span class="token comment">### 이후부터 Case들을 분리해서, 코드 작성</span></code></pre></div>
 <h4 id="2-case1-삭제할-node가-leaf-node인-경우" style="position:relative;"><a href="#2-case1-%EC%82%AD%EC%A0%9C%ED%95%A0-node%EA%B0%80-leaf-node%EC%9D%B8-%EA%B2%BD%EC%9A%B0" aria-label="2 case1 삭제할 node가 leaf node인 경우 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Case1: 삭제할 Node가 Leaf Node인 경우</h4>
 <p><img src="http://www.fun-coding.org/00_Images/tree_remove_leaf_code.png" alt="img"></p>
@@ -299,11 +299,11 @@
         self<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token boolean">None</span>
         self<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token boolean">None</span>
 
-        
+
 <span class="token keyword">class</span> <span class="token class-name">NodeMgmt</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> head<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>head <span class="token operator">=</span> head
-    
+
     <span class="token keyword">def</span> <span class="token function">insert</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>current_node <span class="token operator">=</span> self<span class="token punctuation">.</span>head
         <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
@@ -319,7 +319,7 @@
                 <span class="token keyword">else</span><span class="token punctuation">:</span>
                     self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right <span class="token operator">=</span> Node<span class="token punctuation">(</span>value<span class="token punctuation">)</span>
                     <span class="token keyword">break</span>
-    
+
     <span class="token keyword">def</span> <span class="token function">search</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>current_node <span class="token operator">=</span> self<span class="token punctuation">.</span>head
         <span class="token keyword">while</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">:</span>
@@ -329,8 +329,8 @@
                 self<span class="token punctuation">.</span>current_node <span class="token operator">=</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>left
             <span class="token keyword">else</span><span class="token punctuation">:</span>
                 self<span class="token punctuation">.</span>current_node <span class="token operator">=</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right
-        <span class="token keyword">return</span> <span class="token boolean">False</span>        
-    
+        <span class="token keyword">return</span> <span class="token boolean">False</span>
+
     <span class="token keyword">def</span> <span class="token function">delete</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token comment"># 삭제할 노드 탐색</span>
         searched <span class="token operator">=</span> <span class="token boolean">False</span>
@@ -348,7 +348,7 @@
                 self<span class="token punctuation">.</span>current_node <span class="token operator">=</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right
 
         <span class="token keyword">if</span> searched <span class="token operator">==</span> <span class="token boolean">False</span><span class="token punctuation">:</span>
-            <span class="token keyword">return</span> <span class="token boolean">False</span>    
+            <span class="token keyword">return</span> <span class="token boolean">False</span>
 
         <span class="token comment"># case1</span>
         <span class="token keyword">if</span>  self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>left <span class="token operator">==</span> <span class="token boolean">None</span> <span class="token keyword">and</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right <span class="token operator">==</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
@@ -356,7 +356,7 @@
                 self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token boolean">None</span>
             <span class="token keyword">else</span><span class="token punctuation">:</span>
                 self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token boolean">None</span>
-        
+
         <span class="token comment"># case2</span>
         <span class="token keyword">elif</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>left <span class="token operator">!=</span> <span class="token boolean">None</span> <span class="token keyword">and</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right <span class="token operator">==</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
             <span class="token keyword">if</span> value <span class="token operator">&lt;</span> self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>value<span class="token punctuation">:</span>
@@ -367,8 +367,8 @@
             <span class="token keyword">if</span> value <span class="token operator">&lt;</span> self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>value<span class="token punctuation">:</span>
                 self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>left <span class="token operator">=</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right
             <span class="token keyword">else</span><span class="token punctuation">:</span>
-                self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>right <span class="token operator">=</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right        
-        
+                self<span class="token punctuation">.</span>parent<span class="token punctuation">.</span>right <span class="token operator">=</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right
+
         <span class="token comment"># case 3</span>
         <span class="token keyword">elif</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>left <span class="token operator">!=</span> <span class="token boolean">None</span> <span class="token keyword">and</span> self<span class="token punctuation">.</span>current_node<span class="token punctuation">.</span>right <span class="token operator">!=</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
             <span class="token comment"># case3-1</span>
