@@ -1,87 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 28 Dec 2020 15:49:28 GMT</lastBuildDate><item><title><![CDATA[No title]]></title><description><![CDATA[Underdash 과제에서 reference…]]></description><link>https://ha-young.github.io/2020/drafts/2020-12-04-reference_왜곡/</link><guid isPermaLink="false">https://ha-young.github.io/2020/drafts/2020-12-04-reference_왜곡/</guid><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; mainObject &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-    a&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    b&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token function-variable function&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    d&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; json &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mainObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; copyObject &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;json&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;copyObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; mainArray &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;undefined&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; json &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mainObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; copyObject &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;json&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-
-console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;copyObject&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Underdash 과제에서 reference 값을 할당할 때 왜곡이 일어날 수 있는 부분에 대해서
-리뷰어님께서 지적해주신 적이 있습니다.
-한번 생각해 볼만한 것 같아서 이해하는데 도움되었던 사이트 링크 첨부합니다.
-혹시 잘못된 정보가 있다면 알려주세요~
-송지연님 감사합니다!
-javascript deep copy shallow copy
-&lt;a href=&quot;https://mygumi.tistory.com/322&quot;&gt;https://mygumi.tistory.com/322&lt;/a&gt;
-PS. 깊은 복사 방식중에 JSON.parse(JSON.stringify()); 을 이용하는 경우
-복사하려는 값이 객체일 때 속성이 function, undefined 인 경우 undefined로 처리되고
-복사하려는 값이 배열일 때 원소가 function, undefined 인 경우 null로 처리된다는 것을 확인했습니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><description><![CDATA[…]]></description><link>https://ha-young.github.io/2020/drafts/상담 요청/</link><guid isPermaLink="false">https://ha-young.github.io/2020/drafts/상담 요청/</guid><content:encoded>&lt;h1 id=&quot;상담-요청에-앞서&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%83%81%EB%8B%B4-%EC%9A%94%EC%B2%AD%EC%97%90-%EC%95%9E%EC%84%9C&quot; aria-label=&quot;상담 요청에 앞서 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;상담 요청에 앞서…&lt;/h1&gt;
-&lt;p&gt;켄님 켄님에게 이런 상담을 드린다는게 맞는건지는 잘 모르겠으나…
-켄님의 의견을 한번 들어보고싶기에 불쑥 상담신청을 드렸습니다.&lt;/p&gt;
-&lt;p&gt;절대 켄님에게 결정에 대한 부담을 드릴려는 것은 아니고 의견을 듣고자 함이니
-절대로 부담갖지 마시고 그냥 생각을 말해주시면 결정은 제가 하도록 하겠습니다.&lt;/p&gt;
-&lt;p&gt;그리고 부트캠프를 앞두고 이러한 상담을 요청드려 죄송합니다…&lt;/p&gt;
-&lt;h1 id=&quot;상담의-주제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%83%81%EB%8B%B4%EC%9D%98-%EC%A3%BC%EC%A0%9C&quot; aria-label=&quot;상담의 주제 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;상담의 주제&lt;/h1&gt;
-&lt;p&gt;우선, 주제부터 말씀드리자면 지금 회사와 앞으로의 계획에 관련된 이야기 입니다.
-결론부터 말씀드리자면 지금 회사와 퇴사얘기가 끝나 퇴사일까지 결정된 상황인데요,
-회사에서(팀장님) 6개월 정도 더 일하는 것이 어떻냐고 제안을 받은 상황입니다. 그리고 프론트 웹 개발자보다 지금 회사에서 pc개발과 딥러닝 관련 경력을 쌓는것이 어떻느냐고 물어보십니다. (저는 웹개발 도전하고 싶습니다)&lt;/p&gt;
-&lt;p&gt;저희 회사에 대한 비전도 설명해주시고 프론트앤드에 대한 본인이 갖고계시는 안좋은 점들에 대해서도 설명해주셨습니다.&lt;/p&gt;
-&lt;h1 id=&quot;고민-이유&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%A0%EB%AF%BC-%EC%9D%B4%EC%9C%A0&quot; aria-label=&quot;고민 이유 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;고민 이유&lt;/h1&gt;
-&lt;h2 id=&quot;스톡옵션&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%8A%A4%ED%86%A1%EC%98%B5%EC%85%98&quot; aria-label=&quot;스톡옵션 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;스톡옵션&lt;/h2&gt;
-&lt;p&gt;제안을 받고나서 고민하고 있는 상황인데요… 큰 이유가 2개있는데 그 중 하나는 저희회사 주식 상장 문제와 지금 코로나 사태 때문입니다.
-주식에 대해 이야기를 하자면 스톡옵션으로 받은 주식으로 근속 2년? 정도 이상인 직원들이 받았고, 상장 전 퇴사시에는 전부 반납, 상장하면 본인 것이 되는 그런 조건으로 상장 후 매도로 이익을 실현할 수 있습니다.&lt;/p&gt;
-&lt;p&gt;그 동안 상장 얘기는 신경쓰지 않았으나 저희 팀장님과 퇴사 면담을 하다가 곧 주식상장인데, 그동안 고생한거 이거라도 받고 나가는게 어떻겠느냐 라는 말을 들었습니다. 알고보니 3~4개월 뒤에 상장을 하는 것 같습니다.
-공모가에 의해 이익이 실현되겠지만 제가 받은 주식으로는 2천만원 이상의 이익을 기대할수도 있는 상황인 것 같습니다.&lt;/p&gt;
-&lt;h2 id=&quot;현-시점의-코로나-19-상황&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%98%84-%EC%8B%9C%EC%A0%90%EC%9D%98-%EC%BD%94%EB%A1%9C%EB%82%98-19-%EC%83%81%ED%99%A9&quot; aria-label=&quot;현 시점의 코로나 19 상황 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;현 시점의 코로나-19 상황&lt;/h2&gt;
-&lt;p&gt;이런 상황에 코로나까지 맞물려 채용시장이 침체되는 것 같아서 회사사람들은 너의 꿈도 좋지만 당장 이익실현과 코로나사태가 잠잠해지면 너가 원하는 공부를 하거나 회사를다니면서 이직준비를 하는것이 더 현실적이다.
-라고 대부분의 조언을 해주십니다.&lt;/p&gt;
-&lt;p&gt;처음 바닐라코딩을 해야겠다고 마음먹었을 때 주식상장으로 얻는 이익보다 내 자신에게 투자해서 얻는 반사이익을 더 키우겠다. 내가 열심히하고 잘하면 충분히 프론트엔드 시장은 가능성이 있다. 라고 생각했었는데요,
-지금은 코로나 사태가 심각해지면서 자택에서 공부할 수도 있고 채용시장이 줄어들고있다는 점에 복합적인 상황으로 조금 흔들리고 있는 것 같습니다. (코로나가 잠잠해지면 그 때 해라는 얘기들… 그리고 주식상장도 하니…)&lt;/p&gt;
-&lt;h1 id=&quot;켄님의-생각이-궁금합니다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BC%84%EB%8B%98%EC%9D%98-%EC%83%9D%EA%B0%81%EC%9D%B4-%EA%B6%81%EA%B8%88%ED%95%A9%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;켄님의 생각이 궁금합니다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;켄님의 생각이 궁금합니다&lt;/h1&gt;
-&lt;p&gt;사실 이런 고민을 켄님에게 보내는것이 맞는건지 잘 모르겠습니다. 고민끝에 회사사람들의 의견만 들어서는 안되겠고 여러 의견을 들어보고 싶었습니다. &lt;/p&gt;
-&lt;h2 id=&quot;내-마음의-확신에-한스푼-더-하고싶음&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%82%B4-%EB%A7%88%EC%9D%8C%EC%9D%98-%ED%99%95%EC%8B%A0%EC%97%90-%ED%95%9C%EC%8A%A4%ED%91%BC-%EB%8D%94-%ED%95%98%EA%B3%A0%EC%8B%B6%EC%9D%8C&quot; aria-label=&quot;내 마음의 확신에 한스푼 더 하고싶음 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;내 마음의 확신에 한스푼 더 하고싶음&lt;/h2&gt;
-&lt;p&gt;사실 제 마음은 바닐라코딩을 하고자 하는 마음이 더 큽니다. 9기부터 시작해서 9기로 끝내고 싶습니다. 계속 생각해보면 이미 답은 정해져있는 것 같기도합니다.
-하지만 고민하지않고 정하기보다는 고민끝에 정하는게 후회가 더 없이 나아갈 수 있다고 믿으며  주어진 선택지에서 제 선택에 대한 확신을 얻고자 켄님에게 보내는 것일지도 모르겠습니다.
-이러한 상황속에서 제가 바닐라코딩을 하면 (물론 많이 노력하고 잘 해야되겠지만) 후회하지 않을 수 있는지 걱정이 됩니다.&lt;/p&gt;
-&lt;h1 id=&quot;질문을-합니다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A7%88%EB%AC%B8%EC%9D%84-%ED%95%A9%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;질문을 합니다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;질문을 합니다&lt;/h1&gt;
-&lt;p&gt;적다보니 켄님께 그냥 주저리주저리 상황설명만 하는 것 같아서 질문을 몇가지로 줄여보겠습니다. (지금까지 읽어주셔서 고생많으셨습니다…ㅎㅎㅎ)&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;채용시장이 줄고있지는 않는지&lt;/li&gt;
-&lt;li&gt;하루빨리 웹 개발 시장에서 개발을 시작해 경력을 쌓는것이 좋을지 아니면 천천히 준비해도 괜찮을지 (이 고민이 제일 큰 것 같습니다)&lt;/li&gt;
-&lt;li&gt;켄님이 저를 보았을 때 바닐라코딩으로부터 얻을수 있는게 많아보이는지 (저는 그렇다고 생각합니다만, 개발 경력을 쌓고 부트캠프를 가는데 과연 얻을게 있냐는 주변의 질문이 있었습니다)&lt;/li&gt;
-&lt;li&gt;바코 졸업시 프론트엔드 시장에 개발자로 경쟁력? - 회사 사람들이 프론트엔드 할려는 사람들이 너무 많아서 오히려 힘들것이다 라는 얘기를 합니다… 기술적으로도 계속 변하고 발전이 빠르니 힘들다..
-기술적으로 계속 변하고 발전이 빠르다는 점에서는 익히 잘 알고있고 그런점에서 하고싶은 것이 저의생각이지만,
-오히려 요즘 하려는 사람들이 너무 많아서 경쟁이 심해 힘들다 라는 의견들이 있어서 이 점에서 바닐라코딩 졸업시에 개발자로서 경쟁력도 궁금합니다… (블로그로 취업현황을 확인하지만 위상은 계속 변하는것이므로)&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&quot;정리-지금-나의-선택지&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%95%EB%A6%AC-%EC%A7%80%EA%B8%88-%EB%82%98%EC%9D%98-%EC%84%A0%ED%83%9D%EC%A7%80&quot; aria-label=&quot;정리 지금 나의 선택지 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;정리 (지금 나의 선택지)&lt;/h1&gt;
-&lt;p&gt;제가 귀가 얇아서 이런저런 말들에 고민이 생기는 것 같습니다. 이미 내린 결정에도 한번 더 확인하고 싶고 그렇네요…
-저는 웹개발시장으로 무조건 갈 것이므로 지금 회사에서 퇴사는 필수불가결한 요소인 것 같습니다. 따라서 지금 저에게 있어 선택지는 총 3개인 것 같습니다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;바닐라코딩 부트캠프 9기 &lt;/li&gt;
-&lt;li&gt;지금 회사에서 6개월 일하고 (주식 매도하고 코로나 잠잠해지고) 바닐라코딩 부트캠프 10기 도전&lt;/li&gt;
-&lt;li&gt;지금 회사에서 계속 일하면서 웹개발자 이직준비하기&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;선택은 저의 몫이지만 켄님의 생각을 말씀해주시면 깊게 고민하고 결정을 내리도록하겠습니다.&lt;/p&gt;
-&lt;p&gt;이번주 부트캠프 8기 스텐드업 준비하시느라 힘드셨을텐데 지금까지 읽어주셔서 너무 감사합니다. :)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[No title]]></title><link>https://ha-young.github.io/2020/vanillacoding/2020-09-10-내가_바닐라코딩을_선택한이유/</link><guid isPermaLink="false">https://ha-young.github.io/2020/vanillacoding/2020-09-10-내가_바닐라코딩을_선택한이유/</guid><content:encoded></content:encoded></item><item><title><![CDATA[하옹의 자바스크립트 식사 - Closure2]]></title><description><![CDATA[* 이 글은 MDN, Vanilla Coding Prep 강의자료, PoiemaWeb등 공신력있는 곳들을 참조한 글입니다. Closure의 특성 지역변수 x…]]></description><link>https://ha-young.github.io/2020/javascript/2020-12-16-하옹의-자바스크립트-식사---Closure2/</link><guid isPermaLink="false">https://ha-young.github.io/2020/javascript/2020-12-16-하옹의-자바스크립트-식사---Closure2/</guid><pubDate>Wed, 16 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;* 이 글은 &lt;a href=&quot;https://developer.mozilla.org/es/&quot;&gt;MDN&lt;/a&gt;, &lt;a href=&quot;https://www.vanillacoding.co/&quot;&gt;Vanilla Coding Prep 강의자료&lt;/a&gt;, &lt;a href=&quot;https://poiemaweb.com/&quot;&gt;PoiemaWeb&lt;/a&gt;등 공신력있는 곳들을 참조한 글입니다.&lt;/p&gt;
-&lt;h2 id=&quot;closure의-특성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#closure%EC%9D%98-%ED%8A%B9%EC%84%B1&quot; aria-label=&quot;closure의 특성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Closure의 특성&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;지역변수 x는 자신을 참조하는 함수가 소멸될 때까지 유지된다.&lt;/li&gt;
-&lt;li&gt;클로저에 존재하는 변수들은 값이 계속해서 유지된다.&lt;/li&gt;
-&lt;li&gt;전역 변수의 사용을 막을 수 있다.&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[하옹의 자바스크립트 식사 - Closure]]></title><description><![CDATA[* 이 글은 MDN, Vanilla Coding Prep 강의자료, PoiemaWeb등 공신력있는 곳들을 참조한 글입니다. Closure? 클로저(closure)는 내가 Javascript…]]></description><link>https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---Closure/</link><guid isPermaLink="false">https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---Closure/</guid><pubDate>Wed, 16 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;* 이 글은 &lt;a href=&quot;https://developer.mozilla.org/es/&quot;&gt;MDN&lt;/a&gt;, &lt;a href=&quot;https://www.vanillacoding.co/&quot;&gt;Vanilla Coding Prep 강의자료&lt;/a&gt;, &lt;a href=&quot;https://poiemaweb.com/&quot;&gt;PoiemaWeb&lt;/a&gt;등 공신력있는 곳들을 참조한 글입니다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 29 Dec 2020 15:27:21 GMT</lastBuildDate><item><title><![CDATA[하옹의 자바스크립트 식사 - Closure]]></title><description><![CDATA[* 이 글은 MDN, Vanilla Coding Prep 강의자료, PoiemaWeb등 공신력있는 곳들을 참조한 글입니다. Closure? 클로저(closure)는 내가 Javascript…]]></description><link>https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---Closure/</link><guid isPermaLink="false">https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---Closure/</guid><pubDate>Wed, 16 Dec 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;* 이 글은 &lt;a href=&quot;https://developer.mozilla.org/es/&quot;&gt;MDN&lt;/a&gt;, &lt;a href=&quot;https://www.vanillacoding.co/&quot;&gt;Vanilla Coding Prep 강의자료&lt;/a&gt;, &lt;a href=&quot;https://poiemaweb.com/&quot;&gt;PoiemaWeb&lt;/a&gt;등 공신력있는 곳들을 참조한 글입니다.&lt;/p&gt;
 &lt;h2 id=&quot;closure&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#closure&quot; aria-label=&quot;closure permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Closure?&lt;/h2&gt;
 &lt;p&gt;클로저(closure)는 내가 Javascript 주요 개념중에서 가장 이해하기 어려웠던 내용 일 것 같다.&lt;/p&gt;
 &lt;p&gt;간단한 예제는 이해하기 쉬웠지만, Curying과 Memoization 등 다양한 기법들이 첨가되면서 점점 더 복잡해지고 이해하기 어려워졌던 것 같다.&lt;/p&gt;
@@ -3723,104 +3640,7 @@ buttonElement&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;s
 &lt;li&gt;거기에 나와있는 Tip은 꼭 해야되는 것이 아니라 말 그대로 tip이므로 꼭 그렇게 해야되는건 아님!&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[javascript prototype 생성자 함수 내부에 체이닝을 하면 안되는 이유]]></title><description><![CDATA[…]]></description><link>https://ha-young.github.io/2020/drafts/2020-11-12-javascript-prototype-생성자-함수-내부에-체이닝을-하면-안되는-이유/</link><guid isPermaLink="false">https://ha-young.github.io/2020/drafts/2020-11-12-javascript-prototype-생성자-함수-내부에-체이닝을-하면-안되는-이유/</guid><pubDate>Thu, 12 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const House = function(width, length, height) {
-  this.width = width;
-  this.length = length;
-  this.height = height;
-};
-House.prototype.calculateArea = function() {
-  return (this.width * this.height) + &amp;quot;㎡&amp;quot;
-};
-House.prototype.calculateVolume = function() {
-  return (this.width * this.length * this.height) + &amp;quot;㎥&amp;quot;
-}
-const Room = function(width, length, height, hasWindows) {
-  if (width &amp;lt; 3 || length &amp;lt; 3 || height &amp;lt; 3) {
-    throw new Error(&amp;quot;Is this room really? Okay, so I&amp;#39;ll give you DOOM.&amp;quot;)
-  }
-  House.call(this, width, length, height);
-  this.hasWindows = hasWindows;
-  this.numbersOfWindows = function() {
-    if (!this.hasWindows) {
-      return 0;
-    } else if (this.width &amp;lt; 9 &amp;amp;&amp;amp; this.length &amp;lt; 9) {
-      return 1;
-    } else {
-      return 2;
-    }
-  }
-  Room.prototype = Object.create(House.prototype);
-  Room.prototype.constructor = Room;
-};
-// Room.prototype = Object.create(House.prototype);
-// Room.prototype.constructor = Room;
-const myHouse = new House(6, 6, 4);
-const myRoom = new Room(3, 3, 3, false);
-console.dir(Room);
-console.log(&amp;#39;my Room area is&amp;#39;, myRoom.calculateArea(), &amp;#39;/&amp;#39; , &amp;#39;my Room volume is&amp;#39;, myRoom.calculateVolume());&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;위 코드 대로 실행하면 제일 아랫 줄의 &lt;code class=&quot;language-text&quot;&gt;console.log(&amp;#39;my Room area is&amp;#39;, myRoom.calculateArea(), &amp;#39;/&amp;#39; , &amp;#39;my Room volume is&amp;#39;, myRoom.calculateVolume());&lt;/code&gt;코드는 에러를 던집니다. 하지만 주석 처리된 코드를 해제하고 위에 함수 내부의 동일한 코드를 주석 처리 한 뒤 실행해보면 아랫 줄의 콘솔이 정상적으로 작동합니다.
-그런데 오류가 발생할 때 &lt;code class=&quot;language-text&quot;&gt;Room&lt;/code&gt; 디렉토리를 보면 &lt;code class=&quot;language-text&quot;&gt;caculateArea&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;caculateVolume&lt;/code&gt;을 상속받고 있다고 나옵니다.(아래 사진 첨부)
-그래서 왜 오류가 나오는지 궁금했습니다. &lt;img src=&quot;https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-medium/1f914.png&quot; alt=&quot;:thinking_face:&quot;&gt;(실제로 사용하기에 적절한 코드는 아니지만 공부하다보니 궁금해졌습니다… &lt;img src=&quot;https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-medium/1f449.png&quot; alt=&quot;👉&quot;&gt;&lt;img src=&quot;https://a.slack-edge.com/production-standard-emoji-assets/10.2/google-medium/1f448.png&quot; alt=&quot;👈&quot;&gt;)&lt;/p&gt;
-&lt;h2 id=&quot;나의-답변&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%82%98%EC%9D%98-%EB%8B%B5%EB%B3%80&quot; aria-label=&quot;나의 답변 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;나의 답변&lt;/h2&gt;
-&lt;p&gt;상엽님 이거는 생성자함수인 &lt;code class=&quot;language-text&quot;&gt;Room&lt;/code&gt;을 dir 하기보다는 생성자함수로 생성된 객체인스턴스인 &lt;code class=&quot;language-text&quot;&gt;myRoom&lt;/code&gt;을 dir 해보는게 맞을 것 같아요!실제로 &lt;code class=&quot;language-text&quot;&gt;dir(myRoom)&lt;/code&gt; 해보면 결과가 다르게 나옵니다!생성자 함수에 prototype 상속 체인 작업&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;( &lt;code class=&quot;language-text&quot;&gt;Child.prototype = Object.create(Parent.prototype)&lt;/code&gt; )&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;을 해두면 &lt;strong&gt;생성자 함수가 호출되었을 때 생성자 함수에 prototype 상속 체이닝이 일어나기 때문에&lt;/strong&gt; 맨 처음 생성한 객체 인스턴스에 대해서는 prototype 상속이 제대로 이뤄지지 않습니다!
-(Prototype 체이닝이 생성자 함수를 호출하지 않으면 이뤄지지 않음)두번째로 객체 인스턴스를 생성하면 그때는 프로토타입 체이닝이 되어 있으므로 잘 작동 할 거예요.
-그리고 저렇게 해두고 작업을 하면 어제 캔님이 말씀하셨듯이 생성자가 호출 될 때마다 프로토타입 체이닝을 하므로, 비효율 적이고 이렇게 첫번째 객체인스턴스는 제대로 작동을 하지 않기때문에 잘못된 방법이라 할 수 있을 것 같아요.이 순서대로 한번 해보시고 비교해보시면 이해하실 거예요!&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;생성자 함수 내부에 &lt;code class=&quot;language-text&quot;&gt;Object.create()&lt;/code&gt; 한 것과 외부에 한 것 dir(myRoom) 비교 해보기&lt;/li&gt;
-&lt;li&gt;생성자 함수 내부에 &lt;code class=&quot;language-text&quot;&gt;Object.create()&lt;/code&gt; 해두고 새로운 객체 생성 전에 &lt;code class=&quot;language-text&quot;&gt;dir(Room)&lt;/code&gt; 해보기 (생성자 함수 호출 X)&lt;/li&gt;
-&lt;li&gt;2번 후 새로운 객체(인스턴스) 생성(생성자 함수 호출) 후에 &lt;code class=&quot;language-text&quot;&gt;dir(Room)&lt;/code&gt; 해보기&lt;/li&gt;
-&lt;li&gt;처음만든 객체 인스턴스에서는 당연히 상속이 제대로 이루어지지 않아 애러가 날 것.&lt;/li&gt;
-&lt;li&gt;다시 한번 객체 인스턴스 생성후 &lt;code class=&quot;language-text&quot;&gt;dir(newInstance)&lt;/code&gt; 해보기&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;이렇게 한번 해보세요~&lt;/p&gt;
-&lt;p&gt;생성자 함수 내부에서 &lt;code class=&quot;language-text&quot;&gt;Room.prototype = Object.create(House.rpototype)&lt;/code&gt; 을 하더라도 이미 인스턴스로 생성된 &lt;code class=&quot;language-text&quot;&gt;this&lt;/code&gt; 는 &lt;code class=&quot;language-text&quot;&gt;Room.prototype = Object.create(House.rpototype)&lt;/code&gt; 이 반영되어있지 않은 상태로 생성되어져 버렸기 때문에 바로 적용이 안되는것이구요. 내부에서
-&lt;code class=&quot;language-text&quot;&gt;console.log(this.__``*proto__)*&lt;/code&gt; 해보시면 Object입니다.순서가&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const Room = function (width, length, height, hasWindows) {
-  if (width &amp;lt; 3 || length &amp;lt; 3 || height &amp;lt; 3) {
-    throw new Error(&amp;quot;Is this room really? Okay, so I&amp;#39;ll give you DOOM.&amp;quot;);
-  }
-  House.call(this, width, length, height);
-  this.hasWindows = hasWindows;
-  this.numbersOfWindows = function () {
-    if (!this.hasWindows) {
-      return 0;
-    } else if (this.width &amp;lt; 9 &amp;amp;&amp;amp; this.length &amp;lt; 9) {
-      return 1;
-    } else {
-      return 2;
-    }
-  };
-};var myRoom = new Room(3,3,3,false);Room.prototype = Object.create(House.prototype);
-Room.prototype.constructor = Room;dir(myRoom);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;와 같다고 보시면 될 것 같습니다.이렇게 되면 myRoom객체의 prototype은 Object이죠&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Lexical Scope? Javascript Scope]]></title><description><![CDATA[여러분 lexical scope라는 말을 알고계신가용 (알고 계셨다면 죄송합니당…)
-수요일날 오피스아워 정리한것을 읽어보는데 제가 lexical this라는 것을 적어놨더라구용 (arrow function에 있는 this는 lexical this…]]></description><link>https://ha-young.github.io/2020/drafts/2020-11-12-Lexical-Scope-Javascript-Scope/</link><guid isPermaLink="false">https://ha-young.github.io/2020/drafts/2020-11-12-Lexical-Scope-Javascript-Scope/</guid><pubDate>Thu, 12 Nov 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;여러분 lexical scope라는 말을 알고계신가용 (알고 계셨다면 죄송합니당…)
-수요일날 오피스아워 정리한것을 읽어보는데 제가 lexical this라는 것을 적어놨더라구용 (arrow function에 있는 this는 lexical this라는 말…)
-막 아는 것처럼 적어놨는데, 사실 몰랐습니당. 그래서 이게 무엇인지 좀 찾아보았는데용
-우선 lexical this란 워딩을 &lt;strong&gt;lexical scope가 적용된 this&lt;/strong&gt;로 바꿔야 될 것 같습니당. (lexical this의 의미라고 생각해주셔도 될 것 같습니당)lexical scope란 간단히 말해서 함수가 작동하는 부분이 아닌 &lt;strong&gt;선언된 부분에서 스코프가 결정&lt;/strong&gt;된다는 것입니당.
-우리가 배웠던 javascript의 scope 작동방식인데용, lexical scope를 따로 배우기 보다는 우리가 배운 이 javascript scope방식이 lexical scope방식이라고 생각하시면 될 것 같습니당.
-(반대로 dynamic scope도 있습니당 우리는 javascript를 하기 때문에 굳이 알 필요는 없지만, 다른 언어와의 작동방식 차이로 궁금하시면 알아두시는 것도 좋을 것 같습니당.)아래는 제가 다른 예제 참조하여 만든 예제인데용, 보고 결과를 찾으시면 lexical scope(javascript scope)이해를 잘하고 계시는것이고, dynamic scope의 작동방식을 알면 왜 다르게 작동하는지, dynamic scope와 lexical scope와의 차이를 알 수 있을 것 같습니당&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var isGood = true;function vanilla() {
-    var isGood = false;
-    coding();
-}function coding() {
-    var teacher = &amp;#39;ken&amp;#39;;
-    console.log(teacher);
-    console.log(isGood);
-}vanilla(); // lexical scope 적용과 dynamic scope의 적용결과는 다르다. why?
-function vanilla() {
-    var isGood = false;
-    var teacher = &amp;#39;ken&amp;#39;;
-    function coding() {
-        var isGood = true;
-        console.log(isGood);
-        console.log(teacher);
-    }
-    coding();
-}vanilla(); // lexical scope 적용과 dynamic scope의 적용결과는 같음. why?&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep 6주차 수요일 오피스아워 정리]]></title><description><![CDATA[Q. this Quiz 함수의 실행시점을 잘 보자. 함수의 실행시점은 11라인  dot notation을 통해서 넘겨지더라도 실행시점에서 dot notation이 없으면 일반함수 실행과 같다. 또한  의 인자로  과 같이 dot notation…]]></description><link>https://ha-young.github.io/2020/vanillacoding_prep/Prep 6주차 수요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/2020/vanillacoding_prep/Prep 6주차 수요일 오피스아워 정리/</guid><pubDate>Wed, 11 Nov 2020 12:20:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;q-this-quiz&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#q-this-quiz&quot; aria-label=&quot;q this quiz permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Q. this Quiz&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[바닐라코딩 Prep 6주차 수요일 오피스아워 정리]]></title><description><![CDATA[Q. this Quiz 함수의 실행시점을 잘 보자. 함수의 실행시점은 11라인  dot notation을 통해서 넘겨지더라도 실행시점에서 dot notation이 없으면 일반함수 실행과 같다. 또한  의 인자로  과 같이 dot notation…]]></description><link>https://ha-young.github.io/2020/vanillacoding_prep/Prep 6주차 수요일 오피스아워 정리/</link><guid isPermaLink="false">https://ha-young.github.io/2020/vanillacoding_prep/Prep 6주차 수요일 오피스아워 정리/</guid><pubDate>Wed, 11 Nov 2020 12:20:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;q-this-quiz&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#q-this-quiz&quot; aria-label=&quot;q this quiz permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Q. this Quiz&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; something &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     age&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     &lt;span class=&quot;token function-variable function&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -10047,7 +9867,90 @@ queue의 PriorityQueue를 사용하였다.&lt;/p&gt;
 &lt;h4 id=&quot;설명-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%A4%EB%AA%85-1&quot; aria-label=&quot;설명 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;설명&lt;/h4&gt;
 &lt;p&gt;위 풀이에 대해 코드를 pythonic하게 하였다.&lt;/p&gt;
 &lt;h4 id=&quot;결과-1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B2%B0%EA%B3%BC-1&quot; aria-label=&quot;결과 1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;결과&lt;/h4&gt;
-&lt;p&gt;통과&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] 더 맵게 - Lv2]]></title><description><![CDATA[문제 설명 매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 만들기 위해 Leo…]]></description><link>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</link><guid isPermaLink="false">https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;문제-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;문제 설명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 설명&lt;/h2&gt;
+&lt;p&gt;통과&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 모의고사] 전염병 - Lv3]]></title><description><![CDATA[문제 설명 m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다. 예를 들어 2x…]]></description><link>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</link><guid isPermaLink="false">https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h6 id=&quot;문제-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;문제 설명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 설명&lt;/h6&gt;
+&lt;p&gt;m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다.&lt;/p&gt;
+&lt;p&gt;예를 들어 2x4 크기 사무실에서, 병에 걸린 직원의 위치가 (1,4), (2,2)이고 백신을 맞은 직원의 위치가 (1,2)입니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기 까지는 이틀이 소요됩니다.&lt;/p&gt;
+&lt;p&gt;0일
+&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9c4fb28f8a/efffcfc1-f803-46fc-b3fd-54169a20600b.png&quot; alt=&quot;573528139.32.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;1일&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9fdf14b30f/178463e2-09ad-46ae-a4d9-571572271946.png&quot; alt=&quot;573528143.88.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;2일&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/49d73ec1ca/4cc4355f-407c-4d26-b1d6-87ba7f374a65.png&quot; alt=&quot;573528147.73.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;사무실의 크기 m, n과 병에 걸린 직원의 위치 infests, 백신을 맞은 직원의 위치 vaccinateds가 매개변수로 주어집니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기까지 며칠이 걸리는지 return 하는 solution 함수를 완성해주세요.&lt;/p&gt;
+&lt;h5 id=&quot;제한사항&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD&quot; aria-label=&quot;제한사항 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;제한사항&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;은 1 이상 300 이하인 자연수입니다.&lt;/li&gt;
+&lt;li&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;의 길이는 1 이상&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;*&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이하입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;는 길이가 1 이상&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;*&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이하입니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;백신을 맞은 직원이 병에 걸린 경우는 주어지지 않습니다.&lt;/li&gt;
+&lt;li&gt;병을 아무리 퍼트려도 백신을 맞은 직원을 제외한 모든 직원이 병에 감염될 수 없다면 -1을 리턴합니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;입출력-예&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%98%88&quot; aria-label=&quot;입출력 예 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;입출력 예&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;m&lt;/th&gt;
+&lt;th&gt;n&lt;/th&gt;
+&lt;th&gt;infests&lt;/th&gt;
+&lt;th&gt;vaccinateds&lt;/th&gt;
+&lt;th&gt;result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;[[1,4],[2,2]]&lt;/td&gt;
+&lt;td&gt;[[1,2]]&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;[[2,2]]&lt;/td&gt;
+&lt;td&gt;[[1,2],[2,1],[2,3]]&lt;/td&gt;
+&lt;td&gt;-1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;[[1, 1], [2, 2]]&lt;/td&gt;
+&lt;td&gt;[[1, 2], [2, 1]]&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&quot;입출력-예-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%98%88-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;입출력 예 설명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;입출력 예 설명&lt;/h5&gt;
+&lt;p&gt;입출력 예 #1
+문제의 예시와 같습니다.&lt;/p&gt;
+&lt;p&gt;입출력 예#2
+&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/931ce64a33/486ea8a6-4d6f-45b1-9af2-35e36e049326.png&quot; alt=&quot;573528150.21.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;전염병자의 근처가 백신 접종자로 막혀있어, 다른 직원에게 병이 도달하지 않습니다. 따라서 -1을 리턴합니다.&lt;/p&gt;
+&lt;p&gt;입출력 예#3&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/93d4ee8842/77ec17c9-949f-4ccb-bf11-2c3010a2f9a8.png&quot; alt=&quot;573533913.75.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;처음부터 모든 직원이 전염병을 앓고 있거나, 백신을 맞은 상태입니다. 따라서 0을 리턴합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] 더 맵게 - Lv2]]></title><description><![CDATA[문제 설명 매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 만들기 위해 Leo…]]></description><link>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</link><guid isPermaLink="false">https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;문제-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;문제 설명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;매운 것을 좋아하는 Leo는 모든 음식의 스코빌 지수를 K 이상으로 만들고 싶습니다. 모든 음식의 스코빌 지수를 K 이상으로 만들기 위해 Leo는 스코빌 지수가 가장 낮은 두 개의 음식을 아래와 같이 특별한 방법으로 섞어 새로운 음식을 만듭니다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;섞은 음식의 스코빌 지수 = 가장 맵지 않은 음식의 스코빌 지수 + (두 번째로 맵지 않은 음식의 스코빌 지수 * 2)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Leo는 모든 음식의 스코빌 지수가 K 이상이 될 때까지 반복하여 섞습니다.
@@ -10131,90 +10034,7 @@ O(n log n)&lt;/p&gt;
 &lt;code class=&quot;language-text&quot;&gt;if&lt;/code&gt;를 이용한 예외 처리를 LBYL이라 부르고 &lt;code class=&quot;language-text&quot;&gt;try ~ except&lt;/code&gt;를 이용한 예외 처리를 EAFP라고 부릅니다. 파이썬은 EAFP 방식을 권장하고 있습니다. :)
 &lt;a href=&quot;https://suwoni-codelab.com/python%20%EA%B8%B0%EB%B3%B8/2018/03/06/Python-Basic-EAFP/&quot;&gt;https://suwoni-codelab.com/python%20%EA%B8%B0%EB%B3%B8/2018/03/06/Python-Basic-EAFP/&lt;/a&gt;
 관련 블로그 글 입니다.&lt;/p&gt;
-&lt;p&gt;와 같은 리뷰는 받았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[1주차 모의고사] 전염병 - Lv3]]></title><description><![CDATA[문제 설명 m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다. 예를 들어 2x…]]></description><link>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</link><guid isPermaLink="false">https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</guid><pubDate>Wed, 09 Sep 2020 23:49:00 GMT</pubDate><content:encoded>&lt;h6 id=&quot;문제-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;문제 설명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 설명&lt;/h6&gt;
-&lt;p&gt;m x n 크기인 사무실이 있습니다. 사무실에는 전염병에 걸린 직원이 있는데, 이 직원은 매일 상하좌우로 병을 퍼트려 다른 직원을 감염시킵니다. 단, 백신을 접종한 직원은 면역력이 있어 감염되지 않습니다.&lt;/p&gt;
-&lt;p&gt;예를 들어 2x4 크기 사무실에서, 병에 걸린 직원의 위치가 (1,4), (2,2)이고 백신을 맞은 직원의 위치가 (1,2)입니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기 까지는 이틀이 소요됩니다.&lt;/p&gt;
-&lt;p&gt;0일
-&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9c4fb28f8a/efffcfc1-f803-46fc-b3fd-54169a20600b.png&quot; alt=&quot;573528139.32.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;1일&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/9fdf14b30f/178463e2-09ad-46ae-a4d9-571572271946.png&quot; alt=&quot;573528143.88.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;2일&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/49d73ec1ca/4cc4355f-407c-4d26-b1d6-87ba7f374a65.png&quot; alt=&quot;573528147.73.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;사무실의 크기 m, n과 병에 걸린 직원의 위치 infests, 백신을 맞은 직원의 위치 vaccinateds가 매개변수로 주어집니다. 이때 백신을 맞은 직원을 제외한 모든 직원이 병에 감염되기까지 며칠이 걸리는지 return 하는 solution 함수를 완성해주세요.&lt;/p&gt;
-&lt;h5 id=&quot;제한사항&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD&quot; aria-label=&quot;제한사항 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;제한사항&lt;/h5&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;은 1 이상 300 이하인 자연수입니다.&lt;/li&gt;
-&lt;li&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;의 길이는 1 이상&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;*&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이하입니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;infests&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;는 길이가 1 이상&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;*&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;이하입니다.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;의 원소는 [&lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt;] 형식이며, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;a&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;m&lt;/code&gt;, 1 ≤ &lt;code class=&quot;language-text&quot;&gt;b&lt;/code&gt; ≤ &lt;code class=&quot;language-text&quot;&gt;n&lt;/code&gt;입니다.&lt;/li&gt;
-&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;vaccinateds&lt;/code&gt;에는 같은 원소가 두 번 이상 들어있지 않습니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;백신을 맞은 직원이 병에 걸린 경우는 주어지지 않습니다.&lt;/li&gt;
-&lt;li&gt;병을 아무리 퍼트려도 백신을 맞은 직원을 제외한 모든 직원이 병에 감염될 수 없다면 -1을 리턴합니다.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5 id=&quot;입출력-예&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%98%88&quot; aria-label=&quot;입출력 예 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;입출력 예&lt;/h5&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;m&lt;/th&gt;
-&lt;th&gt;n&lt;/th&gt;
-&lt;th&gt;infests&lt;/th&gt;
-&lt;th&gt;vaccinateds&lt;/th&gt;
-&lt;th&gt;result&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;4&lt;/td&gt;
-&lt;td&gt;[[1,4],[2,2]]&lt;/td&gt;
-&lt;td&gt;[[1,2]]&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;3&lt;/td&gt;
-&lt;td&gt;[[2,2]]&lt;/td&gt;
-&lt;td&gt;[[1,2],[2,1],[2,3]]&lt;/td&gt;
-&lt;td&gt;-1&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;2&lt;/td&gt;
-&lt;td&gt;[[1, 1], [2, 2]]&lt;/td&gt;
-&lt;td&gt;[[1, 2], [2, 1]]&lt;/td&gt;
-&lt;td&gt;0&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h5 id=&quot;입출력-예-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%85%EC%B6%9C%EB%A0%A5-%EC%98%88-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;입출력 예 설명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;입출력 예 설명&lt;/h5&gt;
-&lt;p&gt;입출력 예 #1
-문제의 예시와 같습니다.&lt;/p&gt;
-&lt;p&gt;입출력 예#2
-&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/931ce64a33/486ea8a6-4d6f-45b1-9af2-35e36e049326.png&quot; alt=&quot;573528150.21.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;전염병자의 근처가 백신 접종자로 막혀있어, 다른 직원에게 병이 도달하지 않습니다. 따라서 -1을 리턴합니다.&lt;/p&gt;
-&lt;p&gt;입출력 예#3&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://grepp-programmers.s3.amazonaws.com/files/production/93d4ee8842/77ec17c9-949f-4ccb-bf11-2c3010a2f9a8.png&quot; alt=&quot;573533913.75.png&quot;&gt;&lt;/p&gt;
-&lt;p&gt;처음부터 모든 직원이 전염병을 앓고 있거나, 백신을 맞은 상태입니다. 따라서 0을 리턴합니다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sass(Scss)를 마스터해보자-2]]></title><link>https://ha-young.github.io/2020/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</link><guid isPermaLink="false">https://ha-young.github.io/2020/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</guid><pubDate>Wed, 09 Sep 2020 00:11:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] Flood Fill - Lv3]]></title><description><![CDATA[문제 설명 n x m 크기 도화지에 그려진 그림의 색깔이…]]></description><link>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</link><guid isPermaLink="false">https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</guid><pubDate>Mon, 07 Sep 2020 23:13:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;문제-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;문제 설명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 설명&lt;/h2&gt;
+&lt;p&gt;와 같은 리뷰는 받았다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sass(Scss)를 마스터해보자-2]]></title><link>https://ha-young.github.io/2020/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</link><guid isPermaLink="false">https://ha-young.github.io/2020/scss/2020-09-09-Sass(scss)를-마스터해보자-2/</guid><pubDate>Wed, 09 Sep 2020 00:11:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[[1주차 Queue & Heap] Flood Fill - Lv3]]></title><description><![CDATA[문제 설명 n x m 크기 도화지에 그려진 그림의 색깔이…]]></description><link>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</link><guid isPermaLink="false">https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</guid><pubDate>Mon, 07 Sep 2020 23:13:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;문제-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;문제 설명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;n x m 크기 도화지에 그려진 그림의 색깔이 2차원 리스트로 주어집니다. 같은 색깔은 같은 숫자로 나타난다고 할 때, 그림에 있는 영역은 총 몇 개인지 알아내려 합니다. 영역이란 상하좌우로 연결된 같은 색상의 공간을 말합니다.&lt;/p&gt;
 &lt;p&gt;예를 들어, [[1,2,3], [3,2,1]] 같은 리스트는 다음과 같이 표현할 수 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;span
@@ -12949,7 +12769,4 @@ $$&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;자소서, 면접에서 나에대해 설명하기 부족한데 이 분은 그걸 블로그에 꽉꽉 채워놨고 시간없고 불친절한 면접심사관들을 위해 정리도 무척 잘 해놓았었다.&lt;/p&gt;
 &lt;p&gt;아, 포트폴리오와 이력서를 넘어선 것이 바로 블로그구나!&lt;/p&gt;
 &lt;p&gt;그때 깨닫게 되었고 이렇게 블로그를 시작한다.&lt;/p&gt;
-&lt;p&gt;큰 동기부여를 준 지인분께 감사드린다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[about]]></title><description><![CDATA[Your name Thank you for reading my resume. If you want to contact me, Please send me an email.]]></description><link>https://ha-young.github.io/resume-en/</link><guid isPermaLink="false">https://ha-young.github.io/resume-en/</guid><pubDate>Sun, 27 Jan 2019 16:21:13 GMT</pubDate><content:encoded>&lt;h1 id=&quot;your-name&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#your-name&quot; aria-label=&quot;your name permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Your name&lt;/h1&gt;
-&lt;div align=&quot;center&quot;&gt;
-&lt;p&gt;&lt;em&gt;Thank you for reading my resume. If you want to contact me, Please send me an email.&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;큰 동기부여를 준 지인분께 감사드린다.&lt;/p&gt;</content:encoded></item></channel></rss>
