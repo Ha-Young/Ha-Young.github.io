@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://ha-young.github.io/2021/javascript/why/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---async/하옹의-자바스크립트-식사---async/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---this/하옹의-자바스크립트-식사---this/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---Prototype/하옹의-자바스크립트-식사---Prototype/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -41,8 +40,8 @@
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 3주차월요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 2주차금요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 2주차수요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-13-프로그래머스_단어퍼즐_Lv4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-16-프로그래머스_삼각_달팽이_Lv2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-13-프로그래머스_단어퍼즐_Lv4/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 2주차월요일_오피스아워정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-10-12-프로그래머스_가장_긴_팰린드롬_Lv3/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm/2020-10-11_패캠_알고리즘완주반_6주/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -69,8 +68,8 @@
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-14-[1주차-Queue-&amp;-Heap]-게임-아이템/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-1주차-모의고사-야근지수/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-배상-비용-최소화/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-[1주차-Queue-&amp;-Heap]-더-맵게/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-10-1주차-모의고사-전염병/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-FloodFill/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/scss/2020-09-06-Sass(scss)를-마스터해보자-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/programmers_algorithm_python/2020-09-04-[1주차-Queue-&amp;-Heap]-기능개발/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
