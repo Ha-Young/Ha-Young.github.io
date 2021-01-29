@@ -121,10 +121,21 @@
 <span class="token keyword">const</span> copyName <span class="token operator">=</span> name</code></pre></div>
 <p>위 처럼 <code class="language-text">name</code> 변수에 ‘hayoung’ 값을 저장하고, <code class="language-text">copyName</code>에 복사를 진행하였다.</p>
 <p>그렇다면 아래 그림처럼 진행이 된다.</p>
-<img src="./하옹의-자바스크립트-간식---Deep-Copy-VS-Shallow-Copy/PrimitiveCopy.png" alt="Primitive Value Copy" style="zoom:67%;" />
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 55.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAACCElEQVQoz3VSzYoaQRCu7p5xiLOj68QZghoHshGDJAtCLjF7URbjRYi6qAuJC8b/fySCv5BESF4gj5Fjzr5EIK+QWzzkkpup7lWZIWzBR1V1f1PzVXXB7xE8+vsezr5fwXlAhQAAEAR8g7tNluW7L3cfwL37BCe7j4pnXYxIvx7r5i7+wCPuAhT+XF1CpVL577t2u+3I5/M5yWQyIqYAPhcMdsR73zh9rnvClwFD76w/s2GzQTmh1+vZv2WUUvdgMJAsy1INw/CZpultVt7KX5o1BgxAPXEr/ln7DYYQQpwhrNeZV/Rdrcb2LdLDKNBcjDGzXq9LGBuICCIKLrfLITmXy0n2/OXFhbTdbon9jKAd4lKp5ODXDU3/8TRoiiSdTtNsNssJVFEUroZ2Oh0aDofvcbWIF4hze4FisWgvSBqG5vv5LOQXWbfbJY1GQ7QXj8ePLE3T+B+riK+I8f7YwhlayWTS5Wj51C/bX4zsFRJVVXlbJJFISJvNxtFyMBjkTvJ6vVK5XOZ8Baegofc8eRiS19WbW9XYHikUCiLBVxMFcQVYtVrlqomu64IXiUSOxfcFj4aK6Z5/WzCfzzsIqVSKonKxNtFo1PGArVYLrq+vD3zRRSwWo4ex8T0jo9FIWq1WZDqdUu7H4zHDc1Gw3++D3fOlHg6H0nK5JLPZjC4WCzKZTBjes38EpWmynWvvzQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="Primitive Value Copy" title="Primitive Value Copy" src="/static/4c356004ca5d29223f01d2125a3fcf6c/c1b63/PrimitiveCopy.png" srcset="/static/4c356004ca5d29223f01d2125a3fcf6c/5a46d/PrimitiveCopy.png 300w,
+/static/4c356004ca5d29223f01d2125a3fcf6c/0a47e/PrimitiveCopy.png 600w,
+/static/4c356004ca5d29223f01d2125a3fcf6c/c1b63/PrimitiveCopy.png 1200w,
+/static/4c356004ca5d29223f01d2125a3fcf6c/d8817/PrimitiveCopy.png 1238w" sizes="(max-width: 1200px) 100vw, 1200px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+    </span>
 <p>위 처럼 Primitive Value는 값 그 자체로 메모리에 저장되고, 복사를 할 경우 값 그 자체가 복사되어서 새로운 변수에 할당이 된다.</p>
 <p>절대로 아래 그림의 왼쪽 처럼 되지 않는다.</p>
-<img src="./하옹의-자바스크립트-간식---Deep-Copy-VS-Shallow-Copy/PrimitiveValueNot.png" alt="잘못된 Primitive Value" style="zoom:67%;" />
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1087px;">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 63%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsSAAALEgHS3X78AAAClklEQVQ4y21SS28SURQ+d97DtHREXqWgtJBKU2o0xETd0NQmpmmlbbDSoAgUUCzMFCguTJoajQ0Ll43L/gTTxMQFsX/Af+DOlYuaqjvjDs+9MJOG9CZfzrkn3z2P71wAADHkHFG/pJccd2PTo75Q6NJkOKzH43Gt3W7LuVwOrNNqtahRotGocnR0JLrdbi8ev8fjGY/FYtr+/r5KCZdBEMf/3Zjwd3Qhgfc5AjCL9kqn0+FTqRQMnYDT6XQN/BDiGmIGoXe7Xd5mfZ0N+HsRWTj/EpNJu7u7zA8Gg4DdML/X60EymRSHK21sbLAOo7c0OfwpmehfNJWTZJlQv1QqiYZhDL9jCTc3N4XheLlcVqgVIXBVuPmkKOgABGSZk0SRwzhZXV2VKpUKIxPCamiIUZ/Pp5mmSccbQ7gGkJEr2xWr+Tyr6PN6QNd1Fi8Wi2I2m7UaoBkDiLCmaf5BLAx9veMI98nJSb/rarVK0uk01YQoikIkSaKPydramtRsNuGic5GGmUyGyQaoE9na2hIs8f3+fgOFQkGs1WrMd7lc4HA42Nzr6+t8Pp+nIxOMcaqqUonAHrnZaFC9WMUYAHcdQcnLKyuiOVgKHR2TMP9ZpcLNLyywBh4hN9nn46IybCnwol4nbdMQUUw4j5emIT03TcbZ2dkBa+M1w+Tarabw/vCQWOMelx5zRqPZT3jwNAtLe2/5j4t35ON7txVqP88nlMXXB/yHhw8YZ3t7G6zxX5WKpGyYfK7R4r/PeCPf5iZ8NL5XyImM1KObHlT6NTliIN7Zf84NUK/XbeGp3/OyjcOfsGPq96R2H7HwNyiqNunHtAu6yQTzzzAh4s1pxCnRO1o7kZX4NDLGEp5NjUYRKcTyz4iTLeQ/1NqfOnoM8NMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="&#xC798;&#xBABB;&#xB41C; Primitive Value" title="&#xC798;&#xBABB;&#xB41C; Primitive Value" src="/static/8850e29b6ca2157cbfdc62d0255a54b6/db3a5/PrimitiveValueNot.png" srcset="/static/8850e29b6ca2157cbfdc62d0255a54b6/5a46d/PrimitiveValueNot.png 300w,
+/static/8850e29b6ca2157cbfdc62d0255a54b6/0a47e/PrimitiveValueNot.png 600w,
+/static/8850e29b6ca2157cbfdc62d0255a54b6/db3a5/PrimitiveValueNot.png 1087w" sizes="(max-width: 1087px) 100vw, 1087px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+    </span>
 <p>이 말은 각각 변수는 값이 같지만 메모리상에서는 각각 다른곳에 저장되어 있다는 말이고 어느 한 변수를 수정해도 다른 변수는 불변하다.</p>
 <p>그렇다면, 위에서 얘기했던 메모리에 저장되어 있는 값을 직접적으로 수정하려면 해당 변수 <code class="language-text">copyName</code> 이나 <code class="language-text">name</code>에 새로운 값을 재할당 하는 방법 밖에 없다.</p>
 <p>이 재할당은 우리가 익히 아는 <code class="language-text">const</code> 키워드로 막을 수 있다.</p>
@@ -152,7 +163,13 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <p>원시 타입의 값은 Immutable.</p>
 <p>객체 타입의 값은 Mutable.</p>
 </blockquote>
-<img src="./하옹의-자바스크립트-간식---Deep-Copy-VS-Shallow-Copy/diffInMemory.png" alt="메모리상에 참조값과 원시값차이" style="zoom:67%;" />
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 1200px;">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 51.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAACD0lEQVQoz4WSu28TQRCHZ/fW945jnAPHGOx7+BHiHMQBZBEwxrh3gVxQ+BnLhRu7SkFJTQeVqVyYhhYLKhr4AxASVaQoBaKJUIRSIKRILLMnDElhOOnT7O3OzP5mdgAAlpAYslosFnXP8yKmaTrhcPiS7/vmeDyW8Aym0ynMZjPgnMP/PoUQoqLV75RKIZkxQyRHzjNJ0ieTCV0QJ0Q4yIrwPQUIBReReMbzjPeogAEkQgDngqhYTC6Xy6u1Wm0D8SuVivCVEXSDV6qq/kS+aZp2zBg7FjHkt0K1eGtbvpFfp7vLLBpH5Zv3q/RmYZN2u91op9PJIm6j0Ujati1EUEVR3mKLuOM4PJ1Oc13Xz/bj7svX9OPaBY3ntaDMh9UKGQ6H0qJeybL8xrIsHo/Hf0QikRPcOjnj8LR6W3mRjilinUDl675PW62WKA2azSZpIfV6nYh/vnNPGC8KsI32OlKQKC3AV8c0Dt0l43tS0T5sJKx3XtR8oIJQSLauXaXtdnue8M/FvFFa/MSYMC04svXLBznLPrBN+zkLHgq2Mh4dDAbBut/vC1/Yt415XPKzbaztpQzvU1J391PGlcdRmf1znnDmSK/XCxKORqMg4WEmHJwdOab6xTZ1nl+W+aM85fmI8sxSiHAieymT8JwKT9wYMRhL4vy5VJKyoVBoZZ48l8v9rco1T9+rI1kk2PwFma5xcMD4WPgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="&#xBA54;&#xBAA8;&#xB9AC;&#xC0C1;&#xC5D0; &#xCC38;&#xC870;&#xAC12;&#xACFC; &#xC6D0;&#xC2DC;&#xAC12;&#xCC28;&#xC774;" title="&#xBA54;&#xBAA8;&#xB9AC;&#xC0C1;&#xC5D0; &#xCC38;&#xC870;&#xAC12;&#xACFC; &#xC6D0;&#xC2DC;&#xAC12;&#xCC28;&#xC774;" src="/static/c6893b49550e2f4b731f2ec89357688f/c1b63/diffInMemory.png" srcset="/static/c6893b49550e2f4b731f2ec89357688f/5a46d/diffInMemory.png 300w,
+/static/c6893b49550e2f4b731f2ec89357688f/0a47e/diffInMemory.png 600w,
+/static/c6893b49550e2f4b731f2ec89357688f/c1b63/diffInMemory.png 1200w,
+/static/c6893b49550e2f4b731f2ec89357688f/4fa52/diffInMemory.png 1241w" sizes="(max-width: 1200px) 100vw, 1200px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+    </span>
 <p>그림으로 확인해보면 명확하다.</p>
 <p>우리는 <code class="language-text">objectValue</code> 에 접근할 때 메모리에 직접적으로 있는 값에 접근하는 것이 아닌 참조값이라는 주소값을 통해 실제 있는 값에 접근을 할 수가 있다.</p>
 <p>이 때문에 각각 다른 변수다 하더라도 동일한 값을 바라볼수도 있고 이 참조값을 통해 접근을 하여 수정을 할 수 있다.</p>
