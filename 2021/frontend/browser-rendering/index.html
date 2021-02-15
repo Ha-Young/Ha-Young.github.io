@@ -135,27 +135,7 @@
 내부적으로 이를 이용해서 렌더링작업이 일어난다.</p>
 </blockquote>
 <p>그리고 웹 브라우저상의 렌더링을 <strong>Critical Rendering Path</strong>(CRP)라고 부른다.</p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 730px;"
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 57.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABu0lEQVQoz41Sy0rDQBQV/8O/8Adc+QGCaze6dONOXSi4cFHBrejGhaIUH7ixttVaKygFwWprmza2kz5Mm9c0SSeZvCZO0hIRFL3MMDPMPfdxzh3zfd923YFtWa7jk8D8odEzuv9iY3RvPz1MHuws5a5MXpcLvN6ELnaI9wdyBF69T0/sbs1dnjrCADf7OisNOAgZUQdwVAQhfWwqpiEbSLXwN/B1q76Wz8TZYlCn5RLNItQrCxCAXuhUloXbVoNRpBqU04B9FnjNwh4hATiT5WJbjydnlSikLSKLEQkNFD5TgC1JAuXFcOyHj2aiUX3vK47nhT3vPk7N7C+uJGifjmramqm99YwPlX6ZjlMQ+GvA5vl2HcottZ9s1Ghm+jXKnM7y67HC0RkI2qM8hSQTNyh5YNttTa0p0jHzuv/2fFB+OWaKVSh9gRG+EeCGhuJUHuISCjOAopW6NNCwbMlAm/ncfPJiIXVBpVExDqUMwRy/fHg+XuFmfZfgrm72dMq2mG8hXhtS0EX6faf5KvZexN5dG8im8QUW4F6Zm+4I6yojiU9t1FGxYniUrf8MSSSmrVs/zgYJO4xW5PEJI+Ze+bhSSv0AAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="browser rendering"
-        title="browser rendering"
-        src="/static/b5db5d6ad50fa7f6c625d22b02a57a0b/e9beb/browser-rendering.png"
-        srcset="/static/b5db5d6ad50fa7f6c625d22b02a57a0b/5a46d/browser-rendering.png 300w,
-/static/b5db5d6ad50fa7f6c625d22b02a57a0b/0a47e/browser-rendering.png 600w,
-/static/b5db5d6ad50fa7f6c625d22b02a57a0b/e9beb/browser-rendering.png 730w"
-        sizes="(max-width: 730px) 100vw, 730px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-      />
-    </span></p>
+<p><img src=".%5Cbrowser-rendering%5Cbrowser-rendering.png" alt="browser rendering"></p>
 <p>이미지 출처: <a href="https://blog.logrocket.com/how-browser-rendering-works-behind-the-scenes-6782b0e8fb10/">logrocket blog</a></p>
 <h2 id="브라우저의-렌더링-엔진" style="position:relative;"><a href="#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%9D%98-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%97%94%EC%A7%84" aria-label="브라우저의 렌더링 엔진 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>브라우저의 렌더링 엔진</h2>
 <p>이 브라우저에서 화면을 구성하는 렌더링을 담당하는 부분이 바로 렌더링 엔진으로 각 브라우저마다 상이하게 존재하지만 작동과정은 비슷하다.</p>
