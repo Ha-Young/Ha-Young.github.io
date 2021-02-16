@@ -274,7 +274,7 @@ You Don’t know JS의 카일심슨은 단순히 객체 내부에 있는 프로�
 <blockquote>
 <p>즉, 모든 함수가 <code class="language-text">.call()</code> <code class="language-text">.apply()</code>, <code class="language-text">.bind()</code>를 사용 할 수 있다.</p>
 </blockquote>
-<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this_function_prototype.jpg" alt="Function.prototype 메서드"></p>
+<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5Cthis_function_prototype.jpg" alt="Function.prototype 메서드"></p>
 <p><code class="language-text">apply()</code> <code class="language-text">bind()</code> <code class="language-text">call()</code> 이 함수들의 역할은 무엇일까?</p>
 <div class="gatsby-highlight has-highlighted-lines" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span>
@@ -380,7 +380,7 @@ You Don’t know JS의 카일심슨은 단순히 객체 내부에 있는 프로�
 <span class="token punctuation">}</span>
 
 <span class="token keyword">new</span> <span class="token class-name">HYComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this_new.jpg" alt="new 키워드 결과"></p>
+<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5Cthis_new.jpg" alt="new 키워드 결과"></p>
 <p>이 처럼 빈 객체가 생성된다는 것을 확인 할 수 있다.</p>
 <p>하지만, <code class="language-text">new</code>키워드 없이 일반함수로 쓰일 때에는 <strong>Regular Function Call</strong>과 같다.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">HYComponent</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -418,7 +418,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 
 <span class="token keyword">const</span> hyComponent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HYComponent</span><span class="token punctuation">(</span>h1Element<span class="token punctuation">,</span> <span class="token string">'First h1 Tag'</span><span class="token punctuation">)</span></code></pre></div>
 <p>이후 <code class="language-text">h1Element</code>를 클릭해보면 아래와 같은 결과가 나온다.</p>
-<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this_eventListener.jpg" alt="this eventListener"></p>
+<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5Cthis_eventListener.jpg" alt="this eventListener"></p>
 <p>이를 통해 <strong>EventListener</strong>내부에서의 <code class="language-text">this</code>값은 <code class="language-text">event.target</code>이라는 것을 알 수 있다.</p>
 <h3 id="화살표-함수에서의-this" style="position:relative;"><a href="#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98%EC%97%90%EC%84%9C%EC%9D%98-this" aria-label="화살표 함수에서의 this permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>화살표 함수에서의 this</h3>
 <p>화살표 함수에서의 <code class="language-text">this</code>는 explicit binding되지 않으며, <strong>Lexical Scope</strong>가 적용된다.</p>
@@ -472,9 +472,9 @@ hayoung<span class="token punctuation">.</span><span class="token function">hell
         class="gatsby-resp-image-image"
         alt="arrow function in constructor"
         title="arrow function in constructor"
-        src="/static/b271a51da58b39ff39081b2272b231ff/61008/%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this_arrowFunc.jpg"
-        srcset="/static/b271a51da58b39ff39081b2272b231ff/f93b5/%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this_arrowFunc.jpg 300w,
-/static/b271a51da58b39ff39081b2272b231ff/61008/%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this_arrowFunc.jpg 357w"
+        src="/static/b271a51da58b39ff39081b2272b231ff/61008/this_arrowFunc.jpg"
+        srcset="/static/b271a51da58b39ff39081b2272b231ff/f93b5/this_arrowFunc.jpg 300w,
+/static/b271a51da58b39ff39081b2272b231ff/61008/this_arrowFunc.jpg 357w"
         sizes="(max-width: 357px) 100vw, 357px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
@@ -502,7 +502,7 @@ hayoung<span class="token punctuation">.</span><span class="token function">hell
 <span class="token keyword">const</span> h1Element <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">)</span>
 
 <span class="token keyword">const</span> hyComponent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HYComponent</span><span class="token punctuation">(</span>h1Element<span class="token punctuation">,</span> <span class="token string">'First h1 Tag'</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this_arrowFunc_global.jpg" alt="arrow function outer"></p>
+<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5Cthis_arrowFunc_global.jpg" alt="arrow function outer"></p>
 <h4 id="화살표-함수는-메서드로-사용하면-안된다" style="position:relative;"><a href="#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98%EB%8A%94-%EB%A9%94%EC%84%9C%EB%93%9C%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%A9%B4-%EC%95%88%EB%90%9C%EB%8B%A4" aria-label="화살표 함수는 메서드로 사용하면 안된다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>화살표 함수는 메서드로 사용하면 안된다.</h4>
 <p>화살표 함수는 메서드 함수로 적합하지 않다.</p>
 <p>이유는 <code class="language-text">this</code>에 Lexical Scope가 적용되기 때문에 javascript 생성자 함수, 객체인스턴스를 활용하는 메서드 등에서 제대로 작동하지 않을 수 있기 때문.</p>
