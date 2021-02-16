@@ -274,7 +274,26 @@ You Don’t know JS의 카일심슨은 단순히 객체 내부에 있는 프로�
 <blockquote>
 <p>즉, 모든 함수가 <code class="language-text">.call()</code> <code class="language-text">.apply()</code>, <code class="language-text">.bind()</code>를 사용 할 수 있다.</p>
 </blockquote>
-<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5Cthis_function_prototype.jpg" alt="Function.prototype 메서드"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 312px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHuVE2F/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGRAAAgMBAAAAAAAAAAAAAAAAAREAECEx/9oACAEBAAE/IUAcyDvaW0p//9oADAMBAAIAAwAAABDfD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EAB8QAAEDAwUAAAAAAAAAAAAAAAEAESFRkdEQYcHh8f/aAAgBAQABPxByYHU8Rkhy60MkmdzlMam5ygAEPdf/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Function.prototype 메서드"
+        title="Function.prototype 메서드"
+        src="/static/ddeb1005549f70c4acbea8460fcca48d/f556e/this_function_prototype.jpg"
+        srcset="/static/ddeb1005549f70c4acbea8460fcca48d/f93b5/this_function_prototype.jpg 300w,
+/static/ddeb1005549f70c4acbea8460fcca48d/f556e/this_function_prototype.jpg 312w"
+        sizes="(max-width: 312px) 100vw, 312px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
 <p><code class="language-text">apply()</code> <code class="language-text">bind()</code> <code class="language-text">call()</code> 이 함수들의 역할은 무엇일까?</p>
 <div class="gatsby-highlight has-highlighted-lines" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span>
@@ -380,7 +399,25 @@ You Don’t know JS의 카일심슨은 단순히 객체 내부에 있는 프로�
 <span class="token punctuation">}</span>
 
 <span class="token keyword">new</span> <span class="token class-name">HYComponent</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5Cthis_new.jpg" alt="new 키워드 결과"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 162px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 26.543209876543212%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAFABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd2AuD//xAAVEAEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAQABBQKP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAGBAAAgMAAAAAAAAAAAAAAAAAASEAEBH/2gAIAQEAAT8hLTEjX//aAAwDAQACAAMAAAAQcA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAbEAEAAgIDAAAAAAAAAAAAAAABABEhMXHB0f/aAAgBAQABPxAHZLzt9i8KObe4XReWf//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="new 키워드 결과"
+        title="new 키워드 결과"
+        src="/static/d536031b519228937e19dc4140452ba0/4254c/this_new.jpg"
+        srcset="/static/d536031b519228937e19dc4140452ba0/4254c/this_new.jpg 162w"
+        sizes="(max-width: 162px) 100vw, 162px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
 <p>이 처럼 빈 객체가 생성된다는 것을 확인 할 수 있다.</p>
 <p>하지만, <code class="language-text">new</code>키워드 없이 일반함수로 쓰일 때에는 <strong>Regular Function Call</strong>과 같다.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">HYComponent</span><span class="token punctuation">(</span><span class="token parameter">name</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -418,7 +455,25 @@ console<span class="token punctuation">.</span><span class="token function">log<
 
 <span class="token keyword">const</span> hyComponent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HYComponent</span><span class="token punctuation">(</span>h1Element<span class="token punctuation">,</span> <span class="token string">'First h1 Tag'</span><span class="token punctuation">)</span></code></pre></div>
 <p>이후 <code class="language-text">h1Element</code>를 클릭해보면 아래와 같은 결과가 나온다.</p>
-<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5Cthis_eventListener.jpg" alt="this eventListener"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 255px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 18.823529411764707%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB26Cgf//EABYQAAMAAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQIU/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAGBABAAMBAAAAAAAAAAAAAAAAAQAQESH/2gAIAQEAAT8h1RnRX//aAAwDAQACAAMAAAAQc8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAQUAAAAAAAAAAAAAAAABEQAQQXHR/9oACAEBAAE/EJgueUAVmdtv/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="this eventListener"
+        title="this eventListener"
+        src="/static/ffbf8732a8a2ab0e439060796babc848/53f87/this_eventListener.jpg"
+        srcset="/static/ffbf8732a8a2ab0e439060796babc848/53f87/this_eventListener.jpg 255w"
+        sizes="(max-width: 255px) 100vw, 255px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
 <p>이를 통해 <strong>EventListener</strong>내부에서의 <code class="language-text">this</code>값은 <code class="language-text">event.target</code>이라는 것을 알 수 있다.</p>
 <h3 id="화살표-함수에서의-this" style="position:relative;"><a href="#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98%EC%97%90%EC%84%9C%EC%9D%98-this" aria-label="화살표 함수에서의 this permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>화살표 함수에서의 this</h3>
 <p>화살표 함수에서의 <code class="language-text">this</code>는 explicit binding되지 않으며, <strong>Lexical Scope</strong>가 적용된다.</p>
@@ -502,7 +557,26 @@ hayoung<span class="token punctuation">.</span><span class="token function">hell
 <span class="token keyword">const</span> h1Element <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'h1'</span><span class="token punctuation">)</span>
 
 <span class="token keyword">const</span> hyComponent <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HYComponent</span><span class="token punctuation">(</span>h1Element<span class="token punctuation">,</span> <span class="token string">'First h1 Tag'</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src=".%5C%ED%95%98%EC%98%B9%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%9D%EC%82%AC---this%5Cthis_arrowFunc_global.jpg" alt="arrow function outer"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 571px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 11.333333333333332%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAACABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAdywkR//xAAWEAADAAAAAAAAAAAAAAAAAAABEDH/2gAIAQEAAQUCFX//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAWEAADAAAAAAAAAAAAAAAAAAAAEEH/2gAIAQEAAT8hRT//2gAMAwEAAgADAAAAEIPv/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGBABAQADAAAAAAAAAAAAAAAAAQARIVH/2gAIAQEAAT8QjBwk2v/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="arrow function outer"
+        title="arrow function outer"
+        src="/static/d7d3548b8cf97099361e10fd477a4b9e/ffaf9/this_arrowFunc_global.jpg"
+        srcset="/static/d7d3548b8cf97099361e10fd477a4b9e/f93b5/this_arrowFunc_global.jpg 300w,
+/static/d7d3548b8cf97099361e10fd477a4b9e/ffaf9/this_arrowFunc_global.jpg 571w"
+        sizes="(max-width: 571px) 100vw, 571px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
 <h4 id="화살표-함수는-메서드로-사용하면-안된다" style="position:relative;"><a href="#%ED%99%94%EC%82%B4%ED%91%9C-%ED%95%A8%EC%88%98%EB%8A%94-%EB%A9%94%EC%84%9C%EB%93%9C%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%A9%B4-%EC%95%88%EB%90%9C%EB%8B%A4" aria-label="화살표 함수는 메서드로 사용하면 안된다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>화살표 함수는 메서드로 사용하면 안된다.</h4>
 <p>화살표 함수는 메서드 함수로 적합하지 않다.</p>
 <p>이유는 <code class="language-text">this</code>에 Lexical Scope가 적용되기 때문에 javascript 생성자 함수, 객체인스턴스를 활용하는 메서드 등에서 제대로 작동하지 않을 수 있기 때문.</p>
