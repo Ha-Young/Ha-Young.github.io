@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Feb 2021 01:26:49 GMT</lastBuildDate><item><title><![CDATA[하옹의 자바스크립트 식사 - Object Oriented Programming(OOP)]]></title><description><![CDATA[* 이 글은 Vanilla Coding - BootCamp 9기 1주차 강의 수강 후 적은 글입니다. 객체지향 프로그래밍이란? 객체지향 프로그래밍 (OOP: Object Oriented Programming…]]></description><link>https://ha-young.github.io/2021/javascript/하옹의-자바스크립트-식사---Object-Oriented-Programming/</link><guid isPermaLink="false">https://ha-young.github.io/2021/javascript/하옹의-자바스크립트-식사---Object-Oriented-Programming/</guid><pubDate>Sun, 14 Feb 2021 18:00:00 GMT</pubDate><content:encoded>&lt;p&gt;* 이 글은 &lt;a href=&quot;https://www.vanillacoding.co/&quot;&gt;Vanilla Coding&lt;/a&gt; - BootCamp 9기 1주차 강의 수강 후 적은 글입니다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[HaYoung's Log]]></title><description><![CDATA[타고난 대기만성 성장러 하영의 로그]]></description><link>https://ha-young.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Feb 2021 01:31:38 GMT</lastBuildDate><item><title><![CDATA[하옹의 자바스크립트 식사 - Object Oriented Programming(OOP)]]></title><description><![CDATA[* 이 글은 Vanilla Coding - BootCamp 9기 1주차 강의 수강 후 적은 글입니다. 객체지향 프로그래밍이란? 객체지향 프로그래밍 (OOP: Object Oriented Programming…]]></description><link>https://ha-young.github.io/2021/javascript/하옹의-자바스크립트-식사---Object-Oriented-Programming/</link><guid isPermaLink="false">https://ha-young.github.io/2021/javascript/하옹의-자바스크립트-식사---Object-Oriented-Programming/</guid><pubDate>Sun, 14 Feb 2021 18:00:00 GMT</pubDate><content:encoded>&lt;p&gt;* 이 글은 &lt;a href=&quot;https://www.vanillacoding.co/&quot;&gt;Vanilla Coding&lt;/a&gt; - BootCamp 9기 1주차 강의 수강 후 적은 글입니다.&lt;/p&gt;
 &lt;h2 id=&quot;객체지향-프로그래밍이란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9D%B4%EB%9E%80&quot; aria-label=&quot;객체지향 프로그래밍이란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;객체지향 프로그래밍이란?&lt;/h2&gt;
 &lt;p&gt;객체지향 프로그래밍 (OOP: Object Oriented Programming)이란 프로그래밍을 설계하는 방식중에 하나이다.&lt;/p&gt;
 &lt;p&gt;우리가 프로그래밍을 하는 것은 결국 본질적으로 컴퓨터, 즉 프로그램에게 어떻게 작동해야되는가에 대한 서술이라고 볼 수 있는데, 기존에 순차적으로 명령하던 방식이던 절차지향 프로그래밍 방법론에서 새로운 패러다임을 가져온 프로그래밍 설계 방식이다.&lt;/p&gt;
@@ -3622,7 +3622,26 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 이참에 HEROPHY님에게 클론을 해도되는지 물어보기로했다.&lt;/p&gt;
 &lt;h3 id=&quot;클론코딩-허락&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9-%ED%97%88%EB%9D%BD&quot; aria-label=&quot;클론코딩 허락 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;클론코딩 허락&lt;/h3&gt;
 &lt;p&gt;HEROPHY님에게 블로그 몇가지 기능에대해서 클론코딩을 해도 괜찮은지 조심스럽게 메일을 통해 물어보았고 답변을 받았다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CGatsby-%EB%B8%94%EB%A1%9C%EA%B7%B8-TOC%EB%A7%8C%EB%93%A4%EA%B8%B0-%ED%81%B4%EB%A1%A0%ED%97%88%EB%9D%BD.png&quot; alt=&quot;클론코딩허락&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 491px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABpklEQVQoz5VS6W6zMBDM+z9P/3wPEYWoR1SkcONyfJjT2BDIdL1pqqiV2tTSetdiGc/OeLPdbmGMgePsIaWEXefz2W6XfD3fuTb7/R7ruqKpG0wE/BXgL2AMaLdRKbiuiySJ4fsBvOMRIsuxnBYGvCeul2/spscReZah7TrUtUSeZ2iaGmaavjH4DZQZnuYZRVEQSENgBdq2QSUrDINC13aQlURHl/02PjO0hVIDnh6fEEUxdjuHxvYQxTHSNIH76iIKQ5bEDwLqiUiahAiUEEJAvAnMp9OniQyotUZNDldVxU1VWSLL3xiwyEti3CKJbV3w2UqSkcaS+pM0haxrMvZmZHaZxh2GgZ9QQw193zPzmeSwF9rouh6GsiIptB4xkvYD9fF/H3ozYE/67BwHAY3keR4Oh2cezfd8YppRPiIMYz4HfojDy4Fqj+R45ReRihTa6BtTSIMrO6UUs7G10RRmwkhZU1jzJmJy6TGXHgrW8NaUdVkgUsHalKRfSYKXZY7i/4Au+Ic5ebj6+KPDnwztYSFQq+Xlw/mjBpapxWpqhrrnYb8DibiefnfEcxcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;클론코딩허락&quot;
+        title=&quot;클론코딩허락&quot;
+        src=&quot;/static/3834f9ca823d132ad09a375568fc93f8/13566/Gatsby-%EB%B8%94%EB%A1%9C%EA%B7%B8-TOC%EB%A7%8C%EB%93%A4%EA%B8%B0-%ED%81%B4%EB%A1%A0%ED%97%88%EB%9D%BD.png&quot;
+        srcset=&quot;/static/3834f9ca823d132ad09a375568fc93f8/5a46d/Gatsby-%EB%B8%94%EB%A1%9C%EA%B7%B8-TOC%EB%A7%8C%EB%93%A4%EA%B8%B0-%ED%81%B4%EB%A1%A0%ED%97%88%EB%9D%BD.png 300w,
+/static/3834f9ca823d132ad09a375568fc93f8/13566/Gatsby-%EB%B8%94%EB%A1%9C%EA%B7%B8-TOC%EB%A7%8C%EB%93%A4%EA%B8%B0-%ED%81%B4%EB%A1%A0%ED%97%88%EB%9D%BD.png 491w&quot;
+        sizes=&quot;(max-width: 491px) 100vw, 491px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;예쁜 블로그만큼이나 마음씨도 예쁘신 것 같다.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3743,7 +3762,12 @@ module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;
 &lt;code class=&quot;language-text&quot;&gt;entry.isIntersection&lt;/code&gt;으로 체크하였다.&lt;/p&gt;
 &lt;p&gt;여기서 이것저것 해보다가 발견한 사실이 또 있는데
 &lt;code class=&quot;language-text&quot;&gt;entry.boundingClientRect.top + window.pageYOffset&lt;/code&gt;의 결과가 Element의 static한 top 좌표라는 사실을 알게되었다.&lt;/p&gt;
-&lt;img src=&quot;.\Gatsby-블로그-TOC만들기-rootMargin.png&quot; alt=&quot;rootMargin&quot; style=&quot;zoom:67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1099px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 84.66666666666669%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAADNklEQVQ4y42T2U8TURTG+1coRbAKdNpOFzrT0mHaUloKlFUQDbgCYSmLKHUlLCGSEBPFRPEFfZFIXBP9D0x88cHoq/FdURMTIJKC3ft55nYRjRFv8su5584933x3U03wHPpNHIaMWoxY9JhrrGOMiWYMUz5SbmDjQyYdgjRvJ0O5Pl+GoGjC3UA9VG3lHKw2HSoEDi7Zgva2enQcDqCpsRo1Xgf8Pgd8HjskuwE2qxZ2mmcXtLApUF4h6uAgzCKHDr4EqjNGDl0WDsdNWvRJVgxXSRh2Oyg6MFApYEAWMei0sX5QtiHosmOA8iGnnXIRJ8wcThGdpHHRqIOqiRzmaBUNFHVotGgJDi2CntEsGNBDRSFei3FjZqn9Ao+zVh592aWP0HgvRZVb0EHBRfb9cjna6tw4lKXJJ6HFL6O5phIdlHc1eNFZX4XOgAceqvGUa1FNsdrKMZQxFUuyHwOyFR1UcIRo9zsxcOwIQv29GOs+SeMetPoq0cKQ4HeY4LPzmdqsWEZQ+YPi0FyK4621mL10DjMXxjA5Poxr05exMDeNa7MzmBgdRGiwG2f7TjKUfijYjXpaVZWlLO+UCfpsdIJlhVi6fQNKi8WiSKeSWF3bwsfPa/ix8Qmr65+xtvaNfU+lUox0Oo3ThxshGfbDK+qZ6A5BNe4t3swXKG11PYq3bz4g8v45nr5+h/evXgKJOBJp5Ns/BAtxd3GBTYrH44wkFafSGfFYPBOTyRQi0QRzt4ugOi8YjUaxHYkgvLVFy49RcYqRW2qEvinCuzpcunUj6zCGVDjMCjc2viMc3sY6xc3NMP2MlpxIkKBCkgQbSFDzhyAdv1iqxvLSnV+b8/UL/qf1HG2GpFccGn4JKuqVvAbjgz148ewJHq8s4/HDlUxcub+DZcajB/fztNXIcJlKfneoXEwvPXBBfxAlmiKUaoqhKVJjX8EeFKv3oriw4Df270A2l8FLGspd9OTuYU60TrLQRbWiVjKz6LPxcNOFl/kDkI1/gcY97KVxCHgq4KWtywiSXSfZVvbj+twk5umFzM9cYfHqRAhToRFMnR9lTIYyTFN/+sIZNLgEuMldnVOAlw73J+sg+REl1scQAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;rootMargin&quot; title=&quot;rootMargin&quot; src=&quot;/static/729e2e7a886e1483a3ae714111f152ce/2c95d/Gatsby-%EB%B8%94%EB%A1%9C%EA%B7%B8-TOC%EB%A7%8C%EB%93%A4%EA%B8%B0-rootMargin.png&quot; srcset=&quot;/static/729e2e7a886e1483a3ae714111f152ce/5a46d/Gatsby-%EB%B8%94%EB%A1%9C%EA%B7%B8-TOC%EB%A7%8C%EB%93%A4%EA%B8%B0-rootMargin.png 300w,
+/static/729e2e7a886e1483a3ae714111f152ce/0a47e/Gatsby-%EB%B8%94%EB%A1%9C%EA%B7%B8-TOC%EB%A7%8C%EB%93%A4%EA%B8%B0-rootMargin.png 600w,
+/static/729e2e7a886e1483a3ae714111f152ce/2c95d/Gatsby-%EB%B8%94%EB%A1%9C%EA%B7%B8-TOC%EB%A7%8C%EB%93%A4%EA%B8%B0-rootMargin.png 1099w&quot; sizes=&quot;(max-width: 1099px) 100vw, 1099px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;h3 id=&quot;5-문제점-발견&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-%EB%AC%B8%EC%A0%9C%EC%A0%90-%EB%B0%9C%EA%B2%AC&quot; aria-label=&quot;5 문제점 발견 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. 문제점 발견&lt;/h3&gt;
 &lt;p&gt;이 다음단계로 &lt;code class=&quot;language-text&quot;&gt;Intersectioning&lt;/code&gt; 하는 부분을 따로 hooks로 분리시키는 등의 리팩토링을 진행하려고 하였으나,
 문제점을 발견하였다.&lt;/p&gt;
@@ -3889,7 +3913,12 @@ TOC 컴포넌트의 Link를 클릭하면 &lt;code class=&quot;language-text&quot
 &lt;h2 id=&quot;gatsby-사이트에-google-analytics-적용시키기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gatsby-%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%97%90-google-analytics-%EC%A0%81%EC%9A%A9%EC%8B%9C%ED%82%A4%EA%B8%B0&quot; aria-label=&quot;gatsby 사이트에 google analytics 적용시키기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gatsby 사이트에 Google Analytics 적용시키기&lt;/h2&gt;
 &lt;h3 id=&quot;1-구글-analytics-계정-생성-시작하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EA%B5%AC%EA%B8%80-analytics-%EA%B3%84%EC%A0%95-%EC%83%9D%EC%84%B1-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0&quot; aria-label=&quot;1 구글 analytics 계정 생성 시작하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 구글 Analytics 계정 생성, 시작하기&lt;/h3&gt;
 &lt;p&gt;구글 Analytics 계정이 없다면 새로 생성해야하고, 로그인 후에 &lt;a href=&quot;https://marketingplatform.google.com/about/analytics/&quot;&gt;애널리틱스 사이트&lt;/a&gt;에서 &lt;strong&gt;무료사용 시작하기&lt;/strong&gt;로 시작하면 된다.&lt;/p&gt;
-&lt;img src=&quot;.\Analytics계정생성.png&quot; alt=&quot;Analytics계정생성&quot; style=&quot;zoom:67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1001px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 77.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjUlEQVQ4y61UW1LDMAzMwbkS3IQj8AdtIWns+Ck7j0VSGkinH3Q6ZGZHsmyv15KcZpomDIOD9x7LsmD7xH8EjRB23RnWWtRaUUpR+zDhPM+wxiCEoEQ5ZxARJP4wYUpZiVJKEMUyIfH7sOwwoxnHEW3bwQ4D+t4gp1UhZUG+GsuhGyqnhi4i9FY8H/O05lAGtRZFIV54geRTyMSWXazUUTeXOm8l/EHj84K3Q8Dp9IX3Q4v2q4U/nxBjRIoJwQf1Y4ir5ZikKCZRvB5GZUK+oKkT0A+E3jhuH88YFNJGzjmuPvuOfW4tx9YHUrV6m1JuCQMt+OgSnO1BwfJi+r3atkFTUq9i+3EtsiezTyvhoSdunR7JG020LKbtOruC6EF0idFufhPAtkllwckQX9EhR49KCeM46cK9io3gStmNX9HkChw7LsrxiHP7CXvuYIzVdtjUJS7G6u/ahOjKClQhMGMqSRMvFTSOFNZX3Rz5BUmFRcU9b5zbZkbr19eB//g5PL8mPL0MqOPyJ9E93zfHdJW39vzBBgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Analytics계정생성&quot; title=&quot;Analytics계정생성&quot; src=&quot;/static/e397c3646050b30ee0e85e2c929b9d0f/6acbf/Analytics%EA%B3%84%EC%A0%95%EC%83%9D%EC%84%B1.png&quot; srcset=&quot;/static/e397c3646050b30ee0e85e2c929b9d0f/5a46d/Analytics%EA%B3%84%EC%A0%95%EC%83%9D%EC%84%B1.png 300w,
+/static/e397c3646050b30ee0e85e2c929b9d0f/0a47e/Analytics%EA%B3%84%EC%A0%95%EC%83%9D%EC%84%B1.png 600w,
+/static/e397c3646050b30ee0e85e2c929b9d0f/6acbf/Analytics%EA%B3%84%EC%A0%95%EC%83%9D%EC%84%B1.png 1001w&quot; sizes=&quot;(max-width: 1001px) 100vw, 1001px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;나는 모든 권장항목에대해서 체크진행하였다.&lt;/p&gt;
 &lt;h3 id=&quot;2-analytics-속성-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-analytics-%EC%86%8D%EC%84%B1-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;2 analytics 속성 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Analytics 속성 설정&lt;/h3&gt;
 &lt;p&gt;구글 애널리틱스에서의 속성은 앱이나 &lt;strong&gt;웹사이트&lt;/strong&gt;를 의미한다.&lt;/p&gt;
@@ -3898,24 +3927,67 @@ TOC 컴포넌트의 Link를 클릭하면 &lt;code class=&quot;language-text&quot
 &lt;p&gt;앞으로 다른 속성이 생겼을 때 계정과 속성 일대일 관계를 사용하거나 계정 속성 일대다로 구성하는건 시작하기에 앞서 고려해볼 사항이다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;즉, &lt;strong&gt;우리 블로그를 Analytics 속성으로 설정&lt;/strong&gt;하면 된다.&lt;/p&gt;
-&lt;img src=&quot;.\속성설정.png&quot; alt=&quot;.\속성설정&quot; style=&quot;zoom:80%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 727px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 82.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAABqUlEQVQ4y6VTSVLEMAzMm/ghV77BI/gBT+BGFQcOzCSexGsW2xFqGWeKYbYqVKXYsax2a2vePhTtvj6p7wfy3pNz7l/aDKaAeB8ohJGmafqj4zidPS82+BTFviFaaRgGUl1HbduJ87IsNM8zLfMi+xjxj3082pZqSzRPmRbWnFdq8Bl6ACpSSgmo5gc6fkB1LaneUatYD566PrBdSURghxQBPLhIwUQGzwDMcohLxhihHUIgrTWrIes8aeNkb4wVENjhV2TddF2ZIT5gpNRBLlZAay1ryS1A8BhW2LGmlArcCiAShQigY2eECxDk5B6BX2VZQH8Y4hDJxctY1/rUBZBTredVNobtfs9hZAnXOStsEZrlvKELHOcSD54CnBIQhgBBYWBEbuCIKuKs9hr2v/N2hSHYIOmoNPZgei3sS+FvVQ5cycOhL60yaKnuKKG7rU0qy2OrnBcJOaUo05Ai1uM01LDrZESelEvMNoaJJ8VPXJhxpXs65iZgmDPtdCIdyizecrglzfOrp4fHPT29WP7NpH26mfirDAdm9r6P1Nksya4sz/XYPfIN5TgzujCZ88cAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;./속성설정&quot; title=&quot;./속성설정&quot; src=&quot;/static/63228c85c5b52e4f2581bbdd8d73b015/c54b3/%EC%86%8D%EC%84%B1%EC%84%A4%EC%A0%95.png&quot; srcset=&quot;/static/63228c85c5b52e4f2581bbdd8d73b015/5a46d/%EC%86%8D%EC%84%B1%EC%84%A4%EC%A0%95.png 300w,
+/static/63228c85c5b52e4f2581bbdd8d73b015/0a47e/%EC%86%8D%EC%84%B1%EC%84%A4%EC%A0%95.png 600w,
+/static/63228c85c5b52e4f2581bbdd8d73b015/c54b3/%EC%86%8D%EC%84%B1%EC%84%A4%EC%A0%95.png 727w&quot; sizes=&quot;(max-width: 727px) 100vw, 727px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;보고시간대는 해당 시간을 기준으로 Anaytics 보고서가 작성되고, 아래 통화 설정으로 보고서에서 사용되는 통화를 설정할 수 있다.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;고급옵션에 유니버설 애널리틱스라고 있는데 이건 옛날버전이므로 특별한 이유가 아니라면 패스하자.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;3-비즈니스-정보-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4-%EC%A0%95%EB%B3%B4-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;3 비즈니스 정보 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. 비즈니스 정보 설정&lt;/h3&gt;
-&lt;img src=&quot;.\비즈니스정보설정.png&quot; alt=&quot;비즈니스정보설정&quot; style=&quot;zoom:67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 794px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 101.33333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABoElEQVQ4y61Uy07DMBDsp/JlSEjc+A+4IODEvZVI4tjOO7HzHHa3amlLS6MUS2tHtTqenZ3d1cemQ2gbeFfBOQde0zQtjhUDjOOIruvQtq2ct4AKYN/3qOsaVVWhaRq5GIbhKPjR2YD8hzRNYK1FnucoipKiQJokyLJMfpsrx4o3fj1NUwJM4L2nCyxeAoiJNPQOJaXc9z8a7tbue2bKE1w3ITA1yiJHTRqyjucATh86y5A33w0IVIIksRQpjLGi6zVWh/dHgFxlazS01oi1QRhGVPXmql7n2IqG07jV0PsWLQWn7Kg4XCxmyg8OFP1BnGZwwHBC6UZsVIWMbBLHMbHUYqFY0XesxTr7hxonFmI3XAS01YjPTYkyzyTtryCAUhH5r4Cn7rlUiLMp89ZRCgzEXtQ6psIkYmzuHO6gRUWJogghxc4yJ1Rmm30PqJSSTmENi7L8ZZk5HjwC5JQ1WcYYI9VdOnEEsKWRFYQKxvIwyGcx+aOXZSISnWZ7/seAfVt3eHp1eF+320HRj7cBPjzXuLtP8fhSMz807SjnkvUNeVslIMjp+ngAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;비즈니스정보설정&quot; title=&quot;비즈니스정보설정&quot; src=&quot;/static/6401d7ef0de1dc3d3a5079c4f9f5cae6/7de01/%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4%EC%A0%95%EB%B3%B4%EC%84%A4%EC%A0%95.png&quot; srcset=&quot;/static/6401d7ef0de1dc3d3a5079c4f9f5cae6/5a46d/%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4%EC%A0%95%EB%B3%B4%EC%84%A4%EC%A0%95.png 300w,
+/static/6401d7ef0de1dc3d3a5079c4f9f5cae6/0a47e/%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4%EC%A0%95%EB%B3%B4%EC%84%A4%EC%A0%95.png 600w,
+/static/6401d7ef0de1dc3d3a5079c4f9f5cae6/7de01/%EB%B9%84%EC%A6%88%EB%8B%88%EC%8A%A4%EC%A0%95%EB%B3%B4%EC%84%A4%EC%A0%95.png 794w&quot; sizes=&quot;(max-width: 794px) 100vw, 794px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;다음으로 비즈니스 설정을 하고 만들기 클릭.&lt;/p&gt;
 &lt;p&gt;약관동의는 대한민국으로, 이메일 커뮤니케이션은 희망하는대로 체크 하면 된다. (나는 모두 체크)&lt;/p&gt;
 &lt;h3 id=&quot;4-데이터-스트림-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%8A%A4%ED%8A%B8%EB%A6%BC-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;4 데이터 스트림 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. 데이터 스트림 추가&lt;/h3&gt;
 &lt;p&gt;다음으로 데이터 스트림을 추가해줘야되는데, 데이터 스트림은 고객 터치포인트로 앱이냐 웹이냐 등 데이터 흐름을 설정하는 것이라고 보면 된다.&lt;/p&gt;
 &lt;p&gt;마찬가지로 한개의 속성에 여러개의 데이터스트림을 등록할 수 있으며(최대 50개), 데이터스트림이 추가되면 분석결과는 최대 24시간 소요될 수 있다. (등록한다고 결과가 바로 나오지 않는다)&lt;/p&gt;
-&lt;img src=&quot;.\데이터스트림설정.png&quot; alt=&quot;데이터스트림설정&quot; style=&quot;zoom:67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 55.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABM0lEQVQoz51Si07DMAzs//8dfMFgDG1An3k0Dzs3O22hEkPALJ2SJvb5zmljnYc1FtPpBHN4gj1fMAwjhslUjJOF0Rw3Q3NDjMhECzIh5SygFRkN5QTbT3h8eIN9PgPjCDBjHyTFzAQfCaNLYPlOSVbJK1w+VyJGE+Vitg5W1JB04FKgZyEERFGjMOKg63u0bYePthcHAyZjEDRPEKVOkVWhSlcbzkyrEkaY50pUhHyD2strkdYUuWfnwN4vkHFofSXU4tlaqP2UGZ2Jdb+RJSoYbBCbSxMN8/oOdziCLxeQzJ2OL9VhUwcrsp102JL3yn6E5u1yNdRdJcxC6L2rBxvh71G+7Sqh+jY+YpTBlx3hf/GlUAjnqA+T7iK6aZnXh9EX/Jvd21EJQ1xIeAPfibL82FdFvmG98oMBcgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;데이터스트림설정&quot; title=&quot;데이터스트림설정&quot; src=&quot;/static/383e9535d1deecd139461f8f629555de/c1b63/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png&quot; srcset=&quot;/static/383e9535d1deecd139461f8f629555de/5a46d/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png 300w,
+/static/383e9535d1deecd139461f8f629555de/0a47e/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png 600w,
+/static/383e9535d1deecd139461f8f629555de/c1b63/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png 1200w,
+/static/383e9535d1deecd139461f8f629555de/54d4c/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png 1571w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;등록방법은 &lt;strong&gt;애널리틱스 관리자&lt;/strong&gt;에서 우리가 앞서 만든 속성에 대해 &lt;strong&gt;데이터 스트림을 설정&lt;/strong&gt;하면되는데 웹사이트이므로 &lt;strong&gt;웹&lt;/strong&gt;으로 만들면 된다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C%EC%9B%B9%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png&quot; alt=&quot;웹스트림 설정&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 33%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA90lEQVQoz42R62rDMAyF/f6vsd97jP3bG4wVRkeaJTSuL/Etdk4lpQ1jtDDDh07kWNKxlbUWrTWs6yqwfkatVXi+36Bm76VQCEG4F/4LrxgjjDGi9/y+v0UVU6EfE1LOwkJdGO5WG+sq8PeyVJSy7JMynGMS5QtFNUwW4zjCWEfdvUxgjIW+GExaw/l5w23RkiPnA7SNpBNiysg0SDcluFCggIzjj8F31+M0fOHQn/HZDdDa0IGIQDbnkIj4iwQvua0gczo7KpigXt8dPvqEVgtZjoh5QchFbNS2iu1HtLu+XU/IN8svbxaHIctFc4H/vPYj+Aw3uAL1MiLZzyAQ8wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;웹스트림 설정&quot;
+        title=&quot;웹스트림 설정&quot;
+        src=&quot;/static/23408f9753ebd3ee81f68332bc1546c3/c1b63/%EC%9B%B9%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png&quot;
+        srcset=&quot;/static/23408f9753ebd3ee81f68332bc1546c3/5a46d/%EC%9B%B9%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png 300w,
+/static/23408f9753ebd3ee81f68332bc1546c3/0a47e/%EC%9B%B9%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png 600w,
+/static/23408f9753ebd3ee81f68332bc1546c3/c1b63/%EC%9B%B9%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png 1200w,
+/static/23408f9753ebd3ee81f68332bc1546c3/3c492/%EC%9B%B9%EC%8A%A4%ED%8A%B8%EB%A6%BC%EC%84%A4%EC%A0%95.png 1300w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;향상된 측정부분에 측정 옵셔닝을 할 수 있는데, 다 해두면 좋을 것 같아서 나는 다 해뒀다.&lt;/p&gt;
 &lt;h3 id=&quot;5-측정-id-획득&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-%EC%B8%A1%EC%A0%95-id-%ED%9A%8D%EB%93%9D&quot; aria-label=&quot;5 측정 id 획득 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. 측정 ID 획득&lt;/h3&gt;
-&lt;img src=&quot;.\측정ID.png&quot; alt=&quot;측정 ID&quot; style=&quot;zoom:67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 58.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABqUlEQVQoz31T7Y7bIBDM+z9h+6epql7Vc2LzuWAw9twssZ3oeirSiDUsw86wvljnYKxFnmcsS0Op9f/QvFI4l3/2cp5xiZI6oSOxMFbSpTWknOFDQGtrX2vrikYy++07xutPyI8rGkn6OnM6jwu4BAbWOsxMXrlZeLvGCq06FyXbsAHYlHwcUaaJ84SN+evGPUJShvUHoReMTPQhwntFgCOs8/3mVwil+lSR6oK5VKJgsAUuSD9zCVEg1P42eAz3AX9u77i+G0zGIkim9LnffoJrUTSe+17mBZZFOBZzVhhkxn00lG6YyAq5llJ6SOYhNfzwti7LE/WYKx5KSRh5a122vumFG1kPbt03NVt91bHwoBIf35+H5N1DT8mDnfH774RfbwNuhqUHvmbIcPEp+fSQscr8DOWxh4dqaIxMFulSJelh6W3UieIec9bvx2M8oZWHg/BhtPSXrYdXlLfs3tTetGu34Bjb3iqK1lo/c0rucmLENBkENrJIZJWUxYTEampR37az376C+vrSh8JySWgMhtudvWd3aVxnK6j84yW/+hX1McvLK38Ai9qlAQk+tEQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;측정 ID&quot; title=&quot;측정 ID&quot; src=&quot;/static/f4be6925a35a8069ff3aa17abfb109f5/c1b63/%EC%B8%A1%EC%A0%95ID.png&quot; srcset=&quot;/static/f4be6925a35a8069ff3aa17abfb109f5/5a46d/%EC%B8%A1%EC%A0%95ID.png 300w,
+/static/f4be6925a35a8069ff3aa17abfb109f5/0a47e/%EC%B8%A1%EC%A0%95ID.png 600w,
+/static/f4be6925a35a8069ff3aa17abfb109f5/c1b63/%EC%B8%A1%EC%A0%95ID.png 1200w,
+/static/f4be6925a35a8069ff3aa17abfb109f5/c211c/%EC%B8%A1%EC%A0%95ID.png 1502w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;웹 스트림을 생성하면 &lt;strong&gt;측정 ID&lt;/strong&gt;라고 나오는데 이 측정 ID가 &lt;strong&gt;우리 Gatsby 블로그에서 설정&lt;/strong&gt;해야되므로 따로 복사를 해두자.&lt;/p&gt;
 &lt;p&gt;이 측정 ID는 &lt;code class=&quot;language-text&quot;&gt;G-&lt;/code&gt;혹은 &lt;code class=&quot;language-text&quot;&gt;UA-&lt;/code&gt;로 시작해야되고, 이 &lt;u&gt;측정 ID를 통해 사이트 트래픽을 체킹하고 트래픽으로 데이터를 식별&lt;/u&gt;하게 된다.&lt;/p&gt;
 &lt;h3 id=&quot;6-gatsby-plugin-google-gtag-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#6-gatsby-plugin-google-gtag-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;6 gatsby plugin google gtag 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;6. gatsby-plugin-google-gtag 설치&lt;/h3&gt;
@@ -3941,7 +4013,27 @@ TOC 컴포넌트의 Link를 클릭하면 &lt;code class=&quot;language-text&quot
 &lt;p&gt;보고서에 대한 결과는 우리가 설정했던 &lt;a href=&quot;https://analytics.google.com/analytics/web&quot;&gt;애널리틱스 페이지&lt;/a&gt;에서 확인할 수 있다.&lt;/p&gt;
 &lt;p&gt;막상 다음과 같은 설정을 끝내면 바로 결과는 나오지 않는다.&lt;/p&gt;
 &lt;p&gt;최대 48시간이 지나면 보고서가 작성되어서 대시보드에 표시되니 확인하도록 하자.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cdashboard-examples.png&quot; alt=&quot;dashboard-examples&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 768px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB50lEQVQoz2VSy47UMBDM//8DF74BIXFH4gIHLhwQErvaGTKTOJk4jt9OiuqOFoSI1Iof7erqqu6utwUXxtPLiOeLQT847i0uvdX/9b7+iX7cMEzhv5hswbhU/BoDuocZsPmIxa4YR8OEFdO86n6xDm4LGnbdEFNG23fU2v5G21FqxeocxmFAd71bPNYEnxofOQVJfOhDQC4FIUTuE3YCBZ6F4FEKgVvjv8KTTMyV66IFu2mayDAgZR7EhMxDqSgJx7FjbyeTfT+Yl7Rtu1UyOxgNfX9Df7sh56wY3TCMykrQJYFEyGxHrtLKfq4Zcre6gLthB0XuGgEyZRo1BDCTcXcn4OpOfTIrVDKrZNjaCSitHscB+ZbVU4qka2EszOd5JiGr+fK+m+cHAluNqej/VbMTtP1jgLQkLES7LRT4WBQoUcMQq2J0ZprpotdkT7CVxjgyzkyq9awqZ5aui1kh0oToeVfI89Cir6Ea3mm1AEnLOBp+Xh3efjB4897gy/fARw2GYySsxGUpdL1vWFzGj4uMk1cDpSvRtBuN0XERwL1VdfHplvAyZFjftHXrouoYhV2q+PR1wOdvE959HPBYnILJmOnYGHOOjYyMUBbQ8zs0zlnzCiwPZZRiFufPoRajWhP9EjZK9xtFalIjm9tnWgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;dashboard-examples&quot;
+        title=&quot;dashboard-examples&quot;
+        src=&quot;/static/83640a2d52383d5a632754481a6fea74/e5715/dashboard-examples.png&quot;
+        srcset=&quot;/static/83640a2d52383d5a632754481a6fea74/5a46d/dashboard-examples.png 300w,
+/static/83640a2d52383d5a632754481a6fea74/0a47e/dashboard-examples.png 600w,
+/static/83640a2d52383d5a632754481a6fea74/e5715/dashboard-examples.png 768w&quot;
+        sizes=&quot;(max-width: 768px) 100vw, 768px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;만약 위의 코드를 &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;에 추가했는데도 전혀 추적이 되지 않고 있다면 gatsby-plugin-gtag를 플러그인 최상단에 배치하면 된다고 한다. (&lt;a href=&quot;https://janeljs.github.io/blog/google-analytics/&quot;&gt;참조&lt;/a&gt;)&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3961,13 +4053,23 @@ TOC 컴포넌트의 Link를 클릭하면 &lt;code class=&quot;language-text&quot
 &lt;p&gt;근데 직접 구글에 포스팅 검색도 해보면서 확인을 해보니 검색이 잘 되지않는것 같아 확인을 해봤다.&lt;/p&gt;
 &lt;h2 id=&quot;자신의-사이트가-구글-크롤러에-노출이-되었는지-확인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%90%EC%8B%A0%EC%9D%98-%EC%82%AC%EC%9D%B4%ED%8A%B8%EA%B0%80-%EA%B5%AC%EA%B8%80-%ED%81%AC%EB%A1%A4%EB%9F%AC%EC%97%90-%EB%85%B8%EC%B6%9C%EC%9D%B4-%EB%90%98%EC%97%88%EB%8A%94%EC%A7%80-%ED%99%95%EC%9D%B8&quot; aria-label=&quot;자신의 사이트가 구글 크롤러에 노출이 되었는지 확인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;자신의 사이트가 구글 크롤러에 노출이 되었는지 확인&lt;/h2&gt;
 &lt;p&gt;아래와 같이 google 검색창에 &lt;code class=&quot;language-text&quot;&gt;site:&amp;lt;자신의 사이트&lt;/code&gt;로 검색을 하면 우리 사이트들이 크롤링 되어서 구글 검색엔진에 색인이 되어있는지 확인할 수 있다.&lt;/p&gt;
-&lt;img src=&quot;.\Google-site검색화면.png&quot; alt=&quot;구글 site: 검색&quot; style=&quot;zoom: 67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 775px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 53.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAABZUlEQVQoz31Ty07DMBDMR3NDfAUc+AKExB8g1AtcCrTAAThAJZQLhTRxYufh+DWs86iStGWl0cbJeDK7aweYhHOuyxbGWuwL1xJG/D6CqVhPWHxxPK1ySMYhohWYCPH6HeIzfAeMbkRbfr+3E3SDPzXwz9Zg/vaLq7sPLM9PwW5PsHy4xNHFHDdnx5Av952KbfwONYKR7a1Dh6qosRYCeRyRoxTrOMH18w80Twi8oTPuqC3j0scOgYM9c26n2TBm8L4zsxXU2kCQI5amYIwhjmOIvGiJNBzPs80mC2sslNbE50h52ay3JfeCnuxFdV2j7uA3WRLzMKaduh3Afzda7enhnjI1kTebDTLql6EhZVmGOEmQUnZu9ziNe9hP1+fHBUoqt5QSRV5TWTXKQkHwGgXlPG/XPitlJme3czgUxGyGKopQKUWT1iSqIKVGVWrIijKhLD0UCdqdwx0Mp3ao/P9ielP+AHT8W+l0mpwaAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;구글 site: 검색&quot; title=&quot;구글 site: 검색&quot; src=&quot;/static/a66d5e8a1a27d1f8daa5105f0e808c7a/0098c/Google-site%EA%B2%80%EC%83%89%ED%99%94%EB%A9%B4.png&quot; srcset=&quot;/static/a66d5e8a1a27d1f8daa5105f0e808c7a/5a46d/Google-site%EA%B2%80%EC%83%89%ED%99%94%EB%A9%B4.png 300w,
+/static/a66d5e8a1a27d1f8daa5105f0e808c7a/0a47e/Google-site%EA%B2%80%EC%83%89%ED%99%94%EB%A9%B4.png 600w,
+/static/a66d5e8a1a27d1f8daa5105f0e808c7a/0098c/Google-site%EA%B2%80%EC%83%89%ED%99%94%EB%A9%B4.png 775w&quot; sizes=&quot;(max-width: 775px) 100vw, 775px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;google-search&quot;&gt;&lt;pre class=&quot;language-google-search&quot;&gt;&lt;code class=&quot;language-google-search&quot;&gt;site:&amp;lt;자신의 사이트&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;ex) site:ha-young.github.io&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;검색을 해보면 사이트 목록이 나오는데,&lt;/p&gt;
-&lt;img src=&quot;.\Google-site검색결과.png&quot; alt=&quot;구글 site: 검색결과&quot; style=&quot;zoom:67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1011px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 155.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAfCAYAAADnTu3OAAAACXBIWXMAAAsTAAALEwEAmpwYAAADAklEQVRIx6VVi5LbIAzM//9i27ubJn5jGwMG/NxK+EidXO6ca5nREDtGrLQr6WRUD5H8xDyvGIcBWit0XQdrHdZ1fWjzPKPve/pmwDit4LVuG078wbIs/ApumKH6Ad47+MHTxyPG8dai02mawvN2Ftf3p/iDl1QeZWXQKwtryKGfMdgJ0zjjfgWU1ob9xmF84GU6jbcfZ5xfU1zeMtSFRFcbaNlfEQ4DRzAER3swcd0gVJ3C68sb0jSj23sMoycbYJ2Fc45yZkPujDHB+R7Zw5Ad5a/JO0ihYXt/PfTZ2qOLv28ceuch245YVuTQUVjLQxT7M/dh3zg0nUWVNqiyFiKTMNqGnH3mcO/0oUM+rIgYo3vK1Za3yOIzYX9ESCIvEkEIG3RSBRK898HYOV8YWR5Yg+vyNUJHgpZUJdpoKE2mNNpWQsoOrZSBYSbK0QUxFV86tMYFdLLWdOBrhp8KWSuD/FKiyATqugnGCNnqpiHEKoRuTB/2Q4ScqxCyNoEUDo9JGd/rluv3Wywrkk2aNMjSFhnLhur5UYhPO2QUXFbMLoc0TfP/5bBtNF5+5WQFLhfKX7Plai8bv5POvtN8mkOWTN8bIoDlszVbKTdi/Ltcos3LgQ4NySZNapRFh1ooMoODQjloXySbNBUUboU0q5CQhMqyRtOwhOogndi+2JYjhEOYKdS6bH+t45XKi3c+HLvP0wgldWYm5PWlxOVcBwnxsNpI+VvT8fmQFJYNk6J7HULiUJkUTTXNxGh6xyW5jYLxOGSeHclbAZHL0MYYxX1I3wrZGotWkDO5IXQ0S7Y5Yq81HJ8534cd21qPhPphQdOuqjqSD/fE6d9Lj/vf+XcepJMkXC0laZEqhmaMEPU2awghI2X53M/kD1Nvk8ZE+4wp7BOkHtEUKZpaYJ6Ww2ZxOip+P/LwYoYdluW44Z5iknnnBsoyYblUVUVVUoWaVtQfO/ovjAOu7W4bCVeS7Hae7cT6YmNHm5MSWZ4jJ7skCfXFLLwTQoSLonEZxnPRB9sfkFx6nafs8zsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;구글 site: 검색결과&quot; title=&quot;구글 site: 검색결과&quot; src=&quot;/static/47bc632c5e5e4f19745c074739af6e29/6bfd0/Google-site%EA%B2%80%EC%83%89%EA%B2%B0%EA%B3%BC.png&quot; srcset=&quot;/static/47bc632c5e5e4f19745c074739af6e29/5a46d/Google-site%EA%B2%80%EC%83%89%EA%B2%B0%EA%B3%BC.png 300w,
+/static/47bc632c5e5e4f19745c074739af6e29/0a47e/Google-site%EA%B2%80%EC%83%89%EA%B2%B0%EA%B3%BC.png 600w,
+/static/47bc632c5e5e4f19745c074739af6e29/6bfd0/Google-site%EA%B2%80%EC%83%89%EA%B2%B0%EA%B3%BC.png 1011w&quot; sizes=&quot;(max-width: 1011px) 100vw, 1011px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;나는 분명 20개 이상의 포스팅을 올렸지만 보시다시피 1페이지에 약 10개의 게시글인데 반해 페이지 수는 2개밖에 없다.&lt;/p&gt;
 &lt;p&gt;이 말인 즉슨, 내 사이트에서 구글 검색엔진에 색인된 html 페이지들이 약 20개 정도라는 얘기다.&lt;/p&gt;
 &lt;p&gt;결국 구글 검색엔진에서 내 모든 페이지(포스팅)에 대해 크롤링이 이루어지지 않아 색인조차되지않았다는 얘기인데, 우리는 구글 검색 결과 우선순위는 뒷전이고 우선 이 &lt;strong&gt;크롤링이 되도록 노출부터 시켜야 한다.&lt;/strong&gt; (구글에서 우리 사이트 페이지들을 색인할 수 있도록)&lt;/p&gt;
@@ -3986,7 +4088,14 @@ TOC 컴포넌트의 Link를 클릭하면 &lt;code class=&quot;language-text&quot
 &lt;/ol&gt;
 &lt;p&gt;2번 항목에 대해서는 대표적으로 모바일 기기에 친화적이어야 하는데,
 &lt;a href=&quot;https://search.google.com/test/mobile-friendly?hl=ko&quot;&gt;이 사이트&lt;/a&gt;에서 구글 크롤러가 인정하는 모바일 친화적인 사이트인지 확인할 수 있다.&lt;/p&gt;
-&lt;img src=&quot;.\모바일친화확인.jpg&quot; alt=&quot;모바일 친화적 확인&quot; style=&quot;zoom: 40%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 44.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDBAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHrrpQkWD//xAAaEAEAAgMBAAAAAAAAAAAAAAACAAEDETET/9oACAEBAAEFAvIRYhVHENRcPP/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABkQAAMAAwAAAAAAAAAAAAAAAAACMgEgkf/aAAgBAQAGPwKMELwhdP/EABkQAQACAwAAAAAAAAAAAAAAAAEAESBh8f/aAAgBAQABPyHmyylkJK2aMJ//2gAMAwEAAgADAAAAEPDP/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8QiP/EABURAQEAAAAAAAAAAAAAAAAAAAEA/9oACAECAQE/EFhv/8QAHBAAAgICAwAAAAAAAAAAAAAAABEBMRBBIVGx/9oACAEBAAE/EGu/TKAMNy0HYiOGMepUf//Z&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;모바일 친화적 확인&quot; title=&quot;모바일 친화적 확인&quot; src=&quot;/static/85f1facb5c8774454bc323f6085c366f/e5166/%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%B9%9C%ED%99%94%ED%99%95%EC%9D%B8.jpg&quot; srcset=&quot;/static/85f1facb5c8774454bc323f6085c366f/f93b5/%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%B9%9C%ED%99%94%ED%99%95%EC%9D%B8.jpg 300w,
+/static/85f1facb5c8774454bc323f6085c366f/b4294/%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%B9%9C%ED%99%94%ED%99%95%EC%9D%B8.jpg 600w,
+/static/85f1facb5c8774454bc323f6085c366f/e5166/%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%B9%9C%ED%99%94%ED%99%95%EC%9D%B8.jpg 1200w,
+/static/85f1facb5c8774454bc323f6085c366f/d9c39/%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%B9%9C%ED%99%94%ED%99%95%EC%9D%B8.jpg 1800w,
+/static/85f1facb5c8774454bc323f6085c366f/d729b/%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%B9%9C%ED%99%94%ED%99%95%EC%9D%B8.jpg 1820w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;그 외에 &lt;a href=&quot;https://developers.google.com/search/docs/advanced/guidelines/webmaster-guidelines?hl=ko&quot;&gt;구글 친화적인 가이드라인&lt;/a&gt;이 따로 있는데, 대부분 기본적인 내용이거나 우리가 하지않을 내용들로 이루어져있다.
 한번 확인해봐도 괜찮을 것 같다.&lt;/p&gt;
 &lt;p&gt;위 셋 항목을 모두 만족한 다음부터는 &lt;a href=&quot;https://developers.google.com/search/docs/guides/get-started?hl=ko&quot;&gt;Google 크롤링 봇이 어떻게 사이트를 인식&lt;/a&gt;하는지 이해하고 그에 맞게 맞춰주어야 한다.&lt;/p&gt;
@@ -4007,13 +4116,38 @@ TOC 컴포넌트의 Link를 클릭하면 &lt;code class=&quot;language-text&quot
 &lt;p&gt;이 Sitemap은 구글 크롤러가 새 페이지들이 이러이러한 것들이 있다고 알려줄 수 있는 매개체이다.&lt;/p&gt;
 &lt;p&gt;참조 : &lt;a href=&quot;https://developers.google.com/search/docs/advanced/sitemaps/overview?hl=ko#what-is-a-sitemap&quot;&gt;Sitemap이란?&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;해당 글에 Sitemap이 왜 필요한지에 대해서도 나와있는데,&lt;/p&gt;
-&lt;img src=&quot;.\sitemap이필요한이유.png&quot; alt=&quot;사이트맵이 필요한 이유&quot;/&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 912px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 58.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAB/ElEQVQoz51T2ZLaMBDk/3+HKipcAR6SSm02L1SR2LDYHDa+b1uWMUvvjMSSPMdV7W6NRm1pNB5I2SEMI0SRRhiGyPMc//sMhBDwPA+Xi6fY83z4fkCmBcqyUuYZoSxLpauqRl3XaBqBotA5Oq+AEK02zLIUcRwjzzJi2intkhH4PsIgUDpNEkKM/tpp9Fd0nVT6SixbQbEeg7q/408ssU0lzERjEwpsoha/I0EgjlsYlKNjGrzGTLqnZoTtHYOyBzbZDUu7wFcrx7dzjVe/VfjF7An8cGrSAt/PldKvXoOfF40Xt8YLM+FU32iH8opLXhMaBTerEJQCUS2RNB3qd4DyUBEa1v/ippnneGN82oFsWzinEy6ug4Avx3EUwkDX70a1er/16LsOHeVepUQnW1U3rh9r4P73lvkVxwkMw4S53cFxXJxOZ2x3b9hbFnbEuzcNHbNhmCbswwG2fVDdEUUxXWyOlj6mDNM0pYU77PfWI9FWRhYttsiUx8fjEQeaY+YY85FO5rruU3M7KcP1eo3hcIjJZILx+AtGoxHxGLPZFIvFAqvVCsvlUun5fK54NpspPZ1OFfNa9nkcOVZNy42aUS8y85ibtSjKZ1PrufLR2I2KV1WluCAIqvHTUNWKjm0YBgK6jE9TLgeDa5Qk6cNEG7IZ/zGfppJq+AG/zYHBELQeBwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;사이트맵이 필요한 이유&quot; title=&quot;사이트맵이 필요한 이유&quot; src=&quot;/static/6ecbb2eb23cfcda41abba6248cb0ad9e/8b69f/sitemap%EC%9D%B4%ED%95%84%EC%9A%94%ED%95%9C%EC%9D%B4%EC%9C%A0.png&quot; srcset=&quot;/static/6ecbb2eb23cfcda41abba6248cb0ad9e/5a46d/sitemap%EC%9D%B4%ED%95%84%EC%9A%94%ED%95%9C%EC%9D%B4%EC%9C%A0.png 300w,
+/static/6ecbb2eb23cfcda41abba6248cb0ad9e/0a47e/sitemap%EC%9D%B4%ED%95%84%EC%9A%94%ED%95%9C%EC%9D%B4%EC%9C%A0.png 600w,
+/static/6ecbb2eb23cfcda41abba6248cb0ad9e/8b69f/sitemap%EC%9D%B4%ED%95%84%EC%9A%94%ED%95%9C%EC%9D%B4%EC%9C%A0.png 912w&quot; sizes=&quot;(max-width: 912px) 100vw, 912px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;하이라이트 처리 해놓은 것 처럼 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;연결되는 외부 링크가 많지 않은 새로운 사이트&lt;/code&gt;&lt;/strong&gt;가 바로 내 블로그이지 않나 싶다.&lt;/p&gt;
 &lt;h2 id=&quot;sitemap을-구글에-제출하는-방법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sitemap%EC%9D%84-%EA%B5%AC%EA%B8%80%EC%97%90-%EC%A0%9C%EC%B6%9C%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95&quot; aria-label=&quot;sitemap을 구글에 제출하는 방법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Sitemap을 구글에 제출하는 방법&lt;/h2&gt;
 &lt;p&gt;근데 앞서 말했듯이 나는 Sitemap을 이미 만들어 두었었다.&lt;/p&gt;
 &lt;p&gt;하지만 이 Sitemap을 만들어 두어도 구글 크롤러가 이 Sitemap을 참조해야 의미가 있는 것인데,
 이는 구글 크롤러가 Sitemap을 참조하기를 기다려도 되지만 페이지를 새로 만들었거나 수정이 있었다면 Google에 수동으로 사이트맵을 제출하는 방법이 있다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CGoogle%EC%97%90%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A7%B5%EC%A0%9C%EC%B6%9C%EB%B0%A9%EB%B2%95.jpg&quot; alt=&quot;사이트맵 제출&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 891px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 46.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIBBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe1TSgf/xAAWEAADAAAAAAAAAAAAAAAAAAAAASD/2gAIAQEAAQUCFP8A/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAEQMRFBYf/aAAgBAQABPyF3sw6IdiuP/9oADAMBAAIAAwAAABCgz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAQACAwEAAAAAAAAAAAAAAAEAERAxgVH/2gAIAQEAAT8QoItVAvHYKNvWbJrx/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;사이트맵 제출&quot;
+        title=&quot;사이트맵 제출&quot;
+        src=&quot;/static/d764df2357cbe81da6f62eafe18e6c96/92153/Google%EC%97%90%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A7%B5%EC%A0%9C%EC%B6%9C%EB%B0%A9%EB%B2%95.jpg&quot;
+        srcset=&quot;/static/d764df2357cbe81da6f62eafe18e6c96/f93b5/Google%EC%97%90%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A7%B5%EC%A0%9C%EC%B6%9C%EB%B0%A9%EB%B2%95.jpg 300w,
+/static/d764df2357cbe81da6f62eafe18e6c96/b4294/Google%EC%97%90%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A7%B5%EC%A0%9C%EC%B6%9C%EB%B0%A9%EB%B2%95.jpg 600w,
+/static/d764df2357cbe81da6f62eafe18e6c96/92153/Google%EC%97%90%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A7%B5%EC%A0%9C%EC%B6%9C%EB%B0%A9%EB%B2%95.jpg 891w&quot;
+        sizes=&quot;(max-width: 891px) 100vw, 891px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;Search Console 사이트맵 도구를 사용해 Google에 사이트맵 제출&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;robots.txt에 &lt;code class=&quot;language-text&quot;&gt;Sitemap:&amp;lt;내 사이트 sitemap.xml경로&amp;gt;&lt;/code&gt; 입력&lt;/li&gt;
@@ -4023,18 +4157,50 @@ TOC 컴포넌트의 Link를 클릭하면 &lt;code class=&quot;language-text&quot
 3번 &lt;code class=&quot;language-text&quot;&gt;ping&lt;/code&gt;기능을 이용하였는데,&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;url&quot;&gt;&lt;pre class=&quot;language-url&quot;&gt;&lt;code class=&quot;language-url&quot;&gt;https://www.google.com/ping?sitemap=https://ha-young.github.io/sitemap.xml&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;과 같이 입력을 하니 아래와 같은 결과가 나왔다.&lt;/p&gt;
-&lt;img src=&quot;.\ping결과.jpg&quot; alt=&quot;sitemap ping 결과&quot; style=&quot;zoom: 80%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 954px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 38.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3aAH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAGBAAAwEBAAAAAAAAAAAAAAAAAAERYXH/2gAIAQEAAT8hjwjwnD//2gAMAwEAAgADAAAAEAPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxABAAEFAQAAAAAAAAAAAAAAAQARITFRkXH/2gAIAQEAAT8QDVqvYaOZdk4n/9k=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;sitemap ping 결과&quot; title=&quot;sitemap ping 결과&quot; src=&quot;/static/d2da0897f29d22b5cd8a375b920fed25/d60a6/ping%EA%B2%B0%EA%B3%BC.jpg&quot; srcset=&quot;/static/d2da0897f29d22b5cd8a375b920fed25/f93b5/ping%EA%B2%B0%EA%B3%BC.jpg 300w,
+/static/d2da0897f29d22b5cd8a375b920fed25/b4294/ping%EA%B2%B0%EA%B3%BC.jpg 600w,
+/static/d2da0897f29d22b5cd8a375b920fed25/d60a6/ping%EA%B2%B0%EA%B3%BC.jpg 954w&quot; sizes=&quot;(max-width: 954px) 100vw, 954px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;주목할만한 부분이 &lt;strong&gt;Sitemap을 처음 제출하는 경우 &lt;a href=&quot;http://www.google.com/webmasters/tools/%EB%A5%BC&quot;&gt;http://www.google.com/webmasters/tools/를&lt;/a&gt; 통해 Sitemap을 추가&lt;/strong&gt;하라는 내용이 있는데,&lt;/p&gt;
 &lt;p&gt;결국 이는 1번 &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;Search Console 사이트맵 도구&lt;/code&gt;&lt;/strong&gt;를 이용하라는 것이다.&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;ping&lt;/code&gt;을 이용한 방법은 &lt;u&gt;나중에 사이트에 업데이트가 일어났을 때 간편하게 사용&lt;/u&gt;하기에 좋을 것 같고, 우선은 &lt;code class=&quot;language-text&quot;&gt;Search Console 사이트맵 도구&lt;/code&gt;를 사용하도록 하자.&lt;/p&gt;
 &lt;h2 id=&quot;search-console-사이트맵-도구에-sitemap-등록&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#search-console-%EC%82%AC%EC%9D%B4%ED%8A%B8%EB%A7%B5-%EB%8F%84%EA%B5%AC%EC%97%90-sitemap-%EB%93%B1%EB%A1%9D&quot; aria-label=&quot;search console 사이트맵 도구에 sitemap 등록 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Search Console 사이트맵 도구에 Sitemap 등록&lt;/h2&gt;
 &lt;h3 id=&quot;사이트-소유권-확인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%86%8C%EC%9C%A0%EA%B6%8C-%ED%99%95%EC%9D%B8&quot; aria-label=&quot;사이트 소유권 확인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;사이트 소유권 확인&lt;/h3&gt;
 &lt;p&gt;위 &lt;a href=&quot;http://www.google.com/webmasters/tools/%EC%97%90&quot;&gt;http://www.google.com/webmasters/tools/에&lt;/a&gt; 들어가고 로그인을 진행하면 다음과 같은 화면이 나타난다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CGoogleSearchConsole.jpg&quot; alt=&quot;Google Search Console&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 43.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAezOghY//8QAGBAAAgMAAAAAAAAAAAAAAAAAAhIAESD/2gAIAQEAAQUCQYo2g4//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAACAgMAAAAAAAAAAAAAAAAAATKRERIg/9oACAEBAAY/AooxqqIquP/EABkQAAEFAAAAAAAAAAAAAAAAABAAASFB4f/aAAgBAQABPyFsVSSwqH//2gAMAwEAAgADAAAAEDPP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHRAAAQMFAQAAAAAAAAAAAAAAAQAQMREhQVHR8f/aAAgBAQABPxAgzW1RhgM0cXjGDP/Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Google Search Console&quot;
+        title=&quot;Google Search Console&quot;
+        src=&quot;/static/0dc87fc8321ba90b6c638b53bd732541/e5166/GoogleSearchConsole.jpg&quot;
+        srcset=&quot;/static/0dc87fc8321ba90b6c638b53bd732541/f93b5/GoogleSearchConsole.jpg 300w,
+/static/0dc87fc8321ba90b6c638b53bd732541/b4294/GoogleSearchConsole.jpg 600w,
+/static/0dc87fc8321ba90b6c638b53bd732541/e5166/GoogleSearchConsole.jpg 1200w,
+/static/0dc87fc8321ba90b6c638b53bd732541/d9c39/GoogleSearchConsole.jpg 1800w,
+/static/0dc87fc8321ba90b6c638b53bd732541/1b43a/GoogleSearchConsole.jpg 1892w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;왼쪽은 중복사이트 존재(모바일사이트, pc사이트)일 경우에 쓰이는 것 같고,
 나는 모든 URL을 입력하는 우측으로 진행을 하였다.&lt;/p&gt;
 &lt;p&gt;자신의 사이트 URL을 치고 계속을 누르자.&lt;/p&gt;
-&lt;img src=&quot;.\사이트소유권확인.png&quot; alt=&quot;사이트 소유권 확인&quot; style=&quot;zoom:67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 665px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 121.66666666666669%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsTAAALEwEAmpwYAAADWUlEQVQ4y51US08TURSeP+ZCjcaNMVF8a0QjQmSBGhcudM2KDY+FC3cm8hISCIREU40xLhSitKWVpM9pO6WlhT6mM53ptJ/nnJmBgkYCN/l67p2e+533VS71DuDO0As8eP6S8AoX7w/iwt1+wfnbfTh3i3D7/2C9szcf4kpvPxQm7Bl4hst9Q7j8aAg9/U9wdeApET/G6ev3cfpa75E4Q3qneu7hRt8glI+fv+BnOILvP4NYC4bxayNK56jI9chvrG8cQuRv/CL9aCyBt+8moWSzGbQdB03ThG1bONnqyO/S0hKUVCqFFhGWyyXUajU47TYcp402SYOM1Os6dL0OnSTv67pOhm3539V1YFmWUC4sLEBJp9N06AiZSQSsyB6zbDYt+WbTBcsDn9mBTqcjaLVaYoDX3Py8S8hW8loemUwWKTqrGRX8PZ/XoOXzCAZDiEYiCIVCCIfD2CCEgkH6HkQ2myXP60I4NT3jErIVNa0iHk8Q4kgk4iKTyQQ4JXwxFAoKGYOJo9EoNjc3kdNy+4Qzsz6hTYRJ8sqFSxgT0nQqTZ6rhIx4o6qqGNc0DdulEorFoqTLJezyMJnSkFKLIguFAra2tijkvEi+LHuCv2fkcjk651GtVg8TOlCzZaQzFahaBeWdHewcgd3dXTSNBsyGLi23F3KScsSLe9BxbDgUPlftf+AiVilvUyuf8GZuGR++/RCOSS5KyiM87jLMJt4tB/B6ZhErX78fJDQaDQmhVqvCMAw06HwUWI8aloakjZY3YdMcsktooEqV0r0p8JuY91yww/B1zGZTYHg5nPbbpk2WStQCbNmfAAZfYiPcZwYVgPc6F4FIeJJYh6U/KVO+h5ITCsFuuX90Ou4sc/J9b7oleykj6oHPBz2ki9IO5R1pGdt2FdgT9pofBg6L57hBnrIh17Abyb6HXVU2vQsy/GSxe/B9z1xYQvgvD2dm37uEjvd81Wt1VKjappdklpw30zDd6lJa+GxZ9l7+unM4z69NMpmUAytyiEzCkvN4wDvPW/8t9MPtJlxcXIQSi8VkdApbBRS3t2VGeZaZlIee+7NSqQjcfXWvrQRennkFAgEoTHDS5T/ItpfDtdVVKCMjIxgfH8fo6CjGxsaOBb7jY2JiAsPDw/gDfi6+EY/LFUkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;사이트 소유권 확인&quot; title=&quot;사이트 소유권 확인&quot; src=&quot;/static/7c9958ac52bbae399b414f1243060026/5f4af/%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8.png&quot; srcset=&quot;/static/7c9958ac52bbae399b414f1243060026/5a46d/%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8.png 300w,
+/static/7c9958ac52bbae399b414f1243060026/0a47e/%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8.png 600w,
+/static/7c9958ac52bbae399b414f1243060026/5f4af/%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8.png 665w&quot; sizes=&quot;(max-width: 665px) 100vw, 665px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;소유권을 확인이라는 메세지가 뜬다.&lt;/p&gt;
 &lt;p&gt;이는 웹사이트가 내 소유라는 것을 알려주는 것이고, 한 사이트에 소유권을 가지고 있는 사람이 1명이상이어야만 제대로 작동한다.&lt;/p&gt;
 &lt;p&gt;소유권을 확인 기능은 다음과 같다.&lt;/p&gt;
@@ -4055,24 +4221,59 @@ TOC 컴포넌트의 Link를 클릭하면 &lt;code class=&quot;language-text&quot
 &lt;h3 id=&quot;1-html파일-내-사이트에-추가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-html%ED%8C%8C%EC%9D%BC-%EB%82%B4-%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%97%90-%EC%B6%94%EA%B0%80&quot; aria-label=&quot;1 html파일 내 사이트에 추가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. HTML파일 내 사이트에 추가&lt;/h3&gt;
 &lt;p&gt;나는 가장 권장 사용방법인 HTML 파일 추가를 진행해보았다.&lt;/p&gt;
 &lt;p&gt;우선,
-&lt;img src=&quot;.\소유권확인HTML파일업로드.jpg&quot; alt=&quot;소유권확인 HTML파일 업로드&quot; style=&quot;zoom:80%;&quot; /&gt;&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 493px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 130.33333333333334%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAaABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHlzWUCi2Ar/8QAFxAAAwEAAAAAAAAAAAAAAAAAAAEgEf/aAAgBAQABBQK0ZH//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/Ak//xAAbEAADAAIDAAAAAAAAAAAAAAAAARARUSExQf/aAAgBAQABPyHQ5h8DniEjQu5//9oADAMBAAIAAwAAABDcGs3/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAVEQEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAgEBPxAhP//EAB8QAQABAwQDAAAAAAAAAAAAAAEAETFBECFhsXGBkf/aAAgBAQABPxB4YOphpUEUsZl1GnrRNiobF4FUX5OLMeBOiE//2Q==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;소유권확인 HTML파일 업로드&quot; title=&quot;소유권확인 HTML파일 업로드&quot; src=&quot;/static/cb53320cf0eb6307ee1c77ee8a6b26b3/78ff8/%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8HTML%ED%8C%8C%EC%9D%BC%EC%97%85%EB%A1%9C%EB%93%9C.jpg&quot; srcset=&quot;/static/cb53320cf0eb6307ee1c77ee8a6b26b3/f93b5/%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8HTML%ED%8C%8C%EC%9D%BC%EC%97%85%EB%A1%9C%EB%93%9C.jpg 300w,
+/static/cb53320cf0eb6307ee1c77ee8a6b26b3/78ff8/%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8HTML%ED%8C%8C%EC%9D%BC%EC%97%85%EB%A1%9C%EB%93%9C.jpg 493w&quot; sizes=&quot;(max-width: 493px) 100vw, 493px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;해당 html파일을 받아서 내 블로그 빌드시에 사이트에 추가되도록 하였고&lt;/p&gt;
 &lt;p&gt;내 Github.io에 Deploy시켰다.&lt;/p&gt;
 &lt;h3 id=&quot;2-search-console-소유자-확인에서-html파일-확인버튼-클릭&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-search-console-%EC%86%8C%EC%9C%A0%EC%9E%90-%ED%99%95%EC%9D%B8%EC%97%90%EC%84%9C-html%ED%8C%8C%EC%9D%BC-%ED%99%95%EC%9D%B8%EB%B2%84%ED%8A%BC-%ED%81%B4%EB%A6%AD&quot; aria-label=&quot;2 search console 소유자 확인에서 html파일 확인버튼 클릭 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. Search Console 소유자 확인에서 HTML파일 확인버튼 클릭&lt;/h3&gt;
 &lt;p&gt;사이트에 다운받은 HTML파일을 업로드 한 뒤에 확인버튼을 누르면&lt;/p&gt;
-&lt;img src=&quot;.\사이트소유권확인_HTML파일확인.png&quot; alt=&quot;image-20201230190513860&quot; style=&quot;zoom: 50%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 665px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 121.66666666666669%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAA7EAAAOxAGVKw4bAAADbUlEQVQ4y51US08TURSeP+ZCjcaNMUF8awQjQnSBGhcudM2KDQ9jfMQFqCgqCYTEhSHGpdEobWklKX1My0xbKH3MdNqZTvt5zrkzgE+iN/l67u2c+53vnnvO1Y71DeH88G1cunWHcBdH+6/hyIVBweFzAzh0lnDu72C/g2cu43jfIDQm7B26iZ6BYfRcGUbv4HWcGLpBxFex/1Q/9p/s2xMHyG9f70WcHrgG7d37D/gSi+Pjlwg+R2L4upKgdULscvwblld+QvxXfCX/RDKF6ecz0PL5HDq+j1azCc9z8X+jK7+Li4vQMpkM2kRYLm+iXq/D73Tg+x10yDoUxLJs2LYFmyzPLdumwJ58V74+XNcVyvn5eWjZbJYWXSFrEgE7smK2rZYr/3m0wQ3AaxbQ7XYF7XZbAvB4MzenCDmKaZjI5fLI0FrP6eD/TdOAYZqIRKJIxOOIRqOIxWJYIUQjEfo/gnw+T8otIXzxclYRchQ9q2NtLUVYQyq1JjadToFTwhuj0YiQMZg4kUhgdXUV68b6DuHsq5DQI8I0qVJQhEkhzWaypFwn5ESNrusCwzCwsbGBUrGEeq0WEO5SmM4YyOglscViEYVCgY5siuXNMieEc9MsYJ2/kW9tW+E2oQ89X0Y2V4VuVFHe2sLWHqiUy2iWinCItEXrbcI05YgH16Dve/Dp+HxrfwTdtE+3W1mOYubxUzx6MIW3T56Brh8zr9+oOvy3GlZFbFGHPH04hfv3nmDx8TSoxnYInUYDlUqFarEGx3HQoPVe4D1dql1YdbTr6lJe8i0rQgc1+mgHXRAWMc/5wn6G+BBahCbDdXcI+VI6HR+bm5sSOewABpNyEK4zx2nI3G7YdLqWdBL7sPVcb6cOwxzyUb22F6RJ9TJ3UKh4t2WV0qIBeP2jQtoo5VDekpLxPOXASlg1Pwz8UHAfN0gpB1KB1UnCXpayCRU2gw3S/BRxd+OHyhRcIfydwtlXrxWhHzxfVt1ClW6bScMgnLem01S3S2nhtUs5C/MnOQwUzvFrk06nZcGOfEQmYct5/EFdoDZ8C8Pj7iZcWFiAlkwm5bUuFoooUbNzn3IvMym/kVyf1WpVoOa17bISBHnmsbS0BI0J/neED7IX5PDzp0/QRkdHMTExgbGxMYyPj/8TeE+IyclJjIyM4DuVX7ur14lyFAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;image-20201230190513860&quot; title=&quot;image-20201230190513860&quot; src=&quot;/static/257d4ad142577c05116cdd7124457d35/5f4af/%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8_HTML%ED%8C%8C%EC%9D%BC%ED%99%95%EC%9D%B8.png&quot; srcset=&quot;/static/257d4ad142577c05116cdd7124457d35/5a46d/%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8_HTML%ED%8C%8C%EC%9D%BC%ED%99%95%EC%9D%B8.png 300w,
+/static/257d4ad142577c05116cdd7124457d35/0a47e/%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8_HTML%ED%8C%8C%EC%9D%BC%ED%99%95%EC%9D%B8.png 600w,
+/static/257d4ad142577c05116cdd7124457d35/5f4af/%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8_HTML%ED%8C%8C%EC%9D%BC%ED%99%95%EC%9D%B8.png 665w&quot; sizes=&quot;(max-width: 665px) 100vw, 665px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;다음과 같은 이미지로 확인 할 수 있다.&lt;/p&gt;
-&lt;img src=&quot;.\소유권확인메세지.png&quot; alt=&quot;소유권확인메세지&quot; style=&quot;zoom: 67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 812px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 77.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACqklEQVQ4y52Uy2sTURTG8ye4sNR1QcVaF7pUwSIIgisXrY9qbdOHfSXzSDIzmXcKLt1oi7VCcaVt0yqSQHErYqsL21oF9V+QkkfztJrPc+9kQlpB1IEf5zvnJt89986dG7BtG47jcHzNos/+3KrDtWVx/DFN0xAQJAmiJCMkiGCaIckRRGMxHtmYIEqQo1FEqBZTVIRF73csToTD3lg0higRME0ThmlwTJrN4LkJVYtDoRlVgkUtriOu6xTj0A0DtmN7NHXPO2TCdVwkmnBt2gLL9qhr0zAbWAYt1dyH5RuSMBwLik2zO9SZbUB1DNLUdcLm6DQ+IokYFMIYqjMsCg09GApBoO2JU/eBhGnjwt0xtD++jbaZWzg8G8TRR0EcIVqnr+IQweLBe91EF6flfjdap66ghWoHprpw7M51iGLd0NEtXJ5VcP6li7MvNHSmjAbHkyF0/IETRPvzME4/GIcgyJ4hW/erN6+RrRbwLZ9BtlJoUPhe3ku1Ccp3KkXsooZ3G+8xFhKg62Soairerq2hUiojn83hn56aF7Y+fiLDMBnqZKiqWCPDWq2GQrGIncIOihSLpSLlBa5L5RJKpRKvcViN8kq1yg03t7b2Gq6urqJcLiOTyWB7exv5fJ6TzWZ5zc9zuRyvMbMqmVXrhhubH/Yarq+v43+e3R8/efz85StGfUODTv3c3BxWVlaQSqWQTqd/I5VKI7m0jIXkEmd+MYmnC4t4Mr+A5PIzTM88xIQgeW/Z/2RkWUYkEoHEvmWCaR+W3+gfwLXePvT0BXHqzDm0dZxE58VL6B0YQg+Nhf2DzQwTiQQmJyc5TDfnDNd1EaI/jFEX43Qh9A+P4mZwCIOj45igy2OEjowgRz1Dtu6/QaG9jikKFELjl0UcqqrxGoNdIux9/ALwaXtcShdQQQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;소유권확인메세지&quot; title=&quot;소유권확인메세지&quot; src=&quot;/static/7d950d93107e8ee41360994927105406/63ec5/%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8%EB%A9%94%EC%84%B8%EC%A7%80.png&quot; srcset=&quot;/static/7d950d93107e8ee41360994927105406/5a46d/%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8%EB%A9%94%EC%84%B8%EC%A7%80.png 300w,
+/static/7d950d93107e8ee41360994927105406/0a47e/%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8%EB%A9%94%EC%84%B8%EC%A7%80.png 600w,
+/static/7d950d93107e8ee41360994927105406/63ec5/%EC%86%8C%EC%9C%A0%EA%B6%8C%ED%99%95%EC%9D%B8%EB%A9%94%EC%84%B8%EC%A7%80.png 812w&quot; sizes=&quot;(max-width: 812px) 100vw, 812px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;다음과 같은 화면이 뜨면 소유권이 확인되었다는 것.&lt;/p&gt;
 &lt;h3 id=&quot;3sitemap-등록&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3sitemap-%EB%93%B1%EB%A1%9D&quot; aria-label=&quot;3sitemap 등록 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3.Sitemap 등록&lt;/h3&gt;
-&lt;img src=&quot;.\절차마무리.jpg&quot; alt=&quot;절차마무리&quot; style=&quot;zoom: 67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 668px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 45.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAECAwX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAepIZxVT/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAMCEwEQEf/aAAgBAQABBQKiBQsklfdZP//EABYRAAMAAAAAAAAAAAAAAAAAAAABEv/aAAgBAwEBPwGUSj//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAXEAADAQAAAAAAAAAAAAAAAAAAIDEh/9oACAEBAAY/AoQxP//EABwQAAIBBQEAAAAAAAAAAAAAAAABMRARIWGRof/aAAgBAQABPyFWZ9N/opg9FA6P/9oADAMBAAIAAwAAABCoL//EABgRAAIDAAAAAAAAAAAAAAAAAAARASFh/9oACAEDAQE/EM4F0j//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QgX//xAAdEAACAgEFAAAAAAAAAAAAAAAAARExcSFBUZHR/9oACAEBAAE/EG0bp5Ddq+/6JSbETdlGEbiywf/Z&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;절차마무리&quot; title=&quot;절차마무리&quot; src=&quot;/static/94a8380f8368ccf1522beb3e6309f124/fdf4b/%EC%A0%88%EC%B0%A8%EB%A7%88%EB%AC%B4%EB%A6%AC.jpg&quot; srcset=&quot;/static/94a8380f8368ccf1522beb3e6309f124/f93b5/%EC%A0%88%EC%B0%A8%EB%A7%88%EB%AC%B4%EB%A6%AC.jpg 300w,
+/static/94a8380f8368ccf1522beb3e6309f124/b4294/%EC%A0%88%EC%B0%A8%EB%A7%88%EB%AC%B4%EB%A6%AC.jpg 600w,
+/static/94a8380f8368ccf1522beb3e6309f124/fdf4b/%EC%A0%88%EC%B0%A8%EB%A7%88%EB%AC%B4%EB%A6%AC.jpg 668w&quot; sizes=&quot;(max-width: 668px) 100vw, 668px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;이제 아래 &lt;code class=&quot;language-text&quot;&gt;속성으로 이동&lt;/code&gt;버튼을 클릭해서 Sitemap을 등록해주면 된다.&lt;/p&gt;
-&lt;img src=&quot;.\Sitemap제출.jpg&quot; alt=&quot;Sitemap제출&quot; style=&quot;zoom: 50%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 50.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAID/9oADAMBAAIQAxAAAAHaUE2SrD//xAAZEAADAAMAAAAAAAAAAAAAAAAAAhIEEDP/2gAIAQEAAQUChSFITeR2/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERA//aAAgBAwEBPwEe0ch//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8BR//EABkQAAIDAQAAAAAAAAAAAAAAAAABEDKRMf/aAAgBAQAGPwKqOLCqyWf/xAAaEAACAgMAAAAAAAAAAAAAAAAAARCxUeHx/9oACAEBAAE/IVozObkhRXo//9oADAMBAAIAAwAAABBQD//EABYRAQEBAAAAAAAAAAAAAAAAAAARQf/aAAgBAwEBPxBYwf/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxBNv//EAB0QAQACAQUBAAAAAAAAAAAAAAEAESEQYXGh0fH/2gAIAQEAAT8Qz8DsfJYZXIgV2vRqSUr8J//Z&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Sitemap제출&quot; title=&quot;Sitemap제출&quot; src=&quot;/static/ccce7f418c8e73504c1d49ea17684d8b/e5166/Sitemap%EC%A0%9C%EC%B6%9C.jpg&quot; srcset=&quot;/static/ccce7f418c8e73504c1d49ea17684d8b/f93b5/Sitemap%EC%A0%9C%EC%B6%9C.jpg 300w,
+/static/ccce7f418c8e73504c1d49ea17684d8b/b4294/Sitemap%EC%A0%9C%EC%B6%9C.jpg 600w,
+/static/ccce7f418c8e73504c1d49ea17684d8b/e5166/Sitemap%EC%A0%9C%EC%B6%9C.jpg 1200w,
+/static/ccce7f418c8e73504c1d49ea17684d8b/1d8ab/Sitemap%EC%A0%9C%EC%B6%9C.jpg 1627w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;제출 하고 아래와 같이 제출된 사이트맵에 상태가 성공이면 작업은 끝난 것.&lt;/p&gt;
-&lt;img src=&quot;.\Sitemap제출성공.jpg&quot; alt=&quot;Sitemap 제출성공&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1006px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 43%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB3XWSyEH/xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAEFAl//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAZEAACAwEAAAAAAAAAAAAAAAAAARARcYH/2gAIAQEAAT8hWnRupR//2gAMAwEAAgADAAAAEL8//8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAEDAQE/EImP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGxAAAwACAwAAAAAAAAAAAAAAAAEREDFBYfH/2gAIAQEAAT8QqXl0V+B7Spi1jQ//2Q==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Sitemap 제출성공&quot; title=&quot;Sitemap 제출성공&quot; src=&quot;/static/7893b0f173ca144bd85bbea9943c3da9/d74fb/Sitemap%EC%A0%9C%EC%B6%9C%EC%84%B1%EA%B3%B5.jpg&quot; srcset=&quot;/static/7893b0f173ca144bd85bbea9943c3da9/f93b5/Sitemap%EC%A0%9C%EC%B6%9C%EC%84%B1%EA%B3%B5.jpg 300w,
+/static/7893b0f173ca144bd85bbea9943c3da9/b4294/Sitemap%EC%A0%9C%EC%B6%9C%EC%84%B1%EA%B3%B5.jpg 600w,
+/static/7893b0f173ca144bd85bbea9943c3da9/d74fb/Sitemap%EC%A0%9C%EC%B6%9C%EC%84%B1%EA%B3%B5.jpg 1006w&quot; sizes=&quot;(max-width: 1006px) 100vw, 1006px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;h2 id=&quot;마무리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A7%88%EB%AC%B4%EB%A6%AC&quot; aria-label=&quot;마무리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;마무리&lt;/h2&gt;
 &lt;p&gt;이렇게 구글 크롤링을 유도한 후 다음날 아침 (약 15시간 이후)에 &lt;code class=&quot;language-text&quot;&gt;site:&amp;lt;내 사이트&amp;gt;&lt;/code&gt;를 검색해서 내 사이트의 구글 색인결과를 확인해보았다.&lt;/p&gt;
-&lt;img src=&quot;.\성공적으로크롤링.jpg&quot; alt=&quot;성공적으로크롤링&quot; style=&quot;zoom:67%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1119px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 143.00000000000003%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAdABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgABBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAe6ijagadHGP/8QAGRAAAgMBAAAAAAAAAAAAAAAAARAAETFB/9oACAEBAAEFAuo6iyrn/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAFBABAAAAAAAAAAAAAAAAAAAAMP/aAAgBAQAGPwJP/8QAGRABAAIDAAAAAAAAAAAAAAAAAQAQIDFh/9oACAEBAAE/IXIbQpcg0//aAAwDAQACAAMAAAAQoAYA/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPxAf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxAf/8QAHRABAAEEAwEAAAAAAAAAAAAAAQAQESExQVFxof/aAAgBAQABPxC4AWC0M8jRWGeIe/aa91C7y7im8zxP/9k=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;성공적으로크롤링&quot; title=&quot;성공적으로크롤링&quot; src=&quot;/static/078fcc59324374601e70981f9354ceda/40cc6/%EC%84%B1%EA%B3%B5%EC%A0%81%EC%9C%BC%EB%A1%9C%ED%81%AC%EB%A1%A4%EB%A7%81.jpg&quot; srcset=&quot;/static/078fcc59324374601e70981f9354ceda/f93b5/%EC%84%B1%EA%B3%B5%EC%A0%81%EC%9C%BC%EB%A1%9C%ED%81%AC%EB%A1%A4%EB%A7%81.jpg 300w,
+/static/078fcc59324374601e70981f9354ceda/b4294/%EC%84%B1%EA%B3%B5%EC%A0%81%EC%9C%BC%EB%A1%9C%ED%81%AC%EB%A1%A4%EB%A7%81.jpg 600w,
+/static/078fcc59324374601e70981f9354ceda/40cc6/%EC%84%B1%EA%B3%B5%EC%A0%81%EC%9C%BC%EB%A1%9C%ED%81%AC%EB%A1%A4%EB%A7%81.jpg 1119w&quot; sizes=&quot;(max-width: 1119px) 100vw, 1119px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;보는 것 처럼 처음에 2페이지 밖에 없었는데 6페이지로 늘어나있는 걸 확인 할 수 있다.&lt;/p&gt;
 &lt;p&gt;아직 모든 페이지들이 색인되지는 않았지만, 곧 시간문제 인 것 같다. 크롤러가 좀 더 열심히 일 해주기를 바랄 수 밖에.&lt;/p&gt;
 &lt;h2 id=&quot;추가--rss를-google-search-console에-등록하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B6%94%EA%B0%80--rss%EB%A5%BC-google-search-console%EC%97%90-%EB%93%B1%EB%A1%9D%ED%95%98%EA%B8%B0&quot; aria-label=&quot;추가  rss를 google search console에 등록하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;추가 : RSS를 Google Search Console에 등록하기&lt;/h2&gt;
@@ -4080,11 +4281,43 @@ TOC 컴포넌트의 Link를 클릭하면 &lt;code class=&quot;language-text&quot
 &lt;blockquote&gt;
 &lt;p&gt;등록하면 당연히 좋겠지?&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;img src=&quot;.\rss가져올수없음.jpg&quot; alt=&quot;RSS가져올수없음&quot; style=&quot;zoom:80%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 970px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 47.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3qgB/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFxABAAMAAAAAAAAAAAAAAAAAERAgQf/aAAgBAQABPyGA2n//2gAMAwEAAgADAAAAEIDP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHBABAAEEAwAAAAAAAAAAAAAAAREAECExUYGx/9oACAEBAAE/EA2+WJHJlnLMWd9VxX//2Q==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;RSS가져올수없음&quot; title=&quot;RSS가져올수없음&quot; src=&quot;/static/0e08b13217e343cd15e6537d805344f9/ec7ce/rss%EA%B0%80%EC%A0%B8%EC%98%AC%EC%88%98%EC%97%86%EC%9D%8C.jpg&quot; srcset=&quot;/static/0e08b13217e343cd15e6537d805344f9/f93b5/rss%EA%B0%80%EC%A0%B8%EC%98%AC%EC%88%98%EC%97%86%EC%9D%8C.jpg 300w,
+/static/0e08b13217e343cd15e6537d805344f9/b4294/rss%EA%B0%80%EC%A0%B8%EC%98%AC%EC%88%98%EC%97%86%EC%9D%8C.jpg 600w,
+/static/0e08b13217e343cd15e6537d805344f9/ec7ce/rss%EA%B0%80%EC%A0%B8%EC%98%AC%EC%88%98%EC%97%86%EC%9D%8C.jpg 970w&quot; sizes=&quot;(max-width: 970px) 100vw, 970px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;위 처럼 rss.xml을 등록해도 &lt;strong&gt;가져올 수 없음&lt;/strong&gt;이 뜨는데, 이는 우리 rss.xml에 대한 색인이 없어서라고 추측된다.&lt;/p&gt;
 &lt;p&gt;이 부분은 &lt;strong&gt;직접 URL 검사를 통한 색인성성을&lt;/strong&gt; 하니 해결되었다.&lt;/p&gt;
-&lt;img src=&quot;.\rss.xml_Search.jpg&quot; alt=&quot;RSS URL 검사&quot; style=&quot;zoom: 50%;&quot; /&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Crss%EC%83%89%EC%9D%B8%EC%83%9D%EC%84%B1%EC%9A%94%EC%B2%AD.PNG&quot; alt=&quot;rss색인생성요청&quot;&gt;&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 48.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAKABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMBAgX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHbLSLGB//EABcQAAMBAAAAAAAAAAAAAAAAAAACEiD/2gAIAQEAAQUClSVIXH//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAZEAADAAMAAAAAAAAAAAAAAAAAATEgMpH/2gAIAQEABj8CiNVwmH//xAAZEAADAAMAAAAAAAAAAAAAAAABEEEAgfH/2gAIAQEAAT8h5SkTzoZH/9oADAMBAAIAAwAAABAgz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EAB0QAQACAAcAAAAAAAAAAAAAAAEAERAhQWFxgcH/2gAIAQEAAT8QAMj6y3UdxELT4CeYYf/Z&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;RSS URL 검사&quot; title=&quot;RSS URL 검사&quot; src=&quot;/static/5c13323e1110692d7a139daf2681fed6/e5166/rss.xml_Search.jpg&quot; srcset=&quot;/static/5c13323e1110692d7a139daf2681fed6/f93b5/rss.xml_Search.jpg 300w,
+/static/5c13323e1110692d7a139daf2681fed6/b4294/rss.xml_Search.jpg 600w,
+/static/5c13323e1110692d7a139daf2681fed6/e5166/rss.xml_Search.jpg 1200w,
+/static/5c13323e1110692d7a139daf2681fed6/d9c39/rss.xml_Search.jpg 1800w,
+/static/5c13323e1110692d7a139daf2681fed6/029b7/rss.xml_Search.jpg 1813w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 672px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAA7DAAAOwwHHb6hkAAABKUlEQVQoz62OTUsCURSG53flMhQlKD8oKzRFoo9FlC37Ga2CFoGboI0ZiGWlLUIFB6Hauy43kjPDzNyZ8enOTIbLiA48vOc995yXqyTWCywX94hvlkhI4nNEs0VivyCaLRDbKLGYXENZkWFb5ROS2wes7h+T2S1LjkjvHBJJ5Yikv0nl5nx+TvPhPFNgYSmDcnF5Ra3Zpnr7wPXd4w+1gFaozRY3Ae3wfbYr1b+rNu5pPD1zenaOMvp4xy/PdfAcgWNb2KaJK3vbMpl6LsKfyd4RNq4QyCHhkcfUdZnV2+sLynA4xLYFuq6jaRq6YTCZTNCk/5RqSO/reDwO0HUD4TgIGTzDtKwgsNvtyh+ORvxXDQYDlHq9jqqqQXqv1/sTnU6Hfl+lUqnwBZZYuh1vejHZAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;rss색인생성요청&quot;
+        title=&quot;rss색인생성요청&quot;
+        src=&quot;/static/98207fbf12b2529887bc32225810600e/30d16/rss%EC%83%89%EC%9D%B8%EC%83%9D%EC%84%B1%EC%9A%94%EC%B2%AD.png&quot;
+        srcset=&quot;/static/98207fbf12b2529887bc32225810600e/5a46d/rss%EC%83%89%EC%9D%B8%EC%83%9D%EC%84%B1%EC%9A%94%EC%B2%AD.png 300w,
+/static/98207fbf12b2529887bc32225810600e/0a47e/rss%EC%83%89%EC%9D%B8%EC%83%9D%EC%84%B1%EC%9A%94%EC%B2%AD.png 600w,
+/static/98207fbf12b2529887bc32225810600e/30d16/rss%EC%83%89%EC%9D%B8%EC%83%9D%EC%84%B1%EC%9A%94%EC%B2%AD.png 672w&quot;
+        sizes=&quot;(max-width: 672px) 100vw, 672px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;색인이 생성되려면 마찬가지로 크롤링 되어야 하기 때문에 크롤링 될 때 까지 기다렸다가 사이트맵으로 rss.xml을 제출하면 된다!&lt;/p&gt;
 &lt;h2 id=&quot;추가--타-사이트에도-검색-노출-시키기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B6%94%EA%B0%80--%ED%83%80-%EC%82%AC%EC%9D%B4%ED%8A%B8%EC%97%90%EB%8F%84-%EA%B2%80%EC%83%89-%EB%85%B8%EC%B6%9C-%EC%8B%9C%ED%82%A4%EA%B8%B0&quot; aria-label=&quot;추가  타 사이트에도 검색 노출 시키기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;추가 : 타 사이트에도 검색 노출 시키기&lt;/h2&gt;
 &lt;ul&gt;
@@ -4775,7 +5008,27 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;h3 id=&quot;켄님과의-면담&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%BC%84%EB%8B%98%EA%B3%BC%EC%9D%98-%EB%A9%B4%EB%8B%B4&quot; aria-label=&quot;켄님과의 면담 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;켄님과의 면담&lt;/h3&gt;
 &lt;p&gt;정해진 수순인지는 잘 모르겠지만 Prep을 신청을 하면 우선적으로 켄님과 면담을 하는 듯 하다. 면담은 원격으로 시간을 정하고 진행되는데, 켄님과의 면담은 주로 바닐라코딩에 대한 진행과정에 대해 듣고 질의 응답하는 시간을 가졌다. 나는 이 시간이 매우매우 좋았다고 생각된다. 부트캠프라는게 일반 학원이 아니라 인생에 있어서 큰 결정이 될 수 있다고 생각하시는지 신청자가 어떠한 마음을 가지고 신청을 했는지, 어떠한 상황인지 자세히 경청해주셨고, 그 마음과 상황에 맞게 이런저런 조언도 해주시면서 도움을 주실려고 하는게 보였다.&lt;/p&gt;
 &lt;p&gt;이 부분에서 홈페이지에 적힌 문구처럼 진실되다고 느꼈고, 함께 하고싶다고 느꼈다.
-&lt;img src=&quot;.%5C%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%ED%99%88%ED%94%BC%EB%AC%B8%EA%B5%AC.png&quot; alt=&quot;image-20201212195350513&quot;&gt;&lt;/p&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 897px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 44.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7UlEQVQoz62S6Y7DIAyE+/7PuTkgHCEcbRIlXo9TsqnU/lipSJYNmI9hxG3bNqqx7zv9d+DMlXG7QuZ5Juc9pZRoHEdKOZN3XuoQAnn/V6MvxiiQK1yAFbosC1lrpTGEkSLAfBCAaZoY6M4afchvgXWSWdE1oLTmGrgsMijFJECs1fMvQF6SJ/V9f4RSNAwDKa3Ped0zxlDXHXXKH4Ek/jhnBQyYMZbnTp6HjDVkZ51AUcOmt0/GQANubZqGFCtq2/ZUpp9KtdKsrpP9H+4D/KPCx+N+epXL0zv2sJQiXpZ85LoHP9d1fVX47X/4C30vu03t/u4hAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image-20201212195350513&quot;
+        title=&quot;image-20201212195350513&quot;
+        src=&quot;/static/48e5c6fc240780439854c2cb527d10fd/3a737/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%ED%99%88%ED%94%BC%EB%AC%B8%EA%B5%AC.png&quot;
+        srcset=&quot;/static/48e5c6fc240780439854c2cb527d10fd/5a46d/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%ED%99%88%ED%94%BC%EB%AC%B8%EA%B5%AC.png 300w,
+/static/48e5c6fc240780439854c2cb527d10fd/0a47e/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%ED%99%88%ED%94%BC%EB%AC%B8%EA%B5%AC.png 600w,
+/static/48e5c6fc240780439854c2cb527d10fd/3a737/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%ED%99%88%ED%94%BC%EB%AC%B8%EA%B5%AC.png 897w&quot;
+        sizes=&quot;(max-width: 897px) 100vw, 897px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;br&gt;
 &lt;h3 id=&quot;prep-준비-대기명단&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#prep-%EC%A4%80%EB%B9%84-%EB%8C%80%EA%B8%B0%EB%AA%85%EB%8B%A8&quot; aria-label=&quot;prep 준비 대기명단 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prep 준비, 대기명단&lt;/h3&gt;
 &lt;p&gt;면담을 진행하고 Prep에 대해 참가 의지를 표출하면 Prep코스가 시작되기 전까지 Prep 코스를 잘 진행할 수 있게 사전학습 가이딩과 준비할거리를 알려주신다.
@@ -4785,7 +5038,12 @@ Prep 코스도 어느정도 기본지식이 바탕이 되어야 진행을 할 �
 &lt;br&gt;
 &lt;h2 id=&quot;prep-9기-진행방식&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#prep-9%EA%B8%B0-%EC%A7%84%ED%96%89%EB%B0%A9%EC%8B%9D&quot; aria-label=&quot;prep 9기 진행방식 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Prep 9기 진행방식&lt;/h2&gt;
 &lt;p&gt;Prep코스 진행방식은 매 기수마다 변화했다고 켄님이 말씀하시는데, 기본적인 틀은 커리큘럼대로 진행되는 JavaScript 강의이고, 이를 기반으로 최대한 현업과 비슷한 환경의 과제가 있다. 그리고 이는 초급에서 최대 중상급 정도까지 아우른다고 생각한다.
-&lt;img src=&quot;.\바닐라코딩_Prep후기_커리큘럼.png&quot; alt=&quot;Prep 커리큘럼&quot;  /&gt;&lt;/p&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 793px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 8.333333333333332%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAi0lEQVQI1x2N2wqCUBBF/RK1osBArSSo6APKbhieY3PKS5qE9P/PuznzMLCZWbO246UaCX0wuxn4nLfVgPm9lLx8dPCOCrF+yy7g2ZRfjM8FVtRh/ezhHnJEfI9UjenVwPFThcT0AoxOGrt6wIKByYXkwRaFeYMge7G0knJbZvl982MJIS5ahCIk/AE9+EpQyiDVmwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Prep 커리큘럼&quot; title=&quot;Prep 커리큘럼&quot; src=&quot;/static/e79a64c9aab3767bde727c19bfe1ec28/73fd0/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EC%BB%A4%EB%A6%AC%ED%81%98%EB%9F%BC.png&quot; srcset=&quot;/static/e79a64c9aab3767bde727c19bfe1ec28/5a46d/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EC%BB%A4%EB%A6%AC%ED%81%98%EB%9F%BC.png 300w,
+/static/e79a64c9aab3767bde727c19bfe1ec28/0a47e/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EC%BB%A4%EB%A6%AC%ED%81%98%EB%9F%BC.png 600w,
+/static/e79a64c9aab3767bde727c19bfe1ec28/73fd0/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EC%BB%A4%EB%A6%AC%ED%81%98%EB%9F%BC.png 793w&quot; sizes=&quot;(max-width: 793px) 100vw, 793px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;매 기수마다 변화해서 다음에는 어떻게 진행될지 모르지만 계속 변화하면서 발전하는게 혁신을 추구하는 구글이 생각났다.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -4801,7 +5059,14 @@ Prep9기는 모두 온라인으로 진행되었다.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;가 있다.&lt;/p&gt;
 &lt;p&gt;프렙 가이드도 만들어서 제공해준다.&lt;/p&gt;
-&lt;img src=&quot;.\바닐라코딩_Prep후기_가이드.png&quot; alt=&quot;바닐라코딩 프렙 가이드&quot; style=&quot;zoom: 45%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 46.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABMklEQVQoz22STY+DIBCG/f+37R9p0kNv3e6he9ueG5PqSbf1G4uCgPruQGJjViaZQCbkmYeBoMgfeLU11CChlIIxBvM8w4bdt22LaZpcbZpmt/pSa+0yqMoMTZ0TTGKJBdj3PW63G/7H0sAXwfORIHum0Gp4w5bD1rjrON2gRdPUyPOMmnSbxmvToCbDqnjCaLUBZlmG/X6Pw+GAKIowDAMYY4juEWayXEPfhnWZw85Re4CKrMMwxOn0icvl29XiOMbxeERZlJvzDlgVD1QlGZot0JgRrGHuYQTN08bX+Yzdxw5JknjnGbCmIMNfMhy8wIaAnHcQQrhamqa4Xn8gpfRfWfQv9B3zztDOydDDjPQdbGraYwGsz60NpeCwUC9wNBD8BdmRIedQZDlZOIHt6gP+AdvdupU3BHMoAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;바닐라코딩 프렙 가이드&quot; title=&quot;바닐라코딩 프렙 가이드&quot; src=&quot;/static/5fad78ff2bdbf9da04698c5f79014f7c/c1b63/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EA%B0%80%EC%9D%B4%EB%93%9C.png&quot; srcset=&quot;/static/5fad78ff2bdbf9da04698c5f79014f7c/5a46d/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EA%B0%80%EC%9D%B4%EB%93%9C.png 300w,
+/static/5fad78ff2bdbf9da04698c5f79014f7c/0a47e/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EA%B0%80%EC%9D%B4%EB%93%9C.png 600w,
+/static/5fad78ff2bdbf9da04698c5f79014f7c/c1b63/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EA%B0%80%EC%9D%B4%EB%93%9C.png 1200w,
+/static/5fad78ff2bdbf9da04698c5f79014f7c/d61c2/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EA%B0%80%EC%9D%B4%EB%93%9C.png 1800w,
+/static/5fad78ff2bdbf9da04698c5f79014f7c/9b1e2/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EA%B0%80%EC%9D%B4%EB%93%9C.png 1880w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;h3 id=&quot;javascript-온라인-강의-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#javascript-%EC%98%A8%EB%9D%BC%EC%9D%B8-%EA%B0%95%EC%9D%98-&quot; aria-label=&quot;javascript 온라인 강의  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Javascript 온라인 강의 📘&lt;/h3&gt;
 &lt;p&gt;강의는 모두 JavaScript 온라인강의로 코스 커리큘럼에 맞게 수강생이 직접 들어야 되고, 온라인 강의이기 때문에 반복해서 들을 수 있다. 이 강의의 특징이 이전기수로 진행했던 현장강의라 켄님이 강조하시는 현장감이 살아있고 중간중간 지루하지않게 켄님의 만담이 펼쳐진다. 켄님의 비유를 통한 설명으로 이해가 쏙쏙되고 중간중간 만담을 통해 지루하지않게 들을 수 있었다.&lt;/p&gt;
 &lt;p&gt;강의 방식이 궁금하다면 바닐라코딩 유튜브의 &lt;a href=&quot;https://www.youtube.com/watch?v=ayyuU0xdbIU&amp;#x26;t=56s&quot;&gt;this강의&lt;/a&gt;를 참조하면 될 것 같다. 이 강의에 켄님 강의의 가장 큰 특징이라고 생각하는 비유를 통한 설명이 잘 나타나있다고 생각한다.&lt;/p&gt;
@@ -4832,7 +5097,12 @@ Prep9기는 모두 온라인으로 진행되었다.&lt;/p&gt;
 &lt;p&gt;과제리뷰가 어떻게 진행되었는지 참고하고싶다면 &lt;a href=&quot;https://ha-young.github.io/2020/vanillacoding_prep/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9%20Prep%20%EA%B3%BC%EC%A0%9C%20%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0%20%EB%AA%A8%EC%9D%8C/&quot;&gt;여기 게시글&lt;/a&gt;을 확인하자.&lt;/p&gt;
 &lt;p&gt;아 그리고 과제는 gitlab private 저장소로 제공이 되고, 과제 완료 후 Merge Request로 제출하고 코드리뷰를 받을 수 있다.&lt;/p&gt;
 &lt;h3 id=&quot;slack을-통한-24시간-질의응답-및-교류-&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#slack%EC%9D%84-%ED%86%B5%ED%95%9C-24%EC%8B%9C%EA%B0%84-%EC%A7%88%EC%9D%98%EC%9D%91%EB%8B%B5-%EB%B0%8F-%EA%B5%90%EB%A5%98-&quot; aria-label=&quot;slack을 통한 24시간 질의응답 및 교류  permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Slack을 통한 24시간 질의응답 및 교류 📝&lt;/h3&gt;
-&lt;img src=&quot;.\바닐라코딩_Prep후기_Slack.png&quot; alt=&quot;바닐라코딩 Prep Slack&quot; style=&quot;zoom:50%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1108px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 77%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACIUlEQVQ4y41TTWsTURSdXyMUXBV0Uay4sLgR3Og/sHUl6CLFhaKCRRER3LnKRhCEorjqwoT6gRqoGCikRaHWZDIhmcnMZD4yn+/N8b4XZ0hMIrlw5j5m3j333PPeKHEUQevqaBP8IESUMIRxipRxZFkGzjlEGM1fcLWWXIv380KJiLCrGzCMPizThEmwLQu+5yMIAnieJ3MSBkijsGgi8iwoh419/D76gbbaxGBgI4pDxBIRRLMCcTxCGE6+/weK6K7rJrpdi7JL8EllhOEwRpLERDyNvHjWNyWkUYKQ02gATQoSQETAX+umQligqio6nQ7a7TYcx5n0MAyGcEwL9iCA78dI0xSMpTLPQkLdhBKRc5Xp2H6F0yPyHTrdiFQxaThjAmwCeYEgcF1XQhCOf5OEtVqNfDPoVEenOfT9Yi0gikTmjBdXJi/mM3xRBuTBsarhuKWhqfWg9fromXZRlCuYd/emro14GLaHTt8hHx1SktIu6pwxaYHwKlcy7+5NEAoFr99s48nTZ3j44j2ul7/jVvkzNp7XUK78JF46AFI4Tvi/IIUcpdINLJ9ewdK1l1i5/wUX7uxgebOKe9sHchNfgKggFOOUNktYPbOKtfUtXHm8i0uEtdsf8Ojt4YiQZwuNW3h4dX0DJ5dO4PzFyzh7t4pzD3Zw6uY7bL1qFAoXDfnr1et1VCsVfPq6h48HBnYbOr7t93DUsomMFae9CP4A+k9rpusxUzwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;바닐라코딩 Prep Slack&quot; title=&quot;바닐라코딩 Prep Slack&quot; src=&quot;/static/2cb33cc5dc5e03f5044c15341f641e69/f680b/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_Slack.png&quot; srcset=&quot;/static/2cb33cc5dc5e03f5044c15341f641e69/5a46d/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_Slack.png 300w,
+/static/2cb33cc5dc5e03f5044c15341f641e69/0a47e/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_Slack.png 600w,
+/static/2cb33cc5dc5e03f5044c15341f641e69/f680b/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_Slack.png 1108w&quot; sizes=&quot;(max-width: 1108px) 100vw, 1108px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;기본적으로 질의응답이 있고, 수강생들의 정보공유를 할 수 있다.
 다들 열심히 하시는 분들이라 그런지 질문도 상당히 많았고, 꽤나 활발하게 진행이되었다고 생각한다.&lt;/p&gt;
 &lt;p&gt;또 바닐라코딩 전체 수강생 체널이 있는데, 여기서 부트캠프 수료생들끼리 네트워킹이 얼마나 잘 되는지도 확인할 수 있었다.&lt;/p&gt;
@@ -4858,7 +5128,13 @@ Prep9기는 모두 온라인으로 진행되었다.&lt;/p&gt;
 &lt;p&gt;Prep은 이후 부트캠프에 대한 확신을 가지게 해주고 기대감을 가지게 해주었다. 물론 부트캠프는 쉽지않고 더 노력해야된다는 것은 안다.
 함께했던 켄님과 합격한 Prep 9기들을 부트캠프에서 실제로 본다는 것에 기대되기도 하지만 부담도 된다… 낯가림…ㅎㅎㅎ
 아마 엄청 어색하겠지…&lt;/p&gt;
-&lt;img src=&quot;.\바닐라코딩_Prep후기_마지막.png&quot; alt=&quot;Prep9기 마지막&quot; style=&quot;zoom:50%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 38.666666666666664%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABF0lEQVQoz42R3W6DMAyF8/6PtrtJkyZV2gotUCiQQP6AknDmQInaaheN9MkntmMnDkuTX5TFGZwLKKUgpYTWGtM0vcEt6mEY1nOsbiqkpzPSNEGeZyjLkmyOtm3X4l3Xoe/7SPDtuuvFWmhnHEewpqjw9fmB4pJBUgejzVOStfZp/xobx61QIPhYdsiQnH7Q0JONsYSJwf8LUIywRmGeNJYF8N5H2PF4QJJ8o6x57OScwzzPmMmGpIVOPeJ9wJF2eF2sbVrwlm+zIiTNRnDaC0G6g1aSbmM27jcMDTf8g95g4YlVVaG61hC9ApcGTafuaFy5RCMkhFRx8PtIgg0/vPvWTzHUNc8LaJrfOHvYyUXMnZtb8O76A6dXauwzhay9AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;Prep9기 마지막&quot; title=&quot;Prep9기 마지막&quot; src=&quot;/static/50d2e62f6be67afc75a90e80c4270414/c1b63/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EB%A7%88%EC%A7%80%EB%A7%89.png&quot; srcset=&quot;/static/50d2e62f6be67afc75a90e80c4270414/5a46d/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EB%A7%88%EC%A7%80%EB%A7%89.png 300w,
+/static/50d2e62f6be67afc75a90e80c4270414/0a47e/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EB%A7%88%EC%A7%80%EB%A7%89.png 600w,
+/static/50d2e62f6be67afc75a90e80c4270414/c1b63/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EB%A7%88%EC%A7%80%EB%A7%89.png 1200w,
+/static/50d2e62f6be67afc75a90e80c4270414/78363/%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9_Prep%ED%9B%84%EA%B8%B0_%EB%A7%88%EC%A7%80%EB%A7%89.png 1522w&quot; sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;더군다나 마지막 인사를 이렇게 오글거리게 해버려서 큰일이가 나버렸다…&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;현피는 켄님의 실수로부터 우리 Prep9기들만의 인사가 되어버렸다 ㅋㅋㅋ 👊&lt;/p&gt;
@@ -5503,7 +5779,29 @@ Array가 아니기 때문에 Array와 Array.prototype의 length를 제외한 속
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;셋 중 가장 많이 사용되는 방법은 Array.from인 것 같다.&lt;/p&gt;
 &lt;p&gt;하지만 속도는 가장 고전적 방법인 Array.prototype.slice.call이 가장 빠르다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5C%ED%95%98%EC%98%B9%EC%9D%98-%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9-Prep-%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0-%EC%8B%9D%EC%82%AC_array_like_test.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 28.666666666666668%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAdapEAP/xAAYEAEBAAMAAAAAAAAAAAAAAAACAAMTIf/aAAgBAQABBQIg2syx9//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwFkf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABYQAQEBAAAAAAAAAAAAAAAAAAAxIf/aAAgBAQAGPwKIx//EABgQAQEBAQEAAAAAAAAAAAAAAAEAEVFh/9oACAEBAAE/IUDurxwci//aAAwDAQACAAMAAAAQj/8A/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERYf/aAAgBAwEBPxCoYP/EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAgEBPxBWy//EABoQAQACAwEAAAAAAAAAAAAAAAEAESFBYYH/2gAIAQEAAT8QrBy2rDpS48Qs/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;img&quot;
+        title=&quot;img&quot;
+        src=&quot;/static/999f6f2a31c38b127c8ecde6b5f288e9/e5166/%ED%95%98%EC%98%B9%EC%9D%98-%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9-Prep-%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0-%EC%8B%9D%EC%82%AC_array_like_test.jpg&quot;
+        srcset=&quot;/static/999f6f2a31c38b127c8ecde6b5f288e9/f93b5/%ED%95%98%EC%98%B9%EC%9D%98-%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9-Prep-%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0-%EC%8B%9D%EC%82%AC_array_like_test.jpg 300w,
+/static/999f6f2a31c38b127c8ecde6b5f288e9/b4294/%ED%95%98%EC%98%B9%EC%9D%98-%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9-Prep-%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0-%EC%8B%9D%EC%82%AC_array_like_test.jpg 600w,
+/static/999f6f2a31c38b127c8ecde6b5f288e9/e5166/%ED%95%98%EC%98%B9%EC%9D%98-%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9-Prep-%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0-%EC%8B%9D%EC%82%AC_array_like_test.jpg 1200w,
+/static/999f6f2a31c38b127c8ecde6b5f288e9/d9c39/%ED%95%98%EC%98%B9%EC%9D%98-%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9-Prep-%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0-%EC%8B%9D%EC%82%AC_array_like_test.jpg 1800w,
+/static/999f6f2a31c38b127c8ecde6b5f288e9/d8f91/%ED%95%98%EC%98%B9%EC%9D%98-%EB%B0%94%EB%8B%90%EB%9D%BC%EC%BD%94%EB%94%A9-Prep-%EC%BD%94%EB%93%9C%EB%A6%AC%EB%B7%B0-%EC%8B%9D%EC%82%AC_array_like_test.jpg 1952w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;참조&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://2ality.com/2013/05/quirk-array-like-objects.html&quot;&gt;array like object&lt;/a&gt;&lt;/li&gt;
@@ -13243,9 +13541,46 @@ visit_log_reverse = (*next_position, *cur_position)&lt;/code&gt;&lt;/pre&gt;&lt;
     &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;check&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[2주차 Stack & Hash] 빙고 - Lv3]]></title><description><![CDATA[문제 설명 빙고는 NxN 크기의 게임 보드 칸에 1부터 NxN까지의 자연수를 중복 없이 하나씩 적은 후 숫자를 하나씩 지워나가는 게임입니다. 이때, 가로, 세로, 대각선 방향으로 한 줄에 적힌 숫자를 모두 지울 경우 빙고를…]]></description><link>https://ha-young.github.io/2020/algorithm_python/2020-09-14-[2주차-Stack-&amp;-Hash]-빙고/</link><guid isPermaLink="false">https://ha-young.github.io/2020/algorithm_python/2020-09-14-[2주차-Stack-&amp;-Hash]-빙고/</guid><pubDate>Mon, 14 Sep 2020 04:20:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;문제-설명&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AC%B8%EC%A0%9C-%EC%84%A4%EB%AA%85&quot; aria-label=&quot;문제 설명 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;문제 설명&lt;/h2&gt;
 &lt;p&gt;빙고는 NxN 크기의 게임 보드 칸에 1부터 NxN까지의 자연수를 중복 없이 하나씩 적은 후 숫자를 하나씩 지워나가는 게임입니다. 이때, 가로, 세로, 대각선 방향으로 한 줄에 적힌 숫자를 모두 지울 경우 빙고를 1개 만들었다고 합니다.
 다음은 4X4 크기의 게임 보드를 이용해 게임을 진행한 예시입니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cbingo_rlkqli.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 280px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 103.92857142857143%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAABcRAAAXEQHKJvM/AAADc0lEQVQ4y1WUx04kQRBE+y9Wmv1KrAAJvoATB85cMAKJA0ZYIbwXg/dM483QeDO4qtp4yTS7e8iprqyozMjIrIl2dnZer6+v3y4uLgpXV1eFtbW1Qi6XK8hXODk5Md/29rYZPnCXl5eF1dVVw+Xz+cL5+fmrfH5jY2Mn0iasr6+bCRAECDoMy8vL4fj4OOhiUKAATslCNpsNW1tbQYkMu7KyEg4ODjw+7Q8jXXYjIyMem5mZ8WQSC9/d3e339/d9e3u7Pzo68gL7gYEBPzo66nt7e72SeQW1e21tba65uTmcnp7GkZxuamoqEGxubs7YwUgXLfvCwsKPb2xszHyLi4tcDre3t2FiYiLMzs66ycnJcHZ2FkfSxumD8jwrpasEK/Hw8NCCSecgXBDzEMex+VKJuKPgDglUdhwJ4B4eHqjfs+7u7gY1IyRJYgxgxkUs9bGSBJac39zcOHySKI6UwSE0wqal3N3dGQvK/fj4MGbY29ublfv8/GwNA6dgYXp62j0+PoL51rCvrw8gov+wI2BHR4cFwUdHNzc3Q11dnbFUowx3f38fmpqaTDYLSJeVIfT393sEJ1BaFgleXl7Mh0b41YCANFRCMBiqWY5v4eJIdTuAOvCszBPZYQSYVRgzkuBDN3CUXZxHh0/6x5F+XHFwPaum3RpAl9Et7TKW7v/tMj5kY7Uu0xRegzae5hAIppTAXLLCEkvnDpZoVpwOK/np6em7ZDQcGhoKra2tvqury8aGCxh72JCdAHS1s7PTzphRAkKmtrbWFSfhu8tk5UmlY8MIMMCDg4Ph/f3dgqaaouXn56fpDCsmoKen529TVKqjTAXyqTZcIjDGBV4JTQDHHrb8UfCi+EY2zjRW3y+FUtRBTxf39vb+0ydli6WDjCENOHSV2aQoQRyps46s+oPwlMc3o7C0tGRgGLNP55BGMZuMDEkJKrn+eylfyu5bWlpg6gR0NApd1BTX0NBAObxVNz8/7xobG20PDjxjV19f/4WmipWLKAtB+ftJM1I6f19oB0P0YUbReHh42KRIu46Nj4+bNDo/iaRZXlQTbRIBEwmbiHGiAIkyJiozEQszzlPTA0jEKlEy9nlhH0UgG1VUVGT04DPl5eWZmpqaTFlZWaaqqiqDH19JSYl9V1ZWmp99dXX1D04zmCktLeXub+F//QF+hriDo/auvQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/5db08b4ca7788133c8778588d2894bf3/908b1/bingo_rlkqli.png&quot;
+        srcset=&quot;/static/5db08b4ca7788133c8778588d2894bf3/908b1/bingo_rlkqli.png 280w&quot;
+        sizes=&quot;(max-width: 280px) 100vw, 280px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;위와 같이 각 칸에 숫자가 적혀 있을 때, 위 게임 보드에서 순서대로 지운 숫자가 [14,3,2,4,13,1,16,11,5,15]인 경우 아래와 같이 빙고 3개가 만들어집니다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cbingo_xibpii.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 350px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 97.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABcRAAAXEQHKJvM/AAAEgUlEQVQ4y21US28bVRi9LYsuukCIBQvYIyGB5EpsERL/oQILIQQoKCBosqgEO1ZI7BALaElpaB4kTmonscd5Oh7HY8/Eb4+fM7Zjj5/j+C2nDdDc3I9vpiUQxJU+3bkznuNzzne+Ife//5YUpF2ip4KklQqQ2K6D5CUPmVl1P3/7J/u1mJcjRWnHfK6ng0TmnUQJbpOWHCDNhI/sOh+S/f39V7xe70tYhPz43TcvJDzr76vizntYVv/Gb9aMz3UzuOv8Ksa7P5PcyzfjnnVrQdy14h9bRc5mje2tWfOBbWtecL+7sTz/4dzC4usEFwAQwjvmb/SVMPSUEAwLUejmjT0C5Zgf9IwEAzVs3jN+M1AjMCpGAZnCo3ICeoUYZERP0wDCem7NYb9KOMfKp+ngHmyuzFHP+hLVZJEiM+qyzZ9vLM2eZ8U9Kgs7dPvhAtY8VcM8zYoeurY4e+ZYnAV8t37n7t23UO6rPM9fJ+Ht1Ru9nATxXft5mneyoRpm3dwh8zltLOF1sV7+kB1nJZbiXQwls4ESZjU5yML7Liq5bXCckQqo9goyvDo7c+cKsc/NWHQ1CeO6yk4aBVZOiCgvBI20BD01Cs2kH9ppEU6OEnCqyVCM8JBBRXhNf6+moBY/MAEND9958zVC3Jtbllq9AY1mk9WbLVYuFkx/tEQA+uhRF9kb3hov12URlJAXxqWY4ScdFWPQyUoXgF9PTRJyKEmWo1IJAgGBCYLA1FwGznUFKnEBxmXZbMK5ngePYxGETTv8Wc8geBpSPo6iDfBHLX0BePvzTwg5ODiw1Ot1wJ1FIlHWqFaAtnIozQftbAhOK0mz2wmeg3ZKwHMCHqOCatRLGwkfqon/C/BjQlZWViyapkG73WadbtdkiE0xJXcwLoUwD6mQAI+aBcNn0FIhqGUwQlqWDrUclJP/SP5i4iP00O22NBoNaLVarFars0oJPURW2EkoRg8gHxGg2+vBUUWDeqMJzZb+tPQ21Y87gP5fAH556xYhguC3VJGhy+lk7s1NpmRTAN0iRL1uI7RwoqVhNBpBMpmEdDoNg8EA+v0eOBwOGgwEYDQcXgBOT0/jpPjQQ2To5X0shB5WyyXsbhw8zlVzOkbllAlSqVRgOBzC8fExdLtdkCSJ5vN54/oyoH150VJRs9BpVFi/VWVyLAwqRkNLCNDC/FWTAShhCtBj0HUdVFWFYrEInU6HGmcEvQCcnMTY7CzfszzGzg2UQ4bdZAbYyVEcPRRhiDnrIdseeogAKLVvAhuFnlPjPu4XgFNTU4RsL9+3PGlkYM++cJY42Do7raZoJbJ/xi3N0pV7P1AtGTwbj8fU8Ax9pCifGuw4jnsSQA/xrFwCFNYevNFRooBgOJei2WEjNn5uFTL+TdBzYUBACIVCptynTemDoiimFciyecnDX3/5+e3DPRePI+bEzxSXC2y5W7LgxMiIzbToLUV9zlwu527pOofx4rDTXDab5XAYXFh7sizPkGdrYmKCkAfziy8/+55dqg8mp14k5Pq1/3v23/p72Ww28hfack68ixls6gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/8a0020558be910e5c6c4f4ee311d76df/13ae7/bingo_xibpii.png&quot;
+        srcset=&quot;/static/8a0020558be910e5c6c4f4ee311d76df/5a46d/bingo_xibpii.png 300w,
+/static/8a0020558be910e5c6c4f4ee311d76df/13ae7/bingo_xibpii.png 350w&quot;
+        sizes=&quot;(max-width: 350px) 100vw, 350px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;빙고 게임 보드에 적힌 숫자가 담겨있는 배열 board, 게임 보드에서 순서대로 지운 숫자가 들어있는 배열 nums가 매개변수로 주어질 때, board에서 nums에 들어있는 숫자를 모두 지우면 몇 개의 빙고가 만들어지는지 return하도록 solution함수를 완성해주세요.&lt;/p&gt;
 &lt;h2 id=&quot;제한사항&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%9C%ED%95%9C%EC%82%AC%ED%95%AD&quot; aria-label=&quot;제한사항 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;제한사항&lt;/h2&gt;
 &lt;ul&gt;
@@ -13282,7 +13617,25 @@ visit_log_reverse = (*next_position, *cur_position)&lt;/code&gt;&lt;/pre&gt;&lt;
 문제의 예시와 같습니다.&lt;/p&gt;
 &lt;p&gt;입출력 예 #2
 다음 그림과 같이 2개의 빙고가 만들어집니다.
-&lt;img src=&quot;.%5C%EB%B9%99%EA%B3%A03_l1bqza.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 250px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100.4%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABcRAAAXEQHKJvM/AAAFBElEQVQ4yy1VWW/bRhBexc8piqJogdYN3AD9CUXR46X9SX0s2gJOH/tcIAUSOIrrNIkjK5ZvWdZB3aIlkjpImaRIipcO6oxtpTYjTodSFhjscMn5do5vhuT4+DhQLBYDuXzhTmNznSTOYneT8dhd+JkQiqLulEqlQDabDcTj8QBN04F0Oh1IJBIB/7xQKAT29vYIvl/IYm1tbZGzszNyFk+Qw8hrEk9SP5wlUt+d7G6To6MjgkYkGo2ScDi8MDo8PCQ7OzsEnSDJZJIEg0Gyu7tLfODF2tzc/BgN7p/GYmsvnz7+7CQS+ilxtPvj3ubDz9H4y1wut3Z6eroWCoXWEGANDddevXq15p+j1/c3NjY+9C+LRCJLQJ7nH9q2BYZpDdsXtYlynnijlpPTDl+atBRl2m63pwrukiRObdueapq2eMbzEYrHsuwvlmUR0zRXFoD9fm+zUi5DvcHPZwMbatQhHDx7BFOtDngZYGiABqDrOmAkUMZvB4MBpNOUh3mEVqv1x/X1NRmPxyvoMSFySwlatg1mp3vb1aS5zqa9NkN5A4mZt3V9bln23HEGc1VrzxVVW4humCjGrWnZ0GjwD8aTCTrmrMRiMUIkOvF4otZgolRvDTYNVjUHTpOGTi0LveY5XOk8OBdl0LkczEwB+nhm1vLeZbvhjpUq8Lnory02R+CqGXgPmNxr5mMg0wm3yxeBjh/AafhfBMgCn41C4WQHWufJhRSOd6CePga7XvCo/RfvaqhXM9G/nzwPfUWlkt8jKwJEoRMvTPRMr6TcXiMP9ewpgoShW8+DgiDV1CFoFQralSTUUvug0HEwWMrj00fvfL2RPvozuB25h4DfYI4DRGCKGyNLhZGt3WpVLEAtB2OZAZtLQx8v+E+vwbBZAqVRgSvHAqslgCZw3pue4Y4sBbhi5nepzhK4GQZ8PhOtrQcvRAn4C8kdmAr0MOxG9gSuVRYuFRYMhsKdg163C4rWhm6v74tX5wXXtxNl+cHV9YwMhqOVBWBLUYMcV4VzhnUdQ4EOhlpNHcFMY2Eq0SDljlH3ATvQEJrgMwL56BULBbderyNt5PXZ7JoMh4MVbElC6uVCcGC0YGCqroohG1wGRlIFq50FQ2BgbIhgixzIdQYmHR0smQexKXh9x3ERGLC/15HsBEm+JDbmKmgyKZALUXeEudKYDHDJfaRMeRGeKLfAcZyF51L+BJRiFEZdw7sQRVfX2yBL0rpPbCT7EnAs0sFKLAyZyDPXzxufO4WTl0+gK5zDaDQChmFgOHCgj7mNvngM3NlreDsdeuls3pUkGUzLWgcAMplOl4CtMhW8MgS41AXXruV90sJILC9Ijf0J2AXQ6dhg1Etw05FgKLPQFhvedOS4w54NXJlet3WVdM33IfOC8ATjB003bnWx7plcxtMqKQ9D9rBPPRwEnqqqqC93TIHXvWC8Xi3j9hs5kArR9SuFIaOL0hIQvXjKsSwUS/R8bGsL2pSiYXB7MgiCANjw2K8Nv7JwcHAAJZoG19GgU03PB0IRHL7wACZtcmvxS0D8+JGqKCC1lEtV4GY6m7nBSt/g+JpJsvwWKzjDSTND8JmqKjMcJjOjQc8mIn05Fs+BTx/+hsAEZQmIg/MjjuPuVWu1L6KRV5/sbT/7Nrq7/XU8FPwUfwFfINdWkbCr2FarzWZzNZmiVk9C/6yWo6HV7P7ze+GNvz6gdreIL/76H3kUvzHCswLsAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/122ce8abea391d717abaf4f1ca96019b/63868/%EB%B9%99%EA%B3%A03_l1bqza.png&quot;
+        srcset=&quot;/static/122ce8abea391d717abaf4f1ca96019b/63868/%EB%B9%99%EA%B3%A03_l1bqza.png 250w&quot;
+        sizes=&quot;(max-width: 250px) 100vw, 250px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;나의-풀이&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%82%98%EC%9D%98-%ED%92%80%EC%9D%B4&quot; aria-label=&quot;나의 풀이 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;나의 풀이&lt;/h2&gt;
 &lt;h3 id=&quot;첫번째-풀이&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B2%AB%EB%B2%88%EC%A7%B8-%ED%92%80%EC%9D%B4&quot; aria-label=&quot;첫번째 풀이 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;첫번째 풀이&lt;/h3&gt;
 &lt;h4 id=&quot;소스&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%86%8C%EC%8A%A4&quot; aria-label=&quot;소스 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;소스&lt;/h4&gt;
@@ -13351,7 +13704,7 @@ visit_log_reverse = (*next_position, *cur_position)&lt;/code&gt;&lt;/pre&gt;&lt;
 &lt;li&gt;일단, 빙고를 위한 숫자값이 들어왔을 때 (nums 순회) 그 해당 숫자가 어느위치에 있는지 빠르게 찾아가는것이 관건.
 (중복된 수가 들어오지 않기 때문에 따로 예외처리 할 필요는 없다.)&lt;/li&gt;
 &lt;li&gt;그래서 bingo_hashboard라고 딕셔너리를 만들어 해당 값에 대한 위치정보를 담아둔다. {14:(0,3), 18:(3,3)…}&lt;/li&gt;
-&lt;li&gt;nums를 순회하면서 각 값에대한 해당 위치를 딕셔너리를 이용해  빠르게 찾고, 해당 위치값을 기반으로 빙고가 되었는지 체크한다.&lt;/li&gt;
+&lt;li&gt;nums를 순회하면서 각 값에대한 해당 위치를 딕셔너리를 이용해 빠르게 찾고, 해당 위치값을 기반으로 빙고가 되었는지 체크한다.&lt;/li&gt;
 &lt;li&gt;각 빙고를 체크하는 것은 함수화 시켜서 가로, 세로, 대각선, 역대각선 이렇게 처리하였다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&quot;결과&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B2%B0%EA%B3%BC&quot; aria-label=&quot;결과 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;결과&lt;/h4&gt;
@@ -15444,7 +15797,11 @@ Modal Component였는데, 이를 적용시키면서 설명을 하겠다.&lt;/p&g
 &lt;p&gt;다음과 같이 구현하였다.&lt;/p&gt;
 &lt;h4 id=&quot;4-less쪽-error-발견&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-less%EC%AA%BD-error-%EB%B0%9C%EA%B2%AC&quot; aria-label=&quot;4 less쪽 error 발견 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. less쪽 error 발견&lt;/h4&gt;
 &lt;p&gt;이렇게 해서 실행을 해봤는데 아니나다를까 애러를 발견했다.&lt;/p&gt;
-&lt;img src=&quot;.\lessError.JPG&quot; alt=&quot;image-20200728164139495&quot; style=&quot;zoom:100%;&quot; /&gt;
+&lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 403px; &quot;&gt;
+      &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 38.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAcyFkB//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAYEAACAwAAAAAAAAAAAAAAAAAAARARIf/aAAgBAQABPyF0ZH//2gAMAwEAAgADAAAAEIgf/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAx/9oACAEDAQE/EFXZ/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8Qh//EABoQAQABBQAAAAAAAAAAAAAAAAGBABBBYeH/2gAIAQEAAT8Q0kHKQYWbf//Z&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&quot;gatsby-resp-image-image&quot; alt=&quot;image-20200728164139495&quot; title=&quot;image-20200728164139495&quot; src=&quot;/static/912025bb2e93088f8bed37e92711f02d/c80d3/lessError.jpg&quot; srcset=&quot;/static/912025bb2e93088f8bed37e92711f02d/f93b5/lessError.jpg 300w,
+/static/912025bb2e93088f8bed37e92711f02d/c80d3/lessError.jpg 403w&quot; sizes=&quot;(max-width: 403px) 100vw, 403px&quot; style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot; loading=&quot;lazy&quot;&gt;
+    &lt;/span&gt;
 &lt;p&gt;해당 애러내용은 찾아보니 antd 모듈은 less 모듈을 사용하는데 이 less모듈이 없어서 나는 애러였다.&lt;/p&gt;
 &lt;h4 id=&quot;5-less-모듈-gatsby-plugin-설치-및-config-적용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-less-%EB%AA%A8%EB%93%88-gatsby-plugin-%EC%84%A4%EC%B9%98-%EB%B0%8F-config-%EC%A0%81%EC%9A%A9&quot; aria-label=&quot;5 less 모듈 gatsby plugin 설치 및 config 적용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. less 모듈, gatsby-plugin 설치 및 config 적용&lt;/h4&gt;
 &lt;p&gt;번거롭게도 gatsby에서는 less모듈 또한 gatsby-less-plugin을 설치해줘야 한다.&lt;/p&gt;
@@ -15475,7 +15832,27 @@ Option값에 javascriptEnabled를 반드시 true로 설정해야 한다.&lt;/p&g
 &lt;p&gt;역시 새롭게 사용하는 것에는 한번에 되는일은 없다.
 이제 한번에 되는게 이상할 정도…
 이번 문제는 이랬다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5CnoJavascriptEnabled.JPG&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 776px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 29.666666666666668%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAcyFkB//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAWEAADAAAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hIv/aAAwDAQACAAMAAAAQj9//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAgMBAAAAAAAAAAAAAAABABEhQYGh/9oACAEBAAE/EGnb2IvD5En/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;noJavascriptEnabled&quot;
+        title=&quot;noJavascriptEnabled&quot;
+        src=&quot;/static/6d935d3620f54495904ce242b52fe2fa/1f1b4/noJavascriptEnabled.jpg&quot;
+        srcset=&quot;/static/6d935d3620f54495904ce242b52fe2fa/f93b5/noJavascriptEnabled.jpg 300w,
+/static/6d935d3620f54495904ce242b52fe2fa/b4294/noJavascriptEnabled.jpg 600w,
+/static/6d935d3620f54495904ce242b52fe2fa/1f1b4/noJavascriptEnabled.jpg 776w&quot;
+        sizes=&quot;(max-width: 776px) 100vw, 776px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;찾다찾다 안나와서 그냥 gatsby starter pack 중에서 ant design을 사용한 것이 있길래 해당 git을 clone해서 참조해보았다.&lt;/p&gt;
 &lt;p&gt;그 결과 찾은것이 less-to-json.&lt;/p&gt;
 &lt;p&gt;less에 사용되는 vars값들을 로컬로 만들고 가져오도록 하고있었다.
@@ -15526,7 +15903,28 @@ starter pack에서 이렇게 사용하면 방법이 이런가보다.&lt;/p&gt;
 &lt;h4 id=&quot;8-확인&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#8-%ED%99%95%EC%9D%B8&quot; aria-label=&quot;8 확인 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;8. 확인&lt;/h4&gt;
 &lt;p&gt;자 확인해보니 잘 나온다ㅎㅎㅎ 앞으로 다양하게 ant design을 적용시켜서
 Gatsby 프로젝트를 꾸며보자!&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cmodal.jpg&quot; alt=&quot;modal&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEEA//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdq4AYg//8QAGBABAAMBAAAAAAAAAAAAAAAAAgEDIDL/2gAIAQEAAQUCHdxMDH//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAASAhcf/aAAgBAQAGPwJaUlH/xAAZEAEAAgMAAAAAAAAAAAAAAAABABEgMUH/2gAIAQEAAT8hAi6glQb5j//aAAwDAQACAAMAAAAQMM//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAgMBAAAAAAAAAAAAAAABEBEAITFB/9oACAEBAAE/EC9FAR44tVuX1W58j//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;modal&quot;
+        title=&quot;modal&quot;
+        src=&quot;/static/d00ddc55a9a533baa9bc654cb404eb3d/e5166/modal.jpg&quot;
+        srcset=&quot;/static/d00ddc55a9a533baa9bc654cb404eb3d/f93b5/modal.jpg 300w,
+/static/d00ddc55a9a533baa9bc654cb404eb3d/b4294/modal.jpg 600w,
+/static/d00ddc55a9a533baa9bc654cb404eb3d/e5166/modal.jpg 1200w,
+/static/d00ddc55a9a533baa9bc654cb404eb3d/7e1b6/modal.jpg 1310w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;만약 안되면
 npm 모듈을 clean하고 reinstall 하도록 하자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[C++ 객체지향 프로그래밍 1]]></title><description><![CDATA[객체지향 프로그래밍 현실적인 것, 현실에 존재하는 것을 프로그래밍 하기엔 적합하나,
 현실에 존재하지 않는 것, 추상적인 것을 프로그래밍 구현하기엔 힘들고 부적합한 방식이 될 수 있다. Java VS C++ Java와 C…]]></description><link>https://ha-young.github.io/2020/cpp/2020-08-13-C++-객체지향-프로그래밍-1/</link><guid isPermaLink="false">https://ha-young.github.io/2020/cpp/2020-08-13-C++-객체지향-프로그래밍-1/</guid><pubDate>Thu, 13 Aug 2020 18:15:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;객체지향-프로그래밍&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D&quot; aria-label=&quot;객체지향 프로그래밍 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;객체지향 프로그래밍&lt;/h3&gt;
@@ -16458,12 +16856,49 @@ $$&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;gatsby-transformer-remark&lt;/strong&gt; 플러그인을 이용해 마크다운 파일을 해석 및 html로 변환시키는데,&lt;/p&gt;
 &lt;p&gt;이 과정에서 image 파일을 읽지 않는건지 읽었지만 내부 경로가 바뀌어서 못 읽는 건지 알 수 없었다.&lt;/p&gt;
 &lt;p&gt;build가 된 후의 build폴더인 &lt;u&gt;public 폴더 내부를 살펴보니&lt;/u&gt; 변환된 html 폴더에서 image를 가져오는 것이 빌드 된 후의 asset folder(static)가 아니라 내가 설정한 ./image-1.jpg 그대로 적용되어있는 걸 확인 할 수 있었다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cimage-20200729154157118.png&quot; alt=&quot;image-20200729154157118&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 202px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 147.5247524752475%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAACXBIWXMAAAsTAAALEwEAmpwYAAADcElEQVRIx5VW224bVRT1X1SAWt/mfvVcPB57xvb4lsaBSoUGFNomVKWkFBUqIO0LKs+AxL/wh4u1j+MQIrWdediam886a++19zpuGaaHdjRDO1ujr7voGT5MN4LpDNDVPT43i1YWpbi1fYbiz38wzKeYlEvMV1tUiw0000dbc9BldGpGq0tWEvZgBIOsZJf9O4mO5v7v+UPR8gYZ/CDB6Q+/4PziLUwvxt2je2Rb4E7P2oE2AdSsQFG1/AR2kKr73Tv7CnCfci1AJxjC82OcPHuJxy9+huHGKOZLpKMSSVbswJow1O0QfdYtmVTIpmvorGMQj+CzFC4ZNwZUqboDHH7xENvjR7AIGKUF3DBBT4niXIpTM2WLIhh2gPW9Y3z65SlsPqf5DHkxh8n37b7dDFBaRbd8jOYHjA0BLIoSwvYjWF6k2qgu2KUoKRwuPHnyPc4oij8YotocYVqtMGdz2/y2Z1m7bfocsY+CCJ84AXROR59xnVUzhlQzIctbz5/i4O8/EPop22aNYrqEF6aNgVtSo3bPRp+1NEJpE1fVbc9SmluirtotP8rhE+jB6Xf46skLpXI5W0LUz8ZTFLMVDWOhhGvXYSiNLTc+e8+Lc9zpGkpdYShX2cDlhtqNur4TsKs78KMRLPbcNz++ZnM/Vilr9Ml9uvuUa9mXqGxxfoXp6rNjjBeHaieNKYrZ/hc1DdaPJ0jyJaJsjoP7X2NSHSIvDzBIp3AGY3gMt0G0vGiCfHqX7rLAw/NXWD04Q14dKUA7GMEJx4z8KmSRrNlfb4YSRaLHot/umPjcMxHbTJllELcRUWSa5F6uMpaqBObNkuyCfejS+kNlqDLHv2Y2CsdBOJphVm1QzhcYFRVm9Mi8rCjWzjDeKYpOUUQAlxNjcUrkxxI3m/k6yHvbxg15ptCxz15e4Pz1W3hMS0691XpLxy5RVmusNlsE0bCWlbWEnfzAcCJoUk8ylppK7cStpaGVgVxr7PcCuuGQDBM8ev4Tnr56o+qZ8TiQM3rMkcuKBVnHtY1WqSzC2MkCTrJQDOVotVkGhxvJhuLo9U89LtScDL+f2/jrzQw9Z4hkOEHK+gl4E6e5PFPECGJ8exLht4v7MLwh0y3VMSrfOlfq7s7nDwL2me7H9MMJ+7Dq9HGb7u3yn4Ru78SRZjXEkWqm/C9ojY9DkMtcCQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image-20200729154157118&quot;
+        title=&quot;image-20200729154157118&quot;
+        src=&quot;/static/14ec37fdb64a1d64df4405f14cdf45cf/2e687/image-20200729154157118.png&quot;
+        srcset=&quot;/static/14ec37fdb64a1d64df4405f14cdf45cf/2e687/image-20200729154157118.png 202w&quot;
+        sizes=&quot;(max-width: 202px) 100vw, 202px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;내가 해당 빌드경로에 이미지를 넣어서 deploy하는 방법도 있겠지만, 이미지를 asset폴더로 빌드하고 자동으로 html에 경로를 설정해주는 무언가가 있을 것이라 생각했다.&lt;/p&gt;
 &lt;p&gt;없으면 어떻게 자동화 할 방법을 모색해야했다.&lt;/p&gt;
 &lt;h3 id=&quot;markdown에-쓰이는-image-자동-build-구조-짜기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#markdown%EC%97%90-%EC%93%B0%EC%9D%B4%EB%8A%94-image-%EC%9E%90%EB%8F%99-build-%EA%B5%AC%EC%A1%B0-%EC%A7%9C%EA%B8%B0&quot; aria-label=&quot;markdown에 쓰이는 image 자동 build 구조 짜기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;markdown에 쓰이는 image 자동 build 구조 짜기&lt;/h3&gt;
 &lt;p&gt;나는 우선, 블로그 포스팅 Markdown을 작성 할 때 다음과 같이 이미지와 markdown파일을 동일 폴더내에 위치하도록 글을 작성하고 빌드할 때 자동으로 image는 asset경로로 빠지고 html에서는 image src경로가 해당 asset경로로 바뀌길 원했다.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;.%5Cimage-20200729151830923.jpg&quot; alt=&quot;image-20200729151830923&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 318px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 36%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHMqWQD/8QAFxAAAwEAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAQABBQJGz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABgQAAMBAQAAAAAAAAAAAAAAAAARYQEx/9oACAEBAAE/IeB4OYf/2gAMAwEAAgADAAAAEIQf/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8QJ//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABcQAQEBAQAAAAAAAAAAAAAAAAERAJH/2gAIAQEAAT8QClxSzjNtab//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image-20200729151830923&quot;
+        title=&quot;image-20200729151830923&quot;
+        src=&quot;/static/ff489ad643a6b02c56005cb884fa34e9/2debd/image-20200729151830923.jpg&quot;
+        srcset=&quot;/static/ff489ad643a6b02c56005cb884fa34e9/f93b5/image-20200729151830923.jpg 300w,
+/static/ff489ad643a6b02c56005cb884fa34e9/2debd/image-20200729151830923.jpg 318w&quot;
+        sizes=&quot;(max-width: 318px) 100vw, 318px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h3 id=&quot;리서칭&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EC%84%9C%EC%B9%AD&quot; aria-label=&quot;리서칭 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리서칭&lt;/h3&gt;
 &lt;p&gt;구글링을 하는데 한글로 된 내용이 없어서,
 영어로 검색하니까 제대로 된 내용들을 찾을 수 있었다.&lt;/p&gt;

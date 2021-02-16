@@ -186,7 +186,11 @@ Modal Component였는데, 이를 적용시키면서 설명을 하겠다.</p>
 <p>다음과 같이 구현하였다.</p>
 <h4 id="4-less쪽-error-발견" style="position:relative;"><a href="#4-less%EC%AA%BD-error-%EB%B0%9C%EA%B2%AC" aria-label="4 less쪽 error 발견 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. less쪽 error 발견</h4>
 <p>이렇게 해서 실행을 해봤는데 아니나다를까 애러를 발견했다.</p>
-<img src=".\lessError.JPG" alt="image-20200728164139495" style="zoom:100%;" />
+<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 403px; ">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 38.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAcyFkB//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAYEAACAwAAAAAAAAAAAAAAAAAAARARIf/aAAgBAQABPyF0ZH//2gAMAwEAAgADAAAAEIgf/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAx/9oACAEDAQE/EFXZ/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8Qh//EABoQAQABBQAAAAAAAAAAAAAAAAGBABBBYeH/2gAIAQEAAT8Q0kHKQYWbf//Z'); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image-20200728164139495" title="image-20200728164139495" src="/static/912025bb2e93088f8bed37e92711f02d/c80d3/lessError.jpg" srcset="/static/912025bb2e93088f8bed37e92711f02d/f93b5/lessError.jpg 300w,
+/static/912025bb2e93088f8bed37e92711f02d/c80d3/lessError.jpg 403w" sizes="(max-width: 403px) 100vw, 403px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+    </span>
 <p>해당 애러내용은 찾아보니 antd 모듈은 less 모듈을 사용하는데 이 less모듈이 없어서 나는 애러였다.</p>
 <h4 id="5-less-모듈-gatsby-plugin-설치-및-config-적용" style="position:relative;"><a href="#5-less-%EB%AA%A8%EB%93%88-gatsby-plugin-%EC%84%A4%EC%B9%98-%EB%B0%8F-config-%EC%A0%81%EC%9A%A9" aria-label="5 less 모듈 gatsby plugin 설치 및 config 적용 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. less 모듈, gatsby-plugin 설치 및 config 적용</h4>
 <p>번거롭게도 gatsby에서는 less모듈 또한 gatsby-less-plugin을 설치해줘야 한다.</p>
@@ -217,7 +221,27 @@ Option값에 javascriptEnabled를 반드시 true로 설정해야 한다.</p>
 <p>역시 새롭게 사용하는 것에는 한번에 되는일은 없다.
 이제 한번에 되는게 이상할 정도…
 이번 문제는 이랬다.</p>
-<p><img src=".%5CnoJavascriptEnabled.JPG"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 776px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 29.666666666666668%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAcyFkB//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAWEAADAAAAAAAAAAAAAAAAAAAAEBH/2gAIAQEAAT8hIv/aAAwDAQACAAMAAAAQj9//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAgMBAAAAAAAAAAAAAAABABEhQYGh/9oACAEBAAE/EGnb2IvD5En/2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="noJavascriptEnabled"
+        title="noJavascriptEnabled"
+        src="/static/6d935d3620f54495904ce242b52fe2fa/1f1b4/noJavascriptEnabled.jpg"
+        srcset="/static/6d935d3620f54495904ce242b52fe2fa/f93b5/noJavascriptEnabled.jpg 300w,
+/static/6d935d3620f54495904ce242b52fe2fa/b4294/noJavascriptEnabled.jpg 600w,
+/static/6d935d3620f54495904ce242b52fe2fa/1f1b4/noJavascriptEnabled.jpg 776w"
+        sizes="(max-width: 776px) 100vw, 776px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
 <p>찾다찾다 안나와서 그냥 gatsby starter pack 중에서 ant design을 사용한 것이 있길래 해당 git을 clone해서 참조해보았다.</p>
 <p>그 결과 찾은것이 less-to-json.</p>
 <p>less에 사용되는 vars값들을 로컬로 만들고 가져오도록 하고있었다.
@@ -268,7 +292,28 @@ starter pack에서 이렇게 사용하면 방법이 이런가보다.</p>
 <h4 id="8-확인" style="position:relative;"><a href="#8-%ED%99%95%EC%9D%B8" aria-label="8 확인 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>8. 확인</h4>
 <p>자 확인해보니 잘 나온다ㅎㅎㅎ 앞으로 다양하게 ant design을 적용시켜서
 Gatsby 프로젝트를 꾸며보자!</p>
-<p><img src=".%5Cmodal.jpg" alt="modal"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 70%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEEA//EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdq4AYg//8QAGBABAAMBAAAAAAAAAAAAAAAAAgEDIDL/2gAIAQEAAQUCHdxMDH//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAASAhcf/aAAgBAQAGPwJaUlH/xAAZEAEAAgMAAAAAAAAAAAAAAAABABEgMUH/2gAIAQEAAT8hAi6glQb5j//aAAwDAQACAAMAAAAQMM//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAgMBAAAAAAAAAAAAAAABEBEAITFB/9oACAEBAAE/EC9FAR44tVuX1W58j//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="modal"
+        title="modal"
+        src="/static/d00ddc55a9a533baa9bc654cb404eb3d/e5166/modal.jpg"
+        srcset="/static/d00ddc55a9a533baa9bc654cb404eb3d/f93b5/modal.jpg 300w,
+/static/d00ddc55a9a533baa9bc654cb404eb3d/b4294/modal.jpg 600w,
+/static/d00ddc55a9a533baa9bc654cb404eb3d/e5166/modal.jpg 1200w,
+/static/d00ddc55a9a533baa9bc654cb404eb3d/7e1b6/modal.jpg 1310w"
+        sizes="(max-width: 1200px) 100vw, 1200px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
 <p>만약 안되면
 npm 모듈을 clean하고 reinstall 하도록 하자.</p></div><div class="social-share"><a class="resp-sharing-button__link" href="#" target="_blank" rel="noopener" aria-label="Share on Facebook"><div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z"></path></svg></div><span class="service-label">Share on Facebook</span></div></a><a class="resp-sharing-button__link" href="#" rel="noopener" aria-label="Share on Twitter"><div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--large"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z"></path></svg></div><span class="service-label">Share on Twitter</span></div></a></div><hr class="custom-hr"/><div class="bio"><div class="author"><div class="author-description"><div class="author-image gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:72px;height:72px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABYlAAAWJQFJUiTwAAAEo0lEQVQ4y3WUe1CUZRSH9+8yUwMUBVxAEEEwpqixaaZUUhvNbKa8pAQ4sgiYiZDh/VIj3jB11EANHaAEFCkBwdsiQhEuyG0XkNvKsgK7LCAgmTPOPL3vR1iWfTPvfLd5n3N+5/zOq7J01vO81Xm/jge9Lcqz7vZ1dGXX+CE1kQN7t5N8+jCG2hJ+f9hOt+UuXR11T/epLJ0Nz4EZBKyVklu5LFoYiP8MLwJem46HuxMuTg44TbQT7z7si9+K6V41NmvjU6jq3zD5Q0Ztb6thzqy3cBw/hqkeLkxxm4SX52SmTVXj7eWqwB3sRrP0k4V0mPVYuxrE3ucAZXYPB0ykpZzAeZI9ftM98JnmpoAkUC4ZQL5P93ZXAiYlHmRosF0B/0dyh1kC24herxHy7FFPHo/jhLF4ejgzzVOtwEag3l5q1C7jWbxo7v/XUGYoo23cEIG93UusXrmEuPUR+PlMUWRLuSNAefec4swMX0/qDb/S0930LFDWwWyqps/WyKWfUlgXFgx9FngyRHbKKaUhbq4TFZC3kOzzVy3fDPCjpalcac4zwG5LI8am36irKEBfdRNrYy30W3ncYYShXhIT4nnd31vJcrKQ6qp2xG7cKGJjIhjsv6eoe1ay6JKxqYyW+hKapIS7tXx/5CCPLCaaq25zMmEf/SKIvvgGQUs/4gtNKMErPqa6soheW7PikGFgx3B2bS06Gmq0mNsqMehuYCst4tutX9FakEN1Vjontm3m8Z1SkbWFIVMzVcXXqaq4SV9P8z+bMuw9pX73qqivui5q0URro47WwsvQbcZ6NY/72ZkgsntSWYat9g42Yx1JJw4x840Afs5OU6ZKTpdKgka62ynA8qN8tnYNWyg//RT1pVr+sHXyyNRCa/EVftFeQ68vF6OYLJrjxcL57yl7JUslN3VbGugXo/ZQFLa/r5Ue0a2BgXauZCfxof+LJGxYTM7p3UR84EvUfGf2b1yBoV5PfV0Nt4qKOZywR1jNNNyUrAsp7Nq1Tbj9MOnnkinIP49BX0qx9gIh704g6G17rBXJZB8NY3nAC0TNdSTifVcKr16k3WxGXgX5eRTkpTPQZ0SlrykhTKMhOHQVwSGiayEhaMLDCQkOYsFMd7Z/FkDxuc2sCXQkXKywwElo5kzkRn4aQ0ODFGm1zJ01mwXzAukWKlUDD4ycPfOdAo3eEE1cXJxyX7tuPeGa1SQd2sSZAxuJ/fQdNPPdiJrnTOTiqeSlHsNYW8vF3Fx8fX3xf3UGutwMVNLdxpY7rP08ipVBwezYuZOY2FgiIiMFdB1rIiLJyfiRxGMJ5OekUVleQNqOaFLdPbi8KoyijAy+2bKF3T5+5Du7opJHjs16l0rhp8yMs8TvEcAYkd0aITs0lGXLljNr9mxWh4WRdT6Fx/RyaVsce0eN4biDI/Gjx7Jf7c5JFzduxkQOG1v6sE84XXZY+slsqhEBCrlakMXRI/tFGWKo0GmV7neLA8AgTvA9Ti58/fIr7B3nwBIBjZzgyK3L5/4+D7s6hv0nfSj91NfTogSQa1DUeWS05L/7plrK8zIpzTxDYWoSCVu/JH33JpobyvgT/qR73nLaaRUAAAAASUVORK5CYII=" alt="@Ha-Young" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms"/><noscript><picture><source srcset="/static/8e424d905a882bb161a9f0cc92b57896/e5b88/profile.png 1x,
 /static/8e424d905a882bb161a9f0cc92b57896/e7bd6/profile.png 1.5x,

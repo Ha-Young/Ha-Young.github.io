@@ -76,12 +76,49 @@
 <p><strong>gatsby-transformer-remark</strong> 플러그인을 이용해 마크다운 파일을 해석 및 html로 변환시키는데,</p>
 <p>이 과정에서 image 파일을 읽지 않는건지 읽었지만 내부 경로가 바뀌어서 못 읽는 건지 알 수 없었다.</p>
 <p>build가 된 후의 build폴더인 <u>public 폴더 내부를 살펴보니</u> 변환된 html 폴더에서 image를 가져오는 것이 빌드 된 후의 asset folder(static)가 아니라 내가 설정한 ./image-1.jpg 그대로 적용되어있는 걸 확인 할 수 있었다.</p>
-<p><img src=".%5Cimage-20200729154157118.png" alt="image-20200729154157118"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 202px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 147.5247524752475%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAACXBIWXMAAAsTAAALEwEAmpwYAAADcElEQVRIx5VW224bVRT1X1SAWt/mfvVcPB57xvb4lsaBSoUGFNomVKWkFBUqIO0LKs+AxL/wh4u1j+MQIrWdediam886a++19zpuGaaHdjRDO1ujr7voGT5MN4LpDNDVPT43i1YWpbi1fYbiz38wzKeYlEvMV1tUiw0000dbc9BldGpGq0tWEvZgBIOsZJf9O4mO5v7v+UPR8gYZ/CDB6Q+/4PziLUwvxt2je2Rb4E7P2oE2AdSsQFG1/AR2kKr73Tv7CnCfci1AJxjC82OcPHuJxy9+huHGKOZLpKMSSVbswJow1O0QfdYtmVTIpmvorGMQj+CzFC4ZNwZUqboDHH7xENvjR7AIGKUF3DBBT4niXIpTM2WLIhh2gPW9Y3z65SlsPqf5DHkxh8n37b7dDFBaRbd8jOYHjA0BLIoSwvYjWF6k2qgu2KUoKRwuPHnyPc4oij8YotocYVqtMGdz2/y2Z1m7bfocsY+CCJ84AXROR59xnVUzhlQzIctbz5/i4O8/EPop22aNYrqEF6aNgVtSo3bPRp+1NEJpE1fVbc9SmluirtotP8rhE+jB6Xf46skLpXI5W0LUz8ZTFLMVDWOhhGvXYSiNLTc+e8+Lc9zpGkpdYShX2cDlhtqNur4TsKs78KMRLPbcNz++ZnM/Vilr9Ml9uvuUa9mXqGxxfoXp6rNjjBeHaieNKYrZ/hc1DdaPJ0jyJaJsjoP7X2NSHSIvDzBIp3AGY3gMt0G0vGiCfHqX7rLAw/NXWD04Q14dKUA7GMEJx4z8KmSRrNlfb4YSRaLHot/umPjcMxHbTJllELcRUWSa5F6uMpaqBObNkuyCfejS+kNlqDLHv2Y2CsdBOJphVm1QzhcYFRVm9Mi8rCjWzjDeKYpOUUQAlxNjcUrkxxI3m/k6yHvbxg15ptCxz15e4Pz1W3hMS0691XpLxy5RVmusNlsE0bCWlbWEnfzAcCJoUk8ylppK7cStpaGVgVxr7PcCuuGQDBM8ev4Tnr56o+qZ8TiQM3rMkcuKBVnHtY1WqSzC2MkCTrJQDOVotVkGhxvJhuLo9U89LtScDL+f2/jrzQw9Z4hkOEHK+gl4E6e5PFPECGJ8exLht4v7MLwh0y3VMSrfOlfq7s7nDwL2me7H9MMJ+7Dq9HGb7u3yn4Ru78SRZjXEkWqm/C9ojY9DkMtcCQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-20200729154157118"
+        title="image-20200729154157118"
+        src="/static/14ec37fdb64a1d64df4405f14cdf45cf/2e687/image-20200729154157118.png"
+        srcset="/static/14ec37fdb64a1d64df4405f14cdf45cf/2e687/image-20200729154157118.png 202w"
+        sizes="(max-width: 202px) 100vw, 202px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
 <p>내가 해당 빌드경로에 이미지를 넣어서 deploy하는 방법도 있겠지만, 이미지를 asset폴더로 빌드하고 자동으로 html에 경로를 설정해주는 무언가가 있을 것이라 생각했다.</p>
 <p>없으면 어떻게 자동화 할 방법을 모색해야했다.</p>
 <h3 id="markdown에-쓰이는-image-자동-build-구조-짜기" style="position:relative;"><a href="#markdown%EC%97%90-%EC%93%B0%EC%9D%B4%EB%8A%94-image-%EC%9E%90%EB%8F%99-build-%EA%B5%AC%EC%A1%B0-%EC%A7%9C%EA%B8%B0" aria-label="markdown에 쓰이는 image 자동 build 구조 짜기 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>markdown에 쓰이는 image 자동 build 구조 짜기</h3>
 <p>나는 우선, 블로그 포스팅 Markdown을 작성 할 때 다음과 같이 이미지와 markdown파일을 동일 폴더내에 위치하도록 글을 작성하고 빌드할 때 자동으로 image는 asset경로로 빠지고 html에서는 image src경로가 해당 asset경로로 바뀌길 원했다.</p>
-<p><img src=".%5Cimage-20200729151830923.jpg" alt="image-20200729151830923"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 318px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHMqWQD/8QAFxAAAwEAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAQABBQJGz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAABD/2gAIAQEABj8Cf//EABgQAAMBAQAAAAAAAAAAAAAAAAARYQEx/9oACAEBAAE/IeB4OYf/2gAMAwEAAgADAAAAEIQf/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8QJ//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABcQAQEBAQAAAAAAAAAAAAAAAAERAJH/2gAIAQEAAT8QClxSzjNtab//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="image-20200729151830923"
+        title="image-20200729151830923"
+        src="/static/ff489ad643a6b02c56005cb884fa34e9/2debd/image-20200729151830923.jpg"
+        srcset="/static/ff489ad643a6b02c56005cb884fa34e9/f93b5/image-20200729151830923.jpg 300w,
+/static/ff489ad643a6b02c56005cb884fa34e9/2debd/image-20200729151830923.jpg 318w"
+        sizes="(max-width: 318px) 100vw, 318px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
 <h3 id="리서칭" style="position:relative;"><a href="#%EB%A6%AC%EC%84%9C%EC%B9%AD" aria-label="리서칭 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>리서칭</h3>
 <p>구글링을 하는데 한글로 된 내용이 없어서,
 영어로 검색하니까 제대로 된 내용들을 찾을 수 있었다.</p>
