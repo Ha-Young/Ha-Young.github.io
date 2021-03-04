@@ -2,11 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-N으로표현_lv3_dp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/frontend/infinite-scroll/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-섬연결하기-lv3-그리디/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-섬연결하기_lv3_그리디/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-프린터-lv2-스택-큐/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-H-Index-lv2-정렬/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-카펫-lv2-완전탐색/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2021/vanillacoding/vanillacoding_bootcamp_3주차후기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/javascript/하옹의-자바스크립트-식사---Object-Oriented-Programming/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-단어변환_Lv3_DFS-BFS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/frontend/browser-rendering/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -15,15 +14,15 @@
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-베스트앨범_lv3_해시/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-위장_lv2_해시/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/javascript/하옹의-자바스크립트-간식---Object-Copy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-다리를지나는트럭_lv2_스택-큐/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-기능개발_lv2_스택-큐/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-다리를지나는트럭_lv2_스택-큐/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/javascript/하옹의-자바스크립트-식사---Asynchronous-Programming/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/javascript/하옹의-자바스크립트-식사---this/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/javascript/하옹의-자바스크립트-식사---Prototype/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/gatsby/2021-01-06-Gatsby-블로그-TOC만들기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/gatsby/2020-12-31-블로그를-Google-Analytics에-추가/2020-12-31-블로그를-Google-Analytics에-추가/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/frontend/Google-site검색엔진에노출시키기/2020-12-30-사이트를-Google-검색엔진에-노출시키기-(SEO-향상)/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/gatsby/2020-12-29-Gatsby-블로그-RSS-Feed-생성시키기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/gatsby/Add-Google-Analytics/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/frontend/사이트를-Google-검색엔진에-노출시키기-(SEO-향상)/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/gatsby/Gatsby-블로그-RSS-Feed-생성시키기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---Closure/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---Hoisting/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/vanillacoding-Prep-후기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -35,7 +34,7 @@
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 8주차 수요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 8주차 월요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 7주차 금요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/gatsby/내손내만-Gatsby로-블로그-만들기/2020-11-19-내손내만-Gatsby.js로-블로그-만들기---2-gatsby설치,-starter-고르기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/gatsby/make-blog/install-gatsby-select-starter/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 7주차 수요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/Prep 7주차 월요일 오피스아워 정리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/javascript/하옹의-자바스크립트-식사---DOM/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -71,9 +70,6 @@
 <url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-21-[3주차-Searching]-주사위게임---Lv2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-21-[3주차-Searching]-카페---Lv2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-21-[3주차-Searching]-세-소수의-합/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_가운데-글자-가져오기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_수박수박수박수박수박수/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/vanillacoding_prep/2020-09-16-바닐라코딩-Prep코스-사전준비---Week3_김서방-찾기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-15-[카카오기출]-자물쇠와-열쇠/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-15-[2주차-Stack-&amp;-Hash]-사전순-부분문자열/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-15-[2주차-Stack-&amp;-Hash]-짝지어 제거하기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -93,7 +89,7 @@
 <url> <loc>https://ha-young.github.io/2020/daily/2020-09-01..생각이-많아지는-밤/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/graphQL/GraphQL/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/git/git_refusing_error/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/gatsby/내손내만-Gatsby로-블로그-만들기/2020-08-27-내손내만-Gatsby.js로-블로그-만들기---1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/gatsby/make-blog/what_is_gatsby/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/daily/2020-08-18-바이트-디그리-React-종료와-리뷰어님/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/gatsby/Gatsby에서-Ant-Design적용시키기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/cpp/2020-08-13-C++-객체지향-프로그래밍-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -105,7 +101,7 @@
 <url> <loc>https://ha-young.github.io/2020/cpp/2020-08-05-C++-콘솔-출력/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/cpp/2020-08-05-C++는-여전히-쓰이는가-쓰지-않더라도-왜-배워야-하는가/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/gatsby/2020-07-29-Gatsby---Markdown에-수학-수식(TeX)-적용시키기,-KaTeX-적용시키기/2020-07-29-Gatsby---Markdown에-수학-수식(TeX)-적용시키기,-KaTeX-적용시키기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/gatsby/2020-07-29-Gatsby---Markdown-파일에-이미지-올리기-(내부경로-적용시키기)/2020-07-29-Gatsby---Markdown-파일에-이미지-올리기-(내부경로-적용시키기)/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/gatsby/Gatsby-Markdown-img-upload_innerPath/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/machine-learning/2020-07-26-머신러닝---Linear-Regression/2020-07-26-머신러닝---Linear-Regression/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/machine-learning/모두를 위한 머신러닝 정리 1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/daily/야근은 필요한가/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
