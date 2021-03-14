@@ -56,7 +56,6 @@
 <li><a href="/2020/vanillacoding_prep/Prep%202%EC%A3%BC%EC%B0%A8%EA%B8%88%EC%9A%94%EC%9D%BC_%EC%98%A4%ED%94%BC%EC%8A%A4%EC%95%84%EC%9B%8C%EC%A0%95%EB%A6%AC/#q-dom-%EC%8B%A4%EC%8A%B5-%EC%A2%80%EB%8D%94-%ED%95%98%EA%B3%A0%EC%8B%B6%EC%9D%84%EB%95%90">Q. DOM 실습 좀더 하고싶을땐?</a></li>
 <li><a href="/2020/vanillacoding_prep/Prep%202%EC%A3%BC%EC%B0%A8%EA%B8%88%EC%9A%94%EC%9D%BC_%EC%98%A4%ED%94%BC%EC%8A%A4%EC%95%84%EC%9B%8C%EC%A0%95%EB%A6%AC/#queryselector-vs-getelementbyid">querySelector vs getElementById</a></li>
 <li><a href="/2020/vanillacoding_prep/Prep%202%EC%A3%BC%EC%B0%A8%EA%B8%88%EC%9A%94%EC%9D%BC_%EC%98%A4%ED%94%BC%EC%8A%A4%EC%95%84%EC%9B%8C%EC%A0%95%EB%A6%AC/#%EA%B3%BC%EC%A0%9C-%EA%B2%8C%EC%9E%84-%EC%9E%AC%EC%8B%9C%EC%9E%91%EC%8B%9C%EC%97%90-%EC%83%9D%EA%B8%B8-%EC%88%98-%EC%9E%88%EB%8A%94-%EB%B2%84%EA%B7%B8-restart-button">과제 게임 재시작시에 생길 수 있는 버그? restart button?</a></li>
-<li><a href="/2020/vanillacoding_prep/Prep%202%EC%A3%BC%EC%B0%A8%EA%B8%88%EC%9A%94%EC%9D%BC_%EC%98%A4%ED%94%BC%EC%8A%A4%EC%95%84%EC%9B%8C%EC%A0%95%EB%A6%AC/#tic-tac-toe-%EA%B0%9C%EB%B0%9C%EC%8B%9C-tip-%EB%84%A4%EB%AA%A8%ED%8C%90cell-%ED%81%B4%EB%A6%AD%EC%8B%9C-x-o-%EC%93%B0%EB%8A%94%EB%B2%95-%EC%A4%91%EB%B3%B5-%EA%B8%B0%EC%9E%85-%ED%9A%8C%ED%94%BC%EB%B0%A9%EB%B2%95">Tic Tac Toe 개발시 TIP. 네모판(cell) 클릭시 X, O 쓰는법? 중복 기입 회피방법?</a></li>
 <li><a href="/2020/vanillacoding_prep/Prep%202%EC%A3%BC%EC%B0%A8%EA%B8%88%EC%9A%94%EC%9D%BC_%EC%98%A4%ED%94%BC%EC%8A%A4%EC%95%84%EC%9B%8C%EC%A0%95%EB%A6%AC/#q-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%B6%94%EA%B0%80-%EB%A7%90%EA%B3%A0%EB%8F%84-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90-%EB%B6%80%EB%8B%B4%EC%9D%84-%EC%A3%BC%EB%8A%94-%EA%B2%83%EB%93%A4">Q. 이벤트 추가 말고도 브라우저에 부담을 주는 것들?</a></li>
 <li>
 <p><a href="/2020/vanillacoding_prep/Prep%202%EC%A3%BC%EC%B0%A8%EA%B8%88%EC%9A%94%EC%9D%BC_%EC%98%A4%ED%94%BC%EC%8A%A4%EC%95%84%EC%9B%8C%EC%A0%95%EB%A6%AC/#q-innerhtml%EA%B3%BC-textcontent-%EC%B0%A8%EC%9D%B4">Q. innerHTML과 textContent 차이?</a></p>
@@ -112,55 +111,80 @@ getElementById와 같은 것들만 쓰거나…</p>
 <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
 <p>하지만, 한 요소의 같은 이벤트에 여러개의 함수를 등록하는 것 보다 하나의 이벤트 함수에 다른 함수들을 사용하도록 하는것이 훨씬 바람직하다.(어쩔 수 없는 상황 제외)</p>
 <p><strong>여러번 등록하게 된다면,  브라우저에 일이 추가가 되는 개념(이벤트 대기, 감지)이라 브라우저 효율이나 성능이 떨어질 수 있다.</strong></p>
-<h2 id="tic-tac-toe-개발시-tip-네모판cell-클릭시-x-o-쓰는법-중복-기입-회피방법" style="position:relative;"><a href="#tic-tac-toe-%EA%B0%9C%EB%B0%9C%EC%8B%9C-tip-%EB%84%A4%EB%AA%A8%ED%8C%90cell-%ED%81%B4%EB%A6%AD%EC%8B%9C-x-o-%EC%93%B0%EB%8A%94%EB%B2%95-%EC%A4%91%EB%B3%B5-%EA%B8%B0%EC%9E%85-%ED%9A%8C%ED%94%BC%EB%B0%A9%EB%B2%95" aria-label="tic tac toe 개발시 tip 네모판cell 클릭시 x o 쓰는법 중복 기입 회피방법 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Tic Tac Toe 개발시 TIP. 네모판(cell) 클릭시 X, O 쓰는법? 중복 기입 회피방법?</h2>
-<p>3*3 board로 markup 되었다고 가정.</p>
-<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">var</span> boardElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">".board"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<!--
 
-boardElement<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"click"</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token comment">// ToDo </span>
-  <span class="token comment">// 전체 보드(Cell 상위 Element)하나에만 addEventListener해줘도 각 Cell Element에 대해 클릭이벤트가 가능하다.</span>
-  <span class="token comment">// 이전시간에 배웠던 target / currentTarget</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">var</span> boardElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">".board"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> isXPlaying <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment">// 차례. true: X, false: O</span>
+## Tic Tac Toe 개발시 TIP. 네모판(cell) 클릭시 X, O 쓰는법? 중복 기입 회피방법?
 
-boardElement<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"click"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>isXPlaying<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// 눌러진 cell에 X라고 변경</span>
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token comment">// 눌러진 cell에 O라고 변경</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre></div>
-<p>현재 눌러진 cell을 어떻게 알 수 있을까?</p>
-<p>그것이 바로 저번시간에 배웠던 event.target</p>
-<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">var</span> boardElement <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">".board"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">var</span> isXPlaying <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+3*3 board로 markup 되었다고 가정.
 
-boardElement<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">"click"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token comment">// e.target &lt;-> e.currentTarget</span>
-  <span class="token keyword">var</span> targetElement <span class="token operator">=</span> e<span class="token punctuation">.</span>target<span class="token punctuation">;</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>isXPlaying<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// 눌러진 cell에 X라고 변경</span>
-    targetElement<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"X"</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token comment">// 눌러진 cell에 O라고 변경</span>
-    targetElement<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"O"</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-  isXPlaying <span class="token operator">=</span> <span class="token operator">!</span>isXPlaying <span class="token comment">// 다음과 같이 toggle시켜 플레이어 순서를 바꿔준다.</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
-<p>일단, X / O 반복해서 기입하는건 완성.</p>
-<p>그럼 중복기입 회피는 어떻게 할 수 있을까?</p>
-<p> -> e.target의 값이 비어있는 경우에만 쓰고 값이 있다면 무시하면 된다.</p>
-<div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>targetElement<span class="token punctuation">.</span>textContent <span class="token operator">===</span> <span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>isXPlaying<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token comment">// 눌러진 cell에 X라고 변경</span>
-    targetElement<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"X"</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
-    <span class="token comment">// 눌러진 cell에 O라고 변경</span>
-    targetElement<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token string">"O"</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre></div>
-<p>다음과 같이 처리도 가능하겠다.</p>
+```js
+var boardElement = document.querySelector(".board");
+
+boardElement.addEventListener("click", function() {
+  // ToDo 
+  // 전체 보드(Cell 상위 Element)하나에만 addEventListener해줘도 각 Cell Element에 대해 클릭이벤트가 가능하다.
+  // 이전시간에 배웠던 target / currentTarget
+});
+```
+
+
+
+```js
+var boardElement = document.querySelector(".board");
+var isXPlaying = true; // 차례. true: X, false: O
+
+boardElement.addEventListener("click", function () {
+  if (isXPlaying) {
+    // 눌러진 cell에 X라고 변경
+  } else {
+    // 눌러진 cell에 O라고 변경
+  }
+});
+```
+
+현재 눌러진 cell을 어떻게 알 수 있을까?
+
+그것이 바로 저번시간에 배웠던 event.target
+
+```js
+var boardElement = document.querySelector(".board");
+var isXPlaying = true;
+
+boardElement.addEventListener("click", function (e) {
+  // e.target <-> e.currentTarget
+  var targetElement = e.target;
+  if (isXPlaying) {
+    // 눌러진 cell에 X라고 변경
+    targetElement.textContent = "X";
+  } else {
+    // 눌러진 cell에 O라고 변경
+    targetElement.textContent = "O";
+  }
+  isXPlaying = !isXPlaying // 다음과 같이 toggle시켜 플레이어 순서를 바꿔준다.
+})
+```
+
+일단, X / O 반복해서 기입하는건 완성.
+
+그럼 중복기입 회피는 어떻게 할 수 있을까?
+
+ -> e.target의 값이 비어있는 경우에만 쓰고 값이 있다면 무시하면 된다.
+
+```js
+if (targetElement.textContent === ""){
+  if (isXPlaying) {
+    // 눌러진 cell에 X라고 변경
+    targetElement.textContent = "X";
+  } else {
+    // 눌러진 cell에 O라고 변경
+    targetElement.textContent = "O";
+  }
+}
+```
+
+다음과 같이 처리도 가능하겠다.
+
+-->
 <h2 id="q-이벤트-추가-말고도-브라우저에-부담을-주는-것들" style="position:relative;"><a href="#q-%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%B6%94%EA%B0%80-%EB%A7%90%EA%B3%A0%EB%8F%84-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80%EC%97%90-%EB%B6%80%EB%8B%B4%EC%9D%84-%EC%A3%BC%EB%8A%94-%EA%B2%83%EB%93%A4" aria-label="q 이벤트 추가 말고도 브라우저에 부담을 주는 것들 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Q. 이벤트 추가 말고도 브라우저에 부담을 주는 것들?</h2>
 <p>브라우저가 해야하는 일이 많아지면 부담이 늘어난다고 보면 된다.</p>
 <ul>
