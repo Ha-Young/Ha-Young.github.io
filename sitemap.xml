@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://ha-young.github.io/2021/algorithm_javascript/LeetCode-529_Minesweeper_Lv-Medium_DFS-BFS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2021/algorithm_javascript/LeetCode-101_Symmetric_Tree_Lv-Easy_DFS-BFS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2021/algorithm_javascript/Leet_Code-559_Maximum_Depth_of_ N-ary_Tree-Easy-BFS-DFS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-N으로표현_lv3_dp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/frontend/infinite-scroll/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-섬연결하기_lv3_그리디/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -106,6 +109,7 @@
 <url> <loc>https://ha-young.github.io/2020/machine-learning/모두를 위한 머신러닝 정리 1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/daily/야근은 필요한가/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/daily/나는 왜 블로그를 시작하는가/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/tags/dfs-bfs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/design-parttern/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/javascript-design-parttern/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/oop/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -139,6 +143,7 @@
 <url> <loc>https://ha-young.github.io/tags/infinite-scroll/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/javascript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/javascript-type/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/tags/leet-code/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/linear-regression/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/machine-learning/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/prep/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -168,6 +173,7 @@
 <url> <loc>https://ha-young.github.io/tags/디자인-패턴/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/불변성/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/비동기/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/tags/오답노트/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/카카오기출/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/하옹의-자바스크립트-간식/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/하옹의-자바스크립트-식사/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
