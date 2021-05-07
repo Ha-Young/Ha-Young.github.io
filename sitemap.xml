@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-07/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-06/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/LeetCode-17_Letter_Combinations_of_a_Phone_Number_DFS-BFS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/LeetCode-529_Minesweeper_Lv-Medium_DFS-BFS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/LeetCode-101_Symmetric_Tree_Lv-Easy_DFS-BFS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -10,8 +12,6 @@
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-프린터-lv2-스택-큐/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-H-Index-lv2-정렬/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-카펫-lv2-완전탐색/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-06/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-07/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/javascript/하옹의-자바스크립트-식사---Object-Oriented-Programming/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/algorithm_javascript/프로그래머스-단어변환_Lv3_DFS-BFS/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/frontend/browser-rendering/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -156,6 +156,7 @@
 <url> <loc>https://ha-young.github.io/tags/rendering-optimization/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/repaint/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/request-animation-frame/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/tags/retrospect/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/review/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/scope/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/scss/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -166,6 +167,7 @@
 <url> <loc>https://ha-young.github.io/tags/tree/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/use-intersection-observer/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/vanilla-coding/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/tags/vanilla-coding-final-project/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/객체-불변성/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/객체지향/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/tags/객체지향프로그래밍/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
