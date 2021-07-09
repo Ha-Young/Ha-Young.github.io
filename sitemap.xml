@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-20/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-18/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-17/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-16/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-15/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-14/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-13/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-12/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2021/memona_retrospect/2021-05-10/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -74,8 +80,8 @@
 <url> <loc>https://ha-young.github.io/2020/algorithm/2020-09-28_알고리즘_문제풀이_가이드/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/data-structrue/2020-09-22-자료구조-Tree에-대해-알아보자---2-이진탐색트리-구현/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/data-structrue/2020-09-22-자료구조-Tree에-대해-알아보자---1-트리,이진탐색트리/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-21-[3주차-Searching]-사탕담기---Lv2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-21-[3주차-Searching]-주사위게임---Lv2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-21-[3주차-Searching]-사탕담기---Lv2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-21-[3주차-Searching]-카페---Lv2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-21-[3주차-Searching]-세-소수의-합/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ha-young.github.io/2020/algorithm_python/2020-09-15-[카카오기출]-자물쇠와-열쇠/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
