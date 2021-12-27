@@ -146,7 +146,7 @@ window<span class="token punctuation">.</span><span class="token function">addEv
 <p>위 코드를 보면 사용자의 입력인 버튼 클릭을 하고 나서 팝업을 오픈하고 이후의 결과를 message listener에서 받아 진행하지만 코드량이 많고 복잡할 경우에,
 코드레벨에서 진행상황을 쫒아가기 어렵다는게 문제가 있었다.</p>
 <p>결국에는 사용자의 입력도 비동기이고, 위 post message를 통해 값을 받고 실행하는 부분이 일종의 callback 함수로 볼 수 있는데,
-이러한 같은상황에서 async awiat과 비슷하게 동기적으로 코드를 작성 할 수 있다면 작업자가 아니라도 다른 사람이 볼 때 작업 프로세스를 쫒아갈 수 있게 된다.</p>
+이러한 같은상황에서 async awiat과 비슷하게 동기적으로 코드를 작성 할 수 있₩다면 작업자가 아니라도 다른 사람이 볼 때 작업 프로세스를 쫒아갈 수 있게 된다.</p>
 <div class="gatsby-highlight" data-language="js"><pre class="language-js"><code class="language-js"><span class="token keyword">let</span> popupWorkCompleteResolver<span class="token punctuation">;</span>
 
 <span class="token keyword">const</span> <span class="token function-variable function">handleButtonClick</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
